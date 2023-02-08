@@ -1,0 +1,130 @@
+.block-service-page {
+	padding-top: 65px;
+
+  /* Head */
+  .head {
+    padding: 35px 0 60px;
+
+    &.head--reverse {
+      .holder {
+        .content {
+          margin: 0 0 0 300px;
+          position: relative;
+        }
+
+        .img {
+          left: 0px;
+        }
+      }
+    }
+
+    .wrap {
+      position: relative;
+
+      .img {
+        position: absolute;
+        width: 354px;
+        right: 0;
+        z-index: 0;
+        top: -69px;
+      }
+
+      .content {
+        padding: 56px 13px 34px 51px;
+        background-color: #358bdb;
+        border-radius: 8px;
+        max-width: 805px;
+        margin: 0 300px 0 0;
+        z-index: 2;
+        position: relative;
+
+        .title {
+          margin-bottom: 30px;
+
+          .ttl {
+            font-weight: 700;
+            font-size: 40px;
+            line-height: 47px;
+            color: #fff;
+            padding-top: 0;
+            word-break: break-word;
+          }
+        }
+
+        .txt {
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 20px;
+          color: #fff;
+          padding-bottom: 20px;
+          word-break: break-word;
+        }
+      }
+    }
+
+    @media screen and (max-width: 992px) {
+      & {
+        padding: 35px 0;
+      }
+    }
+
+    @media screen and (max-width: 767px) {
+      & {
+        padding: 0 0 30px;
+
+        .holder {
+          .content {
+            padding: 43px 13px;
+            width: 100%;
+            margin: 0;
+            min-height: auto;
+
+            .title .ttl {
+              font-size: 30px;
+            }
+          }
+
+          img {
+            display: none;
+          }
+        }
+      }
+
+      &.head--reverse {
+        .holder {
+          .content {
+            margin: 0;
+          }
+
+          img {
+            display: none;
+          }
+        }
+      }
+    }
+
+    @media screen and (max-width: 428px) {
+      &,
+      &.head--reverse {
+        .holder {
+          .content {
+            padding: 34px 13px;
+
+            .title {
+              .ttl {
+                font-size: 19px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    & {
+      padding: 0;
+    }
+  }
+  /* END: Head */
+}

@@ -1,0 +1,556 @@
+/* Outsource */
+.block-outsource {
+  padding: 75px 0 85px;
+
+  .outsource-inner {
+    position: relative;
+
+    .wrap {
+      display: flex;
+      position: relative;
+      justify-content: flex-end;
+      padding: 50px 0;
+
+      .img {
+        position: absolute;
+        width: 641px;
+        left: 0;
+        z-index: 1;
+        top: 0;
+      }
+
+      .content {
+        padding: 50px 50px 47px;
+        background-color: #358bdb;
+        border-radius: 8px;
+        width: 641px;
+        min-height: 735px;
+        z-index: 2;
+
+        .title .ttl {
+          color: #fff;
+        }
+
+        .list {
+          margin: 50px auto 0;
+          max-width: 500px;
+
+          .item {
+            list-style: none;
+            cursor: pointer;
+
+            .ttl {
+              padding: 18px 22px;
+              background: #439ef2;
+              font-weight: 700;
+              border-radius: 4px;
+              color: #fff;
+              margin-bottom: 16px;
+              display: flex;
+              justify-content: space-between;
+
+              &-icon {
+                transition: all 0.2s linear;
+              }
+
+              &.expanded {
+                background: #01b9ea;
+                .ttl-icon {
+                  transform: rotate(180deg);
+                  transition: all 0.2s linear;
+                }
+              }
+            }
+
+            .txt {
+              max-height: 150px;
+              overflow: auto;
+              margin-bottom: 22px;
+              padding-top: 2px;
+              color: #fff;
+              line-height: 22px;
+              display: none;
+              word-break: break-word;
+            }
+          }
+        }
+      }
+    }
+
+    .call-meeting {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 1;
+      background-image: url("../../../assets/img/blocks/outsource/outsource-call_bg.png");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      border-radius: 8px;
+      transform: translateY(100%);
+
+      .meeting-wrap {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 65px 64px;
+
+        .txt {
+          font-weight: 700;
+          font-size: 30px;
+          color: #fff;
+        }
+
+        .btn {
+          padding: 10px 21px;
+          border: 1px solid #fff;
+          border-radius: 21px;
+          color: #fff;
+          transition: all 0.2s linear;
+          text-align: center;
+          background-color: transparent;
+          cursor: pointer;
+          margin-left: 5px;
+
+          &:hover {
+            opacity: 0.7;
+            transition: all 0.2s linear;
+          }
+        }
+      }
+    }
+  }
+
+  .modal {
+    position: fixed;
+    inset: 0;
+    z-index: 9;
+    visibility: hidden;
+    justify-content: center;
+    align-items: center;
+
+    .modal-overlay {
+      position: fixed;
+      z-index: 8;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: #00000080;
+      visibility: hidden;
+      opacity: 0;
+    }
+
+    .modal-wrapper {
+      position: relative;
+      z-index: 10;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 100%;
+      max-width: 920px;
+      min-width: 375px;
+      background-color: #fff;
+      box-shadow: 0 0 15px #00000059;
+      max-height: 760px;
+      height: calc(90vh - 70px);
+      overflow: hidden;
+
+      .modal-header {
+        position: sticky;
+        background-color: #fff;
+        box-shadow: 0 1px 2px hsla(0, 0%, 0%, 0.06);
+        border-bottom: 1px solid #e8e8e8;
+        padding: 16px;
+        top: 0;
+        left: 0;
+        width: 100%;
+
+        .modal-close {
+          position: absolute;
+          right: 0;
+          top: 50%;
+          transform: translate(-50%, -50%);
+          cursor: pointer;
+          display: block;
+          text-align: center;
+          width: 30px;
+          height: 30px;
+          color: #ccc;
+          border: 0;
+          background-color: transparent;
+
+          &:hover {
+            color: #000000e0;
+          }
+
+          .icon-close-modal {
+            font-size: 30px;
+          }
+        }
+      }
+
+      .modal-body {
+        padding: 16px 16px 0 16px;
+        max-height: 90vh;
+        height: 100%;
+        overflow-y: auto;
+      }
+    }
+  }
+}
+
+.show-calendar {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  touch-action: none;
+  -ms-touch-action: none;
+
+  .block-outsource .modal {
+    visibility: visible;
+    display: block;
+
+    .modal-overlay {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .block-outsource {
+    .outsource-inner {
+      .wrap {
+        .img {
+          padding-left: 16px;
+        }
+      }
+
+      .call-meeting {
+        left: 16px;
+        right: 16px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .block-outsource {
+    padding-bottom: 75px;
+
+    .outsource-inner {
+      .wrap {
+        flex-direction: column;
+        justify-content: center;
+        padding: 0 0 35px;
+        align-items: center;
+
+        .img {
+          position: relative;
+          padding: 0;
+        }
+
+        .content {
+          width: calc(641px - 20px);
+          margin-top: -100px;
+          padding: 61px 19px;
+          min-height: auto;
+
+          .list {
+            max-width: 100%;
+          }
+        }
+      }
+
+      .call-meeting {
+        .meeting-wrap {
+          padding: 40px 50px;
+
+          .txt {
+            font-size: 21px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .block-outsource {
+    .outsource-inner {
+      .call-meeting .meeting-wrap {
+        padding: 40px 30px;
+      }
+    }
+    .modal-meeting {
+      padding: 0 16px;
+    }
+  }
+}
+
+@media screen and (max-width: 710px) {
+  .block-outsource .outsource-inner .wrap {
+    .content {
+      width: calc(100% - 20px);
+      padding: 50px 19px 28px 19px;
+    }
+  }
+}
+
+@media screen and (max-width: 668px) {
+  .block-outsource .modal .modal-wrapper {
+    max-width: 475px;
+    height: calc(85vh - 70px);
+
+    .modal-body {
+      overflow-y: hidden;
+    }
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .block-outsource {
+    padding: 0 0 50px 0;
+
+    .outsource-inner {
+      .wrap {
+        .content {
+          .title {
+            margin-bottom: 30px;
+          }
+
+          .list {
+            margin: 0;
+
+            .item {
+              .ttl {
+                font-size: 14px;
+                padding: 12px 13px;
+              }
+
+              .txt {
+                font-size: 14px;
+              }
+            }
+          }
+        }
+      }
+
+      .call-meeting {
+        .meeting-wrap {
+          padding: 16px 30px;
+
+          .txt {
+            font-size: 14px;
+          }
+
+          .btn {
+            padding: 5px;
+          }
+        }
+      }
+    }
+
+    .modal {
+      .modal-wrapper {
+        height: calc(80% - 70px);
+        overflow: hidden;
+
+        .modal-body {
+          padding: 16px 16px 0 16px;
+          height: 80%;
+          overflow: auto;
+        }
+      }
+    }
+  }
+}
+
+/* END: Outsource */
+
+/* Customer Admin */
+
+.block-editor-block-list__block {
+  .block-outsource .outsource-inner {
+    font-size: 16px;
+
+    .wrap .content .list {
+      padding: 0;
+
+      .item {
+        .ttl {
+          position: relative;
+          transition: all 0.2s linear;
+
+          &:hover {
+            .admin-buttom-delete-item,
+            .admin-buttom-move-item {
+              display: flex;
+              transition: all 0.2s linear;
+            }
+          }
+
+          .admin-buttom-delete-item,
+          .admin-buttom-move-item {
+            display: none;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 10px;
+            padding: 0;
+            width: 32px;
+            justify-content: center;
+            align-items: center;
+          }
+
+          .admin-buttom-move-item {
+            right: 55px;
+            left: unset;
+          }
+        }
+
+        .txt {
+          line-height: normal;
+        }
+
+        .admin-buttom-add-item {
+          padding: 18px 22px;
+          background: #01b9ea;
+          border-radius: 4px;
+          color: #fff;
+          border: 0;
+          min-height: auto;
+
+          span {
+            display: block;
+            width: 100%;
+            height: 100%;
+            position: unset;
+            transform: none;
+
+            &::before {
+              font-size: 30px;
+              font-weight: 700;
+            }
+          }
+        }
+
+        .show {
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .block-editor-block-list__block {
+    .block-outsource .outsource-inner .wrap .content .list {
+      .item {
+        .admin-buttom-add-item {
+          padding: 12px 13px;
+
+          .dashicons-plus-alt2 {
+            font-size: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* Customer drag and drop */
+
+.item.hold-item-outsource {
+  font-size: 16px;
+
+  &.item {
+    list-style: none;
+
+    .show {
+      display: block;
+    }
+  }
+
+  .ttl {
+    background: #01b9ea;
+    position: relative;
+    padding: 18px 22px;
+    font-weight: 700;
+    border-radius: 4px;
+    color: #fff;
+    margin-bottom: 16px;
+    display: flex;
+    justify-content: space-between;
+
+    .admin-buttom-delete-item,
+    .admin-buttom-move-item {
+      display: flex;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 10px;
+      padding: 0;
+      width: 32px;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .admin-buttom-move-item {
+      right: 55px;
+      left: unset;
+    }
+
+    &-icon {
+      transition: all 0.2s linear;
+    }
+
+    &.expanded {
+      background: #01b9ea;
+      .ttl-icon {
+        transform: rotate(180deg);
+        transition: all 0.2s linear;
+      }
+    }
+  }
+
+  .txt {
+    max-height: 150px;
+    overflow: auto;
+    margin-bottom: 22px;
+    padding-top: 2px;
+    color: #fff;
+    line-height: 22px;
+    display: none;
+  }
+
+  @media screen and (max-width: 575px) {
+    &.item {
+      .ttl {
+        font-size: 14px;
+        padding: 12px 13px;
+      }
+
+      .txt {
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+/* END: Customer drag and drop */
+
+/* END: Customer Admin */
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background-color: rgba(0, 0, 0, 0.5);
+}

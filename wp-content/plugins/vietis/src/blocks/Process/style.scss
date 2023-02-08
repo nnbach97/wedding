@@ -1,0 +1,418 @@
+/* Process */
+.block-process-service {
+  padding: 60px 0;
+
+  .wrap {
+    .ttl {
+      font-size: 20px;
+      font-weight: 400;
+      margin-bottom: 50px;
+      line-height: 23px;
+
+      strong {
+        font-weight: 700;
+      }
+    }
+
+    .content-solution {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 24px;
+
+      .item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 215px;
+        height: 143px;
+        padding: 10px;
+        border-radius: 10px;
+        background: #edfafe;
+        border: 1px solid #ebf5ff;
+        position: relative;
+
+        &:hover,
+        &:active,
+        &:focus {
+          .popover {
+            display: block;
+          }
+        }
+
+        .img-wrap {
+          margin-bottom: 14px;
+
+          .img {
+            width: 60px;
+            height: 60px;
+            object-fit: cover;
+            display: block;
+          }
+        }
+
+        span {
+          color: #2f5aa8;
+        }
+
+        .txt {
+          width: 100%;
+          text-align: center;
+          display: -webkit-box;
+          -webkit-line-clamp: 1;
+          -webkit-box-orient: vertical;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+
+        .popover {
+          display: none;
+          position: absolute;
+          border: 1px solid #dee2e6;
+          border-radius: 4px;
+          background-color: #fff;
+          z-index: 2;
+          bottom: 160px;
+          width: 400px;
+          padding: 38px 16px 25px;
+
+          .arrow-tooltip {
+            bottom: -17px;
+            position: absolute;
+            display: block;
+            width: 20px;
+            height: 17px;
+            left: 50%;
+            transform: translateX(-50%);
+
+            &::before,
+            &::after {
+              position: absolute;
+              display: block;
+              content: "";
+              border-color: transparent;
+              border-style: solid;
+              border-width: 17px 11px 0;
+            }
+
+            &::before {
+              bottom: 0;
+              border-top-color: rgba(0, 0, 0, 0.25);
+            }
+
+            &::after {
+              bottom: 1px;
+              border-top-color: #fff;
+            }
+          }
+
+          .popover-body {
+            .ttl {
+              margin-bottom: 30px;
+              font-weight: 700;
+              font-size: 20px;
+              line-height: 23px;
+              color: #333;
+            }
+
+            .list {
+              .item-popover {
+                margin-bottom: 10px;
+                padding-left: 20px;
+                text-align: left;
+                position: relative;
+
+                &::before {
+                  content: url(../../../assets/img/blocks/digital-transformation-service-page/service_icon_tooltip.png);
+                  position: absolute;
+                  left: 4px;
+                  line-height: 13px;
+                }
+              }
+            }
+          }
+        }
+
+        .icon-show-popover {
+          position: absolute;
+          top: 5px;
+          left: 5px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 1360px) {
+    .wrap {
+      .content-solution .item {
+        width: 20%;
+      }
+    }
+  }
+
+  @media screen and (max-width: 1180px) {
+    .wrap {
+      .content-solution .item .popover {
+        width: 28vw;
+      }
+    }
+  }
+
+  @media screen and (max-width: 1070px) {
+    .wrap {
+      .content-solution .item {
+        width: 25%;
+
+        .popover {
+          width: 40vw;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 992px) {
+    & {
+      padding: 30px 0;
+    }
+
+    .head.head--reverse {
+      padding: 0 0 30px 0;
+    }
+
+    .wrap {
+      .ttl {
+        margin-bottom: 25px;
+      }
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    .wrap {
+      .content-solution .item {
+        width: 40%;
+
+        .popover {
+          width: 55vw;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 568px) {
+    .wrap .content-solution .item {
+      width: 60%;
+
+      .popover {
+        width: 92vw;
+      }
+    }
+  }
+}
+/* END: Process */
+
+/* Customer Admin */
+.block-editor-block-list__block {
+  .block-process-service {
+    .wrap {
+      margin: 0;
+
+      ul {
+        padding-left: 0;
+      }
+
+      .img-wrap {
+        cursor: pointer;
+      }
+
+      .item {
+        list-style: none;
+      }
+
+      .content-solution {
+        .item {
+          &:hover,
+          &:active,
+          &:focus {
+            .popover {
+              display: unset;
+            }
+          }
+
+          .show {
+            display: block;
+          }
+
+          .admin-buttom-add-item {
+            min-height: auto;
+          }
+
+          .admin-buttom-move-item,
+          .admin-buttom-delete-item {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+
+          .admin-buttom-move-item {
+            left: initial;
+            top: 40px;
+            right: 5px;
+            padding-top: 0;
+          }
+
+          .admin-buttom-delete-item {
+            right: 5px;
+            top: 5px;
+            width: 32px;
+            padding: 0;
+          }
+        }
+      }
+    }
+  }
+}
+/* END: Customer Admin */
+
+/* Customer drag and drop */
+.item.hold-item-process {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 215px;
+  height: 143px;
+  padding: 10px;
+  border-radius: 10px;
+  background: #edfafe;
+  border: 1px solid #ebf5ff;
+  position: relative;
+
+  .img-wrap {
+    margin-bottom: 14px;
+
+    .img {
+      width: 60px;
+      height: 60px;
+      object-fit: cover;
+      display: block;
+    }
+  }
+
+  .txt {
+    width: 100%;
+    text-align: center;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 18px;
+    line-height: 27px;
+  }
+
+  span {
+    color: #2f5aa8;
+  }
+
+  .popover {
+    position: absolute;
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+    background-color: #fff;
+    z-index: 2;
+    bottom: 160px;
+    width: 400px;
+    padding: 38px 16px 25px;
+
+    .arrow-tooltip {
+      bottom: -17px;
+      position: absolute;
+      display: block;
+      width: 20px;
+      height: 17px;
+      left: 50%;
+      transform: translateX(-50%);
+
+      &::before,
+      &::after {
+        position: absolute;
+        display: block;
+        content: "";
+        border-color: transparent;
+        border-style: solid;
+        border-width: 17px 11px 0;
+      }
+
+      &::before {
+        bottom: 0;
+        border-top-color: rgba(0, 0, 0, 0.25);
+      }
+
+      &::after {
+        bottom: 1px;
+        border-top-color: #fff;
+      }
+    }
+
+    .popover-body {
+      .ttl {
+        margin-bottom: 30px;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 23px;
+        color: #333;
+      }
+
+      .list {
+        .item-popover {
+          margin-bottom: 10px;
+          padding-left: 20px;
+          text-align: left;
+          position: relative;
+
+          &::before {
+            content: url(../../../assets/img/blocks/digital-transformation-service-page/service_icon_tooltip.png);
+            position: absolute;
+            left: 4px;
+            line-height: 13px;
+          }
+        }
+      }
+    }
+  }
+
+  .icon-show-popover {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    cursor: pointer;
+  }
+
+  .admin-buttom-add-item {
+    min-height: auto;
+  }
+
+  .admin-buttom-move-item,
+  .admin-buttom-delete-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .admin-buttom-move-item {
+    left: initial;
+    top: 40px;
+    right: 5px;
+    padding-top: 0;
+  }
+
+  .admin-buttom-delete-item {
+    right: 5px;
+    top: 5px;
+    width: 32px;
+    padding: 0;
+  }
+}
+/* END: Customer drag and drop */

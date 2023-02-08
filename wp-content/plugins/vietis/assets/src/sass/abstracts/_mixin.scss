@@ -1,0 +1,45 @@
+// flexbox
+
+@mixin flexbox($direction: inherit, $align: inherit, $justify: inherit) {
+  display: flex;
+  @if $direction != inherit {
+    flex-direction: $direction;
+  }
+  @if $align != inherit {
+    align-items: $align;
+  }
+  @if $justify != inherit {
+    justify-content: $justify;
+  }
+  flex-wrap: wrap;
+}
+
+// center
+
+@mixin center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// absolute
+@mixin absolute(
+  $top: inherit,
+  $right: inherit,
+  $bottom: inherit,
+  $left: inherit
+) {
+  position: absolute;
+  @if $top != inherit {
+    top: $top;
+  }
+  @if $right != inherit {
+    right: $right;
+  }
+  @if $bottom != inherit {
+    bottom: $bottom;
+  }
+  @if $left != inherit {
+    left: $left;
+  }
+}

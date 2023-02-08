@@ -1,0 +1,101 @@
+// Mixin
+@import "../../../assets/src/sass/abstracts/mixin";
+
+/* Feature */
+.block-feature {
+  padding: 75px 0 0;
+  overflow-x: hidden;
+
+  .wrap {
+    display: flex;
+    align-items: center;
+
+    .content {
+      width: 50%;
+
+      .title {
+        .ttl {
+          &--highlight {
+            color: var(--color-main);
+          }
+        }
+      }
+
+      .des {
+        margin: 30px auto 50px;
+      }
+    }
+
+    .img {
+      width: 50%;
+      margin-left: 12px;
+    }
+  }
+}
+
+/* Responsive */
+
+@media screen and (max-width: 1023px) {
+  .block-feature {
+    .feature-inner {
+      width: 70%;
+
+      .wrap {
+        flex-direction: column-reverse;
+
+        .content {
+          margin-top: 35px;
+          width: 100%;
+        }
+
+        .img {
+          width: 100%;
+          margin-left: 0;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .block-feature {
+    padding: 38px 0 30px;
+
+    .feature-inner {
+      width: 86%;
+    }
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .block-feature {
+    .feature-inner {
+      width: 100%;
+
+      .wrap {
+        .content {
+          margin-top: 50px;
+
+          .des {
+            font-size: 14px;
+            margin: 15px auto 20px;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* END:Responsive */
+
+/* Customer style admin */
+.add-media {
+  width: 50%;
+  cursor: pointer;
+
+  .dashicons-format-image {
+    margin: 0 auto;
+  }
+}
+/* END:Customer style admin */
+/* END:Feature */

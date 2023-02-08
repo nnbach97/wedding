@@ -1,0 +1,123 @@
+@import '../abstracts/mixin';
+
+.holder {
+  margin: 0 auto;
+  max-width: 1120px;
+  &-fluid {
+    max-width: 1366px;
+    padding: 0 16px;
+    margin: 0 auto;
+  }
+}
+
+.text {
+  &-right {
+    text-align: right;
+  }
+  &-left {
+    text-align: left;
+  }
+  &-center {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .holder {
+    padding: 0 16px;
+  }
+}
+/* END: common */
+
+/* block */
+.block {
+  .title {
+    position: relative;
+    z-index: 1;
+
+    .ttl {
+      color: var(--color-text-primary);
+      font-size: 40px;
+      font-weight: normal;
+      z-index: 1;
+      display: inline-block;
+      padding-top: 50px;
+
+      strong {
+        font-weight: 700;
+      }
+    }
+
+    .shadow {
+      -webkit-text-stroke: 1px var(--color-text-fifth);
+      color: transparent;
+      font-size: 80px;
+      opacity: 0.3;
+      display: inline-block;
+      @include absolute($top: 0, $left: 0);
+      z-index: -1;
+      line-height: 1;
+
+      &--primary {
+        -webkit-text-stroke: 1px var(--color-text-forth);
+      }
+    }
+
+    &.light {
+      .ttl {
+        color: var(--color-text-secondary);
+      }
+
+      .shadow {
+        -webkit-text-stroke: 1px var(--color-text-forth);
+      }
+    }
+
+    &.text-center {
+      .shadow {
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .block {
+
+    .title {
+      .ttl {
+        font-size: 25px;
+        padding-top: 0;
+      }
+
+      .shadow {
+        font-size: 40px;
+        top: -24px;
+      }
+    }
+  }
+}
+
+.block-editor-block-list__block {
+  .block .title .shadow {
+    top: 30px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .block-editor-block-list__block {
+    .block .title .shadow {
+      top: -5px;
+    }
+  }
+}
+
+.block-editor__container {
+  /* Services*/
+  .block-services .wrapper-item .item .wrap .text .ttl a {
+    pointer-events: none;
+    text-decoration: none;
+  }
+  /* END: Services*/
+}

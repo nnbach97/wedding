@@ -1,0 +1,31 @@
+.sidebar-blog {
+  width: calc(100% / 3);
+
+  .ttl {
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 24px;
+  }
+
+  .sidebar-tags {
+    margin-bottom: 50px;
+
+    .holder {
+      padding: 0;
+    }
+
+    .list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+
+      .item {
+        padding: 6px 18px;
+        background: #a9b5c9;
+        border-radius: 4px;
+        display: inline-block;
+        color: #fff;
+      }
+    }
+  }
+}

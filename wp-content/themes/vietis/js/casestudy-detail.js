@@ -1,0 +1,1 @@
+!function(e){e(function(){e(".js-slick-casestudy").slick({arrows:!1,speed:1e3,autoplay:!0,autoplaySpeed:3e3,slidesToShow:1,pauseOnHover:!0,pauseOnFocus:!0})})}(jQuery);

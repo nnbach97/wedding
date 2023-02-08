@@ -1,0 +1,80 @@
+.ub-advanced-video-input-choices {
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.wp-block > .ub-advanced-video-container {
+	width: initial;
+	&.ub-advanced-video-autofit-youtube {
+		width: 100%;
+		> iframe {
+			width: 100%;
+		}
+	}
+	&.ub-advanced-video-autofit-vimeo,
+	&.ub-advanced-video-autofit-dailymotion {
+		position: relative;
+		> iframe {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+		}
+	}
+	&.ub-advanced-video-autofit-dailymotion {
+		height: 0;
+		overflow: hidden;
+		> iframe {
+			overflow: hidden;
+		}
+	}
+}
+
+.ub-labelled-toggle {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: baseline;
+	justify-content: space-between;
+	> p {
+		flex: 1 1 75%;
+	}
+	> .components-toggle-control {
+		flex: 1 1 25%;
+	}
+}
+
+$fixed-border-style: 1px dashed gray;
+
+.ub-indicator-grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	width: 60px;
+	margin-bottom: 20px;
+	&-cell {
+		width: 20px;
+		height: 20px;
+	}
+	&-top-border {
+		border-top: $fixed-border-style;
+	}
+	&-bottom-border {
+		border-bottom: $fixed-border-style;
+	}
+	&-left-border {
+		border-left: $fixed-border-style;
+	}
+	&-right-border {
+		border-right: $fixed-border-style;
+	}
+}
+
+.ub-advanced-video-url-input {
+	display: flex;
+	justify-content: center;
+	margin-top: 10px;
+	> input,
+	> button {
+		display: block;
+	}
+}

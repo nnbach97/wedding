@@ -1,0 +1,194 @@
+.block-veramine-technology {
+  padding: 173px 0 90px;
+  background: url("../../../../../assets/img/blocks/product/veramine/image_bg_feature.svg") no-repeat;
+  background-position: center bottom;
+
+  .list {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-wrap: wrap;
+
+    .item {
+      width: calc(50% - 40px);
+      margin-bottom: 70px;
+
+      .header {
+        display: flex;
+        align-items: center;
+        margin-bottom: 40px;
+        color: #454545;
+
+        .img {
+          width: 60px;
+          height: 60px;
+        }
+
+        .ttl {
+          font-size: 25px;
+          font-weight: 700;
+          padding: 0 18px;
+          line-height: 34px;
+          flex: 1;
+        }
+      }
+
+      .main {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+
+        .desc {
+          margin-bottom: 40px;
+          min-height: 60px;
+        }
+
+        .note {
+          border: 1px solid #A9B5C9;
+          text-align: center;
+          padding: 8px;
+        }
+      }
+
+      .admin-buttom-delete-item {
+        top: -20px;
+      }
+
+      .admin-buttom-move-item {
+        position: absolute;
+        top: -20px;
+        padding: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        left: initial;
+        right: 50px;
+      }
+    }
+  }
+
+  &-txt {
+    line-height: 20px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #454545;
+  }
+
+  @media screen and (max-width: 768px) {
+    & {
+      padding: 160px 0 55px;
+      background-size: contain;
+      background-position: center;
+
+      .list {
+        .item {
+          width: calc(50% - 10px);
+
+          .header {
+            .img {
+              width: 50px;
+              height: 50px;
+            }
+
+            .ttl {
+              font-size: 18px;
+              line-height: 25px;
+              padding: 0 0 0 15px;
+            }
+          }
+
+          .main {
+            .note {
+              font-size: 12px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 755px) {
+    & {
+      .list {
+        flex-direction: column;
+
+        .item {
+          width: 100%;
+
+          .header {
+            margin-bottom: 30px;
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 568px) {
+    & {
+      padding: 80px 0 50px;
+    }
+  }
+}
+
+.item.hold-item-technology {
+  width: calc(50% - 40px);
+  margin-bottom: 70px;
+
+  .header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+    color: #454545;
+
+    .img {
+      width: 60px;
+      height: 60px;
+    }
+
+    .ttl {
+      font-size: 25px;
+      font-weight: 700;
+      padding: 0 18px;
+      line-height: 34px;
+      flex: 1;
+    }
+  }
+
+  .main {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+
+    .desc {
+      margin-bottom: 40px;
+      min-height: 60px;
+    }
+
+    .note {
+      border: 1px solid #A9B5C9;
+      text-align: center;
+      padding: 8px;
+    }
+  }
+
+  .admin-buttom-delete-item {
+    top: -20px;
+  }
+
+  .admin-buttom-move-item {
+    position: absolute;
+    top: -20px;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: initial;
+    right: 50px;
+  }
+}
+
+.block-editor-block-list__block {
+  .block-veramine-technology .list .item {
+    position: relative;
+  }
+}

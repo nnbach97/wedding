@@ -1,0 +1,1 @@
+!function(e){e(function(){e(".js-film").on("click",function(o){o.preventDefault();o=e(this).data("video"),o=e("<source/>",{src:o});e(".js-video-popup").addClass("show"),e(".js-film-video").append(o)}),e(".js-video-overlay").on("click",function(o){e(".js-video-popup").removeClass("show")})})}(jQuery);

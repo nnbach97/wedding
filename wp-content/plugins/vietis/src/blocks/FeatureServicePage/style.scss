@@ -1,0 +1,83 @@
+/* Feature Service Page */
+.block-feature-service-page {
+  padding: 60px 0;
+
+  .wrap {
+    .ttl {
+      font-size: 20px;
+      font-weight: 400;
+      margin-bottom: 50px;
+      line-height: 23px;
+
+      strong {
+        font-weight: 700;
+      }
+    }
+
+    .content-features {
+      display: flex;
+      justify-content: space-between;
+      color: #454545;
+
+      .item {
+        width: 32%;
+        margin-right: 2%;
+        display: flex;
+        flex-direction: column;
+
+        &:last-child {
+          margin-right: 0;
+        }
+
+        .img-wrap {
+          margin-bottom: 17px;
+          text-align: center;
+          flex: 1;
+
+          img {
+            object-fit: cover;
+          }
+        }
+
+        .txt {
+          font-size: 16px;
+          line-height: 20px;
+          text-align: center;
+          height: 60px;
+          display: -webkit-box;
+          -webkit-line-clamp: 3;
+          -webkit-box-orient: vertical;
+          overflow: hidden;
+          text-overflow: ellipsis;
+
+          strong {
+            font-weight: 700;
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    .wrap {
+      .content-features {
+        flex-direction: column;
+
+        .item {
+          width: 100%;
+          margin-right: 0;
+          margin-bottom: 50px;
+
+          .txt {
+            height: auto;
+          }
+
+          &:last-child {
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+  }
+}
+/* END: Feature Service Page */

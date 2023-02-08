@@ -1,0 +1,70 @@
+/* Banner */
+.common-block-banner {
+  position: relative;
+  margin-bottom: 40px;
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(270.12deg, rgba(4, 27, 68, 0.61) 0.11%, rgba(1, 12, 32, 0.4819) 99.91%);
+  }
+
+  .banner-bg {
+    .image-default {
+      max-height: 50vh;
+    }
+
+    img {
+      width: 100%;
+      object-fit: cover;
+      vertical-align: middle;
+      max-height: 630px;
+    }
+  }
+
+  .banner-inner {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+    margin-bottom: 40px;
+
+    .ttl {
+      font-size: 40px;
+      margin-bottom: 16px;
+      text-align: center;
+    }
+  }
+
+  @media screen and (max-width: 991px) {
+    .banner-inner {
+      .ttl {
+        font-size: 30px;
+      }
+    }
+  }
+
+  @media screen and (max-width: 575px) {
+    & {
+      margin-bottom: 25px;
+
+      .banner-inner {
+        margin-bottom: 20px;
+
+        .ttl {
+          font-size: 20px;
+          margin-bottom: 5px;
+        }
+
+        .breadcrumbs {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+/* END: Banner */

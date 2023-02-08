@@ -1,0 +1,250 @@
+.block-veramine-banner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: url("../../../../../assets/img/blocks/product/veramine/image_bg.png") no-repeat top left;
+  background-position: center;
+  background-size: cover;
+  min-height: 730px;
+  word-break: break-word;
+
+  .header {
+    padding: 91px 0 52px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 23px;
+
+    .logo {
+      max-width: 276px;
+    }
+
+    &-txt {
+      max-width: 600px;
+      text-align: center;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      word-break: break-word;
+    }
+  }
+
+  .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+
+    .desc {
+      max-width: 800px;
+
+      .ttl,
+      .txt {
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        word-break: break-word;
+      }
+
+      .ttl {
+        font-size: 60px;
+        font-weight: 900;
+        line-height: 70px;
+        margin-bottom: 30px;
+      }
+
+      .txt {
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 20px;
+        -webkit-line-clamp: 4;
+      }
+    }
+
+    .img {
+      max-width: 299px;
+      width: 100%;
+      margin-right: 20px;
+    }
+  }
+
+  .list {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, 50%);
+    max-width: 1120px;
+    width: 100%;
+
+    .item {
+      background: #f3f4fd;
+      box-shadow: 2px 3px 12px rgba(202, 195, 195, 0.1);
+      border-radius: 8px;
+      width: calc(33% - 12px);
+      min-height: 106px;
+
+      padding: 28px 32px;
+
+      &:nth-child(2) {
+        background: #edfafe;
+      }
+
+      &:nth-child(3) {
+        background: #ebf5ff;
+      }
+
+      span {
+        font-size: 20px;
+        line-height: 23px;
+        font-weight: 700;
+        color: #2f5aa8;
+        display: -webkit-box;
+        -webkit-line-clamp: 10;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        word-break: break-word;
+      }
+    }
+  }
+
+  @media screen and (max-width: 1124px) {
+    .content {
+      .desc {
+        max-width: 700px;
+
+        .ttl {
+          font-size: 40px;
+          line-height: 50px;
+        }
+      }
+    }
+
+    .list {
+      padding: 0 16px;
+
+      .item {
+        span {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 992px) {
+    .content {
+      .desc {
+        max-width: 500px;
+      }
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .header {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 75px 0 50px;
+    }
+
+    .content {
+      flex-wrap: wrap;
+
+      .desc {
+        width: 50%;
+      }
+
+      .img {
+        margin-right: 0;
+      }
+    }
+
+    .list {
+      align-items: stretch;
+
+      .item {
+        padding: 16px;
+        height: inherit;
+        font-size: 18px;
+        width: calc(33% - 8px);
+      }
+    }
+  }
+
+  @media screen and (max-width: 755px) {
+    & {
+      margin-bottom: 0;
+      padding-bottom: 50px;
+
+      .content {
+        flex-direction: column;
+        padding-bottom: 30px;
+
+        .desc {
+          width: 100%;
+          margin-bottom: 30px;
+
+          .ttl,
+          .txt {
+            display: block;
+          }
+
+          .ttl {
+            font-size: 45px;
+
+            br {
+              display: none;
+            }
+          }
+        }
+      }
+
+      .list {
+        align-items: stretch;
+        flex-direction: column;
+        position: static;
+        left: inherit;
+        bottom: inherit;
+        transform: inherit;
+        padding: 0;
+
+        .item {
+          width: 100%;
+          margin-bottom: 20px;
+
+          span {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* Customer Admin */
+.block-editor-block-list__block {
+  .block-veramine-banner {
+    .content {
+      .desc {
+        .ttl {
+          margin-top: 0;
+        }
+      }
+    }
+    .list {
+      margin: 0;
+      padding: 0;
+    }
+  }
+}
+/* AND: Customer Admin */

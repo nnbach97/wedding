@@ -1,0 +1,117 @@
+/* Banner */
+.common-block-banner {
+  position: relative;
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(
+      270.12deg,
+      rgba(4, 27, 68, 0.61) 0.11%,
+      rgba(1, 12, 32, 0.4819) 99.91%
+    );
+  }
+
+  .banner-bg {
+    .image-default {
+      max-height: 630px;
+    }
+
+    img {
+      width: 100%;
+      object-fit: cover;
+      vertical-align: middle;
+      max-height: 630px;
+    }
+  }
+
+  .banner-inner {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+    margin-bottom: 40px;
+
+    .ttl {
+      font-size: 40px;
+      margin-bottom: 16px;
+      text-align: center;
+    }
+
+    .block-breadcrumbs {
+      text-align: center;
+
+      ul {
+        display: flex;
+        justify-content: center;
+
+        li {
+          font-weight: 400;
+          position: relative;
+          padding-right: 10px;
+          margin-right: 5px;
+
+          &:not(:last-child):after {
+            content: "";
+            width: 3px;
+            height: 3px;
+            border-radius: 50%;
+            background-color: #01b9ea;
+            position: absolute;
+            top: 50%;
+            right: 0;
+            transform: translateX(-50%);
+          }
+
+          &:last-child {
+            margin: 0;
+            padding: 0;
+          }
+
+          a {
+            color: #01b9ea;
+            font-weight: 700;
+          }
+        }
+      }
+
+      @media screen and (max-width: 991px) {
+        ul li {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 991px) {
+    .banner-inner {
+      width: 70%;
+
+      .ttl {
+        font-size: 30px;
+      }
+    }
+  }
+
+  @media screen and (max-width: 575px) {
+    .banner-inner {
+      margin-bottom: 20px;
+      width: 100%;
+      padding: 0 16px;
+
+      .ttl {
+        font-size: 20px;
+        margin-bottom: 5px;
+      }
+
+      .breadcrumbs {
+        font-size: 14px;
+      }
+    }
+  }
+}
+/* END: Banner */

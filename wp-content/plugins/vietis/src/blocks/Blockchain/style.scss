@@ -1,0 +1,229 @@
+  /* Blockchain */
+  .block-blockchain {
+    .wrap {
+      padding: 60px 0;
+
+      .title {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 23px;
+        color: #454545;
+      }
+
+      .wrapper-item {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 50px 0 0;
+        justify-content: space-between;
+
+        .item {
+          padding: 31px 39px;
+          border: 1px solid #fff;
+          border-radius: 24px;
+          width: calc(50% - 12px);
+          background: #edfafe;
+          position: relative;
+          margin-bottom: 24px;
+
+          &:first-child {
+            background: #f3f4fd;
+            width: 100%;
+            margin-bottom: 24px;
+          }
+
+          &:last-child {
+            background: #ebf5ff;
+          }
+
+          .subtitle {
+            display: flex;
+            align-items: center;
+            padding-bottom: 27px;
+            padding-left: 0;
+
+            .image {
+              margin-right: 24px;
+              width: 50px;
+
+              img {
+                object-fit: contain;
+              }
+            }
+
+            .ttl {
+              font-size: 20px;
+              line-height: 23px;
+              color: #454545;
+              flex: 1;
+              font-weight: 700;
+              word-break: break-word;
+            }
+          }
+
+          .txt {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 20px;
+            color: #454545;
+            word-break: break-word;
+          }
+
+          .admin-buttom-move-item {
+            background: rgba(255,255,255,.3);
+            border: 1px solid #60606038;
+            position: absolute;
+            color: #606060;
+            height: 32px;
+            line-height: 32px;
+            border-radius: 8px;
+            top: 12px;
+            padding: 5px;
+            cursor: move;
+            width: 32px;
+            right: 50px;
+            box-shadow: 0 0 0 2px #fff;
+            left: unset;
+          }
+
+          .admin-color-control .button-color {
+            height: 20px;
+            width: 20px;
+          }
+        }
+      }
+    }
+
+    @media screen and (max-width: 992px) {
+      & {
+        padding: 30px 0;
+      }
+
+      .wrap {
+        padding: 30px 0 0;
+
+        .wrapper-item {
+          padding-top: 25px;
+        }
+      }
+    }
+
+    @media screen and (max-width: 767px) {
+      .wrap {
+        padding-bottom: 0;
+      }
+    }
+
+    @media screen and (max-width: 700px) {
+      .wrap {
+        .wrapper-item {
+          flex-direction: column;
+
+          .item {
+            width: 100%;
+            margin-bottom: 24px;
+
+            &:last-child {
+              margin-bottom: 0;
+            }
+          }
+        }
+      }
+    }
+
+    @media screen and (max-width: 428px) {
+      .wrap {
+        .title {
+          font-size: 19px;
+        }
+
+        .wrapper-item {
+          .item {
+            .subtitle .ttl {
+              font-size: 18px;
+            }
+          }
+        }
+      }
+    }
+  }
+  /* END: Blockchain */
+
+/* Custom Button Move */
+.item.hold-item-blockchain {
+  padding: 31px 39px;
+  border: 1px solid #fff;
+  border-radius: 24px;
+  width: calc(50% - 12px);
+  background: #edfafe;
+  position: relative;
+  margin-bottom: 24px;
+
+  &:first-child {
+    background: #f3f4fd;
+    width: 100%;
+    margin-bottom: 24px;
+  }
+
+  &:last-child {
+    background: #ebf5ff;
+  }
+
+  .subtitle {
+    display: flex;
+    align-items: center;
+    padding-bottom: 27px;
+    padding-left: 0;
+
+    .image {
+      margin-right: 24px;
+      width: 50px;
+
+      img {
+        object-fit: contain;
+      }
+    }
+
+    .ttl {
+      font-size: 20px;
+      line-height: 23px;
+      color: #454545;
+      flex: 1;
+      font-weight: 700;
+      word-break: break-word;
+    }
+  }
+
+  .txt {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #454545;
+    word-break: break-word;
+  }
+
+  .admin-buttom-move-item {
+    background: rgba(255,255,255,.3);
+    border: 1px solid #60606038;
+    position: absolute;
+    color: #606060;
+    height: 32px;
+    line-height: 32px;
+    border-radius: 8px;
+    top: 12px;
+    padding: 5px;
+    cursor: move;
+    width: 32px;
+    right: 50px;
+    box-shadow: 0 0 0 2px #fff;
+    left: unset;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .admin-color-control .button-color {
+    height: 20px;
+    width: 20px;
+  }
+}
+/* END: Custom Button Move */

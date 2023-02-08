@@ -1,0 +1,8 @@
+node_modules
+wp-content/cache
+wp-content/backups-dup-pro
+wp-content/ai1wm-backups
+wp-content/wphb-cache
+wp-content/litespeed
+wp-content/object-cache.php
+wp-content/.litespeed_conf.dat

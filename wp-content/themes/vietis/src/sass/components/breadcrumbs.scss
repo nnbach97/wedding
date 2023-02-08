@@ -1,0 +1,43 @@
+.block-breadcrumbs {
+  text-align: center;
+
+  ul {
+    display: flex;
+    justify-content: center;
+
+    li {
+      font-weight: 400;
+      position: relative;
+      padding-right: 10px;
+      margin-right: 5px;
+
+      &:not(:last-child):after {
+        content: "";
+        width: 3px;
+        height: 3px;
+        border-radius: 50%;
+        background-color: #01b9ea;
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translateX(-50%);
+      }
+
+      &:last-child {
+        margin: 0;
+        padding: 0;
+      }
+
+      a {
+        color: #01b9ea;
+        font-weight: 700;
+      }
+    }
+  }
+
+  @media screen and (max-width: 991px) {
+    ul li {
+      font-size: 14px;
+    }
+  }
+}

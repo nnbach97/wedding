@@ -1,0 +1,1 @@
+!function(c){c(function(){c(window).scroll(function(){var o=c(window).scrollTop();c(".block-product-overview").offset().top-300<=o&&c(".block-product-overview-pc svg").addClass("active")})})}(jQuery);
