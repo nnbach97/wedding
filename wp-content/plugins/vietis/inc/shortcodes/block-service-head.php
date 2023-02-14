@@ -2,23 +2,23 @@
 global $registerBlock;
 $registerBlock[] = [
   'block_type' => 'create-block/service-head',
-  'callback' => 'vietis_shortcode_block_service_head'
+  'callback' => 'wedding_shortcode_block_service_head'
 ];
 
-function vietis_shortcode_block_service_head($atts, $content)
+function wedding_shortcode_block_service_head($atts, $content)
 {
-  $title = vietis_func_check_data('ttl', $atts, '<strong>Please Enter Title ..</strong>');
-  $text = vietis_func_check_data('txt', $atts, 'Please Enter Content ..');
-  $image = vietis_func_check_data('image', $atts, [
-    "url" => P_VIETIS_RESOURCE_HOST . "/assets/img/image-default.png",
+  $title = wedding_func_check_data('ttl', $atts, '<strong>Please Enter Title ..</strong>');
+  $text = wedding_func_check_data('txt', $atts, 'Please Enter Content ..');
+  $image = wedding_func_check_data('image', $atts, [
+    "url" => P_wedding_RESOURCE_HOST . "/assets/img/image-default.png",
     'alt' => '',
     'id' => '',
   ]);
-  $reverse = vietis_func_check_data('reverse', $atts, 'left');
-  $config = vietis_func_check_data('config', $atts, []);
-  $config = vietis_func_process_config_block($config);
-  $style_block = vietis_func_check_data('style_block', $config, '');
-  $id_raw = vietis_func_check_data('id', $atts, '');
+  $reverse = wedding_func_check_data('reverse', $atts, 'left');
+  $config = wedding_func_check_data('config', $atts, []);
+  $config = wedding_func_process_config_block($config);
+  $style_block = wedding_func_check_data('style_block', $config, '');
+  $id_raw = wedding_func_check_data('id', $atts, '');
 
   $id = '';
   if($id_raw !== ''){

@@ -2,49 +2,49 @@
 global $registerBlock;
 $registerBlock[] = [
   'block_type' => 'create-block/services-new',
-  'callback' => 'vietis_shortcode_block_services_new'
+  'callback' => 'wedding_shortcode_block_services_new'
 ];
 
-function vietis_shortcode_block_services_new($atts, $content) {
-  $title = vietis_func_check_data('title', $atts, '<strong>VietIS Services</strong>');
-  $title_shadow = vietis_func_check_data('title_shadow', $atts, 'Services');
-  $config = vietis_func_check_data('config', $atts, []);
-  $config = vietis_func_process_config_block($config);
-  $style_block = vietis_func_check_data('style_block', $config, '');
-  $items = vietis_func_check_data('items', $atts, [
+function wedding_shortcode_block_services_new($atts, $content) {
+  $title = wedding_func_check_data('title', $atts, '<strong>wedding Services</strong>');
+  $title_shadow = wedding_func_check_data('title_shadow', $atts, 'Services');
+  $config = wedding_func_check_data('config', $atts, []);
+  $config = wedding_func_process_config_block($config);
+  $style_block = wedding_func_check_data('style_block', $config, '');
+  $items = wedding_func_check_data('items', $atts, [
     [
       "image" => [
-        "url" => P_VIETIS_RESOURCE_HOST . '/assets/img/blocks/service/service_img01.png',
+        "url" => P_wedding_RESOURCE_HOST . '/assets/img/blocks/service/service_img01.png',
         "alt" => "",
         "id" => ""
       ],
       "ttl" => "Digital Transformation",
-      "txt" => "Our team at VietIS can assist you in creating a solid digital foundation for your company so you can evolve your customer experience and surpass your competitors.",
+      "txt" => "Our team at wedding can assist you in creating a solid digital foundation for your company so you can evolve your customer experience and surpass your competitors.",
       "link" => "/service/#service-dx"
     ],
     [
       "image" => [
-        "url" => P_VIETIS_RESOURCE_HOST . '/assets/img/blocks/service/service_img02.png',
+        "url" => P_wedding_RESOURCE_HOST . '/assets/img/blocks/service/service_img02.png',
         "alt" => "",
         "id" => ""
       ],
       "ttl" => "Block Chain Technology",
-      "txt" => "In the areas of banking, real estate, entertainment, healthcare, transportation, and insurance, VietIS is a company that specializes in offering organizations and enterprises solutions and applications of Blockchain technology.<br>We will assess, evaluate, develop a plan, and provide the best solution to install Blockchain technology applications for people and businesses with a team of competent and experienced specialists and programmers. Businesses and corporations may do so swiftly, effectively, and safely.",
+      "txt" => "In the areas of banking, real estate, entertainment, healthcare, transportation, and insurance, wedding is a company that specializes in offering organizations and enterprises solutions and applications of Blockchain technology.<br>We will assess, evaluate, develop a plan, and provide the best solution to install Blockchain technology applications for people and businesses with a team of competent and experienced specialists and programmers. Businesses and corporations may do so swiftly, effectively, and safely.",
       "link" => "/service/#block-chain"
     ],
     [
       "image" => [
-        "url" => P_VIETIS_RESOURCE_HOST . '/assets/img/blocks/service/service_img03.png',
+        "url" => P_wedding_RESOURCE_HOST . '/assets/img/blocks/service/service_img03.png',
         "alt" => "",
         "id" => ""
       ],
       "ttl" => "Development of Mobile and Web Applications",
-      "txt" => "Utilizing the best practices obtained from VIETIS's many years of service provision experience, all services are performed according to international standards such as CMMI level 3, ISO27001: 2013, and we can provide the level of service requested by our customers.",
+      "txt" => "Utilizing the best practices obtained from wedding's many years of service provision experience, all services are performed according to international standards such as CMMI level 3, ISO27001: 2013, and we can provide the level of service requested by our customers.",
       "link" => "/service/#service-system"
     ],
     [
       "image" => [
-        "url" => P_VIETIS_RESOURCE_HOST . '/assets/img/blocks/service/service_img04.png',
+        "url" => P_wedding_RESOURCE_HOST . '/assets/img/blocks/service/service_img04.png',
         "alt" => "",
         "id" => ""
       ],
@@ -67,11 +67,11 @@ function vietis_shortcode_block_services_new($atts, $content) {
         <?php if($items): ?>
           <?php foreach($items as $item): ?>
             <?php
-              $ttl = vietis_func_check_data('ttl', $item, 'Your heading', true);
-              $txt = 	vietis_func_check_data('txt', $item, 'Your description', true);
-              $image = vietis_func_check_data('image', $item);
-              $image_url = vietis_func_check_data('url', $image, VIETIS_IMAGE_DEFAULT, true);
-              $link = vietis_func_check_data('link', $item, '#', true);
+              $ttl = wedding_func_check_data('ttl', $item, 'Your heading', true);
+              $txt = 	wedding_func_check_data('txt', $item, 'Your description', true);
+              $image = wedding_func_check_data('image', $item);
+              $image_url = wedding_func_check_data('url', $image, wedding_IMAGE_DEFAULT, true);
+              $link = wedding_func_check_data('link', $item, '#', true);
             ?>
             <div class="lnk">
               <div class="item-media">

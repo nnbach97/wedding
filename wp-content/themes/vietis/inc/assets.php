@@ -1,5 +1,5 @@
 <?php
-class vietis_theme_assets
+class wedding_theme_assets
 {
   public function __construct()
   {
@@ -94,4 +94,4 @@ class vietis_theme_assets
   }
 }
 
-new vietis_theme_assets();
+new wedding_theme_assets();

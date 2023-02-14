@@ -8,12 +8,12 @@ require get_template_directory() . '/inc/theme_data.php';
       <div class="footer-info">
         <div class="item">
           <div class="info">
-            <h3 class="ttl"><?= __('VietIS Corporation', 'vietis'); ?></h3>
+            <h3 class="ttl"><?= __('wedding Corporation', 'wedding'); ?></h3>
             <ul class="list">
               <?php if ($address_vi) : ?>
                 <li class="item">
                   <img class="img" src="<?= RESOURCE_HOST ?>/img/footer_icon-map.svg" alt="" />
-                  <span class="info-text"><?= __($address_vi, "vietis") ?></span>
+                  <span class="info-text"><?= __($address_vi, "wedding") ?></span>
                 </li>
               <?php endif; ?>
 
@@ -33,14 +33,14 @@ require get_template_directory() . '/inc/theme_data.php';
             </ul>
           </div>
           <div class="info">
-            <h3 class="ttl"><?= __('VIETIS Solution', 'vietis'); ?></h3>
+            <h3 class="ttl"><?= __('wedding Solution', 'wedding'); ?></h3>
             <ul class="list">
               <?php if ($address_jp_01) : ?>
                 <li class="item">
                   <img class="img" src="<?= RESOURCE_HOST ?>/img/footer_icon-map.svg" alt="" />
-                  <p class="info-text"><?= __($address_jp_01, "vietis") ?></p>
+                  <p class="info-text"><?= __($address_jp_01, "wedding") ?></p>
                   <?php if ($address_jp_02) : ?>
-                    <p class="info-desc"><?= __($address_jp_02, "vietis") ?></p>
+                    <p class="info-desc"><?= __($address_jp_02, "wedding") ?></p>
 
                   <?php endif ?>
                 </li>
@@ -57,23 +57,23 @@ require get_template_directory() . '/inc/theme_data.php';
         </div>
         <div class="item">
           <div class="info">
-            <h3 class="ttl"><?= __('US Office', 'vietis'); ?></h3>
+            <h3 class="ttl"><?= __('US Office', 'wedding'); ?></h3>
             <ul class="list">
               <?php if ($address_us) : ?>
                 <li class="item">
                   <img class="img" src="<?= RESOURCE_HOST ?>/img/footer_icon-map.svg" alt="" />
-                  <span class="info-text"><?= __($address_us, "vietis") ?></span>
+                  <span class="info-text"><?= __($address_us, "wedding") ?></span>
                 </li>
               <?php endif; ?>
             </ul>
           </div>
           <div class="info">
-            <h3 class="ttl"><?= __('VIETIS FinTech', 'vietis'); ?></h3>
+            <h3 class="ttl"><?= __('wedding FinTech', 'wedding'); ?></h3>
             <ul class="list">
               <?php if ($address_fin) : ?>
                 <li class="item">
                   <img class="img" src="<?= RESOURCE_HOST ?>/img/footer_icon-map.svg" alt="" />
-                  <span class="info-text"><?= __($address_fin, "vietis") ?></span>
+                  <span class="info-text"><?= __($address_fin, "wedding") ?></span>
                 </li>
               <?php endif; ?>
             </ul>

@@ -2,12 +2,12 @@
 global $registerBlock;
 $registerBlock[] = [
   'block_type' => 'create-block/veramine-overview',
-  'callback' => 'vietis_shortcode_block_veramine_overview'
+  'callback' => 'wedding_shortcode_block_veramine_overview'
 ];
 
-function vietis_shortcode_block_veramine_overview($atts, $content)
+function wedding_shortcode_block_veramine_overview($atts, $content)
 {
-  $title = vietis_func_check_data("title", $atts, "Features of Products and Services");
+  $title = wedding_func_check_data("title", $atts, "Features of Products and Services");
   ob_start();
 ?>
   <?php if(trim($title) !== ""): ?>

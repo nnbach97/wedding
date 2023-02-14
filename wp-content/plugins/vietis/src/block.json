@@ -1,16 +1,16 @@
 {
 	"$schema": "https://schemas.wp.org/trunk/block.json",
 	"apiVersion": 2,
-	"name": "create-block/vietis",
+	"name": "create-block/wedding",
 	"version": "0.1.0",
-	"title": "Vietis",
+	"title": "wedding",
 	"category": "widgets",
 	"icon": "smiley",
 	"description": "Example block scaffolded with Create Block tool.",
 	"supports": {
 		"html": false
 	},
-	"textdomain": "vietis",
+	"textdomain": "wedding",
 	"editorScript": "file:./blocks.js",
 	"editorStyle": "file:./editor.css",
 	"style": "file:./style-blocks.css"

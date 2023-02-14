@@ -7,7 +7,7 @@ import "./style.scss";
 registerBlockType("create-block/clients", {
 	title: "Clients",
 	description: "Example block scaffolded with Create Block tool.",
-	category: "vietis",
+	category: "wedding",
 	icon: "dashicons dashicons-buddicons-buddypress-logo",
 	attributes: {
 		title: {

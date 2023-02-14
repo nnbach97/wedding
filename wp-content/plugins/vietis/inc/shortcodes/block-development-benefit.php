@@ -2,16 +2,16 @@
 global $registerBlock;
 $registerBlock[] = [
   'block_type' => 'create-block/develop-benefit',
-  'callback' => 'vietis_shortcode_block_develop_benefit'
+  'callback' => 'wedding_shortcode_block_develop_benefit'
 ];
 
-function vietis_shortcode_block_develop_benefit($atts, $content)
+function wedding_shortcode_block_develop_benefit($atts, $content)
 {
-  $items = vietis_func_check_data("items", $atts, [
+  $items = wedding_func_check_data("items", $atts, [
     [
       "icon" => [
         "id" => 1,
-        "url" => P_VIETIS_RESOURCE_HOST . "/assets/img/blocks/benefit/service-software-icon01.svg",
+        "url" => P_wedding_RESOURCE_HOST . "/assets/img/blocks/benefit/service-software-icon01.svg",
         "alt" => ""
       ],
       "title" => "Efficiency",
@@ -20,7 +20,7 @@ function vietis_shortcode_block_develop_benefit($atts, $content)
     [
       "icon" => [
         "id" => 2,
-        "url" => P_VIETIS_RESOURCE_HOST . "/assets/img/blocks/benefit/service-software-icon02.svg",
+        "url" => P_wedding_RESOURCE_HOST . "/assets/img/blocks/benefit/service-software-icon02.svg",
         "alt" => ""
       ],
       "title" => "Scalability",
@@ -29,7 +29,7 @@ function vietis_shortcode_block_develop_benefit($atts, $content)
     [
       "icon" => [
         "id" => 3,
-        "url" => P_VIETIS_RESOURCE_HOST . "/assets/img/blocks/benefit/service-software-icon03.svg",
+        "url" => P_wedding_RESOURCE_HOST . "/assets/img/blocks/benefit/service-software-icon03.svg",
         "alt" => ""
       ],
       "title" => "Simple & Affordable Integration",
@@ -45,10 +45,10 @@ function vietis_shortcode_block_develop_benefit($atts, $content)
         <?php if($items): ?>
           <?php foreach($items as $item): ?>
             <?php
-							$image = vietis_func_check_data('icon', $item);
-							$image_url = vietis_func_check_data('url', $image, VIETIS_IMAGE_DEFAULT, true);
-							$title = vietis_func_check_data('title', $item, "Your title", true);
-              $txt = vietis_func_check_data('txt', $item, "Your description", true);
+							$image = wedding_func_check_data('icon', $item);
+							$image_url = wedding_func_check_data('url', $image, wedding_IMAGE_DEFAULT, true);
+							$title = wedding_func_check_data('title', $item, "Your title", true);
+              $txt = wedding_func_check_data('txt', $item, "Your description", true);
 						?>
             <div class="item">
               <img class="img" src="<?= $image_url ?>" alt=""/>

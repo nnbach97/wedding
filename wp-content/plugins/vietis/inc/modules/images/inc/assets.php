@@ -1,5 +1,5 @@
 <?php
-class vietis_modules_images_assets {
+class wedding_modules_images_assets {
     public function __construct() {
         add_action('wp_print_scripts', [$this, 'loadScripts']);
         add_action('wp_enqueue_scripts', [$this, 'loadStyles']);
@@ -30,4 +30,4 @@ class vietis_modules_images_assets {
     }
 }
 
-new vietis_modules_images_assets();
+new wedding_modules_images_assets();

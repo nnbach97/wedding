@@ -3,7 +3,7 @@
 /**
  * API
  */
-class class_vietis_plugin_get_data_post extends class_vietis_plugin_api {
+class class_wedding_plugin_get_data_post extends class_wedding_plugin_api {
   public function __construct() {
     add_action('wp_ajax_get_post', [$this, 'get_post']);
     add_action('wp_ajax_nopriv_get_post', [$this, 'get_post']);
@@ -11,10 +11,10 @@ class class_vietis_plugin_get_data_post extends class_vietis_plugin_api {
 
   public function get_post($data = []) {
     if (!$data) $data = $_POST;
-    $posttype = vietis_func_check_data('post_type', $data, 'post');
-    $posts_per_page = vietis_func_check_data('posts_per_page', $data, get_option('posts_per_page'));
-    $orderby = vietis_func_check_data('orderby', $data, 'date');
-    $order = vietis_func_check_data('order', $data, 'DESC');
+    $posttype = wedding_func_check_data('post_type', $data, 'post');
+    $posts_per_page = wedding_func_check_data('posts_per_page', $data, get_option('posts_per_page'));
+    $orderby = wedding_func_check_data('orderby', $data, 'date');
+    $order = wedding_func_check_data('order', $data, 'DESC');
 
     $args = [
       'post_type' => $posttype,
@@ -31,7 +31,7 @@ class class_vietis_plugin_get_data_post extends class_vietis_plugin_api {
         $html .= '<div class="item">';
           $html .= '<div class="wrap">';
             $html .= '<div class="img">';
-              $html .= vietis_func_get_thumbnail();
+              $html .= wedding_func_get_thumbnail();
             $html .= '</div>';
             $html .= '<div class="text">';
               $html .= '<h3 class="ttl">';
@@ -44,7 +44,7 @@ class class_vietis_plugin_get_data_post extends class_vietis_plugin_api {
       }
       // $html .= '</div>';
     } else {
-      $html .= vietis_func_no_content();
+      $html .= wedding_func_no_content();
     }
 
     wp_reset_postdata();
@@ -53,4 +53,4 @@ class class_vietis_plugin_get_data_post extends class_vietis_plugin_api {
   }
 }
 
-new class_vietis_plugin_get_data_post();
+new class_wedding_plugin_get_data_post();

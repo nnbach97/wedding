@@ -2,30 +2,30 @@
 global $registerBlock;
 $registerBlock[] = [
   'block_type' => 'create-block/veramine-banner',
-  'callback' => 'vietis_shortcode_block_veramine_banner'
+  'callback' => 'wedding_shortcode_block_veramine_banner'
 ];
 
-function vietis_shortcode_block_veramine_banner($atts, $content)
+function wedding_shortcode_block_veramine_banner($atts, $content)
 {
-  $title = vietis_func_check_data('title', $atts, 'テレワークのデバイス環<br/>境をセキュアに保つ');
+  $title = wedding_func_check_data('title', $atts, 'テレワークのデバイス環<br/>境をセキュアに保つ');
   if($title === "" || $title === null) $title = "Your title";
-  $header = vietis_func_check_data('header_txt', $atts, 'アメリカ国防総省、空軍、国土安全保障省なとて導入済み!');
+  $header = wedding_func_check_data('header_txt', $atts, 'アメリカ国防総省、空軍、国土安全保障省なとて導入済み!');
   if($header === "" || $header === null) $header = "Your header";
-  $des = vietis_func_check_data('description', $atts, '従来のセキュリティ対策ソフトでは対応できないサイバー攻撃を阻止!');
+  $des = wedding_func_check_data('description', $atts, '従来のセキュリティ対策ソフトでは対応できないサイバー攻撃を阻止!');
   if($des === "" || $des === null) $des = "Your description";
-  $logo = vietis_func_check_data('logo', $atts, [
-    "url" => P_VIETIS_RESOURCE_HOST . "/assets/img/blocks/product/veramine/logo_veramin.svg",
+  $logo = wedding_func_check_data('logo', $atts, [
+    "url" => P_wedding_RESOURCE_HOST . "/assets/img/blocks/product/veramine/logo_veramin.svg",
     "alt" => '',
     'id' => 1,
   ]);
-  $logo_url = vietis_func_check_data('url', $logo, VIETIS_IMAGE_DEFAULT);
-  $image = vietis_func_check_data('image', $atts, [
-    "url" => P_VIETIS_RESOURCE_HOST . "/assets/img/blocks/product/veramine/icon_baner_veramin.svg",
+  $logo_url = wedding_func_check_data('url', $logo, wedding_IMAGE_DEFAULT);
+  $image = wedding_func_check_data('image', $atts, [
+    "url" => P_wedding_RESOURCE_HOST . "/assets/img/blocks/product/veramine/icon_baner_veramin.svg",
     "alt" => '',
     'id' => 1,
   ]);
-  $image_url = vietis_func_check_data('url', $image, VIETIS_IMAGE_DEFAULT);
-  $steps = vietis_func_check_data('steps', $atts, [
+  $image_url = wedding_func_check_data('url', $image, wedding_IMAGE_DEFAULT);
+  $steps = wedding_func_check_data('steps', $atts, [
     [
       "text" => "クラウドとオンプレミス いすれにも対応",
       "color" => "#F3F4FD"
@@ -62,7 +62,7 @@ function vietis_shortcode_block_veramine_banner($atts, $content)
 
       <ul class="list">
         <?php foreach($steps as $step): ?>
-          <?php $text = vietis_func_check_data('text', $step, "Your description", true) ?>
+          <?php $text = wedding_func_check_data('text', $step, "Your description", true) ?>
           <li class="item"><span><?=$text?></span></li>
         <?php endforeach ?>
       </ul>

@@ -2,15 +2,15 @@
 global $registerBlock;
 $registerBlock[] = [
   'block_type' => 'create-block/visinsight-overview',
-  'callback' => 'vietis_shortcode_block_visinsight_overview'
+  'callback' => 'wedding_shortcode_block_visinsight_overview'
 ];
 
-function vietis_shortcode_block_visinsight_overview($atts, $content)
+function wedding_shortcode_block_visinsight_overview($atts, $content)
 {
-  $title = vietis_func_check_data('title', $atts, 'Overview VISInsight');
-  $image = vietis_func_check_data('image', $atts);
-  $image_url = vietis_func_check_data('url', $image, RESOURCE_HOST . '/img/product-insight-dt.png');
-  $items = vietis_func_check_data('items', $atts, [
+  $title = wedding_func_check_data('title', $atts, 'Overview VISInsight');
+  $image = wedding_func_check_data('image', $atts);
+  $image_url = wedding_func_check_data('url', $image, RESOURCE_HOST . '/img/product-insight-dt.png');
+  $items = wedding_func_check_data('items', $atts, [
     [
       "ttl" => "BOD",
       "txt" => "View project situation in the company<br>Review, approve necessary documents"
@@ -49,8 +49,8 @@ function vietis_shortcode_block_visinsight_overview($atts, $content)
         <ul class="list">
           <?php foreach($items as $item): ?>
             <?php
-              $ttl = vietis_func_check_data('ttl', $item, '');
-              $txt = vietis_func_check_data('txt', $item, '');
+              $ttl = wedding_func_check_data('ttl', $item, '');
+              $txt = wedding_func_check_data('txt', $item, '');
             ?>
             <?php if(trim($ttl) !== '' && trim($txt) !== ''): ?>
               <li class="item">

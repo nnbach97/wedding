@@ -2,16 +2,16 @@
 global $registerBlock;
 $registerBlock[] = [
   'block_type' => 'create-block/block-blockchain',
-  'callback' => 'vietis_shortcode_block_blockchain'
+  'callback' => 'wedding_shortcode_block_blockchain'
 ];
 
-function vietis_shortcode_block_blockchain($atts, $content)
+function wedding_shortcode_block_blockchain($atts, $content)
 {
-  $title = vietis_func_check_data('title', $atts, 'Why do we use Blockchain Technology?');
-  $items = vietis_func_check_data('items', $atts, [
+  $title = wedding_func_check_data('title', $atts, 'Why do we use Blockchain Technology?');
+  $items = wedding_func_check_data('items', $atts, [
     [
       "icon" => [
-        "url" => P_VIETIS_RESOURCE_HOST . "/assets/img/blocks/blockchain/blockchain_icon01.svg",
+        "url" => P_wedding_RESOURCE_HOST . "/assets/img/blocks/blockchain/blockchain_icon01.svg",
         "alt" => "",
         "id" => "",
       ],
@@ -21,7 +21,7 @@ function vietis_shortcode_block_blockchain($atts, $content)
     ],
     [
       "icon" => [
-        "url" => P_VIETIS_RESOURCE_HOST . "/assets/img/blocks/blockchain/blockchain_icon02.svg",
+        "url" => P_wedding_RESOURCE_HOST . "/assets/img/blocks/blockchain/blockchain_icon02.svg",
         "alt" => "",
         "id" => "",
       ],
@@ -31,7 +31,7 @@ function vietis_shortcode_block_blockchain($atts, $content)
     ],
     [
       "icon" => [
-        "url" => P_VIETIS_RESOURCE_HOST . "/assets/img/blocks/blockchain/blockchain_icon03.svg",
+        "url" => P_wedding_RESOURCE_HOST . "/assets/img/blocks/blockchain/blockchain_icon03.svg",
         "alt" => "",
         "id" => "",
       ],
@@ -40,9 +40,9 @@ function vietis_shortcode_block_blockchain($atts, $content)
       "color" => "#EBF5FF",
     ]
   ]);
-  $config = vietis_func_check_data('config', $atts, []);
-  $config = vietis_func_process_config_block($config);
-  $style_block = vietis_func_check_data('style_block', $config, '');
+  $config = wedding_func_check_data('config', $atts, []);
+  $config = wedding_func_process_config_block($config);
+  $style_block = wedding_func_check_data('style_block', $config, '');
 
   ob_start(); ?>
 
@@ -53,10 +53,10 @@ function vietis_shortcode_block_blockchain($atts, $content)
           <div class="wrapper-item">
             <?php foreach ($items as $key => $item): ?>
               <?php
-                $color = vietis_func_check_data("color", $item, "#F3F4FD");
-                $ttl = vietis_func_check_data("ttl", $item, "Tiêu đề");
-                $txt = vietis_func_check_data("txt", $item, "Mô tả");
-                $image = VIETIS_IMAGE_DEFAULT;
+                $color = wedding_func_check_data("color", $item, "#F3F4FD");
+                $ttl = wedding_func_check_data("ttl", $item, "Tiêu đề");
+                $txt = wedding_func_check_data("txt", $item, "Mô tả");
+                $image = wedding_IMAGE_DEFAULT;
                 if($item['icon'] !== null && !empty($item['icon']['url'])){
                   $image = $item['icon']["url"];
                 }

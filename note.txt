@@ -2,7 +2,7 @@ http://localhost:8080/wp-admin/
 - admin | 123456a@A
 
 
-1. Text Domain: vietis => Đổi tất cái 'blankslate' => 'vietis'
+1. Text Domain: wedding => Đổi tất cái 'blankslate' => 'wedding'
 2. Tạo trang 404
 3. Dựng base CSS quy định về container, reset css sử file reboot.min.
 4. Cấu trúc lại thư mục theme

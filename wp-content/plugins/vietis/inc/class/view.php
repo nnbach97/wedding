@@ -1,6 +1,6 @@
 <?php
 
-class vietis_class_views
+class wedding_class_views
 {
     private static $key_count_view = KEY_COUNT_VIEW;
 
@@ -20,7 +20,7 @@ class vietis_class_views
         $key = 'session_view_post_id';
         if (!isset($_SESSION[$key])) $_SESSION[$key] = [];
 
-        $post_ids = vietis_class_views::get_session();
+        $post_ids = wedding_class_views::get_session();
         if (!in_array($post_id, $post_ids)) {
             $_SESSION[$key][] = $post_id;
             return $_SESSION[$key];
@@ -38,11 +38,11 @@ class vietis_class_views
         if (!$post_id) return 0;
 
         if ($key === null) {
-            $key = vietis_class_views::$key_count_view;
+            $key = wedding_class_views::$key_count_view;
         }
 
         $count = (int)get_post_meta($post_id, $key, true);
-        $count = vietis_format_number_humanize($count);
+        $count = wedding_format_number_humanize($count);
         return $count;
     }
 
@@ -55,15 +55,15 @@ class vietis_class_views
 
         if (!$post_id) return 0;
 
-        $post_ids = vietis_class_views::get_session();
+        $post_ids = wedding_class_views::get_session();
         if (in_array($post_id, $post_ids)) {
             return false;
         }
 
-        vietis_class_views::set_session($post_id);
+        wedding_class_views::set_session($post_id);
 
-        $count = (int) get_post_meta($post_id, vietis_class_views::$key_count_view, true);
+        $count = (int) get_post_meta($post_id, wedding_class_views::$key_count_view, true);
         $count++;
-        update_post_meta($post_id, vietis_class_views::$key_count_view, $count);
+        update_post_meta($post_id, wedding_class_views::$key_count_view, $count);
     }
 }

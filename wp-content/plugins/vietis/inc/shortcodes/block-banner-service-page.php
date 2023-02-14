@@ -2,15 +2,15 @@
 global $registerBlock;
 $registerBlock[] = [
   'block_type' => 'create-block/banner-service-page',
-  'callback' => 'vietis_shortcode_block_banner_service_page'
+  'callback' => 'wedding_shortcode_block_banner_service_page'
 ];
 
-function vietis_shortcode_block_banner_service_page($atts, $content)
+function wedding_shortcode_block_banner_service_page($atts, $content)
 {
-  $title = vietis_func_check_data('title', $atts, '<strong>Our services that serve your business needs</strong>');
-  $description = vietis_func_check_data('description', $atts, 'At VietIS, our customers’ business needs are at the center of everything we do. We don’t just deliver technological solutions – we provide services that offer tangible business value. To accomplish this, we help you decide on the most suitable approach and the best technology to meet your specific needs.');
-  $title_process = vietis_func_check_data('title_process', $atts, '<strong>Process main service</strong>');
-  $list_text_process = vietis_func_check_data('list_text_process', $atts, [
+  $title = wedding_func_check_data('title', $atts, '<strong>Our services that serve your business needs</strong>');
+  $description = wedding_func_check_data('description', $atts, 'At wedding, our customers’ business needs are at the center of everything we do. We don’t just deliver technological solutions – we provide services that offer tangible business value. To accomplish this, we help you decide on the most suitable approach and the best technology to meet your specific needs.');
+  $title_process = wedding_func_check_data('title_process', $atts, '<strong>Process main service</strong>');
+  $list_text_process = wedding_func_check_data('list_text_process', $atts, [
     'text1' => "Receive the Requirement",
     'text2' => "Understanding the requirement",
     'text3' => "Consultation/ interview",
@@ -46,7 +46,7 @@ function vietis_shortcode_block_banner_service_page($atts, $content)
               </div>
             </div>
           </div>
-          <img class="js-animated-0 img" src="<?= P_VIETIS_RESOURCE_HOST . 'assets/img/blocks/banner-service-page/dash_01_left.svg' ?>" alt="" />
+          <img class="js-animated-0 img" src="<?= P_wedding_RESOURCE_HOST . 'assets/img/blocks/banner-service-page/dash_01_left.svg' ?>" alt="" />
         </div>
         <div class="js-animated-1 process-left-block process-left-block--second">
           <div class="process-left-item">
@@ -57,7 +57,7 @@ function vietis_shortcode_block_banner_service_page($atts, $content)
               </div>
             </div>
           </div>
-          <img class="js-animated-1 img" src="<?= P_VIETIS_RESOURCE_HOST . 'assets/img/blocks/banner-service-page/dash_02_left.svg' ?>" alt="" />
+          <img class="js-animated-1 img" src="<?= P_wedding_RESOURCE_HOST . 'assets/img/blocks/banner-service-page/dash_02_left.svg' ?>" alt="" />
         </div>
         <div class="js-animated-2 process-left-block process-left-block--third">
           <div class="process-left-item">
@@ -68,7 +68,7 @@ function vietis_shortcode_block_banner_service_page($atts, $content)
               </div>
             </div>
           </div>
-          <img class="js-animated-2 img" src="<?= P_VIETIS_RESOURCE_HOST . 'assets/img/blocks/banner-service-page/dash_03_left.svg' ?>" alt="" />
+          <img class="js-animated-2 img" src="<?= P_wedding_RESOURCE_HOST . 'assets/img/blocks/banner-service-page/dash_03_left.svg' ?>" alt="" />
         </div>
         <div class="js-animated-3 process-left-block process-left-block--fourth">
           <div class="process-left-item">
@@ -83,8 +83,8 @@ function vietis_shortcode_block_banner_service_page($atts, $content)
       </div>
 
       <div class="process-mid">
-        <img class="js-animated-9" src="<?= P_VIETIS_RESOURCE_HOST . 'assets/img/blocks/banner-service-page/dash_mid_top.svg' ?>" alt="">
-        <img class="js-animated-4" src="<?= P_VIETIS_RESOURCE_HOST . 'assets/img/blocks/banner-service-page/dash_mid_bottom.svg' ?>" alt="">
+        <img class="js-animated-9" src="<?= P_wedding_RESOURCE_HOST . 'assets/img/blocks/banner-service-page/dash_mid_top.svg' ?>" alt="">
+        <img class="js-animated-4" src="<?= P_wedding_RESOURCE_HOST . 'assets/img/blocks/banner-service-page/dash_mid_bottom.svg' ?>" alt="">
       </div>
 
       <div class="process-right">
@@ -97,7 +97,7 @@ function vietis_shortcode_block_banner_service_page($atts, $content)
             </div>
             <div class="process-right-item__txt"><?= $list_text_process['text8'] ?></div>
           </div>
-          <img class="js-animated-8 img" src="<?= P_VIETIS_RESOURCE_HOST . 'assets/img/blocks/banner-service-page/dash_03_right.svg' ?>" alt="" />
+          <img class="js-animated-8 img" src="<?= P_wedding_RESOURCE_HOST . 'assets/img/blocks/banner-service-page/dash_03_right.svg' ?>" alt="" />
         </div>
         <div class="js-animated-7 process-right-block process-right-block--second">
           <div class="process-right-item">
@@ -108,7 +108,7 @@ function vietis_shortcode_block_banner_service_page($atts, $content)
             </div>
             <div class="process-right-item__txt"><?= $list_text_process['text7'] ?></div>
           </div>
-          <img class="js-animated-7 img" src="<?= P_VIETIS_RESOURCE_HOST . 'assets/img/blocks/banner-service-page/dash_02_right.svg' ?>" alt="" />
+          <img class="js-animated-7 img" src="<?= P_wedding_RESOURCE_HOST . 'assets/img/blocks/banner-service-page/dash_02_right.svg' ?>" alt="" />
         </div>
         <div class="js-animated-6 process-right-block process-right-block--third">
           <div class="process-right-item">
@@ -119,7 +119,7 @@ function vietis_shortcode_block_banner_service_page($atts, $content)
             </div>
             <div class="process-right-item__txt"><?= $list_text_process['text6'] ?></div>
           </div>
-          <img class="js-animated-6 img" src="<?= P_VIETIS_RESOURCE_HOST . 'assets/img/blocks/banner-service-page/dash_01_right.svg' ?>" alt="" />
+          <img class="js-animated-6 img" src="<?= P_wedding_RESOURCE_HOST . 'assets/img/blocks/banner-service-page/dash_01_right.svg' ?>" alt="" />
         </div>
         <div class="js-animated-5 process-right-block process-right-block--fourth">
           <div class="process-right-item">

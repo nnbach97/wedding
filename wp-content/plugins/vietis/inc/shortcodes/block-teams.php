@@ -2,60 +2,60 @@
   global $registerBlock;
   $registerBlock[] = [
     'block_type' => 'create-block/teams',
-    'callback' => 'vietis_shortcode_block_teams'
+    'callback' => 'wedding_shortcode_block_teams'
   ];
 
-  function vietis_shortcode_block_teams($atts, $content) {
-    $title = vietis_func_check_data('title', $atts, '<strong>Meet Our Leadership Team</strong>');
-    $title_shadow = vietis_func_check_data('title_shadow', $atts, 'Team');
-    $config = vietis_func_check_data('config', $atts, []);
-    $config = vietis_func_process_config_block($config);
-    $style_block = vietis_func_check_data('style_block', $config, '');
-    $blocks = vietis_func_check_data('blocks', $atts, [
+  function wedding_shortcode_block_teams($atts, $content) {
+    $title = wedding_func_check_data('title', $atts, '<strong>Meet Our Leadership Team</strong>');
+    $title_shadow = wedding_func_check_data('title_shadow', $atts, 'Team');
+    $config = wedding_func_check_data('config', $atts, []);
+    $config = wedding_func_process_config_block($config);
+    $style_block = wedding_func_check_data('style_block', $config, '');
+    $blocks = wedding_func_check_data('blocks', $atts, [
       [
         "icon" => [
-          "url" => P_VIETIS_RESOURCE_HOST . "/assets/img/blocks/leadership/leadership_img01.png",
+          "url" => P_wedding_RESOURCE_HOST . "/assets/img/blocks/leadership/leadership_img01.png",
           "alt" => "",
           "id" => "",
         ],
         "title" => "<strong>Dang Dieu Linh</strong>",
-        "des" => "VIETIS President & CEO",
+        "des" => "wedding President & CEO",
       ],
       [
         "icon" => [
-          "url" => P_VIETIS_RESOURCE_HOST . "/assets/img/blocks/leadership/leadership_img02.png",
+          "url" => P_wedding_RESOURCE_HOST . "/assets/img/blocks/leadership/leadership_img02.png",
           "alt" => "",
           "id" => "",
         ],
         "title" => "<strong>Nguyen Ngoc Tan</strong>",
-        "des" => "VIETIS Vice-Director & VIETIS Solution President",
+        "des" => "wedding Vice-Director & wedding Solution President",
       ],
       [
         "icon" => [
-          "url" => P_VIETIS_RESOURCE_HOST . "/assets/img/blocks/leadership/leadership_img03.png",
+          "url" => P_wedding_RESOURCE_HOST . "/assets/img/blocks/leadership/leadership_img03.png",
           "alt" => "",
           "id" => "",
         ],
         "title" => "<strong>Nguyen Truong Giang</strong>",
-        "des" => "VIETIS CPO & VIETIS Solution CEO",
+        "des" => "wedding CPO & wedding Solution CEO",
       ],
       [
         "icon" => [
-          "url" => P_VIETIS_RESOURCE_HOST . "/assets/img/blocks/leadership/leadership_img04.png",
+          "url" => P_wedding_RESOURCE_HOST . "/assets/img/blocks/leadership/leadership_img04.png",
           "alt" => "",
           "id" => "",
         ],
         "title" => "<strong>Tran Tri Dung</strong>",
-        "des" => "VIETIS COO & QA Manager",
+        "des" => "wedding COO & QA Manager",
       ],
       [
         "icon" => [
-          "url" => P_VIETIS_RESOURCE_HOST . "/assets/img/blocks/leadership/leadership_img05.png",
+          "url" => P_wedding_RESOURCE_HOST . "/assets/img/blocks/leadership/leadership_img05.png",
           "alt" => "",
           "id" => "",
         ],
         "title" => "<strong>Le Tuan Anh</strong>",
-        "des" => "VIETIS BU2 Director",
+        "des" => "wedding BU2 Director",
       ],
     ]);
 
@@ -69,10 +69,10 @@
           <div class="wrapper wow fadeInUp">
             <?php foreach($blocks as $item): ?>
               <?php
-                $image = vietis_func_check_data('icon', $item);
-                $image_url = vietis_func_check_data('url', $image, VIETIS_IMAGE_DEFAULT, true);
-                $title = vietis_func_check_data('title', $item, 'Họ và tên', true);
-                $desc = vietis_func_check_data('des', $item, 'Mô tả', true);
+                $image = wedding_func_check_data('icon', $item);
+                $image_url = wedding_func_check_data('url', $image, wedding_IMAGE_DEFAULT, true);
+                $title = wedding_func_check_data('title', $item, 'Họ và tên', true);
+                $desc = wedding_func_check_data('des', $item, 'Mô tả', true);
               ?>
               <div class="wrapper-item">
                 <div class="box">

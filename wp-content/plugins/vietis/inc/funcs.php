@@ -1,7 +1,7 @@
 <?php
 
-if (!function_exists('vietis_func_check_data')) {
-  function vietis_func_check_data($name, $object = [], $default = '', $check_empty = false)
+if (!function_exists('wedding_func_check_data')) {
+  function wedding_func_check_data($name, $object = [], $default = '', $check_empty = false)
   {
     if ($check_empty) {
       return isset($object[$name]) && $object[$name] ? $object[$name] : $default;
@@ -10,82 +10,82 @@ if (!function_exists('vietis_func_check_data')) {
   }
 }
 
-if (!function_exists('vietis_func_no_content')) {
-  function vietis_func_no_content($mgs = '')
+if (!function_exists('wedding_func_no_content')) {
+  function wedding_func_no_content($mgs = '')
   {
     return '<div class="no-content">' . ($mgs ? $mgs : __('No content', 'comics')) . '</div>';
   }
 }
 
-if (!function_exists('vietis_func_get_image_default')) {
-  function vietis_func_get_image_default($link = false, $class = '')
+if (!function_exists('wedding_func_get_image_default')) {
+  function wedding_func_get_image_default($link = false, $class = '')
   {
-    $img = VIETIS_IMAGE_DEFAULT;
+    $img = wedding_IMAGE_DEFAULT;
     if ($link) return $img;
     return '<img src="' . $img . '" alt="image-default" class="image-default ' . $class . '">';
   }
 }
 
-if (!function_exists('vietis_func_get_thumbnail')) {
-  function vietis_func_get_thumbnail($size = 'medium', $default = null)
+if (!function_exists('wedding_func_get_thumbnail')) {
+  function wedding_func_get_thumbnail($size = 'medium', $default = null)
   {
     global $post;
     return has_post_thumbnail() ? get_the_post_thumbnail($post, $size, [
       'class' => 'lazyload',
-    ]) : ($default ? $default : vietis_func_get_image_default());
+    ]) : ($default ? $default : wedding_func_get_image_default());
   }
 }
 
-if (!function_exists('vietis_func_get_thumbnail_large')) {
-  function vietis_func_get_thumbnail_large($size = 'large', $default = null)
+if (!function_exists('wedding_func_get_thumbnail_large')) {
+  function wedding_func_get_thumbnail_large($size = 'large', $default = null)
   {
     global $post;
     return has_post_thumbnail() ? get_the_post_thumbnail($post, $size, [
       'class' => 'lazyload',
-    ]) : ($default ? $default : vietis_func_get_image_default());
+    ]) : ($default ? $default : wedding_func_get_image_default());
   }
 }
 
-if (!function_exists('vietis_func_get_thumbnail_url')) {
-  function vietis_func_get_thumbnail_url($size = 'medium', $default = null)
+if (!function_exists('wedding_func_get_thumbnail_url')) {
+  function wedding_func_get_thumbnail_url($size = 'medium', $default = null)
   {
     global $post;
-    return has_post_thumbnail() ? get_the_post_thumbnail_url($post, $size) : ($default ? $default : vietis_func_get_image_default(true));
+    return has_post_thumbnail() ? get_the_post_thumbnail_url($post, $size) : ($default ? $default : wedding_func_get_image_default(true));
   }
 }
 
-if (!function_exists('vietis_func_get_attachment_image')) {
-  function vietis_func_get_attachment_image($attachment_id, $size = 'medium', $default = null)
+if (!function_exists('wedding_func_get_attachment_image')) {
+  function wedding_func_get_attachment_image($attachment_id, $size = 'medium', $default = null)
   {
     if (!$attachment_id) return false;
     $image = wp_get_attachment_image_src($attachment_id, $size);
     if (isset($image[0]) && $image[0]) {
       return $image[0];
     }
-    return vietis_func_get_image_default(true);
+    return wedding_func_get_image_default(true);
   }
 }
 
-if (!function_exists('vietis_func_process_config_block')) {
-  function vietis_func_process_config_block($config)
+if (!function_exists('wedding_func_process_config_block')) {
+  function wedding_func_process_config_block($config)
   {
     if (!$config) return [];
 
     $data = [];
 
     $data['style_block'] = '';
-    $method = vietis_func_check_data('bg_method', $config);
-    $bg_color = vietis_func_check_data('bg_color', $config);
+    $method = wedding_func_check_data('bg_method', $config);
+    $bg_color = wedding_func_check_data('bg_color', $config);
     if ($method == 'color' && $bg_color) {
       $data['style_block'] .= 'background: ' . $bg_color . ';';
     }
 
-    $images = vietis_func_check_data('bg_image', $config);
+    $images = wedding_func_check_data('bg_image', $config);
 
     if ($method == 'image' && isset($images[0]) && !empty($images[0])) {
-      $bg_size = vietis_func_check_data('backgroundSize', $config);
-      $bg_position = vietis_func_check_data('backgroundPosition', $config);
-      $bg_repeat = vietis_func_check_data('backgroundRepeat', $config);
+      $bg_size = wedding_func_check_data('backgroundSize', $config);
+      $bg_position = wedding_func_check_data('backgroundPosition', $config);
+      $bg_repeat = wedding_func_check_data('backgroundRepeat', $config);
       if ($bg_size) {
         $data['style_block'] .= 'background-size: ' . $bg_size . ';';
       }
@@ -95,28 +95,28 @@ if (!function_exists('vietis_func_process_config_block')) {
       if ($bg_repeat) {
         $data['style_block'] .= 'background-repeat: ' . $bg_repeat . ';';
       }
-      $bg_url = vietis_func_check_data('url', $images[0]);
+      $bg_url = wedding_func_check_data('url', $images[0]);
       $data['style_block'] .= 'background-image: url(' . $bg_url . ');';
     }
 
-    $margin = vietis_func_check_data('margin', $config);
+    $margin = wedding_func_check_data('margin', $config);
     if ($margin) {
-      $top = vietis_func_check_data('top', $margin);
-      $right = vietis_func_check_data('right', $margin);
-      $bottom = vietis_func_check_data('bottom', $margin);
-      $left = vietis_func_check_data('left', $margin);
+      $top = wedding_func_check_data('top', $margin);
+      $right = wedding_func_check_data('right', $margin);
+      $bottom = wedding_func_check_data('bottom', $margin);
+      $left = wedding_func_check_data('left', $margin);
       if ($top) $data['style_block'] .= 'margin-top: ' . $top . ';';
       if ($right) $data['style_block'] .= 'margin-right: ' . $right . ';';
       if ($bottom) $data['style_block'] .= 'margin-bottom: ' . $bottom . ';';
       if ($left) $data['style_block'] .= 'margin-left: ' . $left . ';';
     }
 
-    $padding = vietis_func_check_data('padding', $config);
+    $padding = wedding_func_check_data('padding', $config);
     if ($padding) {
-      $top = vietis_func_check_data('top', $padding);
-      $right = vietis_func_check_data('right', $padding);
-      $bottom = vietis_func_check_data('bottom', $padding);
-      $left = vietis_func_check_data('left', $padding);
+      $top = wedding_func_check_data('top', $padding);
+      $right = wedding_func_check_data('right', $padding);
+      $bottom = wedding_func_check_data('bottom', $padding);
+      $left = wedding_func_check_data('left', $padding);
       if ($top) $data['style_block'] .= 'padding-top: ' . $top . ';';
       if ($right) $data['style_block'] .= 'padding-right: ' . $right . ';';
       if ($bottom) $data['style_block'] .= 'padding-bottom: ' . $bottom . ';';
@@ -163,8 +163,8 @@ if (!function_exists('get_post_primary_category')) {
   }
 }
 
-if (!function_exists('vietis_get_post_primary_category')) {
-  function vietis_get_post_primary_category($post_id = null, $taxonomy = 'category')
+if (!function_exists('wedding_get_post_primary_category')) {
+  function wedding_get_post_primary_category($post_id = null, $taxonomy = 'category')
   {
     if ($post_id === null) {
       global $post;
@@ -183,15 +183,15 @@ if (!function_exists('vietis_get_post_primary_category')) {
   }
 }
 
-if (!function_exists('vietis_get_all_params')) {
-  function vietis_get_all_params()
+if (!function_exists('wedding_get_all_params')) {
+  function wedding_get_all_params()
   {
     return $_REQUEST;
   }
 }
 
-if (!function_exists('vietis_pagination')) {
-  function vietis_pagination($custom_query = null, $is_echo = true)
+if (!function_exists('wedding_pagination')) {
+  function wedding_pagination($custom_query = null, $is_echo = true)
   {
     if ($custom_query) {
       $query = $custom_query;
@@ -210,8 +210,8 @@ if (!function_exists('vietis_pagination')) {
       'end_size'     => 2,
       'mid_size'     => 1,
       'prev_next'    => true,
-      'prev_text'    => __('Prev', 'vietis'),
-      'next_text'    => __('Next', 'vietis'),
+      'prev_text'    => __('Prev', 'wedding'),
+      'next_text'    => __('Next', 'wedding'),
       'add_args'     => false,
       'add_fragment' => '',
     ));
@@ -235,8 +235,8 @@ if (!function_exists('vietis_pagination')) {
   }
 }
 
-if (!function_exists('vietis_breadcrumb')) {
-  function vietis_breadcrumb()
+if (!function_exists('wedding_breadcrumb')) {
+  function wedding_breadcrumb()
   {
     $breadcrumb = [];
     $breadcrumb[] = [
@@ -247,7 +247,7 @@ if (!function_exists('vietis_breadcrumb')) {
     if (is_archive()) {
       global $wp_query;
       $object = get_queried_object();
-      $post_type = vietis_func_check_data('post_type', $wp_query->query);
+      $post_type = wedding_func_check_data('post_type', $wp_query->query);
       $breadcrumb[] = [
         'title' => $object->label,
         // 'link' => get_post_type_archive_link($post_type),
@@ -279,18 +279,18 @@ if (!function_exists('vietis_breadcrumb')) {
       global $post;
       if ($post->post_type == 'post') {
         $breadcrumb[] = [
-          'title' => __('Blogs', 'vietis'),
+          'title' => __('Blogs', 'wedding'),
           'link' => home_url('/blogs/'),
         ];
       } else if ($post->post_type == 'works') {
         $breadcrumb[] = [
-          'title' => __('Case Study', 'vietis'),
+          'title' => __('Case Study', 'wedding'),
           'link' => home_url('/works/'),
         ];
       }
 
       $post_categories = get_post_primary_category($post->ID);
-      $primary_category = vietis_func_check_data('primary_category', $post_categories);
+      $primary_category = wedding_func_check_data('primary_category', $post_categories);
       // if ($primary_category) {
       // 	$breadcrumb[] = [
       // 		'title' => $primary_category->name,
@@ -308,9 +308,9 @@ if (!function_exists('vietis_breadcrumb')) {
     if ($breadcrumb) {
       $html .= '<div class="block block-breadcrumbs"><ul>';
       foreach ($breadcrumb as $value) {
-        $title = vietis_func_check_data('title', $value);
+        $title = wedding_func_check_data('title', $value);
         if (!$title) continue;
-        $link = vietis_func_check_data('link', $value);
+        $link = wedding_func_check_data('link', $value);
         $html .= '<li>';
         $html .= $link ? '<a href="' . esc_attr($link) . '" title="' . esc_attr($title) . '">' : '';
         $html .= $title;
@@ -324,8 +324,8 @@ if (!function_exists('vietis_breadcrumb')) {
   }
 }
 
-if (!function_exists('vietis_format_number_humanize')) {
-  function vietis_format_number_humanize($number)
+if (!function_exists('wedding_format_number_humanize')) {
+  function wedding_format_number_humanize($number)
   {
     $abbrevs = array(12 => "T", 9 => "B", 6 => "M", 3 => "K", 0 => "");
     foreach ($abbrevs as $exponent => $abbrev) {

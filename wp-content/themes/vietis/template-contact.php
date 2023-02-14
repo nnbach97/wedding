@@ -9,11 +9,11 @@ require get_template_directory() . '/inc/theme_data.php';
     <div class="block common-block-banner js-hero">
       <div class="overlay"></div>
       <div class="banner-bg">
-        <?= vietis_func_get_thumbnail('full'); ?>
+        <?= wedding_func_get_thumbnail('full'); ?>
       </div>
       <div class="banner-inner">
-        <h2 class="ttl"><?= __("Contact us", "vietis") ?></h2>
-        <?php if (function_exists('vietis_breadcrumb')) echo vietis_breadcrumb(); ?>
+        <h2 class="ttl"><?= __("Contact us", "wedding") ?></h2>
+        <?php if (function_exists('wedding_breadcrumb')) echo wedding_breadcrumb(); ?>
       </div>
     </div>
     <!-- END: Banner -->
@@ -23,19 +23,19 @@ require get_template_directory() . '/inc/theme_data.php';
       <div class="holder intouch-inner">
         <img src="<?= RESOURCE_HOST . '/img/intouch.svg' ?>" alt="" class="img">
         <div class="intouch-content">
-          <div class="ttl"><?= __("Get In Touch", "vietis") ?></div>
-          <p class="des"><?= __("If you want to know how VietIS can be of service to you, please fill out this form to get in touch with our expert team.", "vietis") ?></p>
+          <div class="ttl"><?= __("Get In Touch", "wedding") ?></div>
+          <p class="des"><?= __("If you want to know how wedding can be of service to you, please fill out this form to get in touch with our expert team.", "wedding") ?></p>
           <div class="contact">
             <img src="<?= RESOURCE_HOST . '/img/email-icon.png' ?>" alt="" class="img">
             <div class="content">
-              <div class="ttl"><?= __("MAIL", "vietis") ?>:</div>
+              <div class="ttl"><?= __("MAIL", "wedding") ?>:</div>
               <a href="mailto:<?= $contact_email ?>" class="lnk"><?= $contact_email ?></a>
             </div>
           </div>
           <div class="contact mt-0">
             <img src="<?= RESOURCE_HOST . '/img/phone-icon.png' ?>" alt="" class="img">
             <div class="content">
-              <div class="ttl"><?= __("Phone Number", "vietis") ?>:</div>
+              <div class="ttl"><?= __("Phone Number", "wedding") ?>:</div>
               <a href="tel:<?= $phone_vi ?>" class="lnk"><?= $phone_vi ?></a>
             </div>
           </div>
@@ -49,7 +49,7 @@ require get_template_directory() . '/inc/theme_data.php';
       <input class="form__control" type="hidden" name="action" value="contact_mail">
       <div class="group-input">
         <div class="group-input-item inquiry-group required">
-          <label class="label"><?= __("Inquiry type", "vietis") ?></label>
+          <label class="label"><?= __("Inquiry type", "wedding") ?></label>
           <div class="group-checkbox">
             <?= render_inquiry_type(); ?>
           </div>
@@ -57,7 +57,7 @@ require get_template_directory() . '/inc/theme_data.php';
         <?= render_input_type(); ?>
         <div class="group-input-item required input-captcha">
           <div class="wrap">
-            <label for="captcha" class="label"><?= __('Captcha', 'vietis') ?></label>
+            <label for="captcha" class="label"><?= __('Captcha', 'wedding') ?></label>
             <input id="captcha" required="required" value="" type="text" name="captcha" class="form-control" placeholder="">
           </div>
           <div class="img-wrap">
@@ -65,10 +65,10 @@ require get_template_directory() . '/inc/theme_data.php';
           </div>
         </div>
       </div>
-      <button type="submit" class="form-btn"><?= __("Send", "vietis") ?></button>
+      <button type="submit" class="form-btn"><?= __("Send", "wedding") ?></button>
     </form>
     <!-- END: Form -->
-    <div class="ttl footer_text"><?= __("Thank you for your interest!", "vietis") ?></div>
+    <div class="ttl footer_text"><?= __("Thank you for your interest!", "wedding") ?></div>
 
     <!-- Modal -->
     <div class="modal modal-contact js-modal-contact">
@@ -78,13 +78,13 @@ require get_template_directory() . '/inc/theme_data.php';
             <div class="icon-box">
               <img class="icon-box--img" src="<?= RESOURCE_HOST . '/img/ico_check.svg' ?>" alt="">
             </div>
-            <h4 class="modal-title w-100"><?= __("Failed", "vietis") ?></h4>
+            <h4 class="modal-title w-100"><?= __("Failed", "wedding") ?></h4>
           </div>
           <div class="modal-body">
-            <p class="message"><?= __("Invalid email address", "vietis") ?></p>
+            <p class="message"><?= __("Invalid email address", "wedding") ?></p>
           </div>
           <div class="modal-close">
-            <button type="button" class="close-contact close-contact--btn"><?= __("Close", "vietis") ?></button>
+            <button type="button" class="close-contact close-contact--btn"><?= __("Close", "wedding") ?></button>
           </div>
         </div>
       </div>

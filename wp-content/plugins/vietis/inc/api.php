@@ -3,7 +3,7 @@
 /**
  * API
  */
-abstract class class_vietis_plugin_api
+abstract class class_wedding_plugin_api
 {
   public $response = [
     'status' => 0,
@@ -33,7 +33,7 @@ abstract class class_vietis_plugin_api
         $this->response['status'] = 1;
         $this->response['message'] = $messageError;
         $this->response['data']['focus'] = $name;
-        $this->response['data']['title_modal'] = __('Failed', 'vietis');
+        $this->response['data']['title_modal'] = __('Failed', 'wedding');
         return false;
       }
     }
@@ -46,7 +46,7 @@ abstract class class_vietis_plugin_api
       if ($messageError && is_string($messageError)) {
         $this->response['status'] = 1;
         $this->response['message'] = $messageError;
-        $this->response['data']['title_modal'] = __('Failed', 'vietis');
+        $this->response['data']['title_modal'] = __('Failed', 'wedding');
         $this->response['data']['focus'] = $name;
         return false;
       }
@@ -77,7 +77,7 @@ abstract class class_vietis_plugin_api
 
     if (!$listMails) {
       $this->response['status'] = 1;
-      $this->response['message'] = __('Your administrator hasn\'t set up email yet. Contact your administrator.', 'vietis');
+      $this->response['message'] = __('Your administrator hasn\'t set up email yet. Contact your administrator.', 'wedding');
     }
 
     return $listMails;
@@ -89,8 +89,8 @@ abstract class class_vietis_plugin_api
       $datas[$name] = trim($datas[$name]);
       if (!isset($datas[$name]) || empty($datas[$name]) || !is_email($datas[$name])) {
         $this->response['status'] = 1;
-        $this->response['message'] = $messageError ? $messageError : __('Invalid email address', 'vietis');
-        $this->response['data']['title_modal'] = __('Failed', 'vietis');
+        $this->response['message'] = $messageError ? $messageError : __('Invalid email address', 'wedding');
+        $this->response['data']['title_modal'] = __('Failed', 'wedding');
         $this->response['data']['focus'] = $name;
         return false;
       }
@@ -104,8 +104,8 @@ abstract class class_vietis_plugin_api
       $datas[$name] = trim($datas[$name]);
       if (!isset($datas[$name]) || empty($datas[$name]) || $datas['captcha'] != $_SESSION['captcha']) {
         $this->response['status'] = 1;
-        $this->response['message'] = $messageError ? $messageError : __('Invalid Captcha', 'vietis');
-        $this->response['title_modal'] = __('Failed', 'vietis');
+        $this->response['message'] = $messageError ? $messageError : __('Invalid Captcha', 'wedding');
+        $this->response['title_modal'] = __('Failed', 'wedding');
         $this->response['data']['focus'] = $name;
         return false;
       }
@@ -122,8 +122,8 @@ abstract class class_vietis_plugin_api
     $response = json_decode(file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=" . SECRET_KEY_CAPTCHA . "&response=" . $captcha . "&remoteip=" . $_SERVER['REMOTE_ADDR']), true);
     if ($response['success'] === false) {
       $this->response['status'] = 1;
-      $this->response['message'] = __('Capchaを入力してください。', 'vietis');
-      $this->response['title_modal'] = __('Failed', 'vietis');
+      $this->response['message'] = __('Capchaを入力してください。', 'wedding');
+      $this->response['title_modal'] = __('Failed', 'wedding');
     }
   }
 
@@ -136,10 +136,10 @@ abstract class class_vietis_plugin_api
 
   public function check_security()
   {
-    // check_ajax_referer('VIETIS_SECURITY', 'security');
+    // check_ajax_referer('wedding_SECURITY', 'security');
   }
 }
 
-vietis_include('inc/api/blocks/get-data-post.php');
-vietis_include('inc/api/blocks/get-data-post-casestudy.php');
-vietis_include('inc/api/mail/mail.php');
+wedding_include('inc/api/blocks/get-data-post.php');
+wedding_include('inc/api/blocks/get-data-post-casestudy.php');
+wedding_include('inc/api/mail/mail.php');

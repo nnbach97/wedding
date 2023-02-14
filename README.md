@@ -1,4 +1,4 @@
-# WebsiteVietisEn
+# WebsiteweddingEn
 
 
 
@@ -15,14 +15,14 @@ Already a pro? Just edit this README.md and make it your own. Want to make it ea
 
 ```
 cd existing_repo
-git remote add origin https://repo.vietis.com.vn:8009/VIETIS/websitevietisen.git
+git remote add origin https://repo.wedding.com.vn:8009/wedding/websiteweddingen.git
 git branch -M main
 git push -uf origin main
 ```
 
 ## Integrate with your tools
 
-- [ ] [Set up project integrations](https://repo.vietis.com.vn:8009/VIETIS/websitevietisen/-/settings/integrations)
+- [ ] [Set up project integrations](https://repo.wedding.com.vn:8009/wedding/websiteweddingen/-/settings/integrations)
 
 ## Collaborate with your team
 

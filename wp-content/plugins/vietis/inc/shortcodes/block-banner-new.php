@@ -2,18 +2,18 @@
 global $registerBlock;
 $registerBlock[] = [
   'block_type' => 'create-block/banner-new',
-  'callback' => 'vietis_shortcode_block_banner_new'
+  'callback' => 'wedding_shortcode_block_banner_new'
 ];
 
-function vietis_shortcode_block_banner_new($atts, $content)
+function wedding_shortcode_block_banner_new($atts, $content)
 {
-  $config = vietis_func_check_data('config', $atts, []);
-  $config = vietis_func_process_config_block($config);
-  $title = vietis_func_check_data('title', $atts, 'In Pursuit of Excellence');
-  $description = vietis_func_check_data('description', $atts, 'To be your long term Tech - Partner');
-  $video_background = vietis_func_check_data('video_background', $atts, P_VIETIS_RESOURCE_HOST . "/assets/img/blocks/banner/video_background_new.mp4");
-  $video_film = vietis_func_check_data('video_film', $atts, P_VIETIS_RESOURCE_HOST . '/assets/img/blocks/banner/video_film.mp4');
-  $counters = vietis_func_check_data('counters', $atts, [
+  $config = wedding_func_check_data('config', $atts, []);
+  $config = wedding_func_process_config_block($config);
+  $title = wedding_func_check_data('title', $atts, 'In Pursuit of Excellence');
+  $description = wedding_func_check_data('description', $atts, 'To be your long term Tech - Partner');
+  $video_background = wedding_func_check_data('video_background', $atts, P_wedding_RESOURCE_HOST . "/assets/img/blocks/banner/video_background_new.mp4");
+  $video_film = wedding_func_check_data('video_film', $atts, P_wedding_RESOURCE_HOST . '/assets/img/blocks/banner/video_film.mp4');
+  $counters = wedding_func_check_data('counters', $atts, [
     [
       'number' => '03',
       'text' => 'Locations'
@@ -27,33 +27,33 @@ function vietis_shortcode_block_banner_new($atts, $content)
       'text' => 'Projects'
     ],
   ]);
-  $certificate = vietis_func_check_data('certificate', $atts, [
+  $certificate = wedding_func_check_data('certificate', $atts, [
     'certificate_01' => [
-      "url" => P_VIETIS_RESOURCE_HOST . '/assets/img/blocks/banner/banner_iso.svg',
+      "url" => P_wedding_RESOURCE_HOST . '/assets/img/blocks/banner/banner_iso.svg',
       'alt' => '',
       'id' => '',
     ],
     'certificate_02' => [
-      "url" => P_VIETIS_RESOURCE_HOST . '/assets/img/blocks/banner/banner_cmmi.png',
+      "url" => P_wedding_RESOURCE_HOST . '/assets/img/blocks/banner/banner_cmmi.png',
       'alt' => '',
       'id' => '',
     ],
   ]);
-  $certificate_01 = vietis_func_check_data('certificate_01', $certificate, '');
-  $certificate_02 = vietis_func_check_data('certificate_02', $certificate, '');
-  $btn_inquiry = vietis_func_check_data('btn_inquiry', $atts, [
+  $certificate_01 = wedding_func_check_data('certificate_01', $certificate, '');
+  $certificate_02 = wedding_func_check_data('certificate_02', $certificate, '');
+  $btn_inquiry = wedding_func_check_data('btn_inquiry', $atts, [
     'text' => "<a href='/en/contact/'>Inquiry</a>",
     'icon' => [
-      'url' => P_VIETIS_RESOURCE_HOST . '/assets/img/blocks/banner/banner_icon-inquiry.svg',
+      'url' => P_wedding_RESOURCE_HOST . '/assets/img/blocks/banner/banner_icon-inquiry.svg',
       'alt' => '',
       'id' => '',
     ],
   ]);
 
-  $btn_inquiry_title = vietis_func_check_data('text', $btn_inquiry, '');
-  $btn_inquiry_url = vietis_func_check_data('icon', $btn_inquiry, '');
-  $is_show_btn_video = vietis_func_check_data('is_show_btn_video', $atts, true);
-  $is_show_bg = vietis_func_check_data('is_show_bg', $atts, true);
+  $btn_inquiry_title = wedding_func_check_data('text', $btn_inquiry, '');
+  $btn_inquiry_url = wedding_func_check_data('icon', $btn_inquiry, '');
+  $is_show_btn_video = wedding_func_check_data('is_show_btn_video', $atts, true);
+  $is_show_bg = wedding_func_check_data('is_show_bg', $atts, true);
 
   ob_start(); ?>
   <div class="block block-banner-new js-hero<?= $is_show_bg ? '' : ' is-show-bg' ?>">
@@ -110,7 +110,7 @@ function vietis_shortcode_block_banner_new($atts, $content)
     </div>
   </div>
   <div class="block block-number">
-    <img class="img" src="<?= P_VIETIS_RESOURCE_HOST . '/assets/img/blocks/banner/bg-number.svg' ?>" alt="">
+    <img class="img" src="<?= P_wedding_RESOURCE_HOST . '/assets/img/blocks/banner/bg-number.svg' ?>" alt="">
     <div class="number-inner">
       <div class="holder">
         <div class="counter">

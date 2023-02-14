@@ -2,19 +2,19 @@
 global $registerBlock;
 $registerBlock[] = [
   'block_type' => 'create-block/outsource',
-  'callback' => 'vietis_shortcode_block_outsource'
+  'callback' => 'wedding_shortcode_block_outsource'
 ];
 
-function vietis_shortcode_block_outsource($atts, $content)
+function wedding_shortcode_block_outsource($atts, $content)
 {
-  $title = vietis_func_check_data('title', $atts, '<strong>Why Outsource Your IT Services?</strong>');
-  $title_shadow = vietis_func_check_data('title_shadow', $atts, 'Why Outsource');
-  $image = vietis_func_check_data('image', $atts, [
-    "url" => P_VIETIS_RESOURCE_HOST . "/assets/img/blocks/outsource/outsource_img.png",
+  $title = wedding_func_check_data('title', $atts, '<strong>Why Outsource Your IT Services?</strong>');
+  $title_shadow = wedding_func_check_data('title_shadow', $atts, 'Why Outsource');
+  $image = wedding_func_check_data('image', $atts, [
+    "url" => P_wedding_RESOURCE_HOST . "/assets/img/blocks/outsource/outsource_img.png",
     'alt' => '',
     'id' => '',
   ]);
-  $whys = vietis_func_check_data('whys', $atts, [
+  $whys = wedding_func_check_data('whys', $atts, [
     [
       'title' => 'Save Costs',
       'text' => 'It takes a lot of resources to manage IT. In addition to money and time, hardware and software need to be purchased, installed, and maintained. Additionally, hiring, training, retaining, and managing IT workers costs money and time. You can lower operational costs by outsourcing your IT services and lowering the price associated with these vital IT resources. Additionally, you will spend less on hiring, firing, annual bonuses, health insurance, retirement payments, and other expenses.'
@@ -32,9 +32,9 @@ function vietis_shortcode_block_outsource($atts, $content)
       'text' => 'You may get much more experience by outsourcing your IT services to a skilled provider, which is almost hard for an in-house IT team to do. This is because companies that provide outsourced IT services have a wide range of expertise from working with various organizations and their various IT requirements.'
     ],
   ]);
-  $text_meeting = vietis_func_check_data('text_meeting', $atts, '<strong>Looking for a Long-Term Technical Partner?</strong>');
-  $text_button_meeting = vietis_func_check_data('text_button_meeting', $atts, 'Arrange Meeting Right Now!');
-  $modal_meeting = vietis_func_check_data('modal_meeting', $atts, [
+  $text_meeting = wedding_func_check_data('text_meeting', $atts, '<strong>Looking for a Long-Term Technical Partner?</strong>');
+  $text_button_meeting = wedding_func_check_data('text_button_meeting', $atts, 'Arrange Meeting Right Now!');
+  $modal_meeting = wedding_func_check_data('modal_meeting', $atts, [
     'title_modal' => 'Exec partnership meeting',
     'link' => 'https://meetings.hubspot.com/ken-nguyen1?embed=true'
   ]);

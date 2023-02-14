@@ -5,7 +5,7 @@
   <div class="block block-service-banner js-hero">
     <div class="holder banner-inner">
       <h2 class="ttl">Our services <br /> that serve your business needs</h2>
-      <div class="des">At VietIS, our customers’ business needs are at the center of everything we do. We don’t just deliver technological solutions – we provide services that offer tangible business value. To accomplish this, we help you decide on the most suitable approach and the best technology to meet your specific needs.</div>
+      <div class="des">At wedding, our customers’ business needs are at the center of everything we do. We don’t just deliver technological solutions – we provide services that offer tangible business value. To accomplish this, we help you decide on the most suitable approach and the best technology to meet your specific needs.</div>
     </div>
   </div>
   <!-- END: Banner -->
@@ -145,7 +145,7 @@
                   Building data collection platform Making proposal of simple BI tool
                 </div> -->
                 <ul class="list">
-                  <li class="item-popover">VietIS will go into detail about the experience you want to offer before diving into digital transformation. We will help you in this process by providing answers to the following questions: What, Where, and How?</li>
+                  <li class="item-popover">wedding will go into detail about the experience you want to offer before diving into digital transformation. We will help you in this process by providing answers to the following questions: What, Where, and How?</li>
                 </ul>
               </div>
             </div>
@@ -178,7 +178,7 @@
                   Data analysis agency Dispatch of data scientists
                 </div> -->
                 <ul class="list">
-                  <li class="item-popover">The process of digital transformation is ongoing and has no defined end point. To assure your success, VietIS keeps its tech specialists up to date on the newest developments in technology.</li>
+                  <li class="item-popover">The process of digital transformation is ongoing and has no defined end point. To assure your success, wedding keeps its tech specialists up to date on the newest developments in technology.</li>
                 </ul>
               </div>
             </div>
@@ -194,7 +194,7 @@
                   Development of machine learning system Building system for stable operation
                 </div> -->
                 <ul class="list">
-                  <li class="item-popover">Take a step back as you execute improvements in your company to assess your progress and make any corrections. Then, you can discuss your progress and what isn't working with important stakeholders. In the future, VietIS will be available to help you with any additional upgrades.</li>
+                  <li class="item-popover">Take a step back as you execute improvements in your company to assess your progress and make any corrections. Then, you can discuss your progress and what isn't working with important stakeholders. In the future, wedding will be available to help you with any additional upgrades.</li>
                 </ul>
               </div>
             </div>
@@ -229,7 +229,7 @@
 
     <!--<div class="wrap">
         <div class="ttl">Analyze accumulated data to derive valuable output</div>
-        <div class="des">You have data available, but don't know how to use it. You don't have staff who can analyze the data. You want to carry out marketing activities based on data. VIETIS will help you solve “ Increasing sales” , “Expanding profit” and “Making speedy decisions”</div>
+        <div class="des">You have data available, but don't know how to use it. You don't have staff who can analyze the data. You want to carry out marketing activities based on data. wedding will help you solve “ Increasing sales” , “Expanding profit” and “Making speedy decisions”</div>
         <ul class="content-analyze">
           <li class="item">
             <div class="wrap">
@@ -314,7 +314,7 @@
             <div class="title">
               <h3 class="ttl">02. Block Chain Technology</h3>
             </div>
-            <div class="txt">In the areas of banking, real estate, entertainment, healthcare, transportation, and insurance, VietIS is a company that specializes in offering organizations and enterprises solutions and applications of Blockchain technology.</div>
+            <div class="txt">In the areas of banking, real estate, entertainment, healthcare, transportation, and insurance, wedding is a company that specializes in offering organizations and enterprises solutions and applications of Blockchain technology.</div>
             <div class="txt">We will assess, evaluate, develop a plan, and provide the best solution to install Blockchain technology applications for people and businesses with a team of competent and experienced specialists and programmers. Businesses and corporations may do so swiftly, effectively, and safely.</div>
           </div>
           <img src="<?= RESOURCE_HOST . '/img/services/services-page-title02.png' ?>" alt="" class="img">
@@ -455,7 +455,7 @@
           <!-- <div class="item">
             <div class="subtitle">
               <p class="ttl">Legacy Migration</p>
-              <p class="txt">The longer a system is used the more value it brings to an organization. Over time, these systems and applications have been made sure to work efficiently and integrate with other applications within the business to deliver as much value as possible. Thus, legacy systems are usually crucial software and hardware infrastructure that is aging and too expensive & hard to maintain & difficult to change. VietIS understand that Migration is not simply a “Like-To- Like” transition, but is an opportunity for re-organize, re-composition of the Legacy Applications to maximize the benefit of new investment – this is not only from a Technical Architecture stand point, but Business Improvement.</p>
+              <p class="txt">The longer a system is used the more value it brings to an organization. Over time, these systems and applications have been made sure to work efficiently and integrate with other applications within the business to deliver as much value as possible. Thus, legacy systems are usually crucial software and hardware infrastructure that is aging and too expensive & hard to maintain & difficult to change. wedding understand that Migration is not simply a “Like-To- Like” transition, but is an opportunity for re-organize, re-composition of the Legacy Applications to maximize the benefit of new investment – this is not only from a Technical Architecture stand point, but Business Improvement.</p>
             </div>
             <div class="content">
               <div class="image">
@@ -467,14 +467,14 @@
                   <img src="<?= RESOURCE_HOST . '/img/services/website.svg' ?>" alt="" class="img">
                   <div class="sub-desc">
                     <p class="ttl">.NET Migration</p>
-                    <p class="txt">VietIS has established an experienced Microsoft Tech team to offer client with best solution of VB.NET to ASP.NET C# Application, .NET Framework and Window Version Up.</p>
+                    <p class="txt">wedding has established an experienced Microsoft Tech team to offer client with best solution of VB.NET to ASP.NET C# Application, .NET Framework and Window Version Up.</p>
                   </div>
                 </div>
                 <div class="desc">
                   <img src="<?= RESOURCE_HOST . '/img/services/migrating.svg' ?>" alt="" class="img">
                   <div class="sub-desc">
                     <p class="ttl">Cloud Migration</p>
-                    <p class="txt">VietIS helps clients choose the suitable Cloud platform and adopt Cloud technology. Through numerous projects in various domains, we understand clients’ concerns while moving to the Cloud and have the know-how to overcome these obstacles.</p>
+                    <p class="txt">wedding helps clients choose the suitable Cloud platform and adopt Cloud technology. Through numerous projects in various domains, we understand clients’ concerns while moving to the Cloud and have the know-how to overcome these obstacles.</p>
                   </div>
                 </div>
                 <div class="desc">

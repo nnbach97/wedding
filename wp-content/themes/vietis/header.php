@@ -3,11 +3,11 @@ require get_template_directory() . '/inc/theme_data.php';
 ?>
 
 <!DOCTYPE html>
-<html <?php language_attributes(); ?> <?php vietis_schema_type(); ?>>
+<html <?php language_attributes(); ?> <?php wedding_schema_type(); ?>>
 
 <head>
   <meta charset="<?php bloginfo('charset'); ?>" />
-  <title><?php wp_title(''); ?> <?php if (!wp_title('', false)) { echo 'VIETIS ';} ?><?php bloginfo('name'); ?></title>
+  <title><?php wp_title(''); ?> <?php if (!wp_title('', false)) { echo 'wedding ';} ?><?php bloginfo('name'); ?></title>
 
   <meta name="viewport" content="width=device-width" />
   <link href="<?= RESOURCE_HOST ?>/img/favicon.ico" rel="shortcut icon">
@@ -88,13 +88,13 @@ require get_template_directory() . '/inc/theme_data.php';
           <div class="email">
             <img src="<?= RESOURCE_HOST ?>/img/email-icon.png" alt="" class="img">
             <div class="content">
-              <div class="ttl"><?= __('Mail us daily', 'vietis'); ?></div>
+              <div class="ttl"><?= __('Mail us daily', 'wedding'); ?></div>
               <a href="mailto:<?= $contact_email ?>" class="txt"><?= $contact_email ?></a>
             </div>
           </div>
           <div class="social">
-            <a href="<?= $link_facebook ? __($link_facebook, "vietis") : '#' ?>" target="_blank" class="lnk"><img src="<?= RESOURCE_HOST ?>/img/icon_fb.svg" alt="" class="img img--fb"></a>
-            <a href="<?= $link_youtube ? __($link_youtube, "vietis") : '#' ?>" target="_blank" class="lnk"><img src="<?= RESOURCE_HOST ?>/img/icon_youtube.svg" alt="" class="img"></a>
+            <a href="<?= $link_facebook ? __($link_facebook, "wedding") : '#' ?>" target="_blank" class="lnk"><img src="<?= RESOURCE_HOST ?>/img/icon_fb.svg" alt="" class="img img--fb"></a>
+            <a href="<?= $link_youtube ? __($link_youtube, "wedding") : '#' ?>" target="_blank" class="lnk"><img src="<?= RESOURCE_HOST ?>/img/icon_youtube.svg" alt="" class="img"></a>
           </div>
         </div>
       </div>

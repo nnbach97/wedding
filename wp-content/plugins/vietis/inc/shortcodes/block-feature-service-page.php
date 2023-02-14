@@ -2,17 +2,17 @@
 global $registerBlock;
 $registerBlock[] = [
   'block_type' => 'create-block/feature-service-page',
-  'callback' => 'vietis_shortcode_block_feature_service_page'
+  'callback' => 'wedding_shortcode_block_feature_service_page'
 ];
 
-function vietis_shortcode_block_feature_service_page($atts, $content)
+function wedding_shortcode_block_feature_service_page($atts, $content)
 {
-  $title = vietis_func_check_data('title', $atts, '<strong>Features of the service</strong>');
-  $content = vietis_func_check_data('content', $atts, [
+  $title = wedding_func_check_data('title', $atts, '<strong>Features of the service</strong>');
+  $content = wedding_func_check_data('content', $atts, [
     [
       'title' => '<strong>Full support from analysis to solution construction and operation</strong>',
       'icon' => [
-        'url' => P_VIETIS_RESOURCE_HOST . '/assets/img/blocks/digital-transformation-service-page/product_digital-transformation_feature_1.png',
+        'url' => P_wedding_RESOURCE_HOST . '/assets/img/blocks/digital-transformation-service-page/product_digital-transformation_feature_1.png',
         'alt' =>  "",
         'id' => "",
       ],
@@ -20,7 +20,7 @@ function vietis_shortcode_block_feature_service_page($atts, $content)
     [
       'title' => '<strong>Experienced and proven expert team</strong>',
       'icon' => [
-        'url' => P_VIETIS_RESOURCE_HOST . '/assets/img/blocks/digital-transformation-service-page/product_digital-transformation_feature_2.png',
+        'url' => P_wedding_RESOURCE_HOST . '/assets/img/blocks/digital-transformation-service-page/product_digital-transformation_feature_2.png',
         'alt' =>  "",
         'id' => "",
       ],
@@ -28,7 +28,7 @@ function vietis_shortcode_block_feature_service_page($atts, $content)
     [
       'title' => '<strong>Advanced technology know-how and abundant staff</strong>',
       'icon' => [
-        'url' => P_VIETIS_RESOURCE_HOST . '/assets/img/blocks/digital-transformation-service-page/product_digital-transformation_feature_3.png',
+        'url' => P_wedding_RESOURCE_HOST . '/assets/img/blocks/digital-transformation-service-page/product_digital-transformation_feature_3.png',
         'alt' =>  "",
         'id' => "",
       ],

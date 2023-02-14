@@ -11,7 +11,7 @@ var cleanCSS = require("gulp-clean-css");
 var del = require("del");
 var plumber = require("gulp-plumber");
 var paths = {
-  vietis: {
+  wedding: {
     styles: {
       src: "sass/**/*.scss",
       dest: "../css",
@@ -65,11 +65,11 @@ function scripts(path) {
 }
 
 function watch() {
-  gulp.watch(paths.vietis.scripts.src, function () {
-    return scripts(paths.vietis);
+  gulp.watch(paths.wedding.scripts.src, function () {
+    return scripts(paths.wedding);
   });
-  gulp.watch(paths.vietis.styles.src, function () {
-    return styles(paths.vietis);
+  gulp.watch(paths.wedding.styles.src, function () {
+    return styles(paths.wedding);
   });
 }
 

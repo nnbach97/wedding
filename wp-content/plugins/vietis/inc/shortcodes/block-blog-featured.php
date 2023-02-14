@@ -2,10 +2,10 @@
 global $registerBlock;
 $registerBlock[] = [
   'block_type' => 'create-block/blogs-featured',
-  'callback' => 'vietis_shortcode_block_blogs_featured'
+  'callback' => 'wedding_shortcode_block_blogs_featured'
 ];
 
-function vietis_shortcode_block_blogs_featured($atts, $content)
+function wedding_shortcode_block_blogs_featured($atts, $content)
 {
   ob_start(); ?>
     <?php
@@ -32,20 +32,20 @@ function vietis_shortcode_block_blogs_featured($atts, $content)
 
     <div class="sidebar-featured">
       <div class="holder">
-        <div class="ttl"><?= __('Featured blogs', 'vietis'); ?></div>
+        <div class="ttl"><?= __('Featured blogs', 'wedding'); ?></div>
         <?php if ($the_query->have_posts()) : ?>
           <ul class="list">
             <?php while ($the_query->have_posts()) : $the_query->the_post(); ?>
               <li class="item">
-                <div class="img-wrap"><a href="<?= get_the_permalink(); ?>"><?= vietis_func_get_thumbnail('full'); ?></a></div>
+                <div class="img-wrap"><a href="<?= get_the_permalink(); ?>"><?= wedding_func_get_thumbnail('full'); ?></a></div>
                 <div class="wrap">
                   <h3 class="ttl"><a href="<?= get_the_permalink(); ?>"><?= get_the_title(); ?></a></h3>
-                  <div class="category"><?= vietis_get_post_primary_category(); ?></div>
+                  <div class="category"><?= wedding_get_post_primary_category(); ?></div>
                 </div>
               </li>
             <?php endwhile;  ?>
           </ul>
-        <?php else : echo vietis_func_no_content();
+        <?php else : echo wedding_func_no_content();
         endif; ?>
         <?php wp_reset_postdata(); ?>
       </div>

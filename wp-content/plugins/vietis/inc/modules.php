@@ -1,2 +1,2 @@
 <?php
-vietis_include('inc/modules/images/images.php');
+wedding_include('inc/modules/images/images.php');

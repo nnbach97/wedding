@@ -2,14 +2,14 @@
 global $registerBlock;
 $registerBlock[] = [
   'block_type' => 'create-block/banner-common',
-  'callback' => 'vietis_shortcode_block_banner_common'
+  'callback' => 'wedding_shortcode_block_banner_common'
 ];
 
-function vietis_shortcode_block_banner_common($atts, $content)
+function wedding_shortcode_block_banner_common($atts, $content)
 {
-  $title = vietis_func_check_data('title', $atts, '<strong>Case Study</strong>');
-  $img = vietis_func_check_data('img', $atts, [
-    'url' => P_VIETIS_RESOURCE_HOST . '/assets/img/blocks/casestudy/casestudy_bg.png',
+  $title = wedding_func_check_data('title', $atts, '<strong>Case Study</strong>');
+  $img = wedding_func_check_data('img', $atts, [
+    'url' => P_wedding_RESOURCE_HOST . '/assets/img/blocks/casestudy/casestudy_bg.png',
     'alt' => '',
     'id' => '',
   ]);
@@ -24,7 +24,7 @@ function vietis_shortcode_block_banner_common($atts, $content)
     </div>
     <div class="banner-inner">
       <h2 class="ttl"><?= $title; ?></h2>
-      <?php if (function_exists('vietis_breadcrumb')) echo vietis_breadcrumb(); ?>
+      <?php if (function_exists('wedding_breadcrumb')) echo wedding_breadcrumb(); ?>
     </div>
   </div>
   <!-- END: Banner -->

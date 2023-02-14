@@ -1,7 +1,7 @@
 <?php
 
-if (!function_exists('vietis_schema_type')) {
-  function vietis_schema_type()
+if (!function_exists('wedding_schema_type')) {
+  function wedding_schema_type()
   {
     $schema = 'https://schema.org/';
     if (is_single()) {
@@ -47,13 +47,13 @@ if (!function_exists('template_mail')) {
 
     $html .= '<div style="padding: 10px;background: #14479c;color: #fff; margin-top: 30px;">';
     $html .= '<p style="text-align: center; position: relative; padding-bottom: 26px; text-transform: uppercase;">';
-    $html .= '<strong>' . __("Contact Info", "vietis") . ':</strong>';
+    $html .= '<strong>' . __("Contact Info", "wedding") . ':</strong>';
     $html .= '<span style="height: 8px;display: block;width: 40px;border-radius: 4px;background: #ffe000;margin: 5px auto;"></span>';
     $html .= '</p>';
     $html .= '<div>';
-    $html .= '<p style="text-transform: uppercase; color: #fff""><strong>' . __("Vietnam", "vietis") . ':</strong></p>';
+    $html .= '<p style="text-transform: uppercase; color: #fff""><strong>' . __("Vietnam", "wedding") . ':</strong></p>';
     $html .= '<ul style="list-style: none;padding: 0;margin: 0;line-height: 22px;">';
-    $html .= '<li style="display: block; color: #fff"">' . __("Headquarters", "vietis") . '：' . $company_name_vi . '</li>';
+    $html .= '<li style="display: block; color: #fff"">' . __("Headquarters", "wedding") . '：' . $company_name_vi . '</li>';
     $html .= '<li style="display: block; color: #fff"">' . $address_vi . '</li>';
     $html .= '<li style="display: block; color: #fff"">TEL: <a href="tel:' . $phone_vi . '" style="color: #fff">' . $phone_vi . '</a></li>';
     $html .= '<li style="display: block; color: #fff">EMAIL: <a style="color: #fff" href="mailto: ' . $contact_email . '">' . $contact_email . '</a></li>';
@@ -61,9 +61,9 @@ if (!function_exists('template_mail')) {
     $html .= '</div>';
     $html .= '<hr style: "width: 40%">';
     $html .= '<div>';
-    $html .= '<p style="text-transform: uppercase; color: #fff""><strong>' . __("Japane", "vietis") . ':</strong></p>';
+    $html .= '<p style="text-transform: uppercase; color: #fff""><strong>' . __("Japane", "wedding") . ':</strong></p>';
     $html .= '<ul style="list-style: none;padding: 0;margin: 0;line-height: 22px;">';
-    $html .= '<li style="display: block; color: #fff">' . __("Japanese legal entity", "vietis") . '：' . $company_name_jp . '</li>';
+    $html .= '<li style="display: block; color: #fff">' . __("Japanese legal entity", "wedding") . '：' . $company_name_jp . '</li>';
     // if (pll_current_language() === "ja") {
     //     $html .= '<li style="display: block; color: #fff">' . $address_jp_01 . '<br>' . $address_jp_02 . '</li>';
     // } else {
@@ -74,7 +74,7 @@ if (!function_exists('template_mail')) {
     $html .= '</ul>';
     $html .= '</div>';
     $html .= '<hr>';
-    $html .= '<p style="text-align: center; color: #fff"">Copyright © 2022 VietIS Corporation. All Rights Reserved.</p>';
+    $html .= '<p style="text-align: center; color: #fff"">Copyright © 2022 wedding Corporation. All Rights Reserved.</p>';
     $html .= '</div>';
     $html .= '</div>';
     $html .= '</div>';
@@ -85,8 +85,8 @@ if (!function_exists('template_mail')) {
   }
 }
 
-if(!function_exists('vietis_work_related')) {
-  function vietis_work_related($postID, $taxCategory = [], $perPage = 3) {
+if(!function_exists('wedding_work_related')) {
+  function wedding_work_related($postID, $taxCategory = [], $perPage = 3) {
     $tag_ids = [];
     if (!empty($taxCategory)) {
         foreach ($taxCategory as $key => $tag) {
@@ -102,7 +102,7 @@ if(!function_exists('vietis_work_related')) {
 
       'tax_query' => array(
         array(
-            'taxonomy' => VIETIS_TAXONOMY_WORKS_CATEGORY,
+            'taxonomy' => wedding_TAXONOMY_WORKS_CATEGORY,
             'field'    => 'term_id',
             'terms'    => $tag_ids,
             'operator' => 'IN',
@@ -114,12 +114,12 @@ if(!function_exists('vietis_work_related')) {
 
     if ($result->have_posts()) { ?>
       <?php while ($result->have_posts()) : $result->the_post(); ?>
-        <?php $category = get_the_terms(get_the_ID(), VIETIS_TAXONOMY_WORKS_CATEGORY);  ?>
+        <?php $category = get_the_terms(get_the_ID(), wedding_TAXONOMY_WORKS_CATEGORY);  ?>
         <div class="item">
           <div class="img-wrap">
             <a href="<?= get_the_permalink(); ?>">
-              <?= vietis_func_get_thumbnail(); ?>
-              <p class="date"><?= __("Date done", "vietis") ?>: <?= get_the_date("m/Y"); ?></p>
+              <?= wedding_func_get_thumbnail(); ?>
+              <p class="date"><?= __("Date done", "wedding") ?>: <?= get_the_date("m/Y"); ?></p>
             </a>
           </div>
           <div class="wrap">
@@ -135,7 +135,7 @@ if(!function_exists('vietis_work_related')) {
     <?php
     }
     else{
-      vietis_func_no_content();
+      wedding_func_no_content();
     }
     wp_reset_postdata();
     return false;

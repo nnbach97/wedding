@@ -7,12 +7,12 @@ import "./style.scss";
 registerBlockType("create-block/about", {
 	title: "About",
 	description: "Example block scaffolded with Create Block tool.",
-	category: "vietis",
+	category: "wedding",
 	icon: "dashicons dashicons-editor-help",
 	attributes: {
 		title: {
 			type: "string",
-			default: "<strong>Why VietIS?</strong>",
+			default: "<strong>Why wedding?</strong>",
 		},
 		title_shadow: {
 			type: "string",

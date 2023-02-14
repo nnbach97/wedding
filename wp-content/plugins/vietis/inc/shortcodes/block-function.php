@@ -2,13 +2,13 @@
 global $registerBlock;
 $registerBlock[] = [
   'block_type' => 'create-block/function',
-  'callback' => 'vietis_shortcode_block_function'
+  'callback' => 'wedding_shortcode_block_function'
 ];
 
-function vietis_shortcode_block_function($atts, $content)
+function wedding_shortcode_block_function($atts, $content)
 {
-  $title = vietis_func_check_data('title', $atts, '<strong>Function list</strong>');
-  $functions = vietis_func_check_data('items', $atts, [
+  $title = wedding_func_check_data('title', $atts, '<strong>Function list</strong>');
+  $functions = wedding_func_check_data('items', $atts, [
     [
       'text' => 'Manager Project Bidding'
     ],
@@ -55,7 +55,7 @@ function vietis_shortcode_block_function($atts, $content)
         <h3 class="title"><?= $title; ?></h3>
         <ul class="list">
           <?php foreach ($functions as $value) : ?>
-            <?php $text = vietis_func_check_data('text', $value, 'Your text', true) ?>
+            <?php $text = wedding_func_check_data('text', $value, 'Your text', true) ?>
             <li class="item">
               <p class="txt"><?= $text ?></p>
             </li>

@@ -3,7 +3,7 @@
 /**
  * API
  */
-class class_vietis_plugin_get_data_post_casestudy extends class_vietis_plugin_api
+class class_wedding_plugin_get_data_post_casestudy extends class_wedding_plugin_api
 {
   public function __construct()
   {
@@ -13,11 +13,11 @@ class class_vietis_plugin_get_data_post_casestudy extends class_vietis_plugin_ap
   public function get_post_casestudy($data = [])
   {
     if (!$data) $data = $_POST;
-    $posttype = vietis_func_check_data('post_type', $data, 'works');
-    $posts_per_page = vietis_func_check_data('posts_per_page', $data, get_option('posts_per_page'));
-    $orderby = vietis_func_check_data('orderby', $data, 'date');
-    $order = vietis_func_check_data('order', $data, 'DESC');
-    $highlight_post_only = vietis_func_check_data('highlight_post_only', $data, "0");
+    $posttype = wedding_func_check_data('post_type', $data, 'works');
+    $posts_per_page = wedding_func_check_data('posts_per_page', $data, get_option('posts_per_page'));
+    $orderby = wedding_func_check_data('orderby', $data, 'date');
+    $order = wedding_func_check_data('order', $data, 'DESC');
+    $highlight_post_only = wedding_func_check_data('highlight_post_only', $data, "0");
 
     $args = [
       'post_type' => $posttype,
@@ -46,8 +46,8 @@ class class_vietis_plugin_get_data_post_casestudy extends class_vietis_plugin_ap
       $revert = false;
       while ($the_query->have_posts()) {
         $the_query->the_post();
-        $taxonomy_technology = get_the_terms(get_the_ID(), VIETIS_TAXONOMY_TECHNOLOGY);
-        $taxonomy_scope = get_the_terms(get_the_ID(), VIETIS_TAXONOMY_SCOPE);
+        $taxonomy_technology = get_the_terms(get_the_ID(), wedding_TAXONOMY_TECHNOLOGY);
+        $taxonomy_scope = get_the_terms(get_the_ID(), wedding_TAXONOMY_SCOPE);
         $link_release = get_post_meta(get_the_ID(), 'link_release');
         $link_detail = get_the_permalink(get_the_ID());
         $html .= '<div class="caseStudy">';
@@ -108,7 +108,7 @@ class class_vietis_plugin_get_data_post_casestudy extends class_vietis_plugin_ap
         }
         $html .= '<div class="wrap">';
 
-        $background_img = vietis_func_get_thumbnail_large();
+        $background_img = wedding_func_get_thumbnail_large();
         $html .= $background_img;
 
         $html .= '</div>';
@@ -118,7 +118,7 @@ class class_vietis_plugin_get_data_post_casestudy extends class_vietis_plugin_ap
         $revert = !$revert;
       }
     } else {
-      $html .= vietis_func_no_content();
+      $html .= wedding_func_no_content();
     }
 
     wp_reset_postdata();
@@ -128,4 +128,4 @@ class class_vietis_plugin_get_data_post_casestudy extends class_vietis_plugin_ap
   }
 }
 
-new class_vietis_plugin_get_data_post_casestudy();
+new class_wedding_plugin_get_data_post_casestudy();

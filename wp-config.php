@@ -28,11 +28,11 @@
 
 
 // if (IS_PROD) {
-//   define('DB_NAME', 'vietis_en_website');
-//   define('DB_USER', 'vietis_en');
+//   define('DB_NAME', 'wedding_en_website');
+//   define('DB_USER', 'wedding_en');
 // } else {
-//   define('DB_NAME', 'vietis_en');
-//   define('DB_USER', 'vietis');
+//   define('DB_NAME', 'wedding_en');
+//   define('DB_USER', 'wedding');
 // }
 
 define('DB_NAME', 'webdding');

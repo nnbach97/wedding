@@ -2,10 +2,10 @@
 global $registerBlock;
 $registerBlock[] = [
   'block_type' => 'create-block/blogs-tags',
-  'callback' => 'vietis_shortcode_block_blogs_tags'
+  'callback' => 'wedding_shortcode_block_blogs_tags'
 ];
 
-function vietis_shortcode_block_blogs_tags($atts, $content)
+function wedding_shortcode_block_blogs_tags($atts, $content)
 {
   ob_start(); ?>
 
@@ -22,7 +22,7 @@ function vietis_shortcode_block_blogs_tags($atts, $content)
   ?>
   <div class="sidebar-tags">
     <div class="holder">
-      <div class="ttl"><?= __('Tags', 'vietis'); ?></div>
+      <div class="ttl"><?= __('Tags', 'wedding'); ?></div>
       <ul class="list">
         <?php if ($tags) : ?>
           <?php foreach ($tags as $key => $tag) : ?>

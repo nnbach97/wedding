@@ -1,4 +1,4 @@
-<?php vietis_class_views::set_view_count(); get_header(); ?>
+<?php wedding_class_views::set_view_count(); get_header(); ?>
 <?php
   if (have_posts()) : while (have_posts()) : the_post();
   $img_banner = get_post_meta($post->ID, 'img_banner', true );
@@ -15,17 +15,17 @@
         <?php if($img_banner): ?>
           <img src="<?= wp_get_attachment_url($img_banner) ?>" alt="" />
         <?php else: ?>
-          <?= vietis_func_get_image_default() ?>
+          <?= wedding_func_get_image_default() ?>
         <?php endif; ?>
       </div>
       <div class="container">
         <div class="holder">
           <div class="banner-inner">
             <h1 class="ttl" style="color: <?=$title_color?>"><?= get_the_title(); ?></h1>
-            <?php if (function_exists('vietis_breadcrumb')) echo vietis_breadcrumb(); ?>
+            <?php if (function_exists('wedding_breadcrumb')) echo wedding_breadcrumb(); ?>
             <?php
-            $category = get_the_terms(get_the_ID(), VIETIS_TAXONOMY_WORKS_CATEGORY);
-            $technology = get_the_terms(get_the_ID(), VIETIS_TAXONOMY_TECHNOLOGY);
+            $category = get_the_terms(get_the_ID(), wedding_TAXONOMY_WORKS_CATEGORY);
+            $technology = get_the_terms(get_the_ID(), wedding_TAXONOMY_TECHNOLOGY);
             if($category) { ?>
             <div class="tag-list">
               <?php
@@ -49,7 +49,7 @@
 
         <?php if ($technology) { ?>
           <div class="technology">
-            <p class="ttl-common"><?= __("Technologies", "vietis") ?></p>
+            <p class="ttl-common"><?= __("Technologies", "wedding") ?></p>
             <ul class="technology-list">
               <?php
                 foreach($technology as $item){
@@ -60,7 +60,7 @@
                 <li class="item"><?=$image?></li>
               <?php }
                 else{
-                  echo('<li class="item">'.vietis_func_get_image_default().'</li>');
+                  echo('<li class="item">'.wedding_func_get_image_default().'</li>');
                 }
               }?>
             </ul>
@@ -68,9 +68,9 @@
         <?php } ?>
 
         <div class="solution">
-          <p class="ttl-common"><?= __("Our Solution", "vietis") ?></p>
+          <p class="ttl-common"><?= __("Our Solution", "wedding") ?></p>
           <?php if(!empty(get_the_content())) : ?>
-              <?= __(get_template_part('entry', 'content'), "vietis") ?>
+              <?= __(get_template_part('entry', 'content'), "wedding") ?>
           <?php endif ?>
           <?php
             $images =  get_post_meta(get_the_ID(), IMAGES_META_KEY, true);
@@ -99,9 +99,9 @@
         </div>
 
         <div class="content">
-          <h3 class="title"><?= __("OTHER PROJECT", "vietis") ?></h3>
+          <h3 class="title"><?= __("OTHER PROJECT", "wedding") ?></h3>
           <div class="list">
-            <?= vietis_work_related(get_the_ID(), $category) ?>
+            <?= wedding_work_related(get_the_ID(), $category) ?>
           </div>
         </div>
       </div>

@@ -2,31 +2,31 @@
 $dataInput = [
   '1' => [
     'name' => 'company_name',
-    'label' => __("Company name", "vietis"),
+    'label' => __("Company name", "wedding"),
     'required' => true,
     'tag' => 'input'
   ],
   '2' => [
     'name' => 'your_name',
-    'label' => __("Name", "vietis"),
+    'label' => __("Name", "wedding"),
     'required' => true,
     'tag' => 'input'
   ],
   '3' => [
     'name' => 'email',
-    'label' => __("Email", "vietis"),
+    'label' => __("Email", "wedding"),
     'required' => true,
     'tag' => 'input'
   ],
   '4' => [
     'name' => 'linkedin',
-    'label' => __("LinkedIn", "vietis"),
+    'label' => __("LinkedIn", "wedding"),
     'required' => false,
     'tag' => 'input'
   ],
   '5' => [
     'name' => 'message',
-    'label' => __("Message", "vietis"),
+    'label' => __("Message", "wedding"),
     'required' => false,
     'tag' => 'textarea'
   ]
@@ -75,12 +75,12 @@ if (!function_exists("get_data_inquiry_type")) {
   function get_data_inquiry_type($key = null)
   {
     $dataInquiryType = [
-      '1' => __("Digital Transformation", "vietis"),
-      '2' => __("Dedicated Development Team", "vietis"),
-      '3' => __("Development of Mobile and Web Applications", "vietis"),
-      '4' => __("Development of Personalized Software", "vietis"),
-      '5' => __("Blockchain", "vietis"),
-      '6' => __("Others", "vietis"),
+      '1' => __("Digital Transformation", "wedding"),
+      '2' => __("Dedicated Development Team", "wedding"),
+      '3' => __("Development of Mobile and Web Applications", "wedding"),
+      '4' => __("Development of Personalized Software", "wedding"),
+      '5' => __("Blockchain", "wedding"),
+      '6' => __("Others", "wedding"),
     ];
 
     if ($key === null) return $dataInquiryType;

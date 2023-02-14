@@ -2,19 +2,19 @@
 global $registerBlock;
 $registerBlock[] = [
   'block_type' => 'create-block/banner',
-  'callback' => 'vietis_shortcode_block_banner'
+  'callback' => 'wedding_shortcode_block_banner'
 ];
 
-function vietis_shortcode_block_banner($atts, $content)
+function wedding_shortcode_block_banner($atts, $content)
 {
-  $config = vietis_func_check_data('config', $atts, []);
-  $config = vietis_func_process_config_block($config);
-  $style_block = vietis_func_check_data('style_block', $config, '');
-  $title = vietis_func_check_data('title', $atts, 'In Pursuit of Excellent');
-  $subTitle = vietis_func_check_data('subTitle', $atts, 'To be your long term Tech - Partner');
-  $video_background = vietis_func_check_data('video_background', $atts, P_VIETIS_RESOURCE_HOST . "/assets/img/blocks/banner/video_background.mp4");
-  $video_film = vietis_func_check_data('video_film', $atts, P_VIETIS_RESOURCE_HOST . '/assets/img/blocks/banner/video_film.mp4');
-  $counters = vietis_func_check_data('counters', $atts, [
+  $config = wedding_func_check_data('config', $atts, []);
+  $config = wedding_func_process_config_block($config);
+  $style_block = wedding_func_check_data('style_block', $config, '');
+  $title = wedding_func_check_data('title', $atts, 'In Pursuit of Excellent');
+  $subTitle = wedding_func_check_data('subTitle', $atts, 'To be your long term Tech - Partner');
+  $video_background = wedding_func_check_data('video_background', $atts, P_wedding_RESOURCE_HOST . "/assets/img/blocks/banner/video_background.mp4");
+  $video_film = wedding_func_check_data('video_film', $atts, P_wedding_RESOURCE_HOST . '/assets/img/blocks/banner/video_film.mp4');
+  $counters = wedding_func_check_data('counters', $atts, [
     [
       'number' => '03',
       'text' => 'Locations'
@@ -28,56 +28,56 @@ function vietis_shortcode_block_banner($atts, $content)
       'text' => 'Projects'
     ],
   ]);
-  $certificate = vietis_func_check_data('certificate', $atts, [
+  $certificate = wedding_func_check_data('certificate', $atts, [
     'certificate_01' => [
-      "url" => P_VIETIS_RESOURCE_HOST . '/assets/img/blocks/banner/banner_iso.png',
+      "url" => P_wedding_RESOURCE_HOST . '/assets/img/blocks/banner/banner_iso.png',
       'alt' => '',
       'id' => '',
     ],
     'certificate_02' => [
-      "url" => P_VIETIS_RESOURCE_HOST . '/assets/img/blocks/banner/banner_cmmi.png',
+      "url" => P_wedding_RESOURCE_HOST . '/assets/img/blocks/banner/banner_cmmi.png',
       'alt' => '',
       'id' => '',
     ],
   ]);
-  $certificate_01 = vietis_func_check_data('certificate_01', $certificate, '');
-  $certificate_02 = vietis_func_check_data('certificate_02', $certificate, '');
+  $certificate_01 = wedding_func_check_data('certificate_01', $certificate, '');
+  $certificate_02 = wedding_func_check_data('certificate_02', $certificate, '');
   $theme_options = theme_options::get_theme_options();
-  $contact_email = vietis_func_check_data('contact_email', $theme_options, '');
-  $mail = vietis_func_check_data('mail', $atts, [
+  $contact_email = wedding_func_check_data('contact_email', $theme_options, '');
+  $mail = wedding_func_check_data('mail', $atts, [
     "icon" => [
-      'url' => P_VIETIS_RESOURCE_HOST . '/assets/img/blocks/banner/mail_icon.png',
+      'url' => P_wedding_RESOURCE_HOST . '/assets/img/blocks/banner/mail_icon.png',
       'alt' => '',
       'id' => '',
     ],
     "title" => "MAIL US DAILY:",
     "mail" => "<a href='mailto:" . $contact_email . "'>" . $contact_email . "</a>",
   ]);
-  $mail_icon = vietis_func_check_data('icon', $mail, '');
-  $mail_title = vietis_func_check_data('title', $mail, '');
-  $mail_mail = vietis_func_check_data('mail', $mail, '');
-  $btn_watch = vietis_func_check_data('btn_watch', $atts, [
+  $mail_icon = wedding_func_check_data('icon', $mail, '');
+  $mail_title = wedding_func_check_data('title', $mail, '');
+  $mail_mail = wedding_func_check_data('mail', $mail, '');
+  $btn_watch = wedding_func_check_data('btn_watch', $atts, [
     'text' => "<a href=\"#\">Watch vision film</a>",
     'icon' => [
-      'url' => P_VIETIS_RESOURCE_HOST . '/assets/img/blocks/banner/banner_icon-film.svg',
+      'url' => P_wedding_RESOURCE_HOST . '/assets/img/blocks/banner/banner_icon-film.svg',
       'alt' => '',
       'id' => '',
     ],
   ]);
-  $btn_watch_title = vietis_func_check_data('text', $btn_watch, '');
-  $btn_watch_url = vietis_func_check_data('icon', $btn_watch, '');
-  $btn_inquiry = vietis_func_check_data('btn_inquiry', $atts, [
+  $btn_watch_title = wedding_func_check_data('text', $btn_watch, '');
+  $btn_watch_url = wedding_func_check_data('icon', $btn_watch, '');
+  $btn_inquiry = wedding_func_check_data('btn_inquiry', $atts, [
     'text' => "<a href=\"#\">Inquiry</a>",
     'icon' => [
-      'url' => P_VIETIS_RESOURCE_HOST . '/assets/img/blocks/banner/banner_icon-inquiry.svg',
+      'url' => P_wedding_RESOURCE_HOST . '/assets/img/blocks/banner/banner_icon-inquiry.svg',
       'alt' => '',
       'id' => '',
     ],
   ]);
 
-  $btn_inquiry_title = vietis_func_check_data('text', $btn_inquiry, '');
-  $btn_inquiry_url = vietis_func_check_data('icon', $btn_inquiry, '');
-  $is_show_btn_video = vietis_func_check_data('is_show_btn_video', $atts, true);
+  $btn_inquiry_title = wedding_func_check_data('text', $btn_inquiry, '');
+  $btn_inquiry_url = wedding_func_check_data('icon', $btn_inquiry, '');
+  $is_show_btn_video = wedding_func_check_data('is_show_btn_video', $atts, true);
 
   ob_start(); ?>
   <div class="block block-banner js-hero">

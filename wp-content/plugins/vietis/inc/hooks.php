@@ -1,14 +1,14 @@
 <?php
 
 add_action( 'init', function(){
-	register_block_type( vietis_plugin_root() . '/build');
+	register_block_type( wedding_plugin_root() . '/build');
 });
 
 add_filter('block_categories', function($categories, $post){
 	$categoryExt = [];
 	$categoryExt[] = [
-		'slug' => 'vietis',
-		'title' => __('VIETIS', 'vietis'),
+		'slug' => 'wedding',
+		'title' => __('wedding', 'wedding'),
 	];
 	return array_merge($categoryExt, $categories);
 }, 10, 2);
@@ -16,7 +16,7 @@ add_filter('block_categories', function($categories, $post){
 
 function add_works_columns($columns) {
 	return array_merge($columns, 
-						array('isHighlight' => __('Highlight', 'vietis')));
+						array('isHighlight' => __('Highlight', 'wedding')));
 }
 add_filter('manage_works_posts_columns' , 'add_works_columns');
 

@@ -2,18 +2,18 @@
 global $registerBlock;
 $registerBlock[] = [
   'block_type' => 'create-block/certificate',
-  'callback' => 'vietis_shortcode_block_certificate'
+  'callback' => 'wedding_shortcode_block_certificate'
 ];
 
-function vietis_shortcode_block_certificate($atts) {
-  $config = vietis_func_check_data('config', $atts, []);
-  $config = vietis_func_process_config_block($config);
-  $style_block = vietis_func_check_data('style_block', $config, '');
-  $img_background = vietis_func_check_data('img_background', $atts, P_VIETIS_RESOURCE_HOST . "/assets/img/blocks/certificate/certificate_bg.png");
-  $items = vietis_func_check_data('items', $atts, [
+function wedding_shortcode_block_certificate($atts) {
+  $config = wedding_func_check_data('config', $atts, []);
+  $config = wedding_func_process_config_block($config);
+  $style_block = wedding_func_check_data('style_block', $config, '');
+  $img_background = wedding_func_check_data('img_background', $atts, P_wedding_RESOURCE_HOST . "/assets/img/blocks/certificate/certificate_bg.png");
+  $items = wedding_func_check_data('items', $atts, [
     [
       'image' => [
-        'url' => P_VIETIS_RESOURCE_HOST . "/assets/img/blocks/certificate/certificate_img01.png",
+        'url' => P_wedding_RESOURCE_HOST . "/assets/img/blocks/certificate/certificate_img01.png",
         'alt' => '',
         'id' => '',
       ],
@@ -23,7 +23,7 @@ function vietis_shortcode_block_certificate($atts) {
     ],
     [
       'image' => [
-        'url' => P_VIETIS_RESOURCE_HOST . "/assets/img/blocks/certificate/certificate_img02.png",
+        'url' => P_wedding_RESOURCE_HOST . "/assets/img/blocks/certificate/certificate_img02.png",
         'alt' => '',
         'id' => '',
       ],
@@ -46,24 +46,24 @@ function vietis_shortcode_block_certificate($atts) {
         <div class="wrapper-item">
           <?php foreach ($items as $key => $item): ?>
             <?php
-              $ttl = vietis_func_check_data('ttl', $item, '');
+              $ttl = wedding_func_check_data('ttl', $item, '');
               if (!$ttl) continue;
-              $txt = vietis_func_check_data('txt', $item, '');
-              $image = vietis_func_check_data('image', $item, '');
-              $color = vietis_func_check_data('color', $item, '#F3F4FD');
-              $id = vietis_func_check_data('id', $image, '');
-              $alt = vietis_func_check_data('alt', $image, '');
+              $txt = wedding_func_check_data('txt', $item, '');
+              $image = wedding_func_check_data('image', $item, '');
+              $color = wedding_func_check_data('color', $item, '#F3F4FD');
+              $id = wedding_func_check_data('id', $image, '');
+              $alt = wedding_func_check_data('alt', $image, '');
               if ($id) {
-                $url = vietis_func_get_attachment_image($id);
+                $url = wedding_func_get_attachment_image($id);
               } else {
-                $url = vietis_func_check_data('url', $image);
-                if (!$url) $url= VIETIS_IMAGE_DEFAULT;
+                $url = wedding_func_check_data('url', $image);
+                if (!$url) $url= wedding_IMAGE_DEFAULT;
               }
             ?>
             <div class="item">
               <div class="wrap" style="background: <?= $color; ?>;">
                 <div class="icon">
-                  <img src="<?= P_VIETIS_RESOURCE_HOST . '/assets/img/blocks/certificate/certificate_ico.png' ?>" alt="">
+                  <img src="<?= P_wedding_RESOURCE_HOST . '/assets/img/blocks/certificate/certificate_ico.png' ?>" alt="">
                 </div>
                 <div class="image">
                   <img src="<?= $url; ?>" alt="<?= $alt; ?>" class="img">

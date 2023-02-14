@@ -6,11 +6,11 @@
   <div class="block common-block-banner js-hero">
     <div class="overlay"></div>
     <div class="banner-bg">
-      <?= vietis_func_get_thumbnail('full'); ?>
+      <?= wedding_func_get_thumbnail('full'); ?>
     </div>
     <div class="banner-inner">
-      <h2 class="ttl"><?= __("Blogs", "vietis") ?></h2>
-      <?php if (function_exists('vietis_breadcrumb')) echo vietis_breadcrumb(); ?>
+      <h2 class="ttl"><?= __("Blogs", "wedding") ?></h2>
+      <?php if (function_exists('wedding_breadcrumb')) echo wedding_breadcrumb(); ?>
     </div>
   </div>
   <!-- END: Banner -->
@@ -20,9 +20,9 @@
     <div class="holder">
       <div class="blogs-inner">
         <?php
-        $params = vietis_get_all_params();
-        $keyword = vietis_func_check_data('keyword', $params, '');
-        $category = vietis_func_check_data('category', $params, null);
+        $params = wedding_get_all_params();
+        $keyword = wedding_func_check_data('keyword', $params, '');
+        $category = wedding_func_check_data('category', $params, null);
 
         $args = [
           'post_type' => 'post',
@@ -41,12 +41,12 @@
                 <div class="item">
                   <div class="img-wrap">
                     <a href="<?= get_the_permalink(); ?>">
-                      <?= vietis_func_get_thumbnail('full'); ?>
+                      <?= wedding_func_get_thumbnail('full'); ?>
                     </a>
                   </div>
                   <div class="wrap">
                     <div class="head">
-                      <div class="category"><?= vietis_get_post_primary_category(); ?></div>
+                      <div class="category"><?= wedding_get_post_primary_category(); ?></div>
                       <div class="time"><?= get_the_date(); ?></div>
                     </div>
                     <div class="blogs-wrap">
@@ -57,7 +57,7 @@
                 </div>
               <?php endwhile;  ?>
             </div>
-          <?php else : echo vietis_func_no_content();
+          <?php else : echo wedding_func_no_content();
           endif; ?>
           <?php wp_reset_postdata(); ?>
         </div><!-- /.content -->

@@ -1,5 +1,5 @@
 <?php
-    $custom_query = vietis_func_check_data('custom_query', $args, null);
+    $custom_query = wedding_func_check_data('custom_query', $args, null);
 	if ($custom_query) {
 		$query = $custom_query;
 	} else {
@@ -10,7 +10,7 @@
 <?php if ($query->found_posts > 0): ?>
     <div class="block-pagination">
         <div class="holder">
-            <?php vietis_pagination($query); ?>
+            <?php wedding_pagination($query); ?>
         </div>
     </div>
 <?php endif; ?>

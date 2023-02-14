@@ -2,18 +2,18 @@
 global $registerBlock;
 $registerBlock[] = [
   'block_type' => 'create-block/visinsight-banner',
-  'callback' => 'vietis_shortcode_block_visinsight_banner'
+  'callback' => 'wedding_shortcode_block_visinsight_banner'
 ];
 
-function vietis_shortcode_block_visinsight_banner($atts, $content)
+function wedding_shortcode_block_visinsight_banner($atts, $content)
 {
-  $title = vietis_func_check_data('title', $atts, 'VISInsight');
+  $title = wedding_func_check_data('title', $atts, 'VISInsight');
   if ($title === "") $title = "Title";
 
-  $description = vietis_func_check_data('description', $atts, "Is a project management tool of VietIS company, aiming to implement the digital transformation roadmap.");
+  $description = wedding_func_check_data('description', $atts, "Is a project management tool of wedding company, aiming to implement the digital transformation roadmap.");
   if ($description === "") $description = "Description";
 
-  $steps = vietis_func_check_data('steps', $atts, [
+  $steps = wedding_func_check_data('steps', $atts, [
     [
       "id" => 1,
       "text" => "Planning assistance"
@@ -28,14 +28,14 @@ function vietis_shortcode_block_visinsight_banner($atts, $content)
     ]
   ]);
 
-  $technology = vietis_func_check_data("technology", $atts, []);
+  $technology = wedding_func_check_data("technology", $atts, []);
 
-  $image = vietis_func_check_data("image", $atts, [
+  $image = wedding_func_check_data("image", $atts, [
     "id" => "",
-    "url" => P_VIETIS_RESOURCE_HOST . "/assets/img/blocks/product/product-insight-laptop.png",
+    "url" => P_wedding_RESOURCE_HOST . "/assets/img/blocks/product/product-insight-laptop.png",
     "alt" => ""
   ]);
-  $image_url = vietis_func_check_data('url', $image, VIETIS_IMAGE_DEFAULT);
+  $image_url = wedding_func_check_data('url', $image, wedding_IMAGE_DEFAULT);
 
   ob_start(); ?>
   <div class="block block-product-banner js-hero" id="product-visInsight">
@@ -50,7 +50,7 @@ function vietis_shortcode_block_visinsight_banner($atts, $content)
           <?php foreach ($steps as $step) : ?>
             <li class="item">
               <span class="number"><?= $step['id'] ?></span>
-              <?php $text = vietis_func_check_data('text', $step, "Your text", true) ?>
+              <?php $text = wedding_func_check_data('text', $step, "Your text", true) ?>
               <span class="txt"><?= $text ?></span>
             </li>
           <?php endforeach ?>
@@ -61,7 +61,7 @@ function vietis_shortcode_block_visinsight_banner($atts, $content)
   <div class="block block-technology">
     <ul class="holder list">
       <?php foreach ($technology as $tech) : ?>
-        <?php $tech_url = vietis_func_check_data('url', $tech, VIETIS_IMAGE_DEFAULT);  ?>
+        <?php $tech_url = wedding_func_check_data('url', $tech, wedding_IMAGE_DEFAULT);  ?>
         <li class="item">
           <img class="img" src="<?= $tech_url ?>" alt="" />
         </li>

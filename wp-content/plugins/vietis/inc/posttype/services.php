@@ -1,39 +1,39 @@
 <?php
 
-if ( ! function_exists('vietis_post_type_services') ) {
-    function vietis_post_type_services() {
+if ( ! function_exists('wedding_post_type_services') ) {
+    function wedding_post_type_services() {
         $labels = array(
-            'name'                  => _x( 'Services', 'Post Type General Name', 'vietis' ),
-            'singular_name'         => _x( 'Services', 'Post Type Singular Name', 'vietis' ),
-            'menu_name'             => __( 'Services', 'vietis' ),
-            'name_admin_bar'        => __( 'Services', 'vietis' ),
-            'archives'              => __( 'Item Archives', 'vietis' ),
-            'attributes'            => __( 'Item Attributes', 'vietis' ),
-            'parent_item_colon'     => __( 'Parent Item:', 'vietis' ),
-            'all_items'             => __( 'All Items', 'vietis' ),
-            'add_new_item'          => __( 'Add New Item', 'vietis' ),
-            'add_new'               => __( 'Add New', 'vietis' ),
-            'new_item'              => __( 'New Item', 'vietis' ),
-            'edit_item'             => __( 'Edit Item', 'vietis' ),
-            'update_item'           => __( 'Update Item', 'vietis' ),
-            'view_item'             => __( 'View Item', 'vietis' ),
-            'view_items'            => __( 'View Items', 'vietis' ),
-            'search_items'          => __( 'Search Item', 'vietis' ),
-            'not_found'             => __( 'Not found', 'vietis' ),
-            'not_found_in_trash'    => __( 'Not found in Trash', 'vietis' ),
-            'featured_image'        => __( 'Featured Image', 'vietis' ),
-            'set_featured_image'    => __( 'Set featured image', 'vietis' ),
-            'remove_featured_image' => __( 'Remove featured image', 'vietis' ),
-            'use_featured_image'    => __( 'Use as featured image', 'vietis' ),
-            'insert_into_item'      => __( 'Insert into item', 'vietis' ),
-            'uploaded_to_this_item' => __( 'Uploaded to this item', 'vietis' ),
-            'items_list'            => __( 'Items list', 'vietis' ),
-            'items_list_navigation' => __( 'Items list navigation', 'vietis' ),
-            'filter_items_list'     => __( 'Filter items list', 'vietis' ),
+            'name'                  => _x( 'Services', 'Post Type General Name', 'wedding' ),
+            'singular_name'         => _x( 'Services', 'Post Type Singular Name', 'wedding' ),
+            'menu_name'             => __( 'Services', 'wedding' ),
+            'name_admin_bar'        => __( 'Services', 'wedding' ),
+            'archives'              => __( 'Item Archives', 'wedding' ),
+            'attributes'            => __( 'Item Attributes', 'wedding' ),
+            'parent_item_colon'     => __( 'Parent Item:', 'wedding' ),
+            'all_items'             => __( 'All Items', 'wedding' ),
+            'add_new_item'          => __( 'Add New Item', 'wedding' ),
+            'add_new'               => __( 'Add New', 'wedding' ),
+            'new_item'              => __( 'New Item', 'wedding' ),
+            'edit_item'             => __( 'Edit Item', 'wedding' ),
+            'update_item'           => __( 'Update Item', 'wedding' ),
+            'view_item'             => __( 'View Item', 'wedding' ),
+            'view_items'            => __( 'View Items', 'wedding' ),
+            'search_items'          => __( 'Search Item', 'wedding' ),
+            'not_found'             => __( 'Not found', 'wedding' ),
+            'not_found_in_trash'    => __( 'Not found in Trash', 'wedding' ),
+            'featured_image'        => __( 'Featured Image', 'wedding' ),
+            'set_featured_image'    => __( 'Set featured image', 'wedding' ),
+            'remove_featured_image' => __( 'Remove featured image', 'wedding' ),
+            'use_featured_image'    => __( 'Use as featured image', 'wedding' ),
+            'insert_into_item'      => __( 'Insert into item', 'wedding' ),
+            'uploaded_to_this_item' => __( 'Uploaded to this item', 'wedding' ),
+            'items_list'            => __( 'Items list', 'wedding' ),
+            'items_list_navigation' => __( 'Items list navigation', 'wedding' ),
+            'filter_items_list'     => __( 'Filter items list', 'wedding' ),
         );
         $args = array(
-            'label'                 => __( 'Services', 'vietis' ),
-            'description'           => __( 'Services', 'vietis' ),
+            'label'                 => __( 'Services', 'wedding' ),
+            'description'           => __( 'Services', 'wedding' ),
             'labels'                => $labels,
             'supports'              => array( 'title', 'editor', 'thumbnail', 'page-attributes' ),
             'hierarchical'          => false,
@@ -51,8 +51,8 @@ if ( ! function_exists('vietis_post_type_services') ) {
             'show_in_rest'          => true,
             'capability_type'       => 'post',
         );
-        register_post_type(VIETIS_POST_TYPE_SERVICES, $args );
+        register_post_type(wedding_POST_TYPE_SERVICES, $args );
     
     }
-    add_action( 'init', 'vietis_post_type_services', 0 );
+    add_action( 'init', 'wedding_post_type_services', 0 );
 }

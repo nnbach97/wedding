@@ -1,2 +1,2 @@
 <?php
-vietis_include('inc/class/view.php');
+wedding_include('inc/class/view.php');

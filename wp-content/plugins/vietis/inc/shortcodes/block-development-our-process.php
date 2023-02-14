@@ -2,13 +2,13 @@
 global $registerBlock;
 $registerBlock[] = [
   'block_type' => 'create-block/develop-our-process',
-  'callback' => 'vietis_shortcode_block_develop_our_process'
+  'callback' => 'wedding_shortcode_block_develop_our_process'
 ];
 
-function vietis_shortcode_block_develop_our_process($atts, $content)
+function wedding_shortcode_block_develop_our_process($atts, $content)
 {
-  $title = vietis_func_check_data('title', $atts, '<strong>Our Process</strong>', true);
-  $steps = vietis_func_check_data("steps", $atts, [
+  $title = wedding_func_check_data('title', $atts, '<strong>Our Process</strong>', true);
+  $steps = wedding_func_check_data("steps", $atts, [
     [
       "title" => "Exploration Stage",
       "txt" => "The assessment of the project and comprehension of your company's objectives are the primary objectives of the discovery stage of the development of bespoke software. Based on this demand elicitation, we create the most affordable technological solution and tailored software development methodology to jointly accomplish the set goals.</br>
@@ -49,8 +49,8 @@ function vietis_shortcode_block_develop_our_process($atts, $content)
           <?php if($steps): ?>
             <?php foreach ($steps as $key => $item) : ?>
 							<?php
-								$ttl = vietis_func_check_data("title", $item, 'Your title', true);
-								$txt = vietis_func_check_data("txt", $item, "Your description", true);
+								$ttl = wedding_func_check_data("title", $item, 'Your title', true);
+								$txt = wedding_func_check_data("txt", $item, "Your description", true);
 							?>
               <div class="item">
                 <div class="number">

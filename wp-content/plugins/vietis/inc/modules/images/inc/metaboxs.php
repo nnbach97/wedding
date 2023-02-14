@@ -1,13 +1,13 @@
 <?php
 
-class vietis_modules_images_settings {
+class wedding_modules_images_settings {
 	public function __construct() {
 		add_action('add_meta_boxes', [$this, 'meta_boxes']);
 		add_action('save_post', [$this, 'save']);
 	}
 
 	public function meta_boxes() {
-		add_meta_box('images-metabox-images', __('Images', 'vietis'), [$this, 'output'], REGISTER_POST_TYPE, 'side', 'default');
+		add_meta_box('images-metabox-images', __('Images', 'wedding'), [$this, 'output'], REGISTER_POST_TYPE, 'side', 'default');
 	}
 
 	public function output() {
@@ -78,4 +78,4 @@ class vietis_modules_images_settings {
 	}
 }
 
-new vietis_modules_images_settings();
+new wedding_modules_images_settings();

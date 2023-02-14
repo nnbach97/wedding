@@ -2,20 +2,20 @@
 global $registerBlock;
 $registerBlock[] = [
   'block_type' => 'create-block/guarantee',
-  'callback' => 'vietis_shortcode_block_guarantee'
+  'callback' => 'wedding_shortcode_block_guarantee'
 ];
 
-function vietis_shortcode_block_guarantee($atts, $content)
+function wedding_shortcode_block_guarantee($atts, $content)
 {
-  $title = vietis_func_check_data('title', $atts, '<strong>Our Vision</strong>');
-  $guarantee_title = vietis_func_check_data('guarantee_title', $atts, '<strong><span>What We Guarantee</span> for Successful Businesses</strong>');
-  $guarantee_txt = vietis_func_check_data('guarantee_txt', $atts, '<strong>Leverage technology to enhance the value of the business and provide clients with the best service possible.</strong><br></br>VIETIS provides a new creative platform to increase people’s creativity and productivity and support developers and companies in the next generation of technology. We aim to absorb the latest technology and innovative businesses with our own strength, create new value, and position ourselves as a globally reliable partner.');
-  $image = vietis_func_check_data('image', $atts, [
-    "url" => P_VIETIS_RESOURCE_HOST . "/assets/img/blocks/guarantee/guarantee_default.png",
+  $title = wedding_func_check_data('title', $atts, '<strong>Our Vision</strong>');
+  $guarantee_title = wedding_func_check_data('guarantee_title', $atts, '<strong><span>What We Guarantee</span> for Successful Businesses</strong>');
+  $guarantee_txt = wedding_func_check_data('guarantee_txt', $atts, '<strong>Leverage technology to enhance the value of the business and provide clients with the best service possible.</strong><br></br>wedding provides a new creative platform to increase people’s creativity and productivity and support developers and companies in the next generation of technology. We aim to absorb the latest technology and innovative businesses with our own strength, create new value, and position ourselves as a globally reliable partner.');
+  $image = wedding_func_check_data('image', $atts, [
+    "url" => P_wedding_RESOURCE_HOST . "/assets/img/blocks/guarantee/guarantee_default.png",
     'alt' => '',
     'id' => '',
   ]);
-  $visions = vietis_func_check_data('visions', $atts, [
+  $visions = wedding_func_check_data('visions', $atts, [
     [
       'text' => 'Become an IT service company with innovative technology'
     ],

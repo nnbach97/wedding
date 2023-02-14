@@ -6,7 +6,7 @@ class metabox_img_banner_works {
   }
 
   public function meta_boxes() {
-    add_meta_box('metabox_img_banner_works', __('Image Banner', 'vietis'), [$this, 'output'], [VIETIS_POST_TYPE_WORKS], 'side', 'default');
+    add_meta_box('metabox_img_banner_works', __('Image Banner', 'wedding'), [$this, 'output'], [wedding_POST_TYPE_WORKS], 'side', 'default');
   }
 
   public function output() {
@@ -69,7 +69,7 @@ class metabox_img_banner_works {
     $check_autosave = defined( 'DOING_AUTOSAVE') && DOING_AUTOSAVE; // Check Autosave
     $check_revision = !isset($_POST['post_ID']) || $post_id != $_POST['post_ID']; // Check Revision
     $check_edit_post_1 = !current_user_can('edit_post', $post_id); // Check if user can edit the post.
-    $check_edit_post_2 = !in_array($post_type, [VIETIS_POST_TYPE_WORKS]); // Check if user can edit the post.
+    $check_edit_post_2 = !in_array($post_type, [wedding_POST_TYPE_WORKS]); // Check if user can edit the post.
     if ($check_autosave || $check_revision || $check_edit_post_1 || $check_edit_post_2){
       return $post_id;
     }

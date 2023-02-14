@@ -16,7 +16,7 @@
           </div>
           <div class="content">
             <h2 class="ttl">VISInsight</h2>
-            <div class="des">Is a project management tool of VietIS company, aiming to implement the digital transformation roadmap.</div>
+            <div class="des">Is a project management tool of wedding company, aiming to implement the digital transformation roadmap.</div>
             <ul class="product-insight-implement">
               <li class="item">
                 <span class="number">1</span>

@@ -13,7 +13,7 @@ class theme_customizer
     ]);
 
     $wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'custom_logo_color', [
-      'label'       => __('Logo chính', 'VIETIS'),
+      'label'       => __('Logo chính', 'wedding'),
       'section'     => 'title_tagline',
       'settings'    => 'custom_logo_color',
       'height'      => 117,
@@ -29,7 +29,7 @@ class theme_customizer
     ]);
 
     $wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'custom_header_color', [
-      'label'       => __('Màu header', 'VIETIS'),
+      'label'       => __('Màu header', 'wedding'),
       'section'     => 'title_tagline',
     ]));
 

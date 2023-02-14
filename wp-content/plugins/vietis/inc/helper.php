@@ -4,25 +4,25 @@ if (!function_exists('form_input')) {
   function form_input($name, $args = [])
   {
     if (!$name) return false;
-    $class = vietis_func_check_data('class', $args, '');
-    $type = vietis_func_check_data('type', $args, 'text');
-    $label = vietis_func_check_data('label', $args);
+    $class = wedding_func_check_data('class', $args, '');
+    $type = wedding_func_check_data('type', $args, 'text');
+    $label = wedding_func_check_data('label', $args);
 
-    $required = vietis_func_check_data('required', $args);
-    $tag = vietis_func_check_data('tag', $args);
+    $required = wedding_func_check_data('required', $args);
+    $tag = wedding_func_check_data('tag', $args);
     $class .= $required ? ' required' : '';
     $required_attr = $required ? ' required="required" ' : '';
 
-    $class_input = vietis_func_check_data('class_input', $args, '');
-    $placeholder = vietis_func_check_data('placeholder', $args, '');
+    $class_input = wedding_func_check_data('class_input', $args, '');
+    $placeholder = wedding_func_check_data('placeholder', $args, '');
 
-    $errors = vietis_func_check_data('errors', $args, []);
-    $error = vietis_func_check_data($name, $errors, '');
-    $fill = vietis_func_check_data('fill', $args, true);
+    $errors = wedding_func_check_data('errors', $args, []);
+    $error = wedding_func_check_data($name, $errors, '');
+    $fill = wedding_func_check_data('fill', $args, true);
     $value = '';
     if ($_SERVER['REQUEST_METHOD'] == 'POST') {
       if ($fill !== false) {
-        $value = vietis_func_check_data($name, $_POST, '');
+        $value = wedding_func_check_data($name, $_POST, '');
       }
       if ($error) {
         $class_input .= ' is-invalid ';
@@ -54,23 +54,23 @@ if (!function_exists('form_checkbox')) {
   function form_checkbox($name, $key, $args = [])
   {
     if (!$name) return false;
-    $class = vietis_func_check_data('class', $args, '');
-    $type = vietis_func_check_data('type', $args, 'checkbox');
-    $label = vietis_func_check_data('label', $args);
+    $class = wedding_func_check_data('class', $args, '');
+    $type = wedding_func_check_data('type', $args, 'checkbox');
+    $label = wedding_func_check_data('label', $args);
 
-    $required = vietis_func_check_data('required', $args);
+    $required = wedding_func_check_data('required', $args);
     // $class .= $required ? 'required' : '';
     $required_attr = $required ? ' required="required" ' : '';
 
-    $class_input = vietis_func_check_data('class_input', $args, '');
-    $errors = vietis_func_check_data('errors', $args, []);
-    $error = vietis_func_check_data($name, $errors, '');
-    $fill = vietis_func_check_data('fill', $args, true);
-    $value = vietis_func_check_data('value', $args, '');
+    $class_input = wedding_func_check_data('class_input', $args, '');
+    $errors = wedding_func_check_data('errors', $args, []);
+    $error = wedding_func_check_data($name, $errors, '');
+    $fill = wedding_func_check_data('fill', $args, true);
+    $value = wedding_func_check_data('value', $args, '');
     $data = '';
     if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-      $datas = vietis_func_check_data($name, $_POST, []);
-      if ($datas) $data = vietis_func_check_data($key, $datas, []);
+      $datas = wedding_func_check_data($name, $_POST, []);
+      if ($datas) $data = wedding_func_check_data($key, $datas, []);
     }
     $class_input .= ' form-check-input ';
     $html = '';
@@ -89,17 +89,17 @@ if (!function_exists('form_checkbox_term')) {
   function form_checkbox_term($name, $args = [])
   {
     if (!$name) return false;
-    $class = vietis_func_check_data('class', $args, '');
-    $label = vietis_func_check_data('label', $args);
-    $required = vietis_func_check_data('required', $args);
+    $class = wedding_func_check_data('class', $args, '');
+    $label = wedding_func_check_data('label', $args);
+    $required = wedding_func_check_data('required', $args);
     $required_attr = $required ? ' required="required" ' : '';
 
-    $class_input = vietis_func_check_data('class_input', $args, '');
-    $value = vietis_func_check_data('value', $args, []);
+    $class_input = wedding_func_check_data('class_input', $args, '');
+    $value = wedding_func_check_data('value', $args, []);
 
     $args = [
-      'taxonomy' => vietis_func_check_data('taxonomy', $args, 'category'),
-      'hide_empty' => vietis_func_check_data('hide_empty', $args, false),
+      'taxonomy' => wedding_func_check_data('taxonomy', $args, 'category'),
+      'hide_empty' => wedding_func_check_data('hide_empty', $args, false),
     ];
     $terms = get_terms($args);
     $class_input .= ' check-input ';

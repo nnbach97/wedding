@@ -3,7 +3,7 @@
 <?php
   global $wp_query;
   $object = get_queried_object();
-  $post_type = vietis_func_check_data('post_type', $wp_query->query);
+  $post_type = wedding_func_check_data('post_type', $wp_query->query);
   $action = get_post_type_archive_link($post_type);
   $total = $wp_query->found_posts;
 ?>
@@ -14,10 +14,10 @@
   <!-- END: Banner -->
 
   <?php
-    $params = vietis_get_all_params();
-    $keyword = vietis_func_check_data('keyword', $params, '');
-    $category = vietis_func_check_data('category', $params, []);
-    $tag = vietis_func_check_data('work-tag', $params, []);
+    $params = wedding_get_all_params();
+    $keyword = wedding_func_check_data('keyword', $params, '');
+    $category = wedding_func_check_data('category', $params, []);
+    $tag = wedding_func_check_data('work-tag', $params, []);
   ?>
 
   <!-- Search -->
@@ -32,7 +32,7 @@
               <?= form_checkbox_term('category', [
                 'label' => false,
                 'value' => $category,
-                'taxonomy' => VIETIS_TAXONOMY_WORKS_CATEGORY,
+                'taxonomy' => wedding_TAXONOMY_WORKS_CATEGORY,
               ]); ?>
             </div>
           </div>
@@ -43,7 +43,7 @@
               <?= form_checkbox_term('work-tag', [
                 'label' => false,
                 'value' => $tag,
-                'taxonomy' => VIETIS_TAXONOMY_WORKS_TAG,
+                'taxonomy' => wedding_TAXONOMY_WORKS_TAG,
               ]); ?>
             </div>
           </div>
@@ -52,7 +52,7 @@
           </div>
 
           <div class="multisearch-form-item multisearch-form-item--search">
-            <input type="search" class="multisearch-form-item__input" name="keyword" value="<?= esc_attr($keyword); ?>" placeholder="<?= __("Search news", 'vietis') ?>">
+            <input type="search" class="multisearch-form-item__input" name="keyword" value="<?= esc_attr($keyword); ?>" placeholder="<?= __("Search news", 'wedding') ?>">
             <button type="submit" class="multisearch-form-item__btn"><img src="<?= RESOURCE_HOST . '/img/casestudy/icon-search.svg' ?>" alt=""></button>
           </div>
         </div>
@@ -70,14 +70,14 @@
             <div class="item">
               <div class="img-wrap">
                 <a href="<?= get_the_permalink(); ?>">
-                  <?= vietis_func_get_thumbnail('full'); ?>
-                  <p class="date"><?= __("Date done", "vietis") ?>: <?= get_the_date(DATE_FORMAT_WORKS); ?></p>
+                  <?= wedding_func_get_thumbnail('full'); ?>
+                  <p class="date"><?= __("Date done", "wedding") ?>: <?= get_the_date(DATE_FORMAT_WORKS); ?></p>
                 </a>
               </div>
               <div class="wrap">
                 <h3 class="ttl"><a href="<?= get_the_permalink(); ?>"><?= get_the_title(); ?></a></h3>
                 <ul class="tags">
-                  <?php $category = get_the_terms(get_the_ID(), VIETIS_TAXONOMY_WORKS_CATEGORY); ?>
+                  <?php $category = get_the_terms(get_the_ID(), wedding_TAXONOMY_WORKS_CATEGORY); ?>
                   <?php if ($category): ?>
                     <?php foreach ($category as $item) : ?>
                       <li class="tags-item"><?= $item->name ?></li>
@@ -89,7 +89,7 @@
           <?php endwhile; ?>
         </div>
       <?php else : ?>
-        <?= vietis_func_no_content(); ?>
+        <?= wedding_func_no_content(); ?>
       <?php endif; ?>
     </div>
   </div>
