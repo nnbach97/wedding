@@ -96,14 +96,15 @@
     }
 
     .logo {
-      padding: 34px 0;
+      padding: 25px 0;
 
       .custom-logo-link,
       .custom-logo-color {
         img {
-          width: auto;
+          width: 100%;
+          max-width: 250px;
           display: block;
-          height: 32px;
+          height: auto;
           object-fit: cover;
         }
       }
