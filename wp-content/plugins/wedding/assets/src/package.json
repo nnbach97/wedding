@@ -1,5 +1,5 @@
 {
-  "name": "oic",
+  "name": "wedding",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://gitlab.com/nguyenhuuduc.it.1991/oic.git"
+    "url": "git+https://github.com/nnbach97/wedding.git"
   },
-  "author": "duc.nguyenhuu",
+  "author": "bach.ngongoc",
   "license": "ISC",
   "bugs": {
-    "url": "https://gitlab.com/nguyenhuuduc.it.1991/oic/issues"
+    "url": "https://github.com/nnbach97/wedding.git"
   },
-  "homepage": "https://gitlab.com/nguyenhuuduc.it.1991/oic#readme",
+  "homepage": "https://github.com/nnbach97/wedding.git",
   "devDependencies": {
     "autoprefixer": "^10.4.2",
     "del": "^5.1.0",
