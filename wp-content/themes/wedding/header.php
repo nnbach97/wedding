@@ -34,7 +34,6 @@ require get_template_directory() . '/inc/theme_data.php';
           <div class="line"></div>
         </a>
         <div class="logo">
-          <?php the_custom_logo(); ?>
           <a href="<?= get_home_url(); ?>" class="custom-logo-color" rel="home">
             <img class="custom-logo" src="<?= get_theme_mod('custom_logo_color', RESOURCE_HOST . '/img/logo_color.png'); ?>" alt="">
           </a>

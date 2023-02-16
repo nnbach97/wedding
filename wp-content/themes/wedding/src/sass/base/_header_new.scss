@@ -22,14 +22,6 @@
 
         .logo {
           padding: 0;
-
-          .custom-logo-link {
-            display: block;
-          }
-
-          .custom-logo-color {
-            display: none;
-          }
         }
 
         .nav {
@@ -102,19 +94,11 @@
       .custom-logo-color {
         img {
           width: 100%;
-          max-width: 250px;
+          max-width: 205px;
           display: block;
           height: auto;
           object-fit: cover;
         }
-      }
-
-      .custom-logo-link {
-        display: none;
-      }
-
-      .custom-logo-color {
-        display: block;
       }
     }
 
@@ -257,12 +241,8 @@
         .logo {
           padding: 0;
 
-          .custom-logo-link {
-            display: block;
-          }
-
-          .custom-logo-color {
-            display: none;
+          .custom-logo-color img {
+            max-width: 175px;
           }
         }
 
