@@ -11,6 +11,7 @@ function wedding_shortcode_block_banner_new_img($atts, $content)
   $config = wedding_func_process_config_block($config);
   $title = wedding_func_check_data('title', $atts, 'We’re Getting Married');
   $description = wedding_func_check_data('description', $atts, 'Ngọc Bách & Huyền Trang');
+  $date = wedding_func_check_data('date', $atts, '12 March 2023');
   $img_banner = wedding_func_check_data('img_banner', $atts, [
     'url' => P_wedding_RESOURCE_HOST . '/assets/img/blocks/banner/banner_new.png',
     'alt' => '',
@@ -18,17 +19,6 @@ function wedding_shortcode_block_banner_new_img($atts, $content)
   ],);
   $video_film = wedding_func_check_data('video_film', $atts, P_wedding_RESOURCE_HOST . '/assets/img/blocks/banner/video_time.mp4');
 
-  $btn_inquiry = wedding_func_check_data('btn_inquiry', $atts, [
-    'text' => "<a href='/en/contact/'>Inquiry</a>",
-    'icon' => [
-      'url' => P_wedding_RESOURCE_HOST . '/assets/img/blocks/banner/banner_icon-inquiry.svg',
-      'alt' => '',
-      'id' => '',
-    ],
-  ]);
-
-  $btn_inquiry_title = wedding_func_check_data('text', $btn_inquiry, '');
-  $btn_inquiry_url = wedding_func_check_data('icon', $btn_inquiry, '');
   $is_show_btn_video = wedding_func_check_data('is_show_btn_video', $atts, true);
   $is_show_bg = wedding_func_check_data('is_show_bg', $atts, true);
 
@@ -53,9 +43,11 @@ function wedding_shortcode_block_banner_new_img($atts, $content)
     </div>
     <div class="holder banner-inner">
       <div class="wrap">
-        <h2 class="ttl"><?= $title; ?></h2>
-        <p class="sub"><?= $description; ?></p>
-        <div class="btn-wrapper">
+        <p class="sub"><?= $title; ?></p>
+        <h2 class="ttl"><?= $description; ?></h2>
+        <p class="sub"><?= $date; ?></p>
+
+        <!-- <div class="btn-wrapper">
           <?php if ($is_show_btn_video === true) : ?>
             <div class="video-btn js-film">
               <div class="video-mark">
@@ -69,31 +61,27 @@ function wedding_shortcode_block_banner_new_img($atts, $content)
               </div>
             </div>
           <?php endif; ?>
-          <div class="item">
-            <span class="url">
-              <span class="icon">
-                <img class="img" src="<?= $btn_inquiry_url['url']; ?>" alt="" />
-              </span>
-              <?= $btn_inquiry_title; ?>
-            </span>
-          </div>
+        </div> -->
+      </div>
+
+        <div class="countdown" id="countdown">
+          <ul>
+            <li><span id="days"></span>days</li>
+            <li><span id="hours"></span>Hours</li>
+            <li><span id="minutes"></span>Minutes</li>
+            <li><span id="seconds"></span>Seconds</li>
+          </ul>
         </div>
       </div>
     </div>
-    <div class="holder banner-inner-wrap">
-      <div class="banner-inner__lnk">
-        <a href="/en/about-us/#the-fox" class="lnk"></a>
-      </div>
-    </div>
-    <div class="video-popup">
+    <!-- <div class="video-popup">
       <div class="overlay js-film"></div>
       <div class="wrap">
         <video class="film-video js-film-video" controls="" muted="">
           <source src="<?= $video_film ?>" type="video/mp4" />
         </video>
       </div>
-    </div>
-  </div>
+    </div> -->
 <?php
   return ob_get_clean();
 }

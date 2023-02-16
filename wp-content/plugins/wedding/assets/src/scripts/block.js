@@ -15,6 +15,42 @@
     new WOW().init();
     /*END:Init Animate */
 
+    /* Coming count down */
+    const second = 1000,
+    minute = second * 60,
+    hour = minute * 60,
+    day = hour * 24;
+
+    let today = new Date(),
+      dd = String(today.getDate()).padStart(2, "0"),
+      mm = String(today.getMonth() + 1).padStart(2, "0"),
+      yyyy = today.getFullYear(),
+      nextYear = yyyy + 1,
+      dayMonth = "03/12/",
+      weddingDate = dayMonth + yyyy;
+
+    today = mm + "/" + dd + "/" + yyyy;
+    if (today > weddingDate) {
+    weddingDate = dayMonth + nextYear;
+    }
+    //end
+
+    const countDown = new Date(weddingDate).getTime(),
+          x = setInterval(function() {
+    const now = new Date().getTime(),
+          distance = countDown - now;
+        $("#days").text( Math.floor(distance / (day))),
+        $("#hours").text( Math.floor((distance % (day)) / (hour))),
+        $("#minutes").text( Math.floor((distance % (hour)) / (minute))),
+        $("#seconds").text( Math.floor((distance % (minute)) / second));
+      if (distance < 0) {
+        $("#countdown").hide();
+        clearInterval(x);
+      }
+    }, 0)
+
+    /* END: Coming count down */
+
     /* Auto play video banner bg */
     $(".js-video-bg")[0] && $(".js-video-bg")[0].play();
     /* END: Auto play video banner bg */
