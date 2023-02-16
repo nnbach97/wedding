@@ -76,128 +76,6 @@
         }
       }
     }
-
-    .call-meeting {
-      position: absolute;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      z-index: 1;
-      background-image: url("../../../assets/img/blocks/outsource/outsource-call_bg.png");
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-      border-radius: 8px;
-      transform: translateY(100%);
-
-      .meeting-wrap {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 65px 64px;
-
-        .txt {
-          font-weight: 700;
-          font-size: 30px;
-          color: #fff;
-        }
-
-        .btn {
-          padding: 10px 21px;
-          border: 1px solid #fff;
-          border-radius: 21px;
-          color: #fff;
-          transition: all 0.2s linear;
-          text-align: center;
-          background-color: transparent;
-          cursor: pointer;
-          margin-left: 5px;
-
-          &:hover {
-            opacity: 0.7;
-            transition: all 0.2s linear;
-          }
-        }
-      }
-    }
-  }
-
-  .modal {
-    position: fixed;
-    inset: 0;
-    z-index: 9;
-    visibility: hidden;
-    justify-content: center;
-    align-items: center;
-
-    .modal-overlay {
-      position: fixed;
-      z-index: 8;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: #00000080;
-      visibility: hidden;
-      opacity: 0;
-    }
-
-    .modal-wrapper {
-      position: relative;
-      z-index: 10;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      width: 100%;
-      max-width: 920px;
-      min-width: 375px;
-      background-color: #fff;
-      box-shadow: 0 0 15px #00000059;
-      max-height: 760px;
-      height: calc(90vh - 70px);
-      overflow: hidden;
-
-      .modal-header {
-        position: sticky;
-        background-color: #fff;
-        box-shadow: 0 1px 2px hsla(0, 0%, 0%, 0.06);
-        border-bottom: 1px solid #e8e8e8;
-        padding: 16px;
-        top: 0;
-        left: 0;
-        width: 100%;
-
-        .modal-close {
-          position: absolute;
-          right: 0;
-          top: 50%;
-          transform: translate(-50%, -50%);
-          cursor: pointer;
-          display: block;
-          text-align: center;
-          width: 30px;
-          height: 30px;
-          color: #ccc;
-          border: 0;
-          background-color: transparent;
-
-          &:hover {
-            color: #000000e0;
-          }
-
-          .icon-close-modal {
-            font-size: 30px;
-          }
-        }
-      }
-
-      .modal-body {
-        padding: 16px 16px 0 16px;
-        max-height: 90vh;
-        height: 100%;
-        overflow-y: auto;
-      }
-    }
   }
 }
 
@@ -207,16 +85,6 @@
   height: 100%;
   touch-action: none;
   -ms-touch-action: none;
-
-  .block-outsource .modal {
-    visibility: visible;
-    display: block;
-
-    .modal-overlay {
-      opacity: 1;
-      visibility: visible;
-    }
-  }
 }
 
 @media screen and (max-width: 1199px) {
@@ -226,11 +94,6 @@
         .img {
           padding-left: 16px;
         }
-      }
-
-      .call-meeting {
-        left: 16px;
-        right: 16px;
       }
     }
   }
@@ -263,29 +126,6 @@
           }
         }
       }
-
-      .call-meeting {
-        .meeting-wrap {
-          padding: 40px 50px;
-
-          .txt {
-            font-size: 21px;
-          }
-        }
-      }
-    }
-  }
-}
-
-@media screen and (max-width: 991px) {
-  .block-outsource {
-    .outsource-inner {
-      .call-meeting .meeting-wrap {
-        padding: 40px 30px;
-      }
-    }
-    .modal-meeting {
-      padding: 0 16px;
     }
   }
 }
@@ -335,33 +175,6 @@
               }
             }
           }
-        }
-      }
-
-      .call-meeting {
-        .meeting-wrap {
-          padding: 16px 30px;
-
-          .txt {
-            font-size: 14px;
-          }
-
-          .btn {
-            padding: 5px;
-          }
-        }
-      }
-    }
-
-    .modal {
-      .modal-wrapper {
-        height: calc(80% - 70px);
-        overflow: hidden;
-
-        .modal-body {
-          padding: 16px 16px 0 16px;
-          height: 80%;
-          overflow: auto;
         }
       }
     }

@@ -11,16 +11,6 @@
     });
     /* END: Loading */
 
-    /* ADD script Calendar */
-    if ($(".js-calendar").length) {
-      setTimeout(function () {
-        $(".js-calendar").append(
-          "<script type='text/javascript' src='https://static.hsappstatic.net/MeetingsEmbed/ex/MeetingsEmbedCode.js?ver=1.0' id='meeting-js'></script>"
-        );
-      }, 500);
-    }
-    /* END: ADD script Calendar */
-
     /*Init Animate */
     new WOW().init();
     /*END:Init Animate */
@@ -66,13 +56,6 @@
       }
     });
     /* END: Home - Outsource show/hide QA */
-
-    /* Show modal call meeting */
-    $(".js-modal-toggle-meeting").on("click", function (e) {
-      e.preventDefault();
-      $("body").toggleClass("show-calendar");
-    });
-    /* END: Show modal call meeting */
 
     /* Home: Counter */
 

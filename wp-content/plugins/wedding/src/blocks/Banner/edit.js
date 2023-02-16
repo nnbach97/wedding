@@ -104,7 +104,7 @@ const FragmentBlock = function ({ props }) {
 							className="sub"
 							value={attributes?.description}
 							allowedFormats={ALLOWED_FORMATS}
-							placeholder="To be your long term Tech - Partner"
+							placeholder="Ngọc Bách & Huyền Trang"
 							keepPlaceholderOnFocus={true}
 							onChange={(value) => setAttributes({ description: value })}
 						/>
@@ -174,128 +174,6 @@ const FragmentBlock = function ({ props }) {
 											btn_inquiry: {
 												...attributes?.btn_inquiry,
 												text: value,
-											},
-										})
-									}
-								/>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div className="number">
-					<div className="holder-fluid number-inner">
-						<div className="overlay"></div>
-						<div className="certificate">
-							<ImageUploadSingle
-								value={attributes?.certificate?.certificate_01}
-								className="img"
-								onChange={(value) => {
-									if (!value) return false;
-									setAttributes({
-										certificate: {
-											...attributes?.certificate,
-											certificate_01: value,
-										},
-									});
-								}}
-							/>
-							<ImageUploadSingle
-								value={attributes?.certificate?.certificate_02}
-								className="img img-cmmi"
-								onChange={(value) => {
-									if (!value) return false;
-									setAttributes({
-										certificate: {
-											...attributes?.certificate,
-											certificate_02: value,
-										},
-									});
-								}}
-							/>
-						</div>
-						<div className="counter">
-							{attributes.counters &&
-								attributes.counters.map(function (object, index) {
-									return (
-										<div className="item">
-											<div className="counter-number">
-												<RichText
-													tagName="span"
-													className="js-counter"
-													value={object.number}
-													allowedFormats={ALLOWED_FORMATS}
-													placeholder="Inquiry"
-													keepPlaceholderOnFocus={true}
-													onChange={(value) => {
-														let counters = [...attributes.counters];
-														let counter = { ...object, number: value };
-														counters[index] = counter;
-														setAttributes({ counters: counters });
-													}}
-												/>
-												<span>{index !== 0 && "+"}</span>
-											</div>
-											<RichText
-												tagName="div"
-												className="txt"
-												value={object.text}
-												allowedFormats={ALLOWED_FORMATS}
-												placeholder="Inquiry"
-												keepPlaceholderOnFocus={true}
-												onChange={(value) => {
-													let counters = [...attributes.counters];
-													let counter = { ...object, text: value };
-													counters[index] = counter;
-													setAttributes({ counters: counters });
-												}}
-											/>
-										</div>
-									);
-								})}
-						</div>
-						<div className="contact">
-							<ImageUploadSingle
-								value={attributes?.mail?.icon}
-								className="img"
-								onChange={(value) => {
-									if (!value) return false;
-									setAttributes({
-										mail: {
-											...attributes?.mail,
-											icon: value,
-										},
-									});
-								}}
-							/>
-							<div className="content">
-								<RichText
-									tagName="div"
-									className="ttl"
-									value={attributes.mail?.title}
-									allowedFormats={ALLOWED_FORMATS}
-									placeholder="MAIL US DAILY:"
-									keepPlaceholderOnFocus={true}
-									onChange={(value) =>
-										setAttributes({
-											mail: {
-												...attributes?.mail,
-												title: value,
-											},
-										})
-									}
-								/>
-								<RichText
-									tagName="div"
-									className="email"
-									value={attributes.mail?.mail}
-									allowedFormats={ALLOWED_FORMATS}
-									placeholder="contact@wedding.com.vn"
-									keepPlaceholderOnFocus={true}
-									onChange={(value) =>
-										setAttributes({
-											mail: {
-												...attributes?.mail,
-												mail: value,
 											},
 										})
 									}

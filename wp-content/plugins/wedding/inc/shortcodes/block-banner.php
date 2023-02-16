@@ -11,37 +11,9 @@ function wedding_shortcode_block_banner($atts, $content)
   $config = wedding_func_process_config_block($config);
   $style_block = wedding_func_check_data('style_block', $config, '');
   $title = wedding_func_check_data('title', $atts, 'In Pursuit of Excellent');
-  $subTitle = wedding_func_check_data('subTitle', $atts, 'To be your long term Tech - Partner');
-  $video_background = wedding_func_check_data('video_background', $atts, P_wedding_RESOURCE_HOST . "/assets/img/blocks/banner/video_background.mp4");
-  $video_film = wedding_func_check_data('video_film', $atts, P_wedding_RESOURCE_HOST . '/assets/img/blocks/banner/video_film.mp4');
-  $counters = wedding_func_check_data('counters', $atts, [
-    [
-      'number' => '03',
-      'text' => 'Locations'
-    ],
-    [
-      'number' => '250',
-      'text' => 'Clients'
-    ],
-    [
-      'number' => '300',
-      'text' => 'Projects'
-    ],
-  ]);
-  $certificate = wedding_func_check_data('certificate', $atts, [
-    'certificate_01' => [
-      "url" => P_wedding_RESOURCE_HOST . '/assets/img/blocks/banner/banner_iso.png',
-      'alt' => '',
-      'id' => '',
-    ],
-    'certificate_02' => [
-      "url" => P_wedding_RESOURCE_HOST . '/assets/img/blocks/banner/banner_cmmi.png',
-      'alt' => '',
-      'id' => '',
-    ],
-  ]);
-  $certificate_01 = wedding_func_check_data('certificate_01', $certificate, '');
-  $certificate_02 = wedding_func_check_data('certificate_02', $certificate, '');
+  $subTitle = wedding_func_check_data('subTitle', $atts, 'Ngọc Bách & Huyền Trang');
+  $video_background = wedding_func_check_data('video_background', $atts, P_wedding_RESOURCE_HOST . "/assets/img/blocks/banner/video_time.mp4");
+  $video_film = wedding_func_check_data('video_film', $atts, P_wedding_RESOURCE_HOST . '/assets/img/blocks/banner/video_time.mp4');
   $theme_options = theme_options::get_theme_options();
   $contact_email = wedding_func_check_data('contact_email', $theme_options, '');
   $mail = wedding_func_check_data('mail', $atts, [
@@ -116,18 +88,6 @@ function wedding_shortcode_block_banner($atts, $content)
     <div class="number">
       <div class="holder-fluid number-inner">
         <div class="overlay"></div>
-        <div class="certificate">
-          <img src="<?= $certificate_01['url']; ?>" alt="" class="img wow fadeInDown">
-          <img src="<?= $certificate_02['url']; ?>" alt="" class="img img-cmmi wow fadeInDown" data-wow-delay="0.2s">
-        </div>
-        <div class="counter">
-          <?php foreach ($counters as $key => $value) : ?>
-            <div class="item">
-              <div class="counter-number"><span><?= $value['number'] < 10 ? '0' : '' ?></span><span class="js-counter" data-value="<?= $value['number'] ?>">0</span><span><?= $key !== 0 ? '+' : '' ?></span></div>
-              <div class="txt"><?= $value['text'] ?></div>
-            </div>
-          <?php endforeach ?>
-        </div>
         <div class="contact">
           <img class="img" src="<?= $mail_icon['url']; ?>" alt="">
           <div class="content">

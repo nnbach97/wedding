@@ -11,11 +11,11 @@ registerBlockType("create-block/banner-new-img", {
 	attributes: {
 		title: {
 			type: "string",
-			default: "In Pursuit of Excellence",
+			default: "We’re Getting Married",
 		},
 		description: {
 			type: "string",
-			default: "To be your long term Tech - Partner",
+			default: "Ngọc Bách & Huyền Trang",
 		},
 		btn_watch: {
 			type: "object",
@@ -43,40 +43,6 @@ registerBlockType("create-block/banner-new-img", {
 				},
 			},
 		},
-		certificate: {
-			type: "array",
-			default: {
-				certificate_01: {
-					url:
-						PV_Admin.PV_BASE_URL + "/assets/img/blocks/banner/banner_iso.svg",
-					alt: "",
-					id: "",
-				},
-				certificate_02: {
-					url:
-						PV_Admin.PV_BASE_URL + "/assets/img/blocks/banner/banner_cmmi.png",
-					alt: "",
-					id: "",
-				},
-			},
-		},
-		counters: {
-			type: "array",
-			default: [
-				{
-					number: "03",
-					text: "Locations",
-				},
-				{
-					number: "250",
-					text: "Clients",
-				},
-				{
-					number: "300",
-					text: "Projects",
-				},
-			],
-		},
 		img_banner: {
 			type: "string",
 			default: {
@@ -87,7 +53,7 @@ registerBlockType("create-block/banner-new-img", {
 		video_film: {
 			type: "string",
 			default:
-				PV_Admin.PV_BASE_URL + "/assets/img/blocks/banner/video_film.mp4",
+				PV_Admin.PV_BASE_URL + "/assets/img/blocks/banner/video_time.mp4",
 		},
 		is_show_btn_video: {
 			type: "boolean",

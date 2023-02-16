@@ -89,7 +89,7 @@ const FragmentBlock = function ({ props }) {
               className="ttl"
               value={attributes.title}
               allowedFormats={ALLOWED_FORMATS}
-              placeholder="In Pursuit of Excellence"
+              placeholder="We’re Getting Married"
               keepPlaceholderOnFocus={true}
               onChange={(value) => setAttributes({ title: value })}
             />
@@ -98,7 +98,7 @@ const FragmentBlock = function ({ props }) {
               className="sub"
               value={attributes?.description}
               allowedFormats={ALLOWED_FORMATS}
-              placeholder="To be your long term Tech - Partner"
+              placeholder="Ngọc Bách & Huyền Trang"
               keepPlaceholderOnFocus={true}
               onChange={(value) => setAttributes({ description: value })}
             />
@@ -151,89 +151,6 @@ const FragmentBlock = function ({ props }) {
                   }
                 />
               </div>
-            </div>
-            <div className="certificate">
-              <div class="img-wrap">
-                <ImageUploadSingle
-                  value={attributes?.certificate?.certificate_01}
-                  className="img"
-                  onChange={(value) => {
-                    if (!value) return false;
-                    setAttributes({
-                      certificate: {
-                        ...attributes?.certificate,
-                        certificate_01: value,
-                      },
-                    });
-                  }}
-                />
-              </div>
-              <div class="img-wrap">
-                <ImageUploadSingle
-                  value={attributes?.certificate?.certificate_02}
-                  className="img img-cmmi"
-                  onChange={(value) => {
-                    if (!value) return false;
-                    setAttributes({
-                      certificate: {
-                        ...attributes?.certificate,
-                        certificate_02: value,
-                      },
-                    });
-                  }}
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className="block block-number">
-        <img
-          className="img img-number-bottom"
-          src={`${PV_Admin.PV_BASE_URL}/assets/img/blocks/banner/bg-number.svg`}
-          alt=""
-        />
-        <div class="number-inner">
-          <div class="holder">
-            <div class="counter">
-              {attributes.counters &&
-                attributes.counters.map(function (object, index) {
-                  return (
-                    <div className="item">
-                      <div className="counter-number">
-                        <RichText
-                          tagName="span"
-                          className=""
-                          value={object.number}
-                          allowedFormats={ALLOWED_FORMATS}
-                          placeholder="Num"
-                          keepPlaceholderOnFocus={true}
-                          onChange={(value) => {
-                            let counters = [...attributes.counters];
-                            let counter = { ...object, number: value };
-                            counters[index] = counter;
-                            setAttributes({ counters: counters });
-                          }}
-                        />
-                        <span>{index !== 0 && "+"}</span>
-                      </div>
-                      <RichText
-                        tagName="div"
-                        className="txt"
-                        value={object.text}
-                        allowedFormats={ALLOWED_FORMATS}
-                        placeholder="Title"
-                        keepPlaceholderOnFocus={true}
-                        onChange={(value) => {
-                          let counters = [...attributes.counters];
-                          let counter = { ...object, text: value };
-                          counters[index] = counter;
-                          setAttributes({ counters: counters });
-                        }}
-                      />
-                    </div>
-                  );
-                })}
             </div>
           </div>
         </div>

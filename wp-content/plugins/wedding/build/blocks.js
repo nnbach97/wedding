@@ -3000,7 +3000,7 @@ const Control = function (_ref) {
   }))));
 };
 const FragmentBlock = function (_ref2) {
-  var _attributes$btn_inqui, _attributes$btn_inqui2, _attributes$certifica, _attributes$certifica2;
+  var _attributes$btn_inqui, _attributes$btn_inqui2;
   let {
     props
   } = _ref2;
@@ -3031,7 +3031,7 @@ const FragmentBlock = function (_ref2) {
     className: "ttl",
     value: attributes.title,
     allowedFormats: _config_define__WEBPACK_IMPORTED_MODULE_4__.ALLOWED_FORMATS,
-    placeholder: "In Pursuit of Excellence",
+    placeholder: "We\u2019re Getting Married",
     keepPlaceholderOnFocus: true,
     onChange: value => setAttributes({
       title: value
@@ -3041,7 +3041,7 @@ const FragmentBlock = function (_ref2) {
     className: "sub",
     value: attributes === null || attributes === void 0 ? void 0 : attributes.description,
     allowedFormats: _config_define__WEBPACK_IMPORTED_MODULE_4__.ALLOWED_FORMATS,
-    placeholder: "To be your long term Tech - Partner",
+    placeholder: "Ng\u1ECDc B\xE1ch & Huy\u1EC1n Trang",
     keepPlaceholderOnFocus: true,
     onChange: value => setAttributes({
       description: value
@@ -3091,91 +3091,7 @@ const FragmentBlock = function (_ref2) {
         text: value
       }
     })
-  }))), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-    className: "certificate"
-  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-    class: "img-wrap"
-  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_components_image_upload__WEBPACK_IMPORTED_MODULE_6__.ImageUploadSingle, {
-    value: attributes === null || attributes === void 0 ? void 0 : (_attributes$certifica = attributes.certificate) === null || _attributes$certifica === void 0 ? void 0 : _attributes$certifica.certificate_01,
-    className: "img",
-    onChange: value => {
-      if (!value) return false;
-      setAttributes({
-        certificate: {
-          ...(attributes === null || attributes === void 0 ? void 0 : attributes.certificate),
-          certificate_01: value
-        }
-      });
-    }
-  })), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-    class: "img-wrap"
-  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_components_image_upload__WEBPACK_IMPORTED_MODULE_6__.ImageUploadSingle, {
-    value: attributes === null || attributes === void 0 ? void 0 : (_attributes$certifica2 = attributes.certificate) === null || _attributes$certifica2 === void 0 ? void 0 : _attributes$certifica2.certificate_02,
-    className: "img img-cmmi",
-    onChange: value => {
-      if (!value) return false;
-      setAttributes({
-        certificate: {
-          ...(attributes === null || attributes === void 0 ? void 0 : attributes.certificate),
-          certificate_02: value
-        }
-      });
-    }
-  })))))), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-    className: "block block-number"
-  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("img", {
-    className: "img img-number-bottom",
-    src: `${PV_Admin.PV_BASE_URL}/assets/img/blocks/banner/bg-number.svg`,
-    alt: ""
-  }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-    class: "number-inner"
-  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-    class: "holder"
-  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-    class: "counter"
-  }, attributes.counters && attributes.counters.map(function (object, index) {
-    return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-      className: "item"
-    }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-      className: "counter-number"
-    }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.RichText, {
-      tagName: "span",
-      className: "",
-      value: object.number,
-      allowedFormats: _config_define__WEBPACK_IMPORTED_MODULE_4__.ALLOWED_FORMATS,
-      placeholder: "Num",
-      keepPlaceholderOnFocus: true,
-      onChange: value => {
-        let counters = [...attributes.counters];
-        let counter = {
-          ...object,
-          number: value
-        };
-        counters[index] = counter;
-        setAttributes({
-          counters: counters
-        });
-      }
-    }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("span", null, index !== 0 && "+")), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.RichText, {
-      tagName: "div",
-      className: "txt",
-      value: object.text,
-      allowedFormats: _config_define__WEBPACK_IMPORTED_MODULE_4__.ALLOWED_FORMATS,
-      placeholder: "Title",
-      keepPlaceholderOnFocus: true,
-      onChange: value => {
-        let counters = [...attributes.counters];
-        let counter = {
-          ...object,
-          text: value
-        };
-        counters[index] = counter;
-        setAttributes({
-          counters: counters
-        });
-      }
-    }));
-  }))))));
+  })))))));
 };
 function Edit(props) {
   return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", (0,_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.useBlockProps)(), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(Control, {
@@ -3210,11 +3126,11 @@ __webpack_require__.r(__webpack_exports__);
   attributes: {
     title: {
       type: "string",
-      default: "In Pursuit of Excellence"
+      default: "We’re Getting Married"
     },
     description: {
       type: "string",
-      default: "To be your long term Tech - Partner"
+      default: "Ngọc Bách & Huyền Trang"
     },
     btn_watch: {
       type: "object",
@@ -3238,34 +3154,6 @@ __webpack_require__.r(__webpack_exports__);
         }
       }
     },
-    certificate: {
-      type: "array",
-      default: {
-        certificate_01: {
-          url: PV_Admin.PV_BASE_URL + "/assets/img/blocks/banner/banner_iso.svg",
-          alt: "",
-          id: ""
-        },
-        certificate_02: {
-          url: PV_Admin.PV_BASE_URL + "/assets/img/blocks/banner/banner_cmmi.png",
-          alt: "",
-          id: ""
-        }
-      }
-    },
-    counters: {
-      type: "array",
-      default: [{
-        number: "03",
-        text: "Locations"
-      }, {
-        number: "250",
-        text: "Clients"
-      }, {
-        number: "300",
-        text: "Projects"
-      }]
-    },
     img_banner: {
       type: "string",
       default: {
@@ -3275,7 +3163,7 @@ __webpack_require__.r(__webpack_exports__);
     },
     video_film: {
       type: "string",
-      default: PV_Admin.PV_BASE_URL + "/assets/img/blocks/banner/video_film.mp4"
+      default: PV_Admin.PV_BASE_URL + "/assets/img/blocks/banner/video_time.mp4"
     },
     is_show_btn_video: {
       type: "boolean",
@@ -3399,7 +3287,7 @@ const Control = function (_ref) {
   }))));
 };
 const FragmentBlock = function (_ref2) {
-  var _attributes$btn_inqui, _attributes$btn_inqui2, _attributes$certifica, _attributes$certifica2;
+  var _attributes$btn_inqui, _attributes$btn_inqui2;
   let {
     props
   } = _ref2;
@@ -3432,7 +3320,7 @@ const FragmentBlock = function (_ref2) {
     className: "ttl",
     value: attributes.title,
     allowedFormats: _config_define__WEBPACK_IMPORTED_MODULE_4__.ALLOWED_FORMATS,
-    placeholder: "In Pursuit of Excellence",
+    placeholder: "We\u2019re Getting Married",
     keepPlaceholderOnFocus: true,
     onChange: value => setAttributes({
       title: value
@@ -3442,7 +3330,7 @@ const FragmentBlock = function (_ref2) {
     className: "sub",
     value: attributes === null || attributes === void 0 ? void 0 : attributes.description,
     allowedFormats: _config_define__WEBPACK_IMPORTED_MODULE_4__.ALLOWED_FORMATS,
-    placeholder: "To be your long term Tech - Partner",
+    placeholder: "Ng\u1ECDc B\xE1ch & Huy\u1EC1n Trang",
     keepPlaceholderOnFocus: true,
     onChange: value => setAttributes({
       description: value
@@ -3492,91 +3380,7 @@ const FragmentBlock = function (_ref2) {
         text: value
       }
     })
-  }))), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-    className: "certificate"
-  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-    class: "img-wrap"
-  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_components_image_upload__WEBPACK_IMPORTED_MODULE_6__.ImageUploadSingle, {
-    value: attributes === null || attributes === void 0 ? void 0 : (_attributes$certifica = attributes.certificate) === null || _attributes$certifica === void 0 ? void 0 : _attributes$certifica.certificate_01,
-    className: "img",
-    onChange: value => {
-      if (!value) return false;
-      setAttributes({
-        certificate: {
-          ...(attributes === null || attributes === void 0 ? void 0 : attributes.certificate),
-          certificate_01: value
-        }
-      });
-    }
-  })), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-    class: "img-wrap"
-  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_components_image_upload__WEBPACK_IMPORTED_MODULE_6__.ImageUploadSingle, {
-    value: attributes === null || attributes === void 0 ? void 0 : (_attributes$certifica2 = attributes.certificate) === null || _attributes$certifica2 === void 0 ? void 0 : _attributes$certifica2.certificate_02,
-    className: "img img-cmmi",
-    onChange: value => {
-      if (!value) return false;
-      setAttributes({
-        certificate: {
-          ...(attributes === null || attributes === void 0 ? void 0 : attributes.certificate),
-          certificate_02: value
-        }
-      });
-    }
-  })))))), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-    className: "block block-number"
-  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("img", {
-    className: "img img-number-bottom",
-    src: `${PV_Admin.PV_BASE_URL}/assets/img/blocks/banner/bg-number.svg`,
-    alt: ""
-  }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-    class: "number-inner"
-  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-    class: "holder"
-  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-    class: "counter"
-  }, attributes.counters && attributes.counters.map(function (object, index) {
-    return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-      className: "item"
-    }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-      className: "counter-number"
-    }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.RichText, {
-      tagName: "span",
-      className: "",
-      value: object.number,
-      allowedFormats: _config_define__WEBPACK_IMPORTED_MODULE_4__.ALLOWED_FORMATS,
-      placeholder: "Num",
-      keepPlaceholderOnFocus: true,
-      onChange: value => {
-        let counters = [...attributes.counters];
-        let counter = {
-          ...object,
-          number: value
-        };
-        counters[index] = counter;
-        setAttributes({
-          counters: counters
-        });
-      }
-    }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("span", null, index !== 0 && "+")), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.RichText, {
-      tagName: "div",
-      className: "txt",
-      value: object.text,
-      allowedFormats: _config_define__WEBPACK_IMPORTED_MODULE_4__.ALLOWED_FORMATS,
-      placeholder: "Title",
-      keepPlaceholderOnFocus: true,
-      onChange: value => {
-        let counters = [...attributes.counters];
-        let counter = {
-          ...object,
-          text: value
-        };
-        counters[index] = counter;
-        setAttributes({
-          counters: counters
-        });
-      }
-    }));
-  }))))));
+  })))))));
 };
 function Edit(props) {
   return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", (0,_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.useBlockProps)(), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(Control, {
@@ -3611,11 +3415,11 @@ __webpack_require__.r(__webpack_exports__);
   attributes: {
     title: {
       type: "string",
-      default: "In Pursuit of Excellence"
+      default: "We’re Getting Married"
     },
     description: {
       type: "string",
-      default: "To be your long term Tech - Partner"
+      default: "Ngọc Bách & Huyền Trang"
     },
     btn_watch: {
       type: "object",
@@ -3639,41 +3443,13 @@ __webpack_require__.r(__webpack_exports__);
         }
       }
     },
-    certificate: {
-      type: "array",
-      default: {
-        certificate_01: {
-          url: PV_Admin.PV_BASE_URL + "/assets/img/blocks/banner/banner_iso.svg",
-          alt: "",
-          id: ""
-        },
-        certificate_02: {
-          url: PV_Admin.PV_BASE_URL + "/assets/img/blocks/banner/banner_cmmi.png",
-          alt: "",
-          id: ""
-        }
-      }
-    },
-    counters: {
-      type: "array",
-      default: [{
-        number: "03",
-        text: "Locations"
-      }, {
-        number: "250",
-        text: "Clients"
-      }, {
-        number: "300",
-        text: "Projects"
-      }]
-    },
     video_background: {
       type: "string",
-      default: PV_Admin.PV_BASE_URL + "/assets/img/blocks/banner/video_background_new.mp4"
+      default: PV_Admin.PV_BASE_URL + "/assets/img/blocks/banner/video_time.mp4"
     },
     video_film: {
       type: "string",
-      default: PV_Admin.PV_BASE_URL + "/assets/img/blocks/banner/video_film.mp4"
+      default: PV_Admin.PV_BASE_URL + "/assets/img/blocks/banner/video_time.mp4"
     },
     is_show_btn_video: {
       type: "boolean",
@@ -4181,7 +3957,7 @@ const Control = function (_ref) {
   }))));
 };
 const FragmentBlock = function (_ref2) {
-  var _attributes$btn_watch, _attributes$btn_watch2, _attributes$btn_inqui, _attributes$btn_inqui2, _attributes$certifica, _attributes$certifica2, _attributes$mail, _attributes$mail2, _attributes$mail3;
+  var _attributes$btn_watch, _attributes$btn_watch2, _attributes$btn_inqui, _attributes$btn_inqui2;
   let {
     props
   } = _ref2;
@@ -4228,7 +4004,7 @@ const FragmentBlock = function (_ref2) {
     className: "sub",
     value: attributes === null || attributes === void 0 ? void 0 : attributes.description,
     allowedFormats: _config_define__WEBPACK_IMPORTED_MODULE_4__.ALLOWED_FORMATS,
-    placeholder: "To be your long term Tech - Partner",
+    placeholder: "Ng\u1ECDc B\xE1ch & Huy\u1EC1n Trang",
     keepPlaceholderOnFocus: true,
     onChange: value => setAttributes({
       description: value
@@ -4293,124 +4069,6 @@ const FragmentBlock = function (_ref2) {
         text: value
       }
     })
-  }))))), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-    className: "number"
-  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-    className: "holder-fluid number-inner"
-  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-    className: "overlay"
-  }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-    className: "certificate"
-  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_components_image_upload__WEBPACK_IMPORTED_MODULE_6__.ImageUploadSingle, {
-    value: attributes === null || attributes === void 0 ? void 0 : (_attributes$certifica = attributes.certificate) === null || _attributes$certifica === void 0 ? void 0 : _attributes$certifica.certificate_01,
-    className: "img",
-    onChange: value => {
-      if (!value) return false;
-      setAttributes({
-        certificate: {
-          ...(attributes === null || attributes === void 0 ? void 0 : attributes.certificate),
-          certificate_01: value
-        }
-      });
-    }
-  }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_components_image_upload__WEBPACK_IMPORTED_MODULE_6__.ImageUploadSingle, {
-    value: attributes === null || attributes === void 0 ? void 0 : (_attributes$certifica2 = attributes.certificate) === null || _attributes$certifica2 === void 0 ? void 0 : _attributes$certifica2.certificate_02,
-    className: "img img-cmmi",
-    onChange: value => {
-      if (!value) return false;
-      setAttributes({
-        certificate: {
-          ...(attributes === null || attributes === void 0 ? void 0 : attributes.certificate),
-          certificate_02: value
-        }
-      });
-    }
-  })), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-    className: "counter"
-  }, attributes.counters && attributes.counters.map(function (object, index) {
-    return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-      className: "item"
-    }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-      className: "counter-number"
-    }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.RichText, {
-      tagName: "span",
-      className: "js-counter",
-      value: object.number,
-      allowedFormats: _config_define__WEBPACK_IMPORTED_MODULE_4__.ALLOWED_FORMATS,
-      placeholder: "Inquiry",
-      keepPlaceholderOnFocus: true,
-      onChange: value => {
-        let counters = [...attributes.counters];
-        let counter = {
-          ...object,
-          number: value
-        };
-        counters[index] = counter;
-        setAttributes({
-          counters: counters
-        });
-      }
-    }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("span", null, index !== 0 && "+")), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.RichText, {
-      tagName: "div",
-      className: "txt",
-      value: object.text,
-      allowedFormats: _config_define__WEBPACK_IMPORTED_MODULE_4__.ALLOWED_FORMATS,
-      placeholder: "Inquiry",
-      keepPlaceholderOnFocus: true,
-      onChange: value => {
-        let counters = [...attributes.counters];
-        let counter = {
-          ...object,
-          text: value
-        };
-        counters[index] = counter;
-        setAttributes({
-          counters: counters
-        });
-      }
-    }));
-  })), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-    className: "contact"
-  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_components_image_upload__WEBPACK_IMPORTED_MODULE_6__.ImageUploadSingle, {
-    value: attributes === null || attributes === void 0 ? void 0 : (_attributes$mail = attributes.mail) === null || _attributes$mail === void 0 ? void 0 : _attributes$mail.icon,
-    className: "img",
-    onChange: value => {
-      if (!value) return false;
-      setAttributes({
-        mail: {
-          ...(attributes === null || attributes === void 0 ? void 0 : attributes.mail),
-          icon: value
-        }
-      });
-    }
-  }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-    className: "content"
-  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.RichText, {
-    tagName: "div",
-    className: "ttl",
-    value: (_attributes$mail2 = attributes.mail) === null || _attributes$mail2 === void 0 ? void 0 : _attributes$mail2.title,
-    allowedFormats: _config_define__WEBPACK_IMPORTED_MODULE_4__.ALLOWED_FORMATS,
-    placeholder: "MAIL US DAILY:",
-    keepPlaceholderOnFocus: true,
-    onChange: value => setAttributes({
-      mail: {
-        ...(attributes === null || attributes === void 0 ? void 0 : attributes.mail),
-        title: value
-      }
-    })
-  }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.RichText, {
-    tagName: "div",
-    className: "email",
-    value: (_attributes$mail3 = attributes.mail) === null || _attributes$mail3 === void 0 ? void 0 : _attributes$mail3.mail,
-    allowedFormats: _config_define__WEBPACK_IMPORTED_MODULE_4__.ALLOWED_FORMATS,
-    placeholder: "contact@wedding.com.vn",
-    keepPlaceholderOnFocus: true,
-    onChange: value => setAttributes({
-      mail: {
-        ...(attributes === null || attributes === void 0 ? void 0 : attributes.mail),
-        mail: value
-      }
-    })
   })))))));
 };
 function Edit(props) {
@@ -4450,7 +4108,7 @@ __webpack_require__.r(__webpack_exports__);
     },
     description: {
       type: "string",
-      default: "To be your long term Tech - Partner"
+      default: "Ngọc Bách & Huyền Trang"
     },
     config: {
       type: "object",
@@ -4481,34 +4139,6 @@ __webpack_require__.r(__webpack_exports__);
         }
       }
     },
-    certificate: {
-      type: "array",
-      default: {
-        certificate_01: {
-          url: PV_Admin.PV_BASE_URL + "/assets/img/blocks/banner/banner_iso.png",
-          alt: "",
-          id: ""
-        },
-        certificate_02: {
-          url: PV_Admin.PV_BASE_URL + "/assets/img/blocks/banner/banner_cmmi.png",
-          alt: "",
-          id: ""
-        }
-      }
-    },
-    counters: {
-      type: "array",
-      default: [{
-        number: "03",
-        text: "Locations"
-      }, {
-        number: "250",
-        text: "Clients"
-      }, {
-        number: "300",
-        text: "Projects"
-      }]
-    },
     mail: {
       type: "object",
       default: {
@@ -4523,11 +4153,11 @@ __webpack_require__.r(__webpack_exports__);
     },
     video_background: {
       type: "string",
-      default: PV_Admin.PV_BASE_URL + "/assets/img/blocks/banner/video_background.mp4"
+      default: PV_Admin.PV_BASE_URL + "/assets/img/blocks/banner/video_time.mp4"
     },
     video_film: {
       type: "string",
-      default: PV_Admin.PV_BASE_URL + "/assets/img/blocks/banner/video_film.mp4"
+      default: PV_Admin.PV_BASE_URL + "/assets/img/blocks/banner/video_time.mp4"
     },
     is_show_btn_video: {
       type: "boolean",

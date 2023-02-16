@@ -173,27 +173,6 @@
           }
         }
       }
-
-      .certificate {
-        display: flex;
-        gap: 17px;
-
-        .img-wrap {
-          width: 157px;
-          height: 87px;
-          border-radius: 13px;
-          background: #fff;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          padding: 0 10px;
-          box-shadow: rgb(149 157 165 / 20%) 0px 8px 24px;
-
-          .img {
-            max-height: 44px;
-          }
-        }
-      }
     }
   }
 
@@ -269,19 +248,6 @@
               }
             }
           }
-
-          .certificate {
-            .img-wrap {
-              padding: 2px;
-              width: 110px;
-              height: 50px;
-              border-radius: 6px;
-
-              .img {
-                max-height: 32px;
-              }
-            }
-          }
         }
       }
     }
@@ -327,18 +293,6 @@
           .btn-wrapper {
             margin-bottom: 21px;
           }
-
-          .certificate {
-            .img-wrap {
-              width: 80px;
-              height: 40px;
-
-              img {
-                width: 59px;
-                height: auto;
-              }
-            }
-          }
         }
       }
     }
@@ -346,102 +300,6 @@
   /* END: Responsive */
 }
 /* END: Banner */
-
-.block-number {
-  position: relative;
-  margin-top: -15vh;
-
-  .img {
-    width: 100%;
-    object-fit: cover;
-    display: block;
-  }
-
-  .number-inner {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 100%;
-
-    .counter {
-      display: flex;
-      justify-content: space-around;
-      flex-wrap: nowrap;
-
-      .item {
-        .counter-number {
-          font-weight: 700;
-          font-size: 110px;
-          -webkit-text-stroke: 1px #fff;
-          color: transparent;
-          text-align: center;
-        }
-
-        .txt {
-          font-weight: 700;
-          font-size: 25px;
-          color: #fff;
-          text-align: center;
-        }
-      }
-    }
-  }
-
-  @media screen and (max-width: 1023px) {
-    & {
-      margin-top: -10vh;
-
-      .number-inner {
-        .counter {
-          .item {
-            .counter-number {
-              font-size: 80px;
-              -webkit-text-stroke: 0.7px #fff;
-            }
-
-            .txt {
-              font-size: 20px;
-            }
-          }
-        }
-      }
-    }
-  }
-
-  @media screen and (max-width: 767px) {
-    & {
-      margin-top: -7vh;
-
-      .number-inner {
-        .counter {
-          .item {
-            .counter-number {
-              font-size: 56px;
-              -webkit-text-stroke: 0.5px #fff;
-            }
-
-            .txt {
-              font-size: 14px;
-            }
-          }
-        }
-      }
-    }
-  }
-
-  @media screen and (max-width: 475px) {
-    .number-inner {
-      .counter {
-        .item {
-          .counter-number {
-            font-size: 30px;
-          }
-        }
-      }
-    }
-  }
-}
 
 .show-film {
   overflow: hidden;
@@ -461,10 +319,6 @@
 
 /* Customer style admin */
 .block-editor-block-list__block {
-  .block-banner-new .banner-inner .wrap .certificate .img-wrap .img {
-    cursor: pointer;
-  }
-
   .wrap .btn-wrapper .item {
     display: flex;
     justify-content: center;

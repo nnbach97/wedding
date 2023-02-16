@@ -15,7 +15,7 @@ registerBlockType("create-block/banner", {
 		},
 		description: {
 			type: "string",
-			default: "To be your long term Tech - Partner",
+			default: "Ngọc Bách & Huyền Trang",
 		},
 		config: {
 			type: "object",
@@ -51,40 +51,6 @@ registerBlockType("create-block/banner", {
 				},
 			},
 		},
-		certificate: {
-			type: "array",
-			default: {
-				certificate_01: {
-					url:
-						PV_Admin.PV_BASE_URL + "/assets/img/blocks/banner/banner_iso.png",
-					alt: "",
-					id: "",
-				},
-				certificate_02: {
-					url:
-						PV_Admin.PV_BASE_URL + "/assets/img/blocks/banner/banner_cmmi.png",
-					alt: "",
-					id: "",
-				},
-			},
-		},
-		counters: {
-			type: "array",
-			default: [
-				{
-					number: "03",
-					text: "Locations",
-				},
-				{
-					number: "250",
-					text: "Clients",
-				},
-				{
-					number: "300",
-					text: "Projects",
-				},
-			],
-		},
 		mail: {
 			type: "object",
 			default: {
@@ -105,12 +71,12 @@ registerBlockType("create-block/banner", {
 		video_background: {
 			type: "string",
 			default:
-				PV_Admin.PV_BASE_URL + "/assets/img/blocks/banner/video_background.mp4",
+				PV_Admin.PV_BASE_URL + "/assets/img/blocks/banner/video_time.mp4",
 		},
 		video_film: {
 			type: "string",
 			default:
-				PV_Admin.PV_BASE_URL + "/assets/img/blocks/banner/video_film.mp4",
+				PV_Admin.PV_BASE_URL + "/assets/img/blocks/banner/video_time.mp4",
 		},
 		is_show_btn_video: {
 			type: "boolean",
