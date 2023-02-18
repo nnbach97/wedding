@@ -6,7 +6,7 @@ $registerBlock[] = [
 ];
 
 function wedding_shortcode_block_services($atts, $content) {
-  $title = wedding_func_check_data('title', $atts, '<strong>wedding Services</strong>');
+  $title = wedding_func_check_data('title', $atts, '<strong>Cô dâu & Chú rể</strong>');
   $title_shadow = wedding_func_check_data('title_shadow', $atts, 'Services');
   $config = wedding_func_check_data('config', $atts, []);
   $config = wedding_func_process_config_block($config);
@@ -20,7 +20,7 @@ function wedding_shortcode_block_services($atts, $content) {
   $query = new class_wedding_plugin_get_data_post();
   $response = $query->get_post([
     'post_type' => wedding_func_check_data('post_type', $conditon_post, 'post'),
-    'posts_per_page' => wedding_func_check_data('posts_per_page', $conditon_post, '4'),
+    'posts_per_page' => wedding_func_check_data('posts_per_page', $conditon_post, '2'),
     'orderby' => wedding_func_check_data('orderby', $conditon_post, 'date'),
     'order' => wedding_func_check_data('order', $conditon_post, 'DESC')
   ]);

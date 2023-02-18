@@ -39,7 +39,6 @@
       x = setInterval(function () {
         const now = new Date().getTime(),
           distance = countDown - now;
-        console.log(typeof distance);
         $("#days").text(Math.floor(distance / day)),
           $("#hours").text(Math.floor((distance % day) / hour)),
           $("#minutes").text(Math.floor((distance % hour) / minute)),
