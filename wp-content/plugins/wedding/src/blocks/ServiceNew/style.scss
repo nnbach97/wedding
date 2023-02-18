@@ -212,9 +212,18 @@
   @media screen and (max-width: 768px) {
     & {
       .wrapper-item {
-        .lnk .item-media .image {
-          padding: 30px;
-          height: 295px;
+        .lnk {
+          width: calc(50% - 25px);
+          .item-media {
+            .image {
+              padding: 30px;
+              height: 295px;
+            }
+
+            .heading {
+              margin: 55px auto 0;
+            }
+          }
         }
 
         .desc {
@@ -235,6 +244,10 @@
           .item-media {
             .txt {
               font-size: 14px;
+            }
+
+            .image {
+              height: 400px;
             }
           }
 

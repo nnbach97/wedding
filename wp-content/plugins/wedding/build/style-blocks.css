@@ -195,9 +195,15 @@
   }
 }
 @media screen and (max-width: 768px) {
+  .block-services-new .wrapper-item .lnk {
+    width: calc(50% - 25px);
+  }
   .block-services-new .wrapper-item .lnk .item-media .image {
     padding: 30px;
     height: 295px;
+  }
+  .block-services-new .wrapper-item .lnk .item-media .heading {
+    margin: 55px auto 0;
   }
   .block-services-new .wrapper-item .desc {
     height: 50px;
@@ -212,6 +218,9 @@
   }
   .block-services-new .wrapper-item .lnk .item-media .txt {
     font-size: 14px;
+  }
+  .block-services-new .wrapper-item .lnk .item-media .image {
+    height: 400px;
   }
   .block-services-new .wrapper-item .lnk:active .link, .block-services-new .wrapper-item .lnk:focus .link {
     opacity: 1;
