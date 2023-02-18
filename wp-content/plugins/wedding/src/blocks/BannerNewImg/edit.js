@@ -85,8 +85,8 @@ const FragmentBlock = function ({ props }) {
         <div className="holder banner-inner">
           <div className="wrap">
             <RichText
-              tagName="h2"
-              className="ttl"
+              tagName="p"
+              className="sub"
               value={attributes.title}
               allowedFormats={ALLOWED_FORMATS}
               placeholder="We’re Getting Married"
@@ -94,15 +94,33 @@ const FragmentBlock = function ({ props }) {
               onChange={(value) => setAttributes({ title: value })}
             />
             <RichText
-              tagName="p"
-              className="sub"
+              tagName="h2"
+              className="ttl"
               value={attributes?.description}
               allowedFormats={ALLOWED_FORMATS}
               placeholder="Ngọc Bách & Huyền Trang"
               keepPlaceholderOnFocus={true}
               onChange={(value) => setAttributes({ description: value })}
             />
-            <div className="btn-wrapper">
+            <RichText
+              tagName="p"
+              className="sub"
+              value={attributes?.date}
+              allowedFormats={ALLOWED_FORMATS}
+              placeholder="12 March 2023"
+              keepPlaceholderOnFocus={true}
+              onChange={(value) => setAttributes({ date: value })}
+            />
+            <RichText
+              tagName="p"
+              className="sub"
+              value={attributes?.countdown}
+              allowedFormats={ALLOWED_FORMATS}
+              placeholder="03/12"
+              keepPlaceholderOnFocus={true}
+              onChange={(value) => setAttributes({ countdown: value })}
+            />
+            {/* <div className="btn-wrapper">
               {attributes.is_show_btn_video ? (
                 <div className="video-btn">
                   <div className="video-mark">
@@ -151,7 +169,7 @@ const FragmentBlock = function ({ props }) {
                   }
                 />
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

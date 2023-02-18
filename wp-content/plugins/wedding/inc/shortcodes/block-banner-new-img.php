@@ -12,6 +12,7 @@ function wedding_shortcode_block_banner_new_img($atts, $content)
   $title = wedding_func_check_data('title', $atts, 'We’re Getting Married');
   $description = wedding_func_check_data('description', $atts, 'Ngọc Bách & Huyền Trang');
   $date = wedding_func_check_data('date', $atts, '12 March 2023');
+  $countdown = wedding_func_check_data('countdown', $atts, '03/12');
   $img_banner = wedding_func_check_data('img_banner', $atts, [
     'url' => P_wedding_RESOURCE_HOST . '/assets/img/blocks/banner/banner_new.png',
     'alt' => '',
@@ -64,9 +65,9 @@ function wedding_shortcode_block_banner_new_img($atts, $content)
         </div> -->
       </div>
 
-        <div class="countdown" id="countdown">
+        <div class="countdown" id="countdown" data-countdown="<?= $countdown; ?>">
           <ul>
-            <li><span id="days"></span>days</li>
+            <li><span id="days"></span>Days</li>
             <li><span id="hours"></span>Hours</li>
             <li><span id="minutes"></span>Minutes</li>
             <li><span id="seconds"></span>Seconds</li>

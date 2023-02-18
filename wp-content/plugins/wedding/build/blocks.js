@@ -3000,7 +3000,6 @@ const Control = function (_ref) {
   }))));
 };
 const FragmentBlock = function (_ref2) {
-  var _attributes$btn_inqui, _attributes$btn_inqui2;
   let {
     props
   } = _ref2;
@@ -3027,8 +3026,8 @@ const FragmentBlock = function (_ref2) {
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "wrap"
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.RichText, {
-    tagName: "h2",
-    className: "ttl",
+    tagName: "p",
+    className: "sub",
     value: attributes.title,
     allowedFormats: _config_define__WEBPACK_IMPORTED_MODULE_4__.ALLOWED_FORMATS,
     placeholder: "We\u2019re Getting Married",
@@ -3037,8 +3036,8 @@ const FragmentBlock = function (_ref2) {
       title: value
     })
   }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.RichText, {
-    tagName: "p",
-    className: "sub",
+    tagName: "h2",
+    className: "ttl",
     value: attributes === null || attributes === void 0 ? void 0 : attributes.description,
     allowedFormats: _config_define__WEBPACK_IMPORTED_MODULE_4__.ALLOWED_FORMATS,
     placeholder: "Ng\u1ECDc B\xE1ch & Huy\u1EC1n Trang",
@@ -3046,52 +3045,27 @@ const FragmentBlock = function (_ref2) {
     onChange: value => setAttributes({
       description: value
     })
-  }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-    className: "btn-wrapper"
-  }, attributes.is_show_btn_video ? (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-    className: "video-btn"
-  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-    className: "video-mark"
-  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-    className: "wave-pulse wave-pulse-1"
-  }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-    className: "wave-pulse wave-pulse-2"
-  })), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-    className: "video-click"
-  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-    className: "video-play"
-  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("span", {
-    className: "video-play-icon"
-  })))) : "", (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-    className: "item"
-  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("span", {
-    className: "icon"
-  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_components_image_upload__WEBPACK_IMPORTED_MODULE_6__.ImageUploadSingle, {
-    value: attributes === null || attributes === void 0 ? void 0 : (_attributes$btn_inqui = attributes.btn_inquiry) === null || _attributes$btn_inqui === void 0 ? void 0 : _attributes$btn_inqui.icon,
-    className: "img",
-    onChange: value => {
-      if (!value) return false;
-      setAttributes({
-        btn_inquiry: {
-          ...(attributes === null || attributes === void 0 ? void 0 : attributes.btn_inquiry),
-          icon: value
-        }
-      });
-    }
-  })), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.RichText, {
-    tagName: "span",
-    className: "url",
-    value: (_attributes$btn_inqui2 = attributes.btn_inquiry) === null || _attributes$btn_inqui2 === void 0 ? void 0 : _attributes$btn_inqui2.text,
+  }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.RichText, {
+    tagName: "p",
+    className: "sub",
+    value: attributes === null || attributes === void 0 ? void 0 : attributes.date,
     allowedFormats: _config_define__WEBPACK_IMPORTED_MODULE_4__.ALLOWED_FORMATS,
-    placeholder: "Inquiry",
+    placeholder: "12 March 2023",
     keepPlaceholderOnFocus: true,
     onChange: value => setAttributes({
-      btn_inquiry: {
-        ...(attributes === null || attributes === void 0 ? void 0 : attributes.btn_inquiry),
-        text: value
-      }
+      date: value
     })
-  })))))));
+  }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.RichText, {
+    tagName: "p",
+    className: "sub",
+    value: attributes === null || attributes === void 0 ? void 0 : attributes.countdown,
+    allowedFormats: _config_define__WEBPACK_IMPORTED_MODULE_4__.ALLOWED_FORMATS,
+    placeholder: "03/12",
+    keepPlaceholderOnFocus: true,
+    onChange: value => setAttributes({
+      countdown: value
+    })
+  })))));
 };
 function Edit(props) {
   return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", (0,_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.useBlockProps)(), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(Control, {
@@ -3132,28 +3106,40 @@ __webpack_require__.r(__webpack_exports__);
       type: "string",
       default: "Ngọc Bách & Huyền Trang"
     },
-    btn_watch: {
-      type: "object",
-      default: {
-        text: '<a href="#">Watch vision film</a>',
-        icon: {
-          url: PV_Admin.PV_BASE_URL + "/assets/img/blocks/banner/banner_icon-film.svg",
-          alt: "",
-          id: ""
-        }
-      }
+    date: {
+      type: "string",
+      default: "12 March 2023"
     },
-    btn_inquiry: {
-      type: "object",
-      default: {
-        text: '<a href="/en/contact/">Inquiry</a>',
-        icon: {
-          url: PV_Admin.PV_BASE_URL + "/assets/img/blocks/banner/banner_icon-inquiry.svg",
-          alt: "",
-          id: ""
-        }
-      }
+    countdown: {
+      type: "string",
+      default: "03/12"
     },
+    // btn_watch: {
+    // 	type: "object",
+    // 	default: {
+    // 		text: '<a href="#">Watch vision film</a>',
+    // 		icon: {
+    // 			url:
+    // 				PV_Admin.PV_BASE_URL +
+    // 				"/assets/img/blocks/banner/banner_icon-film.svg",
+    // 			alt: "",
+    // 			id: "",
+    // 		},
+    // 	},
+    // },
+    // btn_inquiry: {
+    // 	type: "object",
+    // 	default: {
+    // 		text: '<a href="/en/contact/">Inquiry</a>',
+    // 		icon: {
+    // 			url:
+    // 				PV_Admin.PV_BASE_URL +
+    // 				"/assets/img/blocks/banner/banner_icon-inquiry.svg",
+    // 			alt: "",
+    // 			id: "",
+    // 		},
+    // 	},
+    // },
     img_banner: {
       type: "string",
       default: {
@@ -3161,14 +3147,15 @@ __webpack_require__.r(__webpack_exports__);
         alt: ""
       }
     },
-    video_film: {
-      type: "string",
-      default: PV_Admin.PV_BASE_URL + "/assets/img/blocks/banner/video_time.mp4"
-    },
-    is_show_btn_video: {
-      type: "boolean",
-      default: true
-    },
+    // video_film: {
+    // 	type: "string",
+    // 	default:
+    // 		PV_Admin.PV_BASE_URL + "/assets/img/blocks/banner/video_time.mp4",
+    // },
+    // is_show_btn_video: {
+    // 	type: "boolean",
+    // 	default: true,
+    // },
     is_show_bg: {
       type: "boolean",
       default: true
