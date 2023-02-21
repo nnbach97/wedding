@@ -1,6 +1,6 @@
 .block-services-new {
-  padding: 143px 0 35px;
-  background: #f6f6ff;
+  padding: 35px 0;
+  background: #fff;
   overflow-x: hidden;
 
   .block-content {
@@ -196,6 +196,46 @@
     .admin-buttom-add-item {
       width: calc((100% / 2) - 70px);
       min-height: 504px;
+    }
+  }
+
+  .message {
+    background: #ffe2e5;
+    margin: 25px 0 0;
+
+    &-content {
+      padding: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      &-lnk {
+        display: inline-block;
+        background: #ff4061;
+        padding: 15px 20px;
+        color: #fff;
+        max-width: 220px;
+        width: 100%;
+        text-align: center;
+        box-shadow: 0 0 0 2px transparent inset, 0 0 0 2px transparent;
+        border-radius: 8px;
+        border: 2px solid transparent;
+
+        &:hover {
+          transition: all 0.8s;
+          box-shadow: 0 0 0 2px #fff inset, 0 0 0 2px #ff4061;
+        }
+
+        .content-button {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          svg {
+            margin-right: 5px;
+          }
+        }
+      }
     }
   }
 

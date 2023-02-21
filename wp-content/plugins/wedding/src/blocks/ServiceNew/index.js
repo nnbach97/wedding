@@ -14,6 +14,10 @@ registerBlockType("create-block/services-new", {
       type: "string",
       default: "<strong>Cô dâu & Chú rể</strong>",
     },
+    txt: {
+      type: "string",
+      default: "Tình yêu là điều kiện trong đó hạnh phúc của người khác là điều cần thiết cho chính bạn.",
+    },
 
     items: {
       type: "array",

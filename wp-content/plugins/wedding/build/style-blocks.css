@@ -11,8 +11,8 @@
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[3].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[3].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[3].use[3]!./src/blocks/ServiceNew/style.scss ***!
   \*********************************************************************************************************************************************************************************************************************************************************/
 .block-services-new {
-  padding: 143px 0 35px;
-  background: #f6f6ff;
+  padding: 35px 0;
+  background: #fff;
   overflow-x: hidden;
 }
 .block-services-new .block-content {
@@ -188,6 +188,40 @@
 .block-services-new .wrapper-item .admin-buttom-add-item {
   width: calc(50% - 70px);
   min-height: 504px;
+}
+.block-services-new .message {
+  background: #ffe2e5;
+  margin: 25px 0 0;
+}
+.block-services-new .message-content {
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.block-services-new .message-content-lnk {
+  display: inline-block;
+  background: #ff4061;
+  padding: 15px 20px;
+  color: #fff;
+  max-width: 220px;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 0 0 2px transparent inset, 0 0 0 2px transparent;
+  border-radius: 8px;
+  border: 2px solid transparent;
+}
+.block-services-new .message-content-lnk:hover {
+  transition: all 0.8s;
+  box-shadow: 0 0 0 2px #fff inset, 0 0 0 2px #ff4061;
+}
+.block-services-new .message-content-lnk .content-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.block-services-new .message-content-lnk .content-button svg {
+  margin-right: 5px;
 }
 @media screen and (max-width: 992px) {
   .block-services-new .wrapper-item .lnk .item-media .image {

@@ -523,6 +523,16 @@ const FragmentBlock = function (_ref) {
     onChange: value => setAttributes({
       title: value
     })
+  }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.RichText, {
+    tagName: "p",
+    className: "txt",
+    value: attributes === null || attributes === void 0 ? void 0 : attributes.txt,
+    allowedFormats: _config_define__WEBPACK_IMPORTED_MODULE_4__.ALLOWED_FORMATS,
+    placeholder: "Text",
+    keepPlaceholderOnFocus: true,
+    onChange: value => setAttributes({
+      txt: value
+    })
   })), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     class: "block-content"
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.InnerBlocks, {
@@ -579,6 +589,10 @@ __webpack_require__.r(__webpack_exports__);
     title: {
       type: "string",
       default: "<strong>Cô dâu & Chú rể</strong>"
+    },
+    txt: {
+      type: "string",
+      default: "Tình yêu là điều kiện trong đó hạnh phúc của người khác là điều cần thiết cho chính bạn."
     },
     items: {
       type: "array",
