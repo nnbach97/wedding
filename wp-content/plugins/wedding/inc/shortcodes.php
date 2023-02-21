@@ -5,7 +5,7 @@ $registerBlock = [];
 wedding_include('inc/shortcodes/block-banner.php');
 wedding_include('inc/shortcodes/block-feature.php');
 wedding_include('inc/shortcodes/block-outsource.php');
-wedding_include('inc/shortcodes/block-services.php');
+// wedding_include('inc/shortcodes/block-services.php');
 wedding_include('inc/shortcodes/block-about.php');
 wedding_include('inc/shortcodes/block-clients.php');
 wedding_include('inc/shortcodes/block-feedback.php');
@@ -35,6 +35,7 @@ wedding_include('inc/shortcodes/block-services-new.php');
 wedding_include('inc/shortcodes/block-banner-service-page.php');
 wedding_include('inc/shortcodes/block-banner-new-img.php');
 wedding_include('inc/shortcodes/block-thefox.php');
+wedding_include('inc/shortcodes/block-header-title.php');
 wedding_include('inc/shortcodes/block-process.php');
 wedding_include('inc/shortcodes/block-feature-service-page.php');
 

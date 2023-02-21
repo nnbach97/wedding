@@ -1,6 +1,5 @@
 import "./style.scss";
 // import {} from "./blocks/Banner";
-// import {} from "./blocks/Services";
 // import {} from "./blocks/Feature";
 // import {} from "./blocks/Outsource";
 // import {} from "./blocks/About";
@@ -24,12 +23,9 @@ import "./style.scss";
 // import {} from "./blocks/DevelopingMobile";
 // import {} from "./blocks/DevelopmentOurProcess";
 // import {} from "./blocks/DevelopmentBenefit";
-// import {} from "./blocks/ServiceHead";
 // import {} from "./blocks/BlockChain";
 // import {} from "./blocks/BannerNew";
 // import {} from "./blocks/Leadership";
-// import {} from "./blocks/ServiceNew";
-// import {} from "./blocks/BannerNewImg";
 // import {} from "./blocks/BannerServicePage";
 // import {} from "./blocks/TheFox";
 // import {} from "./blocks/Process";
@@ -37,3 +33,5 @@ import "./style.scss";
 
 import {} from "./blocks/ServiceNew";
 import {} from "./blocks/BannerNewImg";
+import {} from "./blocks/HeaderTitle";
+import {} from "./blocks/ServiceHead";

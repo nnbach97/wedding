@@ -790,5 +790,141 @@
     transform: translateX(100vh);
   }
 }
+/*!**********************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[3].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[3].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[3].use[3]!./src/blocks/HeaderTitle/style.scss ***!
+  \**********************************************************************************************************************************************************************************************************************************************************/
+.block-header-title {
+  margin-bottom: 65px;
+}
+/*!**********************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[3].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[3].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[3].use[3]!./src/blocks/ServiceHead/style.scss ***!
+  \**********************************************************************************************************************************************************************************************************************************************************/
+.block-service-page {
+  /* Head */
+  /* END: Head */
+}
+.block-service-page .head {
+  padding: 35px 0 60px;
+}
+.block-service-page .head.head--reverse .holder .content {
+  margin: 0 0 0 385px;
+  position: relative;
+}
+.block-service-page .head.head--reverse .holder .img {
+  left: 0px;
+}
+.block-service-page .head .wrap {
+  position: relative;
+}
+.block-service-page .head .wrap .img {
+  position: absolute;
+  width: 420px;
+  height: 420px;
+  right: 0;
+  z-index: 0;
+  top: -69px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+}
+.block-service-page .head .wrap .content {
+  padding: 56px 13px 34px 51px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  max-width: 805px;
+  margin: 0 385px 0 0;
+  z-index: 2;
+  color: #091932;
+  position: relative;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
+.block-service-page .head .wrap .content .title {
+  margin-bottom: 30px;
+}
+.block-service-page .head .wrap .content .title .ttl {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 47px;
+  color: #ff4061;
+  padding-top: 0;
+  word-break: break-word;
+}
+.block-service-page .head .wrap .content .txt {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  color: #767878;
+  padding-bottom: 20px;
+  word-break: break-word;
+}
+@media screen and (max-width: 1024px) {
+  .block-service-page .head.head--reverse .holder .content {
+    margin: 0 0 0 285px;
+  }
+  .block-service-page .head .wrap .img {
+    width: 320px;
+    height: 320px;
+  }
+  .block-service-page .head .wrap .content {
+    margin: 0 285px 0 0;
+  }
+}
+@media screen and (max-width: 992px) {
+  .block-service-page .head {
+    padding: 35px 0;
+  }
+}
+@media screen and (max-width: 767px) {
+  .block-service-page .head {
+    padding: 0 0 30px;
+  }
+  .block-service-page .head .holder .wrap .content {
+    padding: 15px 33vw 15px 13px;
+    width: 100%;
+    margin: 0;
+    min-height: auto;
+  }
+  .block-service-page .head .holder .wrap .content .title .ttl {
+    font-size: 30px;
+  }
+  .block-service-page .head .holder .wrap img {
+    width: 30vw;
+    height: 30vw;
+    top: 10px;
+    right: 10px;
+    z-index: 2;
+    border-radius: 8px;
+  }
+  .block-service-page .head.head--reverse .holder .content {
+    margin: 0;
+    padding: 15px 13px 15px 33vw;
+  }
+  .block-service-page .head.head--reverse .holder img {
+    right: inherit;
+    left: 10px !important;
+  }
+}
+@media screen and (max-width: 428px) {
+  .block-service-page .head .holder .wrap .content {
+    padding: 15px 35vw 15px 13px;
+  }
+  .block-service-page .head .holder .wrap .content .title .ttl {
+    font-size: 19px;
+  }
+  .block-service-page .head.head--reverse .holder .content {
+    padding: 15px 13px 15px 35vw;
+  }
+}
+@media screen and (max-width: 992px) {
+  .block-service-page {
+    margin-bottom: 50px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .block-service-page {
+    margin-bottom: 20px;
+  }
+}
 
 /*# sourceMappingURL=style-blocks.css.map*/

@@ -30,9 +30,7 @@ const Control = function ({ props }) {
       <PanelBody title="Id Block">
         <InputControl
           value={attributes?.id}
-          onChange={(value) =>
-            setAttributes({id: value})
-          }
+          onChange={(value) => setAttributes({ id: value })}
           placeholder="Nhập id block"
         />
       </PanelBody>
@@ -88,6 +86,15 @@ const FragmentBlock = function ({ props }) {
                   placeholder="Description .."
                   keepPlaceholderOnFocus={true}
                   onChange={(value) => setAttributes({ txt: value })}
+                />
+                <RichText
+                  tagName="p"
+                  className="date"
+                  value={txt}
+                  allowedFormats={ALLOWED_FORMATS}
+                  placeholder="Description .."
+                  keepPlaceholderOnFocus={true}
+                  onChange={(value) => setAttributes({ date: value })}
                 />
               </div>
 

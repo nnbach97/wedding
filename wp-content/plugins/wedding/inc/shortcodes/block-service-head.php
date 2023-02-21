@@ -19,6 +19,7 @@ function wedding_shortcode_block_service_head($atts, $content)
   $config = wedding_func_process_config_block($config);
   $style_block = wedding_func_check_data('style_block', $config, '');
   $id_raw = wedding_func_check_data('id', $atts, '');
+  $date = wedding_func_check_data('date', $atts, '24/03/2019');
 
   $id = '';
   if($id_raw !== ''){
@@ -33,6 +34,7 @@ function wedding_shortcode_block_service_head($atts, $content)
           <div class="content" style="<?= esc_attr($style_block); ?>">
             <div class="title">
               <h3 class="ttl"><?= $title; ?></h3>
+              <p class="date">--- <?= $date; ?> ---</p>
             </div>
             <p class="txt"><?= $text; ?></p>
           </div>
