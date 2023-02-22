@@ -29,9 +29,10 @@ import "./style.scss";
 // import {} from "./blocks/BannerServicePage";
 // import {} from "./blocks/TheFox";
 // import {} from "./blocks/Process";
-// import {} from "./blocks/FeatureServicePage";
 
 import {} from "./blocks/ServiceNew";
 import {} from "./blocks/BannerNewImg";
 import {} from "./blocks/HeaderTitle";
 import {} from "./blocks/ServiceHead";
+import {} from "./blocks/FeatureServicePage";
+

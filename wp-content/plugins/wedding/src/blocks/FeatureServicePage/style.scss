@@ -1,36 +1,26 @@
 /* Feature Service Page */
 .block-feature-service-page {
-  padding: 60px 0;
+  padding: 0 0 60px;
 
   .wrap {
-    .ttl {
-      font-size: 20px;
-      font-weight: 400;
-      margin-bottom: 50px;
-      line-height: 23px;
-
-      strong {
-        font-weight: 700;
-      }
-    }
-
     .content-features {
       display: flex;
       justify-content: space-between;
       color: #454545;
 
       .item {
-        width: 32%;
+        width: 25%;
         margin-right: 2%;
         display: flex;
         flex-direction: column;
+        box-shadow: 0 0 10px rgb(0 0 0 / 15%);
+        text-align: center;
 
         &:last-child {
           margin-right: 0;
         }
 
         .img-wrap {
-          margin-bottom: 17px;
           text-align: center;
           flex: 1;
 
@@ -39,26 +29,70 @@
           }
         }
 
-        .txt {
-          font-size: 16px;
-          line-height: 20px;
-          text-align: center;
-          height: 60px;
-          display: -webkit-box;
-          -webkit-line-clamp: 3;
-          -webkit-box-orient: vertical;
-          overflow: hidden;
-          text-overflow: ellipsis;
+        .desc {
+          padding: 15px 8px 20px;
+          .txt {
+            font-size: 16px;
+            line-height: 20px;
+            text-align: center;
+            margin-bottom: 15px;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
 
-          strong {
-            font-weight: 700;
+            strong {
+              font-weight: 700;
+            }
+          }
+
+          .date, .address {
+            font-size: 14px;
+            margin-bottom: 8px;
+          }
+
+          .map {
+            background-color: #f9667e;
+            color: #fff;
+            font-size: 14px;
+            font-weight: bold;
+            padding: 5px 10px;
+            border-radius: 60px;
+            text-transform: uppercase;
+            border: 2px solid transparent;
+            display: block;
+            margin-top: 20px;
+
+            &:hover {
+              background-color: white;
+              border-color: #f9667e;
+              color: #f9667e;
+              transition: all 0.8s;
+            }
           }
         }
       }
     }
   }
 
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 992px) {
+    .wrap {
+      .content-features {
+        flex-wrap: wrap;
+        .item {
+          width: 49%;
+          margin-bottom: 2%;
+
+          &:nth-child(even) {
+            margin-right: 0;
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 568px) {
     .wrap {
       .content-features {
         flex-direction: column;

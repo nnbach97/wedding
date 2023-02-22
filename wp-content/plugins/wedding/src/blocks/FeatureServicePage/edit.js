@@ -32,16 +32,6 @@ const FragmentBlock = function ({ props }) {
     <Fragment>
       <div className="block block-feature-service-page">
         <div className="holder wrap">
-          <RichText
-            tagName="div"
-            className="ttl"
-            value={attributes.title}
-            allowedFormats={ALLOWED_FORMATS}
-            placeholder="Title"
-            keepPlaceholderOnFocus={true}
-            onChange={(value) => setAttributes({ title: value })}
-          />
-
           <ul className="content-features">
             {attributes.content.length > 0 &&
               attributes.content.map((item, index) => {
@@ -60,20 +50,47 @@ const FragmentBlock = function ({ props }) {
                         }}
                       />
                     </div>
-                    <RichText
-                      tagName="div"
-                      className="txt"
-                      value={item.title}
-                      allowedFormats={ALLOWED_FORMATS}
-                      placeholder="Title"
-                      keepPlaceholderOnFocus={true}
-                      onChange={(value) => {
-                        const newContent = [...attributes.content];
-                        newContent[index].title = value;
-
-                        setAttributes({ content: newContent });
-                      }}
-                    />
+                    <div class="desc">
+                      <RichText
+                        tagName="div"
+                        className="txt"
+                        value={item.title}
+                        allowedFormats={ALLOWED_FORMATS}
+                        placeholder="Title"
+                        keepPlaceholderOnFocus={true}
+                        onChange={(value) => {
+                          const newContent = [...attributes.content];
+                          newContent[index].title = value;
+                          setAttributes({ content: newContent });
+                        }}
+                      />
+                      <RichText
+                        tagName="p"
+                        className="date"
+                        value={item.date}
+                        allowedFormats={ALLOWED_FORMATS}
+                        placeholder="Date"
+                        keepPlaceholderOnFocus={true}
+                        onChange={(value) => {
+                          const newContent = [...attributes.content];
+                          newContent[index].date = value;
+                          setAttributes({ content: newContent });
+                        }}
+                      />
+                      <RichText
+                        tagName="p"
+                        className="address"
+                        value={item.address}
+                        allowedFormats={ALLOWED_FORMATS}
+                        placeholder="address"
+                        keepPlaceholderOnFocus={true}
+                        onChange={(value) => {
+                          const newContent = [...attributes.content];
+                          newContent[index].address = value;
+                          setAttributes({ content: newContent });
+                        }}
+                      />
+                    </div>
                   </li>
                 );
               })}
