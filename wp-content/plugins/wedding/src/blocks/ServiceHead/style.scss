@@ -26,8 +26,8 @@
         right: 0;
         z-index: 0;
         top: -69px;
-        object-fit: cover;
-    object-position: top;
+        object-fit: contain;
+        object-position: top;
       }
 
       .content {
@@ -135,25 +135,31 @@
     }
 
     @media screen and (max-width: 428px) {
-      & {
+      &, &.head--reverse {
+        padding: 0;
         .holder .wrap {
           .content {
-            padding: 15px 35vw 15px 13px;
+            padding: 400px 15px 0;
 
-            .title .ttl {
-              font-size: 19px;
+            .title {
+              text-align: center;
+
+              .ttl {
+                font-size: 19px;
+              }
             }
           }
-
         }
       }
 
-      &.head--reverse {
-        .holder {
-          .content {
-            padding: 15px 13px 15px 35vw;
-          }
-        }
+      .holder .wrap .img {
+        width: 100%;
+        height: 390px;
+        left: 50% !important;
+        transform: translateX(-50%);
+        padding: 15px;
+        border-radius: 23px;
+        top: 0;
       }
     }
   }
