@@ -2168,39 +2168,37 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _blocks_Feature__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./blocks/Feature */ "./src/blocks/Feature/index.js");
 /* harmony import */ var _blocks_Outsource__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./blocks/Outsource */ "./src/blocks/Outsource/index.js");
 /* harmony import */ var _blocks_About__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./blocks/About */ "./src/blocks/About/index.js");
-/* harmony import */ var _blocks_Clients__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./blocks/Clients */ "./src/blocks/Clients/index.js");
-/* harmony import */ var _blocks_Feedback__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./blocks/Feedback */ "./src/blocks/Feedback/index.js");
-/* harmony import */ var _blocks_Teams__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./blocks/Teams */ "./src/blocks/Teams/index.js");
-/* harmony import */ var _blocks_CaseStudy__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./blocks/CaseStudy */ "./src/blocks/CaseStudy/index.js");
-/* harmony import */ var _blocks_AboutBanner__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./blocks/AboutBanner */ "./src/blocks/AboutBanner/index.js");
-/* harmony import */ var _blocks_Overview__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./blocks/Overview */ "./src/blocks/Overview/index.js");
-/* harmony import */ var _blocks_Guarantee__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./blocks/Guarantee */ "./src/blocks/Guarantee/index.js");
-/* harmony import */ var _blocks_Certificate__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./blocks/Certificate */ "./src/blocks/Certificate/index.js");
-/* harmony import */ var _blocks_FunctionList__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./blocks/FunctionList */ "./src/blocks/FunctionList/index.js");
-/* harmony import */ var _blocks_Product_VISInsight_Banner__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./blocks/Product/VISInsight/Banner */ "./src/blocks/Product/VISInsight/Banner/index.js");
-/* harmony import */ var _blocks_Product_VISInsight_Overview__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./blocks/Product/VISInsight/Overview */ "./src/blocks/Product/VISInsight/Overview/index.js");
-/* harmony import */ var _blocks_Product_Veramine_Banner__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./blocks/Product/Veramine/Banner */ "./src/blocks/Product/Veramine/Banner/index.js");
-/* harmony import */ var _blocks_Product_Veramine_Technology__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./blocks/Product/Veramine/Technology */ "./src/blocks/Product/Veramine/Technology/index.js");
-/* harmony import */ var _blocks_Product_Veramine_Overview__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./blocks/Product/Veramine/Overview */ "./src/blocks/Product/Veramine/Overview/index.js");
-/* harmony import */ var _blocks_BlogFeatured__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./blocks/BlogFeatured */ "./src/blocks/BlogFeatured/index.js");
-/* harmony import */ var _blocks_BlogTags__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./blocks/BlogTags */ "./src/blocks/BlogTags/index.js");
-/* harmony import */ var _blocks_BannerCommon__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ./blocks/BannerCommon */ "./src/blocks/BannerCommon/index.js");
-/* harmony import */ var _blocks_DevelopingMobile__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ./blocks/DevelopingMobile */ "./src/blocks/DevelopingMobile/index.js");
-/* harmony import */ var _blocks_DevelopmentOurProcess__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ./blocks/DevelopmentOurProcess */ "./src/blocks/DevelopmentOurProcess/index.js");
-/* harmony import */ var _blocks_DevelopmentBenefit__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ./blocks/DevelopmentBenefit */ "./src/blocks/DevelopmentBenefit/index.js");
-/* harmony import */ var _blocks_BlockChain__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! ./blocks/BlockChain */ "./src/blocks/BlockChain/index.js");
-/* harmony import */ var _blocks_BannerNew__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! ./blocks/BannerNew */ "./src/blocks/BannerNew/index.js");
-/* harmony import */ var _blocks_Leadership__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! ./blocks/Leadership */ "./src/blocks/Leadership/index.js");
-/* harmony import */ var _blocks_BannerServicePage__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(/*! ./blocks/BannerServicePage */ "./src/blocks/BannerServicePage/index.js");
-/* harmony import */ var _blocks_TheFox__WEBPACK_IMPORTED_MODULE_29__ = __webpack_require__(/*! ./blocks/TheFox */ "./src/blocks/TheFox/index.js");
-/* harmony import */ var _blocks_Process__WEBPACK_IMPORTED_MODULE_30__ = __webpack_require__(/*! ./blocks/Process */ "./src/blocks/Process/index.js");
-/* harmony import */ var _blocks_ServiceNew__WEBPACK_IMPORTED_MODULE_31__ = __webpack_require__(/*! ./blocks/ServiceNew */ "./src/blocks/ServiceNew/index.js");
-/* harmony import */ var _blocks_BannerNewImg__WEBPACK_IMPORTED_MODULE_32__ = __webpack_require__(/*! ./blocks/BannerNewImg */ "./src/blocks/BannerNewImg/index.js");
-/* harmony import */ var _blocks_HeaderTitle__WEBPACK_IMPORTED_MODULE_33__ = __webpack_require__(/*! ./blocks/HeaderTitle */ "./src/blocks/HeaderTitle/index.js");
-/* harmony import */ var _blocks_ServiceHead__WEBPACK_IMPORTED_MODULE_34__ = __webpack_require__(/*! ./blocks/ServiceHead */ "./src/blocks/ServiceHead/index.js");
-/* harmony import */ var _blocks_FeatureServicePage__WEBPACK_IMPORTED_MODULE_35__ = __webpack_require__(/*! ./blocks/FeatureServicePage */ "./src/blocks/FeatureServicePage/index.js");
-
-
+/* harmony import */ var _blocks_Feedback__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./blocks/Feedback */ "./src/blocks/Feedback/index.js");
+/* harmony import */ var _blocks_Teams__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./blocks/Teams */ "./src/blocks/Teams/index.js");
+/* harmony import */ var _blocks_CaseStudy__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./blocks/CaseStudy */ "./src/blocks/CaseStudy/index.js");
+/* harmony import */ var _blocks_AboutBanner__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./blocks/AboutBanner */ "./src/blocks/AboutBanner/index.js");
+/* harmony import */ var _blocks_Overview__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./blocks/Overview */ "./src/blocks/Overview/index.js");
+/* harmony import */ var _blocks_Guarantee__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./blocks/Guarantee */ "./src/blocks/Guarantee/index.js");
+/* harmony import */ var _blocks_Certificate__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./blocks/Certificate */ "./src/blocks/Certificate/index.js");
+/* harmony import */ var _blocks_FunctionList__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./blocks/FunctionList */ "./src/blocks/FunctionList/index.js");
+/* harmony import */ var _blocks_Product_VISInsight_Banner__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./blocks/Product/VISInsight/Banner */ "./src/blocks/Product/VISInsight/Banner/index.js");
+/* harmony import */ var _blocks_Product_VISInsight_Overview__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./blocks/Product/VISInsight/Overview */ "./src/blocks/Product/VISInsight/Overview/index.js");
+/* harmony import */ var _blocks_Product_Veramine_Banner__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./blocks/Product/Veramine/Banner */ "./src/blocks/Product/Veramine/Banner/index.js");
+/* harmony import */ var _blocks_Product_Veramine_Technology__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./blocks/Product/Veramine/Technology */ "./src/blocks/Product/Veramine/Technology/index.js");
+/* harmony import */ var _blocks_Product_Veramine_Overview__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./blocks/Product/Veramine/Overview */ "./src/blocks/Product/Veramine/Overview/index.js");
+/* harmony import */ var _blocks_BlogFeatured__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./blocks/BlogFeatured */ "./src/blocks/BlogFeatured/index.js");
+/* harmony import */ var _blocks_BlogTags__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./blocks/BlogTags */ "./src/blocks/BlogTags/index.js");
+/* harmony import */ var _blocks_DevelopingMobile__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./blocks/DevelopingMobile */ "./src/blocks/DevelopingMobile/index.js");
+/* harmony import */ var _blocks_DevelopmentOurProcess__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ./blocks/DevelopmentOurProcess */ "./src/blocks/DevelopmentOurProcess/index.js");
+/* harmony import */ var _blocks_DevelopmentBenefit__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ./blocks/DevelopmentBenefit */ "./src/blocks/DevelopmentBenefit/index.js");
+/* harmony import */ var _blocks_BlockChain__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ./blocks/BlockChain */ "./src/blocks/BlockChain/index.js");
+/* harmony import */ var _blocks_BannerNew__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ./blocks/BannerNew */ "./src/blocks/BannerNew/index.js");
+/* harmony import */ var _blocks_Leadership__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! ./blocks/Leadership */ "./src/blocks/Leadership/index.js");
+/* harmony import */ var _blocks_BannerServicePage__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! ./blocks/BannerServicePage */ "./src/blocks/BannerServicePage/index.js");
+/* harmony import */ var _blocks_TheFox__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! ./blocks/TheFox */ "./src/blocks/TheFox/index.js");
+/* harmony import */ var _blocks_Process__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(/*! ./blocks/Process */ "./src/blocks/Process/index.js");
+/* harmony import */ var _blocks_ServiceNew__WEBPACK_IMPORTED_MODULE_29__ = __webpack_require__(/*! ./blocks/ServiceNew */ "./src/blocks/ServiceNew/index.js");
+/* harmony import */ var _blocks_BannerNewImg__WEBPACK_IMPORTED_MODULE_30__ = __webpack_require__(/*! ./blocks/BannerNewImg */ "./src/blocks/BannerNewImg/index.js");
+/* harmony import */ var _blocks_HeaderTitle__WEBPACK_IMPORTED_MODULE_31__ = __webpack_require__(/*! ./blocks/HeaderTitle */ "./src/blocks/HeaderTitle/index.js");
+/* harmony import */ var _blocks_ServiceHead__WEBPACK_IMPORTED_MODULE_32__ = __webpack_require__(/*! ./blocks/ServiceHead */ "./src/blocks/ServiceHead/index.js");
+/* harmony import */ var _blocks_FeatureServicePage__WEBPACK_IMPORTED_MODULE_33__ = __webpack_require__(/*! ./blocks/FeatureServicePage */ "./src/blocks/FeatureServicePage/index.js");
+/* harmony import */ var _blocks_BannerCommon__WEBPACK_IMPORTED_MODULE_34__ = __webpack_require__(/*! ./blocks/BannerCommon */ "./src/blocks/BannerCommon/index.js");
+/* harmony import */ var _blocks_Clients__WEBPACK_IMPORTED_MODULE_35__ = __webpack_require__(/*! ./blocks/Clients */ "./src/blocks/Clients/index.js");
 
 
 
@@ -2231,6 +2229,8 @@ __webpack_require__.r(__webpack_exports__);
 
 
 // ------------------------------------------------------
+
+
 
 
 
@@ -5436,14 +5436,6 @@ __webpack_require__.r(__webpack_exports__);
   category: "wedding",
   icon: "dashicons dashicons-buddicons-buddypress-logo",
   attributes: {
-    title: {
-      type: "string",
-      default: "<strong>Our Clients</strong>"
-    },
-    title_shadow: {
-      type: "string",
-      default: "Clients"
-    },
     images: {
       type: "array",
       default: []

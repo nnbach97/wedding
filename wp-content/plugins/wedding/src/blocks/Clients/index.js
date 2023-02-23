@@ -10,14 +10,6 @@ registerBlockType("create-block/clients", {
 	category: "wedding",
 	icon: "dashicons dashicons-buddicons-buddypress-logo",
 	attributes: {
-		title: {
-			type: "string",
-			default: "<strong>Our Clients</strong>",
-		},
-		title_shadow: {
-			type: "string",
-			default: "Clients",
-		},
 		images: {
 			type: "array",
 			default: [],

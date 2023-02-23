@@ -714,98 +714,6 @@
   font-size: 16px;
   line-height: 19px;
 }
-/*!******************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[3].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[3].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[3].use[3]!./src/blocks/Clients/style.scss ***!
-  \******************************************************************************************************************************************************************************************************************************************************/
-.block-clients {
-  padding: 70px 0;
-  background: #fff;
-  overflow-x: hidden;
-}
-.block-clients .holder .wrapper-item,
-.block-clients .holder .images-list {
-  display: flex;
-  margin: 60px -16px 0;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  align-content: center;
-}
-.block-clients .holder .wrapper-item .item,
-.block-clients .holder .images-list .item {
-  width: 20%;
-  padding: 9px 20px;
-}
-.block-clients .holder .wrapper-item .item .wrap,
-.block-clients .holder .images-list .item .wrap {
-  padding: 20px 10px;
-  border: 1px solid #A9B5C9;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 8px;
-  background: #fff;
-}
-.block-clients .holder .wrapper-item .item .wrap:hover img,
-.block-clients .holder .images-list .item .wrap:hover img {
-  transform: scale(1.1);
-}
-.block-clients .holder .wrapper-item .item img, .block-clients .holder .wrapper-item .item button,
-.block-clients .holder .images-list .item img,
-.block-clients .holder .images-list .item button {
-  -o-object-fit: contain;
-  object-fit: contain;
-  height: 70px;
-  transition: 0.3s ease-in-out;
-}
-.block-clients .holder .images-list .item {
-  cursor: pointer;
-}
-.block-clients .holder .images-list .item button, .block-clients .holder .images-list .item img {
-  position: relative;
-  border: none;
-}
-.block-clients .holder .images-list .item:hover {
-  opacity: 0.7;
-}
-@media screen and (max-width: 768px) {
-  .block-clients .holder .wrapper-item .item,
-  .block-clients .holder .images-list .item {
-    width: 25%;
-  }
-}
-@media screen and (max-width: 568px) {
-  .block-clients .holder .wrapper-item {
-    margin: 60px -9px 0;
-  }
-  .block-clients .holder .wrapper-item .item,
-  .block-clients .holder .images-list .item {
-    width: 50%;
-    padding: 9px 9px;
-  }
-}
-
-/* Custom Admin */
-.block-editor-block-list__block .block-clients .holder .wrapper-item {
-  margin: 0 -20px;
-}
-.block-editor-block-list__block .block-clients .holder .wrapper-item .item {
-  width: 100%;
-}
-.block-editor-block-list__block .block-clients .holder .wrapper-item .images-list .item {
-  width: 20%;
-}
-@media screen and (max-width: 768px) {
-  .block-editor-block-list__block .block-clients .holder .wrapper-item .images-list .item {
-    width: 25%;
-  }
-}
-@media screen and (max-width: 568px) {
-  .block-editor-block-list__block .block-clients .holder .wrapper-item .images-list .item {
-    width: 50%;
-  }
-}
-
-/* END: Custom Admin */
 /*!*******************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[3].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[3].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[3].use[3]!./src/blocks/Feedback/style.scss ***!
   \*******************************************************************************************************************************************************************************************************************************************************/
@@ -3477,72 +3385,6 @@ li {
   display: inline-block;
   color: #fff;
 }
-/*!***********************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[3].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[3].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[3].use[3]!./src/blocks/BannerCommon/style.scss ***!
-  \***********************************************************************************************************************************************************************************************************************************************************/
-/* Banner */
-.common-block-banner {
-  position: relative;
-}
-.common-block-banner .overlay {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background: linear-gradient(270.12deg, rgba(4, 27, 68, 0.61) 0.11%, rgba(1, 12, 32, 0.4819) 99.91%);
-}
-.common-block-banner .banner-bg .image-default {
-  max-height: 630px;
-}
-.common-block-banner .banner-bg img {
-  width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  vertical-align: middle;
-  max-height: 450px;
-}
-.common-block-banner .banner-inner {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: #fff;
-  text-align: center;
-}
-.common-block-banner .banner-inner .ttl {
-  font-size: 30px;
-  margin-bottom: 16px;
-}
-.common-block-banner .banner-inner .txt {
-  font-size: 25px;
-}
-@media screen and (max-width: 991px) {
-  .common-block-banner .banner-inner {
-    width: 70%;
-  }
-  .common-block-banner .banner-inner .ttl {
-    font-size: 25px;
-  }
-  .common-block-banner .banner-inner .txt {
-    font-size: 20px;
-  }
-}
-@media screen and (max-width: 575px) {
-  .common-block-banner .banner-inner {
-    margin-bottom: 20px;
-    width: 100%;
-    padding: 0 16px;
-  }
-  .common-block-banner .banner-inner .ttl {
-    font-size: 18px;
-  }
-  .common-block-banner .banner-inner .txt {
-    font-size: 14px;
-  }
-}
-
-/* END: Banner */
 /*!***************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[3].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[3].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[3].use[3]!./src/blocks/DevelopingMobile/style.scss ***!
   \***************************************************************************************************************************************************************************************************************************************************************/
@@ -6674,5 +6516,460 @@ li {
 }
 
 /* END: Feature Service Page */
+/*!***********************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[3].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[3].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[3].use[3]!./src/blocks/BannerCommon/style.scss ***!
+  \***********************************************************************************************************************************************************************************************************************************************************/
+/* Banner */
+.common-block-banner {
+  position: relative;
+}
+.common-block-banner .overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(270.12deg, rgba(4, 27, 68, 0.61) 0.11%, rgba(1, 12, 32, 0.4819) 99.91%);
+}
+.common-block-banner .banner-bg .image-default {
+  max-height: 630px;
+}
+.common-block-banner .banner-bg img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  vertical-align: middle;
+  max-height: 450px;
+}
+.common-block-banner .banner-inner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-align: center;
+}
+.common-block-banner .banner-inner .ttl {
+  font-size: 30px;
+  margin-bottom: 16px;
+}
+.common-block-banner .banner-inner .txt {
+  font-size: 25px;
+}
+@media screen and (max-width: 991px) {
+  .common-block-banner .banner-inner {
+    width: 70%;
+  }
+  .common-block-banner .banner-inner .ttl {
+    font-size: 25px;
+  }
+  .common-block-banner .banner-inner .txt {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 575px) {
+  .common-block-banner .banner-inner {
+    margin-bottom: 20px;
+    width: 100%;
+    padding: 0 16px;
+  }
+  .common-block-banner .banner-inner .ttl {
+    font-size: 18px;
+  }
+  .common-block-banner .banner-inner .txt {
+    font-size: 14px;
+  }
+}
+
+/* END: Banner */
+/*!******************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[3].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[3].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[3].use[3]!./src/blocks/Clients/style.scss ***!
+  \******************************************************************************************************************************************************************************************************************************************************/
+.block-clients {
+  padding: 70px 0;
+  background: #fff;
+  overflow-x: hidden;
+}
+.block-clients .holder {
+  text-align: center;
+}
+.block-clients .holder .btn-lnk {
+  background-color: #ff4061;
+  color: #fff;
+  margin: 30px 0;
+  display: inline-block;
+  padding: 10px 41px 10px;
+  font-size: 17px;
+  box-shadow: 0 0 0 2px transparent inset, 0 0 0 2px transparent;
+  border-radius: 5px;
+}
+.block-clients .holder .btn-lnk:hover {
+  box-shadow: 0 0 0 2px #fff inset, 0 0 0 2px #ff4061;
+  transition: all 0.8s;
+}
+.block-clients .holder .wrapper-item {
+  display: grid;
+  grid-template-columns: repeat("auto-fix");
+  grid-template-rows: 540x;
+  grid-gap: 10px;
+  grid-template-areas: "a1 a2 a3" "b1 b2 b3" "b1 b4 b3" "c1 c2 c3" "c4 c2 c5";
+}
+.block-clients .holder .wrapper-item .item .wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  height: 100%;
+}
+.block-clients .holder .wrapper-item .item .wrap:hover img {
+  transform: scale(1.2);
+}
+.block-clients .holder .wrapper-item .item img, .block-clients .holder .wrapper-item .item button {
+  -o-object-fit: contain;
+  object-fit: contain;
+  transition: 0.5s ease-in-out;
+}
+.block-clients .holder .wrapper-item .item-1 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: a1;
+}
+.block-clients .holder .wrapper-item .item-2 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: a2;
+}
+.block-clients .holder .wrapper-item .item-3 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 5;
+  grid-area: a3;
+}
+.block-clients .holder .wrapper-item .item-4 {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 1;
+  grid-area: b1;
+}
+.block-clients .holder .wrapper-item .item-5 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+  grid-area: b2;
+}
+.block-clients .holder .wrapper-item .item-6 {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 5;
+  grid-area: b3;
+}
+.block-clients .holder .wrapper-item .item-7 {
+  -ms-grid-row: 5;
+  -ms-grid-column: 3;
+  grid-area: b4;
+}
+.block-clients .holder .wrapper-item .item-8 {
+  -ms-grid-row: 7;
+  -ms-grid-column: 1;
+  grid-area: c1;
+}
+.block-clients .holder .wrapper-item .item-9 {
+  -ms-grid-row: 7;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 3;
+  grid-area: c2;
+}
+.block-clients .holder .wrapper-item .item-10 {
+  -ms-grid-row: 7;
+  -ms-grid-column: 5;
+  grid-area: c3;
+}
+.block-clients .holder .wrapper-item .item-11 {
+  -ms-grid-row: 9;
+  -ms-grid-column: 1;
+  grid-area: c4;
+}
+.block-clients .holder .wrapper-item .item-12 {
+  -ms-grid-row: 9;
+  -ms-grid-column: 5;
+  grid-area: c5;
+}
+@media screen and (max-width: 568px) {
+  .block-clients .holder .wrapper-item {
+    grid-template-areas: "a1 a2" "b3 b2" "b3 c5" "c3 c2" "c4 c2";
+  }
+  .block-clients .holder .wrapper-item .item-1 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: a1;
+  }
+  .block-clients .holder .wrapper-item .item-2 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+    grid-area: a2;
+  }
+  .block-clients .holder .wrapper-item .item-3 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 5;
+    grid-area: a3;
+    display: none;
+  }
+  .block-clients .holder .wrapper-item .item-4 {
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 3;
+    -ms-grid-column: 1;
+    grid-area: b1;
+    display: none;
+  }
+  .block-clients .holder .wrapper-item .item-5 {
+    -ms-grid-row: 3;
+    -ms-grid-column: 3;
+    grid-area: b2;
+  }
+  .block-clients .holder .wrapper-item .item-6 {
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 3;
+    -ms-grid-column: 5;
+    grid-area: b3;
+  }
+  .block-clients .holder .wrapper-item .item-7 {
+    -ms-grid-row: 5;
+    -ms-grid-column: 3;
+    grid-area: b4;
+    display: none;
+  }
+  .block-clients .holder .wrapper-item .item-8 {
+    -ms-grid-row: 7;
+    -ms-grid-column: 1;
+    grid-area: c1;
+    display: none;
+  }
+  .block-clients .holder .wrapper-item .item-9 {
+    -ms-grid-row: 7;
+    -ms-grid-row-span: 3;
+    -ms-grid-column: 3;
+    grid-area: c2;
+  }
+  .block-clients .holder .wrapper-item .item-10 {
+    -ms-grid-row: 7;
+    -ms-grid-column: 5;
+    grid-area: c3;
+  }
+  .block-clients .holder .wrapper-item .item-11 {
+    -ms-grid-row: 9;
+    -ms-grid-column: 1;
+    grid-area: c4;
+  }
+  .block-clients .holder .wrapper-item .item-12 {
+    -ms-grid-row: 9;
+    -ms-grid-column: 5;
+    grid-area: c5;
+  }
+  .block-clients .holder .wrapper-item .item-1 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+  }
+  .block-clients .holder .wrapper-item .item-2 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+  }
+  .block-clients .holder .wrapper-item .item-5 {
+    -ms-grid-row: 3;
+    -ms-grid-column: 3;
+  }
+  .block-clients .holder .wrapper-item .item-6 {
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 3;
+    -ms-grid-column: 1;
+  }
+  .block-clients .holder .wrapper-item .item-9 {
+    -ms-grid-row: 7;
+    -ms-grid-row-span: 3;
+    -ms-grid-column: 3;
+  }
+  .block-clients .holder .wrapper-item .item-10 {
+    -ms-grid-row: 7;
+    -ms-grid-column: 1;
+  }
+  .block-clients .holder .wrapper-item .item-11 {
+    -ms-grid-row: 9;
+    -ms-grid-column: 1;
+  }
+  .block-clients .holder .wrapper-item .item-12 {
+    -ms-grid-row: 5;
+    -ms-grid-column: 3;
+  }
+}
+
+/* Custom Admin */
+.block-editor-block-list__block .block-clients {
+  padding: 70px 0;
+  background: #fff;
+  overflow-x: hidden;
+}
+.block-editor-block-list__block .block-clients .wrapper-item {
+  width: 100%;
+  grid-template-areas: inherit;
+}
+.block-editor-block-list__block .block-clients .holder {
+  text-align: center;
+}
+.block-editor-block-list__block .block-clients .holder .images-list {
+  display: grid;
+  grid-template-columns: repeat("auto-fix");
+  grid-template-rows: 540x;
+  grid-gap: 10px;
+  grid-template-areas: "a1 a2 a3" "b1 b2 b3" "b1 b4 b3" "c1 c2 c3" "c4 c2 c5";
+}
+.block-editor-block-list__block .block-clients .holder .images-list .item {
+  width: 100%;
+  padding: 0;
+}
+.block-editor-block-list__block .block-clients .holder .images-list .item .wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  height: 100%;
+}
+.block-editor-block-list__block .block-clients .holder .images-list .item .wrap:hover img {
+  transform: scale(1.2);
+}
+.block-editor-block-list__block .block-clients .holder .images-list .item img, .block-editor-block-list__block .block-clients .holder .images-list .item button {
+  -o-object-fit: contain;
+  object-fit: contain;
+  transition: 0.5s ease-in-out;
+}
+.block-editor-block-list__block .block-clients .holder .images-list .item-1 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: a1;
+}
+.block-editor-block-list__block .block-clients .holder .images-list .item-2 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: a2;
+}
+.block-editor-block-list__block .block-clients .holder .images-list .item-3 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 5;
+  grid-area: a3;
+}
+.block-editor-block-list__block .block-clients .holder .images-list .item-4 {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 1;
+  grid-area: b1;
+}
+.block-editor-block-list__block .block-clients .holder .images-list .item-5 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+  grid-area: b2;
+}
+.block-editor-block-list__block .block-clients .holder .images-list .item-6 {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 5;
+  grid-area: b3;
+}
+.block-editor-block-list__block .block-clients .holder .images-list .item-7 {
+  -ms-grid-row: 5;
+  -ms-grid-column: 3;
+  grid-area: b4;
+}
+.block-editor-block-list__block .block-clients .holder .images-list .item-8 {
+  -ms-grid-row: 7;
+  -ms-grid-column: 1;
+  grid-area: c1;
+}
+.block-editor-block-list__block .block-clients .holder .images-list .item-9 {
+  -ms-grid-row: 7;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 3;
+  grid-area: c2;
+}
+.block-editor-block-list__block .block-clients .holder .images-list .item-10 {
+  -ms-grid-row: 7;
+  -ms-grid-column: 5;
+  grid-area: c3;
+}
+.block-editor-block-list__block .block-clients .holder .images-list .item-11 {
+  -ms-grid-row: 9;
+  -ms-grid-column: 1;
+  grid-area: c4;
+}
+.block-editor-block-list__block .block-clients .holder .images-list .item-12 {
+  -ms-grid-row: 9;
+  -ms-grid-column: 5;
+  grid-area: c5;
+}
+@media screen and (max-width: 568px) {
+  .block-clients .holder .wrapper-item .item-1 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+  }
+  .block-clients .holder .wrapper-item .item-2 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+  }
+  .block-clients .holder .wrapper-item .item-5 {
+    -ms-grid-row: 3;
+    -ms-grid-column: 3;
+  }
+  .block-clients .holder .wrapper-item .item-6 {
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 3;
+    -ms-grid-column: 1;
+  }
+  .block-clients .holder .wrapper-item .item-9 {
+    -ms-grid-row: 7;
+    -ms-grid-row-span: 3;
+    -ms-grid-column: 3;
+  }
+  .block-clients .holder .wrapper-item .item-10 {
+    -ms-grid-row: 7;
+    -ms-grid-column: 1;
+  }
+  .block-clients .holder .wrapper-item .item-11 {
+    -ms-grid-row: 9;
+    -ms-grid-column: 1;
+  }
+  .block-clients .holder .wrapper-item .item-12 {
+    -ms-grid-row: 5;
+    -ms-grid-column: 3;
+  }
+  .block-editor-block-list__block .block-clients .holder .images-list .item-1 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+  }
+  .block-editor-block-list__block .block-clients .holder .images-list .item-2 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+  }
+  .block-editor-block-list__block .block-clients .holder .images-list .item-5 {
+    -ms-grid-row: 3;
+    -ms-grid-column: 3;
+  }
+  .block-editor-block-list__block .block-clients .holder .images-list .item-6 {
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 3;
+    -ms-grid-column: 1;
+  }
+  .block-editor-block-list__block .block-clients .holder .images-list .item-9 {
+    -ms-grid-row: 7;
+    -ms-grid-row-span: 3;
+    -ms-grid-column: 3;
+  }
+  .block-editor-block-list__block .block-clients .holder .images-list .item-10 {
+    -ms-grid-row: 7;
+    -ms-grid-column: 1;
+  }
+  .block-editor-block-list__block .block-clients .holder .images-list .item-11 {
+    -ms-grid-row: 9;
+    -ms-grid-column: 1;
+  }
+  .block-editor-block-list__block .block-clients .holder .images-list .item-12 {
+    -ms-grid-row: 5;
+    -ms-grid-column: 3;
+  }
+}
 
 /*# sourceMappingURL=style-blocks.css.map*/
