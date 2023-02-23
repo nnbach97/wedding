@@ -7,7 +7,6 @@ wedding_include('inc/shortcodes/block-feature.php');
 wedding_include('inc/shortcodes/block-outsource.php');
 // wedding_include('inc/shortcodes/block-services.php');
 wedding_include('inc/shortcodes/block-about.php');
-wedding_include('inc/shortcodes/block-clients.php');
 wedding_include('inc/shortcodes/block-feedback.php');
 wedding_include('inc/shortcodes/block-teams.php');
 wedding_include('inc/shortcodes/block-casestudy.php');
@@ -23,21 +22,23 @@ wedding_include('inc/shortcodes/block-veramine-overview.php');
 wedding_include('inc/shortcodes/block-veramine-technology.php');
 wedding_include('inc/shortcodes/block-blog-tags.php');
 wedding_include('inc/shortcodes/block-blog-featured.php');
-wedding_include('inc/shortcodes/block-banner-common.php');
 wedding_include('inc/shortcodes/block-developing-mobile.php');
 wedding_include('inc/shortcodes/block-development-our-process.php');
 wedding_include('inc/shortcodes/block-development-benefit.php');
-wedding_include('inc/shortcodes/block-service-head.php');
 wedding_include('inc/shortcodes/block-blockchain.php');
-wedding_include('inc/shortcodes/block-banner-new.php');
 wedding_include('inc/shortcodes/block-leadership.php');
-wedding_include('inc/shortcodes/block-services-new.php');
 wedding_include('inc/shortcodes/block-banner-service-page.php');
-wedding_include('inc/shortcodes/block-banner-new-img.php');
 wedding_include('inc/shortcodes/block-thefox.php');
-wedding_include('inc/shortcodes/block-header-title.php');
 wedding_include('inc/shortcodes/block-process.php');
+// -----------------------
+wedding_include('inc/shortcodes/block-services-new.php');
+wedding_include('inc/shortcodes/block-banner-new-img.php');
+wedding_include('inc/shortcodes/block-service-head.php');
+wedding_include('inc/shortcodes/block-banner-common.php');
+wedding_include('inc/shortcodes/block-header-title.php');
 wedding_include('inc/shortcodes/block-feature-service-page.php');
+wedding_include('inc/shortcodes/block-clients.php');
+wedding_include('inc/shortcodes/block-contact.php');
 
 add_action('init', function () {
   if (!function_exists('register_block_type')) return;

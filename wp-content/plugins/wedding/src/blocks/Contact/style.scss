@@ -1,0 +1,211 @@
+.block-contact {
+  position: relative;
+  padding: 40px 0;
+
+  &::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: linear-gradient(270.12deg,rgba(4,27,68,.61) .11%,rgba(1,12,32,.4819) 99.91%);
+    z-index: 0;
+  }
+
+  .holder {
+    width: 100%;
+    position: relative;
+    z-index: 1;
+
+    .title .txt {
+      color: #fff;
+    }
+  }
+
+  .main {
+    width: 100%;
+    max-width: 1120px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 40px;
+
+    .card {
+      width: calc(40% - 20px);
+      overflow-y: auto;
+      height: 390px;
+      background-color: rgb(255 255 255 / 70%);
+      margin: 0.5rem 0;
+      border: 5px solid #f23b43;
+      color: #333;
+    }
+
+    .form-contact {
+      padding-bottom: 50px;
+      width: 60%;
+
+      .ttl {
+        color: #fff;
+        margin-bottom: 15px;
+      }
+
+      .inquiry-group {
+        margin-bottom: 32px;
+
+        .label {
+          margin-bottom: 32px;
+          color: #6d6969;
+          display: block;
+        }
+      }
+
+      .group-input {
+        display: flex;
+        flex-wrap: wrap;
+
+        &-item {
+          width: calc(50% - 13px);
+          margin-bottom: 32px;
+
+          &:first-child {
+            margin-right: 26px;
+          }
+
+          .label {
+            color: #fff;
+          }
+
+          .form-control {
+            width: 100%;
+            font-size: 16px;
+            border: none;
+            background-color: #fff;
+            padding: 8px 20px;
+            box-shadow: none;
+            margin-top: 8px;
+
+            &:focus {
+              outline: none;
+            }
+          }
+
+          &--textarea {
+            width: 100%;
+            margin-right: 0;
+
+            textarea {
+              resize: vertical;
+            }
+          }
+        }
+
+        .inquiry-group {
+          width: 100%;
+          margin-right: 0;
+        }
+      }
+
+      .required {
+        .label::after {
+          margin-left: 4px;
+          color: #fc7561;
+          content: "*";
+        }
+      }
+
+      .form-btn {
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+        max-width: 256px;
+        padding: 12px 10px;
+        font-size: 16px;
+        line-height: 20px;
+        background: #ff4061;
+        border: none;
+        border-radius: 6px;
+        color: #fff;
+        cursor: pointer;
+        transition: all 0.2s linear;
+        box-shadow: 0 0 0 2px transparent inset, 0 0 0 2px transparent;
+        text-transform: uppercase;
+
+        &:hover,
+        &:focus {
+          transition: all 0.2s linear;
+          box-shadow: 0 0 0 2px #fff inset, 0 0 0 2px #ff4061;
+        }
+
+        &:active {
+          opacity: 1;
+        }
+      }
+    }
+    /* Responsive */
+
+    @media screen and (max-width: 991px) {
+      .form-contact .group-input .group-input-item .form-control {
+        font-size: 14px;
+      }
+    }
+
+    @media screen and (max-width: 768px) {
+      .card {
+        height: 300px;
+        width: calc(50% - 20px);
+      }
+
+      .form-contact {
+        width: 50%;
+
+        .ttl {
+          color: #fff;
+          font-size: 13px;
+        }
+
+        .group-input {
+          .group-input-item {
+            width: 100%;
+            margin-right: 0;
+            margin-bottom: 15px;
+            .label {
+              font-size: 14px;
+            }
+          }
+        }
+      }
+
+      .form-contact .form-btn {
+        font-size: 14px;
+        max-width: 200px;
+        padding: 8px 10px;
+      }
+    }
+
+    @media screen and (max-width: 575px) {
+      .form-contact .group-input {
+        .group-input-item {
+          .label {
+            font-size: 14px;
+          }
+        }
+      }
+
+      .form-btn {
+        font-size: 14px;
+        max-width: 180px;
+      }
+
+      & {
+        flex-direction: column;
+
+        .form-contact, .card {
+          width: 100%;
+        }
+      }
+    }
+    /* END: Responsive */
+  }
+}

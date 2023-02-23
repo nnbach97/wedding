@@ -6272,7 +6272,7 @@ li {
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[3].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[3].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[3].use[3]!./src/blocks/HeaderTitle/style.scss ***!
   \**********************************************************************************************************************************************************************************************************************************************************/
 .block-header-title {
-  margin-bottom: 65px;
+  margin-bottom: 0;
 }
 /*!**********************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[3].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[3].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[3].use[3]!./src/blocks/ServiceHead/style.scss ***!
@@ -6522,6 +6522,7 @@ li {
 /* Banner */
 .common-block-banner {
   position: relative;
+  margin-bottom: 35px;
 }
 .common-block-banner .overlay {
   position: absolute;
@@ -6586,7 +6587,7 @@ li {
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[3].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[3].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[3].use[3]!./src/blocks/Clients/style.scss ***!
   \******************************************************************************************************************************************************************************************************************************************************/
 .block-clients {
-  padding: 70px 0;
+  padding: 0 0 70px;
   background: #fff;
   overflow-x: hidden;
 }
@@ -6596,7 +6597,7 @@ li {
 .block-clients .holder .btn-lnk {
   background-color: #ff4061;
   color: #fff;
-  margin: 30px 0;
+  margin: 0 0 35px;
   display: inline-block;
   padding: 10px 41px 10px;
   font-size: 17px;
@@ -6969,6 +6970,179 @@ li {
   .block-editor-block-list__block .block-clients .holder .images-list .item-12 {
     -ms-grid-row: 5;
     -ms-grid-column: 3;
+  }
+}
+/*!******************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[3].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[3].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[3].use[3]!./src/blocks/Contact/style.scss ***!
+  \******************************************************************************************************************************************************************************************************************************************************/
+.block-contact {
+  position: relative;
+  padding: 40px 0;
+}
+.block-contact::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: linear-gradient(270.12deg, rgba(4, 27, 68, 0.61) 0.11%, rgba(1, 12, 32, 0.4819) 99.91%);
+  z-index: 0;
+}
+.block-contact .holder {
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+.block-contact .holder .title .txt {
+  color: #fff;
+}
+.block-contact .main {
+  width: 100%;
+  max-width: 1120px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 40px;
+  /* Responsive */
+  /* END: Responsive */
+}
+.block-contact .main .card {
+  width: calc(40% - 20px);
+  overflow-y: auto;
+  height: 390px;
+  background-color: rgba(255, 255, 255, 0.7);
+  margin: 0.5rem 0;
+  border: 5px solid #f23b43;
+  color: #333;
+}
+.block-contact .main .form-contact {
+  padding-bottom: 50px;
+  width: 60%;
+}
+.block-contact .main .form-contact .ttl {
+  color: #fff;
+  margin-bottom: 15px;
+}
+.block-contact .main .form-contact .inquiry-group {
+  margin-bottom: 32px;
+}
+.block-contact .main .form-contact .inquiry-group .label {
+  margin-bottom: 32px;
+  color: #6d6969;
+  display: block;
+}
+.block-contact .main .form-contact .group-input {
+  display: flex;
+  flex-wrap: wrap;
+}
+.block-contact .main .form-contact .group-input-item {
+  width: calc(50% - 13px);
+  margin-bottom: 32px;
+}
+.block-contact .main .form-contact .group-input-item:first-child {
+  margin-right: 26px;
+}
+.block-contact .main .form-contact .group-input-item .label {
+  color: #fff;
+}
+.block-contact .main .form-contact .group-input-item .form-control {
+  width: 100%;
+  font-size: 16px;
+  border: none;
+  background-color: #fff;
+  padding: 8px 20px;
+  box-shadow: none;
+  margin-top: 8px;
+}
+.block-contact .main .form-contact .group-input-item .form-control:focus {
+  outline: none;
+}
+.block-contact .main .form-contact .group-input-item--textarea {
+  width: 100%;
+  margin-right: 0;
+}
+.block-contact .main .form-contact .group-input-item--textarea textarea {
+  resize: vertical;
+}
+.block-contact .main .form-contact .group-input .inquiry-group {
+  width: 100%;
+  margin-right: 0;
+}
+.block-contact .main .form-contact .required .label::after {
+  margin-left: 4px;
+  color: #fc7561;
+  content: "*";
+}
+.block-contact .main .form-contact .form-btn {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 256px;
+  padding: 12px 10px;
+  font-size: 16px;
+  line-height: 20px;
+  background: #ff4061;
+  border: none;
+  border-radius: 6px;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.2s linear;
+  box-shadow: 0 0 0 2px transparent inset, 0 0 0 2px transparent;
+  text-transform: uppercase;
+}
+.block-contact .main .form-contact .form-btn:hover, .block-contact .main .form-contact .form-btn:focus {
+  transition: all 0.2s linear;
+  box-shadow: 0 0 0 2px #fff inset, 0 0 0 2px #ff4061;
+}
+.block-contact .main .form-contact .form-btn:active {
+  opacity: 1;
+}
+@media screen and (max-width: 991px) {
+  .block-contact .main .form-contact .group-input .group-input-item .form-control {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .block-contact .main .card {
+    height: 300px;
+    width: calc(50% - 20px);
+  }
+  .block-contact .main .form-contact {
+    width: 50%;
+  }
+  .block-contact .main .form-contact .ttl {
+    color: #fff;
+    font-size: 13px;
+  }
+  .block-contact .main .form-contact .group-input .group-input-item {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+  .block-contact .main .form-contact .group-input .group-input-item .label {
+    font-size: 14px;
+  }
+  .block-contact .main .form-contact .form-btn {
+    font-size: 14px;
+    max-width: 200px;
+    padding: 8px 10px;
+  }
+}
+@media screen and (max-width: 575px) {
+  .block-contact .main .form-contact .group-input .group-input-item .label {
+    font-size: 14px;
+  }
+  .block-contact .main .form-btn {
+    font-size: 14px;
+    max-width: 180px;
+  }
+  .block-contact .main {
+    flex-direction: column;
+  }
+  .block-contact .main .form-contact, .block-contact .main .card {
+    width: 100%;
   }
 }
 

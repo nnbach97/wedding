@@ -35,3 +35,4 @@ import {} from "./blocks/ServiceHead";
 import {} from "./blocks/FeatureServicePage";
 import {} from "./blocks/BannerCommon";
 import {} from "./blocks/Clients";
+import {} from "./blocks/Contact";

@@ -1,0 +1,110 @@
+.block-clients {
+  padding: 70px 0;
+  background: #fff;
+  overflow-x: hidden;
+
+  .holder {
+    .wrapper-item,
+    .images-list {
+      display: flex;
+      margin: 60px -16px 0;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-content: center;
+
+      .item {
+        width: 33%;
+        padding: 10px;
+
+        .wrap {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          &:hover {
+            img {
+              transform: scale(1.2);
+            }
+          }
+        }
+
+        img, button {
+          -o-object-fit: contain;
+          object-fit: contain;
+          transition: 0.5s ease-in-out;
+        }
+      }
+    }
+
+    .images-list .item {
+      cursor: pointer;
+
+      button, img {
+        position: relative;
+        border: none;
+      }
+
+      &:hover {
+        opacity: .7;
+      }
+    }
+
+    @media screen and (max-width: 768px) {
+      .wrapper-item,
+      .images-list {
+        .item {
+          width: 25%;
+        }
+      }
+    }
+
+    @media screen and (max-width: 568px) {
+      .wrapper-item {
+        margin: 60px -9px 0;
+      }
+
+      .wrapper-item,
+      .images-list {
+        .item {
+          width: 50%;
+          padding: 9px 9px;
+        }
+      }
+    }
+  }
+}
+
+/* Custom Admin */
+
+.block-editor-block-list__block {
+  .block-clients {
+    .holder {
+      .wrapper-item {
+        margin: 0 -20px;
+        .item {
+          width: 100%;
+        }
+
+        .images-list {
+          .item {
+            width: 20%;
+          }
+        }
+
+        @media screen and (max-width: 768px) {
+          .images-list .item {
+            width: 25%;
+          }
+        }
+
+        @media screen and (max-width: 568px) {
+          .images-list .item {
+            width: 50%;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* END: Custom Admin */

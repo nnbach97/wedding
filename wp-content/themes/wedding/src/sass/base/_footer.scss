@@ -1,280 +1,26 @@
 /* Footer */
 .footer {
-  background-color: #0869c2;
-  padding: 120px 0px 47px;
-
-  .footer-inner {
-    .wrap {
-      display: flex;
-      gap: 25px;
-
-      .footer-info {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-
-        .item {
-          color: #fff;
-          display: flex;
-          line-height: 20px;
-          margin-bottom: 50px;
-          width: 100% ;
-          justify-content: space-between;
-
-          .info {
-            width: 40%;
-
-            &:last-child {
-              width: 49%;
-            }
-
-            .ttl {
-              font-weight: 700;
-              font-size: 20px;
-              margin-bottom: 30px;
-            }
-
-            .list {
-              .item {
-                display: flex;
-                align-items: flex-start;
-                margin-bottom: 30px;
-                position: relative;
-                padding-left: 32px;
-                flex-direction: column;
-
-                &:last-child {
-                  margin-bottom: 0;
-                }
-
-                .img {
-                  position: absolute;
-                  left: 0;
-
-                  &-email {
-                    top: 50%;
-                    transform: translateY(-50%);
-                  }
-                }
-
-                .info-text, .info-desc {
-                  line-height: 20px;
-                  word-break: break-word;
-
-                  a {
-                    color: #fff;
-                    cursor: none;
-                    pointer-events: none;
-
-                    &.lnk {
-                      color: #fff;
-                      font-weight: 700;
-                      transition: all .2s linear;
-                      cursor: pointer;
-                      pointer-events: inherit;
-
-                      &:hover {
-                        color: var(--color-main);
-                        transition: all .2s linear;
-                      }
-                    }
-                  }
-                }
-
-                .info-desc {
-                  padding-top: 18px;
-                }
-
-                &-text a {
-                  color: #fff;
-
-                  &:hover {
-                    color: #0869c2;
-                  }
-                }
-              }
-            }
-          }
-        }
-      }
-
-      .footer-detail-list {
-        .item {
-          margin-bottom: 19px;
-        }
-      }
-
-      .item .lnk {
-        color: #fff;
-        font-weight: 700;
-        transition: all 0.2s linear;
-
-        &:hover {
-          color: var(--color-main);
-          transition: all 0.2s linear;
-        }
-      }
-    }
-
-    .footer-social {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-
-      .media {
-        width: 50%;
-
-        &-list{
-          display: flex;
-          flex-wrap: wrap;
-
-          .menu-item {
-            margin-right: 13px;
-            transition: all 0.2s linear;
-            margin-bottom: 5px;
-
-            &:last-child {
-              margin-right: 0;
-            }
-    
-            &:hover {
-              opacity: 0.7;
-              transition: all 0.2s linear;
-            }
-            .icon {
-              border: 1px solid #fff;
-              border-radius: 50%;
-              padding: 15px;
-              display: flex;
-              justify-content: center;
-              min-width: 50px;
-
-              i {
-                color: #fff;
-                font-size: medium;
-
-                &:before {
-                  font-size: medium;
-                }
-              }
-            }
-          }
-
-          &:hover {
-            color: var(--color-main);
-            transition: all 0.2s linear;
-          }
-        }
-      }
-
-      .link-list{
-        display: flex;
-        flex-wrap: wrap;
-
-        .menu-item a {
-          font-weight: 700;
-          font-size: 16px;
-          line-height: 20px;
-          color: #FFFFFF;
-          margin-right: 30px;
-          padding-bottom: 10px;
-        }
-
-        &:hover {
-          color: var(--color-main);
-          transition: all 0.2s linear;
-        }
-      }
-      
-    }
-  }
+  border-top: 2px solid #df4759;
+  background: #000;
+  color: #fff;
+  padding: 15px;
+  text-align: center;
+  font-size: 18px;
 }
 
 /*END: Footer*/
 
 /*Responsive*/
 @media screen and (max-width: 992px) {
-  .footer .footer-inner {
-    .footer-social {
-      .link{
-        width: 50%;
-      }
-    }
-  }
+
 }
 
 @media screen and (max-width: 768px) {
-  .footer .footer-inner {
-    .wrap {
-      flex-direction: column;
-      gap: 0;
-
-      .footer-info {
-        width: 100%;
-
-        .item {
-          flex-direction: column;
-          gap: 33px;
-
-          .info:first-child,
-          .info:last-child {
-            width: 100%;
-          }
-        }
-      }
-    }
-
-    .footer-social {
-      .link{
-        width: 50%;
-      }
-    }
-  }
-}
-
-@media screen and (max-width: 560px) {
   .footer {
-    padding: 33px 0 24px;
-
-    .footer-inner .wrap .footer-info .item .info {
-      .ttl {
-        font-size: 18px;
-        margin-bottom: 16px;
-      }
-
-      .list {
-        .item {
-          .info-text {
-            font-size: 14px;
-          }
-
-          .info-desc {
-            font-size: 14px;
-            padding-top: 0;
-          }
-        }
-      }
-    }
-
-    .footer-inner .footer-social {
-      flex-direction: column;
-
-      .media {
-        width: 100%;
-        display: flex;
-        margin-bottom: 20px;
-      }
-
-      .link {
-        width: 100%;
-      }
-    }
-
-    .footer-detail-list .item .lnk {
-      font-size: 14px;
-    }
+    font-size: 15px;
   }
 }
+
 /*END: Responsive*/
 
 /* Loading */
@@ -415,6 +161,7 @@
   width: 60px;
   height: 60px;
   cursor: pointer;
+  animation: dropdown 1s infinite;
 
   &.visible {
     visibility: visible;
@@ -426,6 +173,24 @@
       width: 40px;
       height: 40px;
     }
+  }
+}
+
+@keyframes dropdown {
+  0% {
+    bottom: 50px;
+  }
+  30% {
+    bottom: 52px;
+  }
+  30% {
+    bottom: 54px;
+  }
+  60% {
+    bottom: 56px;
+  }
+  100% {
+    bottom: 50px;
   }
 }
 /* END: back-top */

@@ -7,27 +7,15 @@ $dataInput = [
     'tag' => 'input'
   ],
   '2' => [
-    'name' => 'your_name',
-    'label' => __("Name", "wedding"),
-    'required' => true,
-    'tag' => 'input'
-  ],
-  '3' => [
     'name' => 'email',
     'label' => __("Email", "wedding"),
     'required' => true,
     'tag' => 'input'
   ],
-  '4' => [
-    'name' => 'linkedin',
-    'label' => __("LinkedIn", "wedding"),
-    'required' => false,
-    'tag' => 'input'
-  ],
-  '5' => [
+  '3' => [
     'name' => 'message',
     'label' => __("Message", "wedding"),
-    'required' => false,
+    'required' => true,
     'tag' => 'textarea'
   ]
 ];

@@ -42,18 +42,6 @@ const FragmentBlock = function ({ props }) {
 		<Fragment>
 			<div className="block block-clients" style={data?.style_block || {}}>
 				<div className="holder">
-					<div className="title text-center">
-						<RichText
-							tagName="h3"
-							className="ttl"
-							value={attributes.title}
-							allowedFormats={ALLOWED_FORMATS}
-							placeholder="Title"
-							keepPlaceholderOnFocus={true}
-							onChange={(value) => setAttributes({ title: value })}
-						/>
-						<span className="shadow">{attributes.title_shadow}</span>
-					</div>
 					<div class="wrapper-item">
 						<div class="item">
 							<ImageUpload
