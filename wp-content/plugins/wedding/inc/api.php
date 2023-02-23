@@ -89,8 +89,8 @@ abstract class class_wedding_plugin_api
       $datas[$name] = trim($datas[$name]);
       if (!isset($datas[$name]) || empty($datas[$name]) || !is_email($datas[$name])) {
         $this->response['status'] = 1;
-        $this->response['message'] = $messageError ? $messageError : __('Invalid email address', 'wedding');
-        $this->response['data']['title_modal'] = __('Failed', 'wedding');
+        $this->response['message'] = $messageError ? $messageError : __('Địa chỉ Email không hợp lệ', 'wedding');
+        $this->response['data']['title_modal'] = __('Thất bại', 'wedding');
         $this->response['data']['focus'] = $name;
         return false;
       }
@@ -105,7 +105,7 @@ abstract class class_wedding_plugin_api
       if (!isset($datas[$name]) || empty($datas[$name]) || $datas['captcha'] != $_SESSION['captcha']) {
         $this->response['status'] = 1;
         $this->response['message'] = $messageError ? $messageError : __('Invalid Captcha', 'wedding');
-        $this->response['title_modal'] = __('Failed', 'wedding');
+        $this->response['title_modal'] = __('Thất bại', 'wedding');
         $this->response['data']['focus'] = $name;
         return false;
       }

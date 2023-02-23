@@ -1,9 +1,9 @@
 <?php get_header(); /* Template Name: Template Home */ ?>
 
 <div id="loader-wrapper">
-  <div id="loader"></div>
-  <div class="loader-section section-left"></div>
-  <div class="loader-section section-right"></div>
+    <div class="heart">
+      <i class="fa-solid fa-heart"></i>
+    </div>
 </div>
 
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>

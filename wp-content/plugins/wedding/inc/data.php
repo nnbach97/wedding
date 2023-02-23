@@ -2,21 +2,27 @@
 $dataInput = [
   '1' => [
     'name' => 'company_name',
-    'label' => __("Company name", "wedding"),
+    'label' => __("Họ tên", "wedding"),
     'required' => true,
-    'tag' => 'input'
+    'tag' => 'input',
+    'placeholder' => 'Nhập họ tên',
+    'class' => ' input-name '
   ],
   '2' => [
     'name' => 'email',
     'label' => __("Email", "wedding"),
     'required' => true,
-    'tag' => 'input'
+    'tag' => 'input',
+    'placeholder' => 'Nhập email',
+    'class' => ' input-email '
   ],
   '3' => [
     'name' => 'message',
-    'label' => __("Message", "wedding"),
-    'required' => true,
-    'tag' => 'textarea'
+    'label' => __("Lời chức mừng", "wedding"),
+    'required' => false,
+    'tag' => 'textarea',
+    'placeholder' => 'Nhập Lời chức mừng',
+    'class' => ' input-message '
   ]
 ];
 
@@ -33,45 +39,11 @@ if (!function_exists("render_input_type")) {
         'label' => $obj['label'],
         'value' => $key,
         'required' => $obj['required'],
+        'placeholder' => $obj['placeholder'],
+        'class' => $obj['class'],
         'tag' => $obj['tag']
       ]);
     }
     return $html;
-  }
-}
-
-// Render html InquiryType
-if (!function_exists("render_inquiry_type")) {
-  function render_inquiry_type()
-  {
-    $datas = get_data_inquiry_type();
-    $html = '';
-
-    foreach ($datas as $key => $value) {
-      $html .= form_checkbox("inquiry_$key", "inquiry_type[]", [
-        'label' => $value,
-        'value' => $key,
-        "class_input" => 'js-checkbox',
-        "required" => true,
-      ]);
-    }
-    return $html;
-  }
-}
-
-if (!function_exists("get_data_inquiry_type")) {
-  function get_data_inquiry_type($key = null)
-  {
-    $dataInquiryType = [
-      '1' => __("Digital Transformation", "wedding"),
-      '2' => __("Dedicated Development Team", "wedding"),
-      '3' => __("Development of Mobile and Web Applications", "wedding"),
-      '4' => __("Development of Personalized Software", "wedding"),
-      '5' => __("Blockchain", "wedding"),
-      '6' => __("Others", "wedding"),
-    ];
-
-    if ($key === null) return $dataInquiryType;
-    return isset($dataInquiryType[$key]) ? $dataInquiryType[$key] : false;
   }
 }

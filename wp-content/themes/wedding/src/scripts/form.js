@@ -60,7 +60,7 @@
             $(".modal-title").html(result.data.title_modal);
             $(".icon-box").css("background", "#14479c");
             $(".close-contact--btn").css("background", "#14479c");
-            $(".icon-box--img").attr("src", `${PV_Admin.PV_RESOURCE_HOST}/img/ico_check.svg`);
+            $(".icon-box--img").attr("src", `${PV_Admin.PV_RESOURCE_HOST}/img/thankiu.gif`);
           }
           if (!result.status) {
             $(".js-form-contact")[0].reset();
@@ -74,7 +74,7 @@
             $(".icon-box").css("background", "#d63143");
             $(".close-contact--btn").css("background", "#d63143");
             $(".modal-title").html(result.data.title_modal);
-            $(".icon-box--img").attr("src", `${PV_Admin.PV_RESOURCE_HOST}/img/ico_close.svg`);
+            $(".icon-box--img").attr("src", `${PV_Admin.PV_RESOURCE_HOST}/img/thankiu.gif`);
           }
         })
         .fail(function (jqXHR, textStatus, errorThrown) {

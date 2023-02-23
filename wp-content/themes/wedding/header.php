@@ -35,7 +35,7 @@ require get_template_directory() . '/inc/theme_data.php';
         </a>
         <div class="logo">
           <a href="<?= get_home_url(); ?>" class="custom-logo-color" rel="home">
-            <img class="custom-logo" src="<?= get_theme_mod('custom_logo_color', RESOURCE_HOST . '/img/logo_color.png'); ?>" alt="">
+            <img class="custom-logo" src="<?= get_theme_mod('custom_logo_color', RESOURCE_HOST . '/img/logo_white.png'); ?>" alt="">
           </a>
         </div>
         <nav class="nav js-nav-pc">
@@ -83,19 +83,6 @@ require get_template_directory() . '/inc/theme_data.php';
           'theme_location' => 'header-menu',
         ]);
         ?>
-        <div class="contact">
-          <div class="email">
-            <img src="<?= RESOURCE_HOST ?>/img/email-icon.png" alt="" class="img">
-            <div class="content">
-              <div class="ttl"><?= __('Mail us daily', 'wedding'); ?></div>
-              <a href="mailto:<?= $contact_email ?>" class="txt"><?= $contact_email ?></a>
-            </div>
-          </div>
-          <div class="social">
-            <a href="<?= $link_facebook ? __($link_facebook, "wedding") : '#' ?>" target="_blank" class="lnk"><img src="<?= RESOURCE_HOST ?>/img/icon_fb.svg" alt="" class="img img--fb"></a>
-            <a href="<?= $link_youtube ? __($link_youtube, "wedding") : '#' ?>" target="_blank" class="lnk"><img src="<?= RESOURCE_HOST ?>/img/icon_youtube.svg" alt="" class="img"></a>
-          </div>
-        </div>
       </div>
     </div>
   </header>

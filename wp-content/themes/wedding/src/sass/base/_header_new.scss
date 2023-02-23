@@ -7,7 +7,7 @@
 
   &.header-child {
     position: relative;
-    background-color: #2f5aa8;
+    background-color: #ff4061;
     height: 70px;
 
     .header-inner {
@@ -94,9 +94,8 @@
       .custom-logo-color {
         img {
           width: 100%;
-          max-width: 205px;
+          max-width: 155px;
           display: block;
-          height: auto;
           object-fit: cover;
         }
       }
@@ -217,7 +216,7 @@
   &.fixed {
     position: fixed;
     box-shadow: 2px 2px 4px 0 rgba(10, 2, 4, 0.2);
-    background-color: #2f5aa8;
+    background-color: #f9667e;
     z-index: 10;
     height: 70px;
 
@@ -306,13 +305,14 @@
       flex-direction: column;
       width: 85%;
       height: 100%;
-      background-color: #2f5aa8;
+      background-color: #101127;
       transition: all 0.7s cubic-bezier(0.645, 0.045, 0.355, 1);
 
       .head {
         padding: 0 16px;
         height: 70px;
         justify-content: space-between;
+        margin-top: 12px;
 
         .logo {
           padding: 0;
@@ -425,56 +425,6 @@
           }
         }
       }
-
-      .contact {
-        position: relative;
-        @include flexbox($align: center, $justify: space-between);
-        width: 100%;
-        background-color: #09193233;
-
-        .email {
-          @include flexbox($align: center, $justify: center);
-          flex: 1;
-
-          .content {
-            margin-left: 9px;
-
-            .ttl,
-            .txt {
-              font-weight: 700;
-              color: #fff;
-              transition: all 0.2s linear;
-            }
-
-            .ttl {
-              text-transform: uppercase;
-            }
-
-            .txt:hover {
-              color: var(--color-main);
-              border-bottom: 1px solid var(--color-main);
-            }
-          }
-        }
-
-        .social {
-          padding: 9px 16px;
-          border-left: 1px solid rgba(255, 255, 255, 0.2);
-
-          .lnk {
-            display: block;
-            transition: all 0.2s linear;
-
-            &:first-child {
-              margin-bottom: 10px;
-            }
-
-            &:hover {
-              opacity: 0.7;
-            }
-          }
-        }
-      }
     }
   }
   /* END: Header SP */
@@ -571,11 +521,6 @@
   }
 }
 
-@media screen and (max-width: 374px) {
-  .block-header .wrapper .contact .email .content .txt {
-    font-size: 14px;
-  }
-}
 /* END: Responsive */
 
 /* Keyframes */

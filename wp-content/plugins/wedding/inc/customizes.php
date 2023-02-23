@@ -9,7 +9,7 @@ class theme_customizer
   public function addSections($wp_customize)
   {
     $wp_customize->add_setting('custom_logo_color', [
-      'default' => RESOURCE_HOST . '/img/logo_color.png',
+      'default' => RESOURCE_HOST . '/img/logo_white.png',
     ]);
 
     $wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'custom_logo_color', [
@@ -25,7 +25,7 @@ class theme_customizer
     ]));
 
     $wp_customize->add_setting('custom_header_color', [
-      'default' => '#454545',
+      'default' => '#fff',
     ]);
 
     $wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'custom_header_color', [

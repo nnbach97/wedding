@@ -30,7 +30,7 @@ if (!function_exists('template_mail')) {
     $html .= '<div style="max-width:580px;width:100%;border:0px;margin-right:auto;margin-left:auto;font-weight:500">';
     $html .= '<div style="background-color:#ffffff;font-weight:500">';
     $html .= '<div style="text-align:center;padding:18px 0">';
-    $html .= '<a href=""><img src="' . RESOURCE_HOST . '/img/logo_color.png" alt="" width="170"></a>';
+    $html .= '<a href=""><img src="' . RESOURCE_HOST . '/img/logo_white.png" alt="" width="170"></a>';
     $html .= '</div>';
     $html .= '<div style="background: #14479c; color: #fff; padding: 10px; text-align: center;">';
     $html .= '<p><strong style="font-size: 18px;">' . $company_name_vi . '</strong></p>';

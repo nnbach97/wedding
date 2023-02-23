@@ -39,6 +39,27 @@ function wedding_shortcode_block_contact($atts, $content)
       <div class="card">
       </div>
     </div>
+
+      <!-- Modal -->
+      <div class="modal modal-contact js-modal-contact">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <div class="icon-box">
+                <img class="icon-box--img" src="<?= RESOURCE_HOST . '/img/thankiu.gif' ?>" alt="">
+              </div>
+              <h4 class="modal-title w-100"><?= __("Thất bại", "wedding") ?></h4>
+            </div>
+            <div class="modal-body">
+              <p class="message"><?= __("Địa chỉ Email không hợp lệ", "wedding") ?></p>
+            </div>
+            <div class="modal-close">
+              <button type="button" class="close-contact close-contact--btn"><?= __("Close", "wedding") ?></button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- END: Modal -->
   </div>
 </div>
 
