@@ -14,7 +14,7 @@ function wedding_shortcode_block_services_new($atts, $content) {
   $items = wedding_func_check_data('items', $atts, [
     [
       "image" => [
-        "url" => P_wedding_RESOURCE_HOST . '/assets/img/blocks/service/bach.jpg',
+        "url" => P_wedding_RESOURCE_HOST . '/assets/img/blocks/service/bach.png',
         "alt" => "",
         "id" => ""
       ],
@@ -24,7 +24,7 @@ function wedding_shortcode_block_services_new($atts, $content) {
     ],
     [
       "image" => [
-        "url" => P_wedding_RESOURCE_HOST . '/assets/img/blocks/service/trang.jpg',
+        "url" => P_wedding_RESOURCE_HOST . '/assets/img/blocks/service/trang.png',
         "alt" => "",
         "id" => ""
       ],

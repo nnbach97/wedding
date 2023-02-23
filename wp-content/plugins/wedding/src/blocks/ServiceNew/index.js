@@ -16,7 +16,8 @@ registerBlockType("create-block/services-new", {
     },
     txt: {
       type: "string",
-      default: "Tình yêu là điều kiện trong đó hạnh phúc của người khác là điều cần thiết cho chính bạn.",
+      default:
+        "Tình yêu là điều kiện trong đó hạnh phúc của người khác là điều cần thiết cho chính bạn.",
     },
 
     items: {
@@ -24,7 +25,7 @@ registerBlockType("create-block/services-new", {
       default: [
         {
           image: {
-            url: PV_Admin.PV_BASE_URL + "/assets/img/blocks/service/bach.jpg",
+            url: PV_Admin.PV_BASE_URL + "/assets/img/blocks/service/bach.png",
             alt: "",
             id: "",
           },
@@ -34,7 +35,7 @@ registerBlockType("create-block/services-new", {
         },
         {
           image: {
-            url: PV_Admin.PV_BASE_URL + "/assets/img/blocks/service/trang.jpg",
+            url: PV_Admin.PV_BASE_URL + "/assets/img/blocks/service/trang.png",
             alt: "",
             id: "",
           },

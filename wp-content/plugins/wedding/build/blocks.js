@@ -1174,7 +1174,7 @@ __webpack_require__.r(__webpack_exports__);
       type: "array",
       default: [{
         image: {
-          url: PV_Admin.PV_BASE_URL + "/assets/img/blocks/service/bach.jpg",
+          url: PV_Admin.PV_BASE_URL + "/assets/img/blocks/service/bach.png",
           alt: "",
           id: ""
         },
@@ -1183,7 +1183,7 @@ __webpack_require__.r(__webpack_exports__);
         link: "https://www.facebook.com/nngocbach"
       }, {
         image: {
-          url: PV_Admin.PV_BASE_URL + "/assets/img/blocks/service/trang.jpg",
+          url: PV_Admin.PV_BASE_URL + "/assets/img/blocks/service/trang.png",
           alt: "",
           id: ""
         },
