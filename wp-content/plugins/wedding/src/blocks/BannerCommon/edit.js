@@ -48,6 +48,15 @@ const FragmentBlock = function ({ props }) {
             keepPlaceholderOnFocus={true}
             onChange={(value) => setAttributes({ title: value })}
           />
+          <RichText
+            tagName="p"
+            className="txt"
+            value={attributes.txt}
+            allowedFormats={ALLOWED_FORMATS}
+            placeholder="Case Study"
+            keepPlaceholderOnFocus={true}
+            onChange={(value) => setAttributes({ txt: value })}
+          />
         </div>
       </div>
     </Fragment>

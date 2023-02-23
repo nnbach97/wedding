@@ -7,9 +7,10 @@ $registerBlock[] = [
 
 function wedding_shortcode_block_banner_common($atts, $content)
 {
-  $title = wedding_func_check_data('title', $atts, '<strong>Case Study</strong>');
+  $title = wedding_func_check_data('title', $atts, '<strong>...Tình yêu không phải là nhìn chằm chằm vào nhau, mà là nhìn chằm chằm về cùng một hướng...</strong>');
+  $txt = wedding_func_check_data('txt', $atts, '--Forever one love--');
   $img = wedding_func_check_data('img', $atts, [
-    'url' => P_wedding_RESOURCE_HOST . '/assets/img/blocks/casestudy/casestudy_bg.png',
+    'url' => P_wedding_RESOURCE_HOST . '/assets/img/blocks/casestudy/banner_bg_common_story.jpg',
     'alt' => '',
     'id' => '',
   ]);
@@ -24,7 +25,7 @@ function wedding_shortcode_block_banner_common($atts, $content)
     </div>
     <div class="banner-inner">
       <h2 class="ttl"><?= $title; ?></h2>
-      <?php if (function_exists('wedding_breadcrumb')) echo wedding_breadcrumb(); ?>
+      <p class="txt"><?= $txt; ?></p>
     </div>
   </div>
   <!-- END: Banner -->

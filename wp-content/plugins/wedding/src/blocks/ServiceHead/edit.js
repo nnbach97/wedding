@@ -80,21 +80,21 @@ const FragmentBlock = function ({ props }) {
                 </div>
                 <RichText
                   tagName="p"
+                  className="date"
+                  value={txt}
+                  allowedFormats={ALLOWED_FORMATS}
+                  placeholder="DD/MM/YYYY .."
+                  keepPlaceholderOnFocus={true}
+                  onChange={(value) => setAttributes({ date: value })}
+                />
+                <RichText
+                  tagName="p"
                   className="txt"
                   value={txt}
                   allowedFormats={ALLOWED_FORMATS}
                   placeholder="Description .."
                   keepPlaceholderOnFocus={true}
                   onChange={(value) => setAttributes({ txt: value })}
-                />
-                <RichText
-                  tagName="p"
-                  className="date"
-                  value={txt}
-                  allowedFormats={ALLOWED_FORMATS}
-                  placeholder="Description .."
-                  keepPlaceholderOnFocus={true}
-                  onChange={(value) => setAttributes({ date: value })}
                 />
               </div>
 

@@ -20,7 +20,7 @@ registerBlockType("create-block/service-head", {
     },
     date: {
       type: "string",
-      default: "DD/MM/YYYY",
+      default: "Please Enter date (DD/MM/YYYY)",
     },
     image: {
       type: "object",
