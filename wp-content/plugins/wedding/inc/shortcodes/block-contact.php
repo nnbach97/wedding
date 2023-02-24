@@ -37,6 +37,12 @@ function wedding_shortcode_block_contact($atts, $content)
         <button type="submit" class="form-btn"><?= __("Gửi lời chúc", "wedding") ?></button>
       </form>
       <div class="card">
+        <div class="card-img">
+          <img src="<?= RESOURCE_HOST . '/img/ico_bank_bach.png' ?>" alt="QR">
+        </div>
+        <div class="card-img">
+          <img src="<?= RESOURCE_HOST . '/img/ico_bank_bach.png' ?>" alt="QR">
+        </div>
       </div>
     </div>
 

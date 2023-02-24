@@ -31,15 +31,32 @@
     justify-content: space-between;
     flex-wrap: wrap;
     margin-top: 40px;
+    align-items: flex-start;
 
     .card {
       width: calc(40% - 20px);
       overflow-y: auto;
-      height: 390px;
       background-color: rgb(255 255 255 / 70%);
       margin: 0.5rem 0;
       border: 5px solid #f23b43;
       color: #333;
+      display: flex;
+      align-items: beet;
+      justify-content: space-between;
+
+      &-img {
+        width: 50%;
+        padding: 8px 10px 3px 5px;
+
+        &:first-child {
+          padding: 8px 5px 3px 10px;
+        }
+
+        img {
+          max-width: 100%;
+          height: auto;
+        }
+      }
     }
 
     .form-contact {
@@ -153,7 +170,6 @@
 
     @media screen and (max-width: 768px) {
       .card {
-        height: 300px;
         width: calc(50% - 20px);
       }
 
