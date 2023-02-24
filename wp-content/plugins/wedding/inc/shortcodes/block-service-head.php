@@ -7,8 +7,8 @@ $registerBlock[] = [
 
 function wedding_shortcode_block_service_head($atts, $content)
 {
-  $title = wedding_func_check_data('ttl', $atts, '<strong>Please Enter Title ..</strong>');
-  $text = wedding_func_check_data('txt', $atts, 'Please Enter Content ..');
+  $title = wedding_func_check_data('ttl', $atts, '<strong>Nhập tiêu đề</strong>');
+  $text = wedding_func_check_data('txt', $atts, 'Nhập nội dung');
   $image = wedding_func_check_data('image', $atts, [
     "url" => P_wedding_RESOURCE_HOST . "/assets/img/image-default.png",
     'alt' => '',
@@ -19,7 +19,7 @@ function wedding_shortcode_block_service_head($atts, $content)
   $config = wedding_func_process_config_block($config);
   $style_block = wedding_func_check_data('style_block', $config, '');
   $id_raw = wedding_func_check_data('id', $atts, '');
-  $date = wedding_func_check_data('date', $atts, '24/03/2019');
+  $date = wedding_func_check_data('date', $atts, 'Nhập ngày DD/MM/YYYY');
 
   $id = '';
   if($id_raw !== ''){

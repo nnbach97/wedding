@@ -32,6 +32,26 @@ const FragmentBlock = function ({ props }) {
     <Fragment>
       <div className="block block-feature-service-page">
         <div className="holder wrap">
+          <div className="title text-center">
+            <RichText
+              tagName="h3"
+              className="ttl"
+              value={attributes?.title}
+              allowedFormats={ALLOWED_FORMATS}
+              placeholder="Title"
+              keepPlaceholderOnFocus={true}
+              onChange={(value) => setAttributes({ title: value })}
+            />
+            <RichText
+              tagName="p"
+              className="txt"
+              value={attributes?.txt}
+              allowedFormats={ALLOWED_FORMATS}
+              placeholder="Text"
+              keepPlaceholderOnFocus={true}
+              onChange={(value) => setAttributes({ txt: value })}
+            />
+          </div>
           <ul className="content-features">
             {attributes.content.length > 0 &&
               attributes.content.map((item, index) => {

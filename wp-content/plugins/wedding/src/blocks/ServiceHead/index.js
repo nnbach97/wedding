@@ -12,15 +12,15 @@ registerBlockType("create-block/service-head", {
   attributes: {
     ttl: {
       type: "string",
-      default: "<strong>Please Enter Title..</strong>",
+      default: "<strong>Nhập tiêu đề</strong>",
     },
     txt: {
       type: "string",
-      default: "Please Enter Content ..",
+      default: "Nhập nội dung",
     },
     date: {
       type: "string",
-      default: "Please Enter date (DD/MM/YYYY)",
+      default: "Nhập ngày (DD/MM/YYYY)",
     },
     image: {
       type: "object",

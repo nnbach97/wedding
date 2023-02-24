@@ -5493,6 +5493,9 @@ li {
   background: #fff;
   overflow-x: hidden;
 }
+.block-services-new .title.text-center {
+  margin-bottom: 35px;
+}
 .block-services-new .block-content {
   max-width: 736px;
   line-height: 19px;
@@ -5723,10 +5726,14 @@ li {
 }
 @media screen and (max-width: 667px) {
   .block-services-new {
-    padding: 70px 0 35px;
+    padding: 45px 0 35px;
+  }
+  .block-services-new .title.text-center {
+    margin-bottom: 15px;
   }
   .block-services-new .wrapper-item .lnk {
     width: 100%;
+    margin-bottom: 0;
   }
   .block-services-new .wrapper-item .lnk .item-media .txt {
     font-size: 14px;
@@ -6276,6 +6283,11 @@ li {
 .block-header-title {
   margin-bottom: 0;
 }
+@media screen and (max-width: 768px) {
+  .block-header-title {
+    margin-bottom: 35px;
+  }
+}
 /*!**********************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[3].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[3].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[3].use[3]!./src/blocks/ServiceHead/style.scss ***!
   \**********************************************************************************************************************************************************************************************************************************************************/
@@ -6418,7 +6430,7 @@ li {
   \*****************************************************************************************************************************************************************************************************************************************************************/
 /* Feature Service Page */
 .block-feature-service-page {
-  padding: 0 0 60px;
+  padding: 60px 0;
 }
 .block-feature-service-page .wrap .content-features {
   display: flex;
@@ -6484,6 +6496,11 @@ li {
   transition: all 0.8s;
 }
 @media screen and (max-width: 992px) {
+  .block-feature-service-page {
+    padding: 0;
+  }
+}
+@media screen and (max-width: 992px) {
   .block-feature-service-page .wrap .content-features {
     flex-wrap: wrap;
   }
@@ -6493,6 +6510,11 @@ li {
   }
   .block-feature-service-page .wrap .content-features .item:nth-child(even) {
     margin-right: 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  .block-feature-service-page .wrap .title.text-center {
+    margin-bottom: 35px;
   }
 }
 @media screen and (max-width: 568px) {

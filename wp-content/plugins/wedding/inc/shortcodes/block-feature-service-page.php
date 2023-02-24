@@ -7,6 +7,8 @@ $registerBlock[] = [
 
 function wedding_shortcode_block_feature_service_page($atts, $content)
 {
+  $title = wedding_func_check_data('title', $atts, "<strong>Sự Kiện Cưới</strong>");
+  $txt = wedding_func_check_data('txt', $atts, 'Được ai đó yêu sâu sắc sẽ mang lại cho bạn sức mạnh, trong khi yêu ai đó sâu sắc sẽ cho bạn dũng khí.');
   $content = wedding_func_check_data('content', $atts, [
     [
       'title' => '<strong>LỄ CƯỚI NHÀ NỮ</strong>',
@@ -56,8 +58,12 @@ function wedding_shortcode_block_feature_service_page($atts, $content)
 
   ob_start(); ?>
   <!-- Feature -->
-  <div class="block block-feature-service-page">
+  <div class="block block-feature-service-page" id="event">
     <div class="holder wrap">
+      <div class="title text-center">
+        <h3 class="ttl"><?= $title; ?></h3>
+        <p class="txt"><?= $txt; ?></p>
+      </div>
       <ul class="content-features">
         <?php foreach ($content as $key => $value) : ?>
           <li class="item">

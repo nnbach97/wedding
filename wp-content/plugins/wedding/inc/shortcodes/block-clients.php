@@ -7,14 +7,20 @@
 
   function wedding_shortcode_block_clients($atts, $content)
   {
+    $title = wedding_func_check_data('title', $atts, "<strong>Album Hình Cưới</strong>");
+    $txt = wedding_func_check_data('txt', $atts, 'Tôi có thể chinh phục thế giới bằng một tay miễn là bạn đang nắm tay kia.');
     $images = wedding_func_check_data('images', $atts, []);
     $config = wedding_func_check_data('config', $atts, []);
     $config = wedding_func_process_config_block($config);
     $style_block = wedding_func_check_data('style_block', $config, '');
     ob_start();
 ?>
-    <div class="block block-clients" style="<?= esc_attr($style_block); ?>">
+  <div class="block block-clients" id="gallery" style="<?= esc_attr($style_block); ?>">
     <div class="holder">
+      <div class="title text-center">
+        <h3 class="ttl"><?= $title; ?></h3>
+        <p class="txt"><?= $txt; ?></p>
+      </div>
       <div class="btn">
         <a class="btn-lnk" href="/album/">Xem Album</a>
       </div>

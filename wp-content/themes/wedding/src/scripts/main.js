@@ -77,29 +77,45 @@
       }, waitTime);
     });
 
-    // Scroll to id
-    var flag = true;
-    function scrollToID(isHash) {
-      if (isHash) {
-        // get the hash
-        var target = window.location.hash;
-        var heightPadding = $(target).innerHeight() - $(target).height();
-        var heightNav = $(".js-header").height();
-        $("html, body")
-          .stop()
-          .animate(
-            {
-              scrollTop: $(target).offset().top - heightNav - (flag ? heightPadding : 0),
-            },
-            "slow"
-          );
-        flag = false;
-      }
+    // Click Scroll to id
+    // Xoa hash URL
+    function removeHash() {
+      history.replaceState(
+        "",
+        document.title,
+        window.location.origin + window.location.pathname + window.location.search
+      );
     }
 
-    scrollToID(window.location.hash);
-    $(window).on("hashchange", function (e) {
-      scrollToID(window.location.hash);
-    });
+    // Scroll
+    function smoothScrolling($scrollLinks, $topOffset) {
+      var links = $scrollLinks;
+      var topGap = $topOffset;
+
+      links.on("click", function () {
+        if (
+          location.pathname.replace(/^\//, "") === this.pathname.replace(/^\//, "") &&
+          location.hostname === this.hostname
+        ) {
+          var target = $(this.hash);
+          if (target.length) {
+            $("html, body").animate(
+              {
+                scrollTop: target.offset().top - topGap,
+              },
+              1000
+            );
+            setTimeout(() => {
+              removeHash();
+            }, 5);
+
+            return false;
+          }
+        }
+        return false;
+      });
+    }
+
+    smoothScrolling($(".js-header a[href^='#']"), $(".js-header").innerHeight());
   });
 })(jQuery);

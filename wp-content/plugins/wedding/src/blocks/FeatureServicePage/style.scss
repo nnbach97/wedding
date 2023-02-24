@@ -1,6 +1,6 @@
 /* Feature Service Page */
 .block-feature-service-page {
-  padding: 0 0 60px;
+  padding: 60px 0;
 
   .wrap {
     .content-features {
@@ -77,6 +77,12 @@
   }
 
   @media screen and (max-width: 992px) {
+    & {
+      padding: 0;
+    }
+  }
+
+  @media screen and (max-width: 992px) {
     .wrap {
       .content-features {
         flex-wrap: wrap;
@@ -88,6 +94,14 @@
             margin-right: 0;
           }
         }
+      }
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .wrap {
+      .title.text-center {
+        margin-bottom: 35px;
       }
     }
   }

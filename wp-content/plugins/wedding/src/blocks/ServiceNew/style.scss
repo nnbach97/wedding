@@ -3,6 +3,10 @@
   background: #fff;
   overflow-x: hidden;
 
+  .title.text-center {
+    margin-bottom: 35px;
+  }
+
   .block-content {
     max-width: 736px;
     line-height: 19px;
@@ -275,11 +279,16 @@
 
   @media screen and (max-width: 667px) {
     & {
-      padding: 70px 0 35px;
+      padding: 45px 0 35px;
+
+      .title.text-center {
+        margin-bottom: 15px;
+      }
 
       .wrapper-item {
         .lnk {
           width: 100%;
+          margin-bottom: 0;
 
           .item-media {
             .txt {

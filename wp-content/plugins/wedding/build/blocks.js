@@ -5373,6 +5373,28 @@ const FragmentBlock = function (_ref2) {
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "holder"
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    className: "title text-center"
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.RichText, {
+    tagName: "h3",
+    className: "ttl",
+    value: attributes === null || attributes === void 0 ? void 0 : attributes.title,
+    allowedFormats: _config_define__WEBPACK_IMPORTED_MODULE_4__.ALLOWED_FORMATS,
+    placeholder: "Title",
+    keepPlaceholderOnFocus: true,
+    onChange: value => setAttributes({
+      title: value
+    })
+  }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.RichText, {
+    tagName: "p",
+    className: "txt",
+    value: attributes === null || attributes === void 0 ? void 0 : attributes.txt,
+    allowedFormats: _config_define__WEBPACK_IMPORTED_MODULE_4__.ALLOWED_FORMATS,
+    placeholder: "Text",
+    keepPlaceholderOnFocus: true,
+    onChange: value => setAttributes({
+      txt: value
+    })
+  })), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     class: "wrapper-item"
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     class: "item"
@@ -5424,6 +5446,14 @@ __webpack_require__.r(__webpack_exports__);
   category: "wedding",
   icon: "dashicons dashicons-buddicons-buddypress-logo",
   attributes: {
+    title: {
+      type: "string",
+      default: "<strong>Album Hình Cưới</strong>"
+    },
+    txt: {
+      type: "string",
+      default: "Tôi có thể chinh phục thế giới bằng một tay miễn là bạn đang nắm tay kia."
+    },
     images: {
       type: "array",
       default: []
@@ -6539,7 +6569,29 @@ const FragmentBlock = function (_ref2) {
     className: "block block-feature-service-page"
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "holder wrap"
-  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("ul", {
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    className: "title text-center"
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.RichText, {
+    tagName: "h3",
+    className: "ttl",
+    value: attributes === null || attributes === void 0 ? void 0 : attributes.title,
+    allowedFormats: _config_define__WEBPACK_IMPORTED_MODULE_4__.ALLOWED_FORMATS,
+    placeholder: "Title",
+    keepPlaceholderOnFocus: true,
+    onChange: value => setAttributes({
+      title: value
+    })
+  }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.RichText, {
+    tagName: "p",
+    className: "txt",
+    value: attributes === null || attributes === void 0 ? void 0 : attributes.txt,
+    allowedFormats: _config_define__WEBPACK_IMPORTED_MODULE_4__.ALLOWED_FORMATS,
+    placeholder: "Text",
+    keepPlaceholderOnFocus: true,
+    onChange: value => setAttributes({
+      txt: value
+    })
+  })), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("ul", {
     className: "content-features"
   }, attributes.content.length > 0 && attributes.content.map((item, index) => {
     return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("li", {
@@ -6635,6 +6687,14 @@ __webpack_require__.r(__webpack_exports__);
   category: "wedding",
   icon: "format-image",
   attributes: {
+    title: {
+      type: "string",
+      default: "<strong>Sự Kiện Cưới</strong>"
+    },
+    txt: {
+      type: "string",
+      default: "Được ai đó yêu sâu sắc sẽ mang lại cho bạn sức mạnh, trong khi yêu ai đó sâu sắc sẽ cho bạn dũng khí."
+    },
     content: {
       type: "array",
       default: [{
@@ -6644,8 +6704,8 @@ __webpack_require__.r(__webpack_exports__);
           alt: "",
           id: ""
         },
-        date: '07:30 AM 12/03/2023',
-        address: 'Bạch Đằng, Đông Hưng, Thái Bình'
+        date: "07:30 AM 12/03/2023",
+        address: "Bạch Đằng, Đông Hưng, Thái Bình"
       }, {
         title: "<strong>TIỆC CƯỚI NHÀ NỮ</strong>",
         icon: {
@@ -6653,8 +6713,8 @@ __webpack_require__.r(__webpack_exports__);
           alt: "",
           id: ""
         },
-        date: '07:30 AM 12/03/2023',
-        address: 'Bạch Đằng, Đông Hưng, Thái Bình'
+        date: "07:30 AM 12/03/2023",
+        address: "Bạch Đằng, Đông Hưng, Thái Bình"
       }, {
         title: "<strong>TIỆC CƯỚI NHÀ NAM</strong>",
         icon: {
@@ -6662,8 +6722,8 @@ __webpack_require__.r(__webpack_exports__);
           alt: "",
           id: ""
         },
-        date: '07:30 AM 12/03/2023',
-        address: 'Số 32, Đường Kho Sáu, Vạn Điểm, Thường Tín, Hà Nội'
+        date: "07:30 AM 12/03/2023",
+        address: "Số 32, Đường Kho Sáu, Vạn Điểm, Thường Tín, Hà Nội"
       }, {
         title: "<strong>LỄ CƯỚI NHÀ NAM</strong>",
         icon: {
@@ -6671,8 +6731,8 @@ __webpack_require__.r(__webpack_exports__);
           alt: "",
           id: ""
         },
-        date: '07:30 AM 12/03/2023',
-        address: 'Số 32, Đường Kho Sáu, Vạn Điểm, Thường Tín, Hà Nội'
+        date: "07:30 AM 12/03/2023",
+        address: "Số 32, Đường Kho Sáu, Vạn Điểm, Thường Tín, Hà Nội"
       }]
     }
   },
@@ -10531,15 +10591,15 @@ __webpack_require__.r(__webpack_exports__);
   attributes: {
     ttl: {
       type: "string",
-      default: "<strong>Please Enter Title..</strong>"
+      default: "<strong>Nhập tiêu đề</strong>"
     },
     txt: {
       type: "string",
-      default: "Please Enter Content .."
+      default: "Nhập nội dung"
     },
     date: {
       type: "string",
-      default: "Please Enter date (DD/MM/YYYY)"
+      default: "Nhập ngày (DD/MM/YYYY)"
     },
     image: {
       type: "object",

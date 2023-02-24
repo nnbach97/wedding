@@ -16,7 +16,7 @@ function wedding_shortcode_block_contact($atts, $content)
   ]);
   ob_start(); ?>
 
-<div class="block block-contact" style="
+<div class="block block-contact" id="message" style="
   background: url(<?= $img['url']; ?>) no-repeat;
   background-position: center;
   background-size: cover;
