@@ -10,7 +10,7 @@ function wedding_shortcode_block_contact($atts, $content)
   $title = wedding_func_check_data('title', $atts, "<strong>Sổ Lưu Bút</strong>");
   $txt = wedding_func_check_data('txt', $atts, 'Tôi yêu bạn vì tất cả những gì bạn đang có, tất cả những gì bạn đã có, và tất cả những gì bạn chưa hiện hữu.');
   $img = wedding_func_check_data('img', $atts, [
-    'url' => P_wedding_RESOURCE_HOST . '/assets/img/blocks/casestudy/banner_bg_common_story.jpg',
+    'url' => P_wedding_RESOURCE_HOST . '/assets/img/blocks/story/banner_bg_common_story.jpg',
     'alt' => '',
     'id' => '',
   ]);

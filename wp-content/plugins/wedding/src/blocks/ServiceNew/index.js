@@ -25,7 +25,7 @@ registerBlockType("create-block/services-new", {
       default: [
         {
           image: {
-            url: PV_Admin.PV_BASE_URL + "/assets/img/blocks/service/bach.png",
+            url: PV_Admin.PV_BASE_URL + "/assets/img/blocks/couple/bach.png",
             alt: "",
             id: "",
           },
@@ -35,7 +35,7 @@ registerBlockType("create-block/services-new", {
         },
         {
           image: {
-            url: PV_Admin.PV_BASE_URL + "/assets/img/blocks/service/trang.png",
+            url: PV_Admin.PV_BASE_URL + "/assets/img/blocks/couple/trang.png",
             alt: "",
             id: "",
           },

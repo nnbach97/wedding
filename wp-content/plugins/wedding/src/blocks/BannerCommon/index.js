@@ -23,7 +23,7 @@ registerBlockType("create-block/banner-common", {
       default: {
         url:
           PV_Admin.PV_BASE_URL +
-          "assets/img/blocks/casestudy/banner_bg_common_story.jpg",
+          "assets/img/blocks/story/banner_bg_common_story.jpg",
         alt: "",
         id: "",
       },

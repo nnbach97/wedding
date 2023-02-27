@@ -13,7 +13,7 @@ function wedding_shortcode_block_feature_service_page($atts, $content)
     [
       'title' => '<strong>LỄ CƯỚI NHÀ NỮ</strong>',
       'icon' => [
-        'url' => P_wedding_RESOURCE_HOST . '/assets/img/blocks/digital-transformation-service-page/1.png',
+        'url' => P_wedding_RESOURCE_HOST . '/assets/img/blocks/event/1.png',
         'alt' =>  "",
         'id' => "",
       ],
@@ -24,7 +24,7 @@ function wedding_shortcode_block_feature_service_page($atts, $content)
     [
       'title' => '<strong>TIỆC CƯỚI NHÀ NỮ</strong>',
       'icon' => [
-        'url' => P_wedding_RESOURCE_HOST . '/assets/img/blocks/digital-transformation-service-page/2.png',
+        'url' => P_wedding_RESOURCE_HOST . '/assets/img/blocks/event/2.png',
         'alt' =>  "",
         'id' => "",
       ],
@@ -35,7 +35,7 @@ function wedding_shortcode_block_feature_service_page($atts, $content)
     [
       'title' => '<strong>TIỆC CƯỚI NHÀ NAM</strong>',
       'icon' => [
-        'url' => P_wedding_RESOURCE_HOST . '/assets/img/blocks/digital-transformation-service-page/3.png',
+        'url' => P_wedding_RESOURCE_HOST . '/assets/img/blocks/event/3.png',
         'alt' =>  "",
         'id' => "",
       ],
@@ -46,7 +46,7 @@ function wedding_shortcode_block_feature_service_page($atts, $content)
     [
       'title' => '<strong>LỄ CƯỚI NHÀ NAM</strong>',
       'icon' => [
-        'url' => P_wedding_RESOURCE_HOST . '/assets/img/blocks/digital-transformation-service-page/4.png',
+        'url' => P_wedding_RESOURCE_HOST . '/assets/img/blocks/event/4.png',
         'alt' =>  "",
         'id' => "",
       ],
