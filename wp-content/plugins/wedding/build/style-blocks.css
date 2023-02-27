@@ -7032,7 +7032,7 @@ li {
   /* END: Responsive */
 }
 .block-contact .main .card {
-  width: calc(40% - 20px);
+  width: calc(45% - 20px);
   overflow-y: auto;
   background-color: rgba(255, 255, 255, 0.7);
   margin: 0.5rem 0;
@@ -7055,7 +7055,7 @@ li {
 }
 .block-contact .main .form-contact {
   padding-bottom: 50px;
-  width: 60%;
+  width: 55%;
 }
 .block-contact .main .form-contact .ttl {
   color: #fff;
@@ -7141,23 +7141,11 @@ li {
   }
 }
 @media screen and (max-width: 768px) {
-  .block-contact .main .card {
-    width: calc(50% - 20px);
+  .block-contact .main {
+    flex-direction: column;
   }
-  .block-contact .main .form-contact {
-    width: 50%;
-  }
-  .block-contact .main .form-contact .ttl {
-    color: #fff;
-    font-size: 13px;
-  }
-  .block-contact .main .form-contact .group-input .group-input-item {
+  .block-contact .main .form-contact, .block-contact .main .card {
     width: 100%;
-    margin-right: 0;
-    margin-bottom: 15px;
-  }
-  .block-contact .main .form-contact .group-input .group-input-item .label {
-    font-size: 14px;
   }
   .block-contact .main .form-contact .form-btn {
     font-size: 14px;
@@ -7172,12 +7160,6 @@ li {
   .block-contact .main .form-btn {
     font-size: 14px;
     max-width: 180px;
-  }
-  .block-contact .main {
-    flex-direction: column;
-  }
-  .block-contact .main .form-contact, .block-contact .main .card {
-    width: 100%;
   }
 }
 

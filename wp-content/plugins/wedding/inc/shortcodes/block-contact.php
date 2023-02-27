@@ -41,7 +41,7 @@ function wedding_shortcode_block_contact($atts, $content)
           <img src="<?= RESOURCE_HOST . '/img/ico_bank_bach.png' ?>" alt="QR">
         </div>
         <div class="card-img">
-          <img src="<?= RESOURCE_HOST . '/img/ico_bank_bach.png' ?>" alt="QR">
+          <img src="<?= RESOURCE_HOST . '/img/ico_bank_trang.png' ?>" alt="QR">
         </div>
       </div>
     </div>

@@ -34,7 +34,7 @@
     align-items: flex-start;
 
     .card {
-      width: calc(40% - 20px);
+      width: calc(45% - 20px);
       overflow-y: auto;
       background-color: rgb(255 255 255 / 70%);
       margin: 0.5rem 0;
@@ -61,7 +61,7 @@
 
     .form-contact {
       padding-bottom: 50px;
-      width: 60%;
+      width: 55%;
 
       .ttl {
         color: #fff;
@@ -169,27 +169,11 @@
     }
 
     @media screen and (max-width: 768px) {
-      .card {
-        width: calc(50% - 20px);
-      }
+      & {
+        flex-direction: column;
 
-      .form-contact {
-        width: 50%;
-
-        .ttl {
-          color: #fff;
-          font-size: 13px;
-        }
-
-        .group-input {
-          .group-input-item {
-            width: 100%;
-            margin-right: 0;
-            margin-bottom: 15px;
-            .label {
-              font-size: 14px;
-            }
-          }
+        .form-contact, .card {
+          width: 100%;
         }
       }
 
@@ -212,14 +196,6 @@
       .form-btn {
         font-size: 14px;
         max-width: 180px;
-      }
-
-      & {
-        flex-direction: column;
-
-        .form-contact, .card {
-          width: 100%;
-        }
       }
     }
     /* END: Responsive */
