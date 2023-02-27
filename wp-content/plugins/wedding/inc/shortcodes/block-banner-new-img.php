@@ -47,22 +47,6 @@ function wedding_shortcode_block_banner_new_img($atts, $content)
         <p class="sub"><?= $title; ?></p>
         <h2 class="ttl"><?= $description; ?></h2>
         <p class="sub"><?= $date; ?></p>
-
-        <!-- <div class="btn-wrapper">
-          <?php if ($is_show_btn_video === true) : ?>
-            <div class="video-btn js-film">
-              <div class="video-mark">
-                <div class="wave-pulse wave-pulse-1"></div>
-                <div class="wave-pulse wave-pulse-2"></div>
-              </div>
-              <div class="video-click">
-                <div class="video-play">
-                  <span class="video-play-icon"></span>
-                </div>
-              </div>
-            </div>
-          <?php endif; ?>
-        </div> -->
       </div>
 
         <div class="countdown" id="countdown" data-countdown="<?= $countdown; ?>">
@@ -75,14 +59,6 @@ function wedding_shortcode_block_banner_new_img($atts, $content)
         </div>
       </div>
     </div>
-    <!-- <div class="video-popup">
-      <div class="overlay js-film"></div>
-      <div class="wrap">
-        <video class="film-video js-film-video" controls="" muted="">
-          <source src="<?= $video_film ?>" type="video/mp4" />
-        </video>
-      </div>
-    </div> -->
 <?php
   return ob_get_clean();
 }
