@@ -6,6 +6,8 @@
   .holder {
     text-align: center;
     .btn {
+      position: relative;
+      z-index: 2;
       &-lnk {
         background-color: #ff4061;
         color: #fff;
@@ -54,6 +56,8 @@
           -o-object-fit: contain;
           object-fit: contain;
           transition: 0.5s ease-in-out;
+          position: relative;
+          z-index: 2;
         }
 
         &-1 {

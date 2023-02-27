@@ -22,7 +22,7 @@
         <p class="txt"><?= $txt; ?></p>
       </div>
       <div class="btn">
-        <a class="btn-lnk" href="/album/">Xem Album</a>
+        <a class="btn-lnk" href="/gallary/">Xem Album</a>
       </div>
       <div class="wrapper-item">
         <?php foreach($images as $key => $image): ?>

@@ -63,6 +63,8 @@
             border: 2px solid transparent;
             display: block;
             margin-top: 20px;
+            position: relative;
+            z-index: 2;
 
             &:hover {
               background-color: white;

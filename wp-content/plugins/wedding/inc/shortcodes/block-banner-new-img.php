@@ -27,7 +27,7 @@ function wedding_shortcode_block_banner_new_img($atts, $content)
   <div class="block block-banner-new-img js-hero<?= $is_show_bg ? '' : ' is-show-bg' ?>">
     <div class="banner-bg">
       <img class="banner-bg__img" src="<?= $img_banner['url'] ?>" alt="<?= $img_banner['alt'] ?>">
-      <div class="night">
+      <!-- <div class="night">
         <div class="night-item">
           <div class="shooting_star"></div>
         </div>
@@ -40,7 +40,7 @@ function wedding_shortcode_block_banner_new_img($atts, $content)
         <div class="night-item">
           <div class="shooting_star"></div>
         </div>
-      </div>
+      </div> -->
     </div>
     <div class="holder banner-inner">
       <div class="wrap">
