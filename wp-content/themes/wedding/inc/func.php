@@ -26,55 +26,14 @@ if (!function_exists('template_mail')) {
     $html .= '<!DOCTYPE html>';
     $html .= '<html>';
     $html .= '<body>';
-    $html .= '<div style="font-size:14px;line-height:1.4;font-weight:400;margin:0px;background-color:#eeeeee;padding-top:20px">';
+    $html .= '<div style="font-size:14px;line-height:1.4;font-weight:400;margin:0px;background-color:#f9667e73;padding:80px">';
     $html .= '<div style="max-width:580px;width:100%;border:0px;margin-right:auto;margin-left:auto;font-weight:500">';
-    $html .= '<div style="background-color:#ffffff;font-weight:500">';
-    $html .= '<div style="text-align:center;padding:18px 0">';
-    $html .= '<a href=""><img src="' . RESOURCE_HOST . '/img/logo_white.png" alt="" width="170"></a>';
-    $html .= '</div>';
-    $html .= '<div style="background: #14479c; color: #fff; padding: 10px; text-align: center;">';
-    $html .= '<p><strong style="font-size: 18px;">' . $company_name_vi . '</strong></p>';
-    $html .= '</div>';
-
+    $html .= '<div style="background-color:#ffffff;font-weight:500;padding: 20px;">';
     $html .= '<div style="padding: 10px;">';
-    $html .= '<h2 style="text-align: center; position: relative; margin: 50px 0; color: #000">';
+    $html .= '<h2 style="text-align: center; position: relative; margin: 0 0 30px; color: #000">';
     $html .= $title;
-    $html .= '<span style="height: 8px;display: block;width: 40px;border-radius: 4px;background: #ffe000;margin: 5px auto;"></span>';
     $html .= '</h2>';
-    $html .= '<br>';
     $html .= $content;
-    $html .= '</div>';
-
-    $html .= '<div style="padding: 10px;background: #14479c;color: #fff; margin-top: 30px;">';
-    $html .= '<p style="text-align: center; position: relative; padding-bottom: 26px; text-transform: uppercase;">';
-    $html .= '<strong>' . __("Contact Info", "wedding") . ':</strong>';
-    $html .= '<span style="height: 8px;display: block;width: 40px;border-radius: 4px;background: #ffe000;margin: 5px auto;"></span>';
-    $html .= '</p>';
-    $html .= '<div>';
-    $html .= '<p style="text-transform: uppercase; color: #fff""><strong>' . __("Vietnam", "wedding") . ':</strong></p>';
-    $html .= '<ul style="list-style: none;padding: 0;margin: 0;line-height: 22px;">';
-    $html .= '<li style="display: block; color: #fff"">' . __("Headquarters", "wedding") . '：' . $company_name_vi . '</li>';
-    $html .= '<li style="display: block; color: #fff"">' . $address_vi . '</li>';
-    $html .= '<li style="display: block; color: #fff"">TEL: <a href="tel:' . $phone_vi . '" style="color: #fff">' . $phone_vi . '</a></li>';
-    $html .= '<li style="display: block; color: #fff">EMAIL: <a style="color: #fff" href="mailto: ' . $contact_email . '">' . $contact_email . '</a></li>';
-    $html .= '</ul>';
-    $html .= '</div>';
-    $html .= '<hr style: "width: 40%">';
-    $html .= '<div>';
-    $html .= '<p style="text-transform: uppercase; color: #fff""><strong>' . __("Japane", "wedding") . ':</strong></p>';
-    $html .= '<ul style="list-style: none;padding: 0;margin: 0;line-height: 22px;">';
-    $html .= '<li style="display: block; color: #fff">' . __("Japanese legal entity", "wedding") . '：' . $company_name_jp . '</li>';
-    // if (pll_current_language() === "ja") {
-    //     $html .= '<li style="display: block; color: #fff">' . $address_jp_01 . '<br>' . $address_jp_02 . '</li>';
-    // } else {
-    //     $html .= '<li style="display: block; color: #fff">' . $address_en_01 . '<br>' . $address_en_02 . '</li>';
-    // }
-    $html .= '<li style="display: block; color: #fff">TEL： <a href="tel:' . $phone_jp . '" style="color: #fff">' . $phone_jp . '</a></li>';
-    $html .= '<li style="display: block; color: #fff">EMAIL: <a style="color: #fff" href="mailto: ' . $contact_email . '">' . $contact_email . '</a></li>';
-    $html .= '</ul>';
-    $html .= '</div>';
-    $html .= '<hr>';
-    $html .= '<p style="text-align: center; color: #fff"">Copyright © 2022 wedding Corporation. All Rights Reserved.</p>';
     $html .= '</div>';
     $html .= '</div>';
     $html .= '</div>';
