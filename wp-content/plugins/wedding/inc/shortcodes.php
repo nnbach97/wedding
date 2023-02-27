@@ -2,7 +2,7 @@
 
 $registerBlock = [];
 
-// wedding_include('inc/shortcodes/block-leadership.php');
+wedding_include('inc/shortcodes/block-leadership.php');
 // -----------------------
 wedding_include('inc/shortcodes/block-couple.php');
 wedding_include('inc/shortcodes/block-banner-new-img.php');

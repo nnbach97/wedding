@@ -6,8 +6,8 @@
   ];
 
   function wedding_shortcode_block_leadership($atts, $content) {
-    $title = wedding_func_check_data('title', $atts, '<strong>Meet Our Leadership Team</strong>');
-    $title_shadow = wedding_func_check_data('title_shadow', $atts, 'Team');
+    $title = wedding_func_check_data('title', $atts, '<strong>Ngọc Bách & Huyền Trang</strong>');
+    $txt = wedding_func_check_data('txt', $atts, 'Tôi có thể chinh phục thế giới bằng một tay miễn là bạn đang nắm tay kia');
     $config = wedding_func_check_data('config', $atts, []);
     $config = wedding_func_process_config_block($config);
     $style_block = wedding_func_check_data('style_block', $config, '');
@@ -18,8 +18,6 @@
           "alt" => "",
           "id" => "",
         ],
-        "title" => "<strong>Dang Dieu Linh</strong>",
-        "desc" => "wedding President & CEO",
       ],
       [
         "icon" => [
@@ -27,8 +25,6 @@
           "alt" => "",
           "id" => "",
         ],
-        "title" => "<strong>Nguyen Ngoc Tan</strong>",
-        "desc" => "wedding Vice-Director & wedding Solution President",
       ],
       [
         "icon" => [
@@ -36,8 +32,6 @@
           "alt" => "",
           "id" => "",
         ],
-        "title" => "<strong>Nguyen Truong Giang</strong>",
-        "desc" => "wedding CPO & wedding Solution CEO",
       ],
       [
         "icon" => [
@@ -45,8 +39,6 @@
           "alt" => "",
           "id" => "",
         ],
-        "title" => "<strong>Tran Tri Dung</strong>",
-        "desc" => "wedding COO & QA Manager",
       ],
       [
         "icon" => [
@@ -54,36 +46,43 @@
           "alt" => "",
           "id" => "",
         ],
-        "title" => "<strong>Le Tuan Anh</strong>",
-        "desc" => "wedding BU2 Director",
+      ],
+      [
+        "icon" => [
+          "url" => P_wedding_RESOURCE_HOST . "/assets/img/blocks/leadership/1.png",
+          "alt" => "",
+          "id" => "",
+        ],
+      ],
+      [
+        "icon" => [
+          "url" => P_wedding_RESOURCE_HOST . "/assets/img/blocks/leadership/1.png",
+          "alt" => "",
+          "id" => "",
+        ],
       ],
     ]);
-    $countBlocks = count($blocks) >= 5 ? ' hide-dots' : '';
     ob_start();
 ?>
   <?php if(!empty($blocks)): ?>
-  <div class="block block-leadership-new" style="<?= esc_attr($style_block); ?>">
+  <div class="block block-gallary" style="<?= esc_attr($style_block); ?>">
     <div class="holder">
       <div class="title text-center">
         <h3 class="ttl"><?= $title; ?></h3>
-        <span class="shadow"><?= $title_shadow; ?></span>
+        <h3 class="txt"><?= $txt; ?></h3>
       </div>
-      <div class="wrapper-item wow fadeInUp js-slick-teams <?= $countBlocks ?>">
+
+      <div class="wrapper-item wow fadeInUp js-slick-gallary">
         <?php foreach($blocks as $key => $value): ?>
           <?php
-            $ttl = wedding_func_check_data('title', $value, "Your title", true);
-            $des = wedding_func_check_data('des', $value, "Your description", true);
             $image = wedding_func_check_data('icon', $value);
             $image_url = wedding_func_check_data('url', $image, wedding_IMAGE_DEFAULT, true);
           ?>
           <div class="item">
             <div class="wrap">
-              <img src="<?= $image_url ?>" alt="">
-            </div>
-
-            <div class="content">
-              <h4 class="ttl"><?=$ttl?></h4>
-              <p class="txt"><?=$des?></p>
+              <a class="grouped_elements" rel="group1" href="<?= $image_url ?>">
+                <img src="<?= $image_url ?>" alt="">
+              </a>
             </div>
           </div>
         <?php endforeach ?>

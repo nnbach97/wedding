@@ -33,6 +33,11 @@ function wedding_shortcode_block_contact($atts, $content)
         <input class="form__control" type="hidden" name="action" value="contact_mail">
         <div class="group-input">
           <?= render_input_type(); ?>
+          <div class="group-input-item input-message  group-input-item--textarea required">
+            <label for="Lời chức mừng" class="label form-label">Lời chức mừng</label>
+            <textarea class="form-control" cols="30" rows="5" name="message" autocomplete="off" value="" required></textarea>
+            <div class="invalid-feedback"></div>
+          </div>
         </div>
         <button type="submit" class="form-btn"><?= __("Gửi lời chúc", "wedding") ?></button>
       </form>

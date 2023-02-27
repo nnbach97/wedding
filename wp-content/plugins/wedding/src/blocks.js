@@ -1,5 +1,5 @@
 import "./style.scss";
-// import {} from "./blocks/Leadership";
+import {} from "./blocks/Leadership";
 // ------------------------------------------------------
 import {} from "./blocks/Couple";
 import {} from "./blocks/BannerNewImg";

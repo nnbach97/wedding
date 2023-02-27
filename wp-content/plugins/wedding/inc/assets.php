@@ -55,6 +55,9 @@ class wedding_plugin_assets
     wp_register_script('slick', 'https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js', ['jquery'], '1.1');
     wp_enqueue_script('slick');
 
+    wp_register_script('fancybox', 'https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js', ['jquery'], '1.1');
+    wp_enqueue_script('fancybox');
+
     wp_register_script('main', P_wedding_RESOURCE_HOST . 'assets/js/main.js', ['jquery'], '1.1');
     wp_enqueue_script('main');
 
@@ -63,6 +66,9 @@ class wedding_plugin_assets
 
     wp_register_script('home', P_wedding_RESOURCE_HOST . 'assets/js/block.js', ['jquery'], '1.9');
     wp_enqueue_script('home');
+
+    wp_register_script('gallary', P_wedding_RESOURCE_HOST . 'assets/js/gallary.js', ['jquery'], '1.9');
+    wp_enqueue_script('gallary');
   }
 
   public function load_style()
@@ -78,6 +84,9 @@ class wedding_plugin_assets
 
     wp_register_style('slick-min', 'https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css', []);
     wp_enqueue_style('slick-min');
+
+    wp_register_style('fancybox-min', 'https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css', []);
+    wp_enqueue_style('fancybox-min');
 
     wp_register_style('block', P_wedding_RESOURCE_HOST . 'assets/css/block.css', [], '1.2');
     wp_enqueue_style('block');

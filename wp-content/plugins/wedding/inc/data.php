@@ -16,14 +16,14 @@ $dataInput = [
     'placeholder' => 'Nhập email',
     'class' => ' input-email '
   ],
-  '3' => [
-    'name' => 'message',
-    'label' => __("Lời chức mừng", "wedding"),
-    'required' => false,
-    'tag' => 'textarea',
-    'placeholder' => 'Nhập Lời chức mừng',
-    'class' => ' input-message '
-  ]
+  // '3' => [
+  //   'name' => 'message',
+  //   'label' => __("Lời chức mừng", "wedding"),
+  //   'required' => false,
+  //   'tag' => 'textarea',
+  //   'placeholder' => 'Nhập Lời chức mừng',
+  //   'class' => ' input-message '
+  // ]
 ];
 
 if (!defined('INPUT_TYPE')) define('INPUT_TYPE', $dataInput);

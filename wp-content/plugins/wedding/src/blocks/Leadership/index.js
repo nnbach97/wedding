@@ -5,18 +5,19 @@ import "./style.scss";
 import Edit from "./edit";
 
 registerBlockType("create-block/leadership", {
-	title: "Leadership New",
+	title: "Gallary List",
 	description: "Example block scaffolded with Create Block tool.",
 	category: "wedding",
 	icon: "dashicons dashicons-buddicons-buddypress-logo",
 	attributes: {
 		title: {
 			type: "string",
-			default: "<strong>Meet Our Leadership Team</strong>",
+			default: "<strong>Ngọc Bách & Huyền Trang</strong>",
 		},
-		title_shadow: {
+		txt: {
 			type: "string",
-			default: "Team",
+			default:
+				"Tôi có thể chinh phục thế giới bằng một tay miễn là bạn đang nắm tay kia",
 		},
 		blocks: {
 			type: "array",
@@ -27,8 +28,6 @@ registerBlockType("create-block/leadership", {
 						id: "",
 						alt: "",
 					},
-					title: "<strong>Dang Dieu Linh</strong>",
-					des: "wedding President & CEO",
 				},
 				{
 					icon: {
@@ -36,8 +35,6 @@ registerBlockType("create-block/leadership", {
 						id: "",
 						alt: "",
 					},
-					title: "<strong>Nguyen Ngoc Tan</strong>",
-					des: "wedding Vice-Director & wedding Solution President",
 				},
 				{
 					icon: {
@@ -45,8 +42,6 @@ registerBlockType("create-block/leadership", {
 						id: "",
 						alt: "",
 					},
-					title: "<strong>Nguyen Truong Giang</strong>",
-					des: "wedding CPO & wedding Solution CEO",
 				},
 				{
 					icon: {
@@ -54,17 +49,6 @@ registerBlockType("create-block/leadership", {
 						id: "",
 						alt: "",
 					},
-					title: "<strong>Tran Tri Dung</strong>",
-					des: "wedding COO & QA Manager",
-				},
-				{
-					icon: {
-						url: PV_Admin.PV_BASE_URL + "/assets/img/blocks/leadership/1.png",
-						id: "",
-						alt: "",
-					},
-					title: "<strong>Le Tuan Anh</strong>",
-					des: "wedding BU2 Director",
 				},
 			],
 		},

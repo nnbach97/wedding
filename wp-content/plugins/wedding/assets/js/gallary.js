@@ -1,0 +1,1 @@
+!function(s){s(function(){s(".js-slick-gallary .slick-slide img").click(function(){s(this).attr("src")}),s(".js-slick-gallary a.grouped_elements").fancybox({showNavArrows:!0})})}(jQuery);

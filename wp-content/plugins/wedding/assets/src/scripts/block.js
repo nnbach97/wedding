@@ -52,26 +52,19 @@
     /* END: Coming count down */
 
     /* Teams */
-    $(".js-slick-teams").slick({
-      dots: true,
-      arrows: false,
+    $(".js-slick-gallary").slick({
+      dots: false,
+      arrows: true,
       speed: 3000,
       autoplay: true,
       autoplaySpeed: 3000,
-      slidesToShow: 5,
+      slidesToShow: 4,
       pauseOnHover: true,
       pauseOnFocus: true,
-      slidesToScroll: 5,
+      slidesToScroll: 4,
       responsive: [
         {
           breakpoint: 992,
-          settings: {
-            slidesToShow: 4,
-            slidesToScroll: 4,
-          },
-        },
-        {
-          breakpoint: 769,
           settings: {
             slidesToShow: 3,
             slidesToScroll: 3,
@@ -82,6 +75,13 @@
           settings: {
             slidesToShow: 2,
             slidesToScroll: 2,
+          },
+        },
+        {
+          breakpoint: 475,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
           },
         },
       ],

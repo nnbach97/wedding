@@ -5,7 +5,7 @@ import "./style.scss";
 import Edit from "./edit";
 
 registerBlockType("create-block/teams", {
-	title: "Leadership",
+	title: "Gallary Lists",
 	description: "Example block scaffolded with Create Block tool.",
 	category: "wedding",
 	icon: "dashicons dashicons-buddicons-buddypress-logo",

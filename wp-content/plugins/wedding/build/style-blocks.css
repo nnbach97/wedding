@@ -7,6 +7,335 @@
  *
  * Replace them with your own styles or remove the file completely.
  */
+/*!*********************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[3].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[3].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[3].use[3]!./src/blocks/Leadership/style.scss ***!
+  \*********************************************************************************************************************************************************************************************************************************************************/
+/* Leadership Version 2*/
+.block-gallary {
+  background: #F6F6FF;
+  padding: 70px 0;
+  overflow-x: hidden;
+}
+.block-gallary .head .ttl {
+  font-size: 40px;
+}
+.block-gallary .wrapper-item {
+  display: flex;
+  margin: 0 -13.5px;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: stretch;
+  padding: 70px 0 0;
+}
+.block-gallary .wrapper-item .item {
+  width: 20%;
+  padding: 0 5px;
+  position: relative;
+  height: 100%;
+}
+.block-gallary .wrapper-item .item .wrap {
+  padding-top: 0;
+  margin: 0;
+  height: 350px;
+}
+.block-gallary .wrapper-item .item .wrap a {
+  display: block;
+  height: 100%;
+}
+.block-gallary .wrapper-item .item .wrap img {
+  position: static;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  height: 100%;
+}
+.block-gallary .wrapper-item .item .wrap .add {
+  position: static;
+  border: 0;
+  height: 100%;
+  width: 100%;
+}
+.block-gallary .wrapper-item .item .wrap .add .dashicons-plus-alt {
+  width: 100%;
+  height: auto;
+}
+.block-gallary .wrapper-item .item .wrap .add .dashicons-plus-alt::before {
+  font-size: 30px;
+}
+.block-gallary .wrapper-item .item .wrapper-images-list.single {
+  margin-bottom: 0;
+}
+.block-gallary .wrapper-item .item .wrapper-images-list.single .images-list {
+  justify-content: center;
+}
+.block-gallary .wrapper-item .item .wrapper-images-list.single .images-list .item {
+  width: 100%;
+  text-align: center;
+  display: block;
+  min-height: 197px;
+  margin-bottom: 0;
+}
+.block-gallary .wrapper-item .item .wrapper-images-list.single .images-list .item.button-add {
+  cursor: pointer;
+  outline: none;
+}
+.block-gallary .wrapper-item .item .wrapper-images-list.single .images-list .item.button-add .wrap {
+  border: 2px dashed #4bae4f;
+  border-radius: 10px;
+  min-height: 190px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.block-gallary .wrapper-item .item .wrapper-images-list.single .images-list .item.button-add:hover {
+  opacity: 0.7;
+}
+.block-gallary .wrapper-item .item .content {
+  text-align: center;
+}
+.block-gallary .wrapper-item .item .content .ttl {
+  color: #454545;
+  font-size: 20px;
+  margin: 17px 0 8px;
+  font-weight: 700;
+  line-height: 23px;
+}
+.block-gallary .wrapper-item .item .content .txt {
+  color: #828282;
+  font-weight: 400;
+  font-size: 16px;
+  word-break: break-word;
+}
+.block-gallary .wrapper-item .item .admin-buttom-delete-item {
+  position: absolute;
+  top: 7px;
+  right: 20px;
+  z-index: 1;
+}
+.block-gallary .wrapper-item .item .admin-buttom-move-item {
+  position: absolute;
+  top: 7px;
+  left: 18px;
+  z-index: 1;
+}
+.block-gallary .wrapper-item .btn-about-add {
+  padding: 10px;
+  text-align: center;
+  background: 0 0;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  min-height: 265px;
+  color: #4bae4f;
+  border: 2px dashed #4bae4f;
+  max-width: 204px;
+}
+.block-gallary .wrapper-item .btn-about-delete {
+  padding: 5px 6px;
+  position: absolute;
+  top: 10px;
+  right: 22px;
+  border: none;
+  outline: none;
+  text-align: center;
+  background: 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+.block-gallary .wrapper-item .btn-about-move {
+  padding: 5px 6px;
+  position: absolute;
+  top: 10px;
+  right: 22px;
+  border: none;
+  outline: none;
+  text-align: center;
+  background: 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+.block-gallary .wrapper-item .slick-prev:before, .block-gallary .wrapper-item .slick-next:before {
+  color: #091932;
+  font-size: 25px;
+}
+.block-gallary .wrapper-item .slick-prev {
+  left: 0;
+  z-index: 1;
+}
+.block-gallary .wrapper-item .slick-next {
+  right: 0;
+  z-index: 1;
+}
+@media screen and (max-width: 992px) {
+  .block-gallary .wrapper-item .item {
+    width: 25%;
+  }
+  .block-gallary .wrapper-item .item .images-list .wrap img {
+    min-height: 287px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .block-gallary .wrapper-item .item .wrap {
+    height: 315px;
+  }
+}
+@media screen and (max-width: 568px) {
+  .block-gallary {
+    padding: 50px 0 15px;
+  }
+  .block-gallary .wrapper-item {
+    padding-top: 30px;
+    margin: 0;
+  }
+  .block-gallary .wrapper-item .item {
+    width: 50%;
+    margin-bottom: 25px;
+    padding: 0 9px;
+  }
+  .block-gallary .wrapper-item .item .wrap {
+    height: 355px;
+  }
+  .block-gallary .wrapper-item .item .content .ttl {
+    font-size: 18px;
+    line-height: 21px;
+  }
+  .block-gallary .wrapper-item .item .content .txt {
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .block-gallary .wrapper-item .item .images-list .wrap img {
+    min-height: 287px;
+  }
+}
+@media screen and (max-width: 475px) {
+  .block-gallary .wrapper-item .item .wrap img {
+    -o-object-fit: contain;
+       object-fit: contain;
+    -o-object-position: center;
+       object-position: center;
+  }
+}
+
+.fancybox-content {
+  border: 5px solid #fff !important;
+}
+.fancybox-toolbar {
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+/* END: Leadership Version 2*/
+/* Custom Admin*/
+.block-editor-block-list__block .block-gallary .wrapper-item {
+  justify-content: flex-start;
+}
+
+/* END: Custom Admin*/
+.item.hold-item-gallary {
+  width: 20%;
+  padding: 0 5px;
+  position: relative;
+  margin-bottom: 50px;
+  height: 100%;
+}
+.item.hold-item-gallary .wrap {
+  padding-top: 0;
+  margin: 0;
+}
+.item.hold-item-gallary .wrap img {
+  position: static;
+  border: 1px solid #FFFFFF;
+  border-bottom-left-radius: 40px;
+  width: 100%;
+  min-height: 265px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: bottom;
+     object-position: bottom;
+  height: 100%;
+}
+.item.hold-item-gallary .wrap .add {
+  position: static;
+  border: 0;
+  height: 100%;
+  width: 100%;
+}
+.item.hold-item-gallary .wrap .add .dashicons-plus-alt {
+  width: 100%;
+  height: auto;
+}
+.item.hold-item-gallary .wrap .add .dashicons-plus-alt::before {
+  font-size: 30px;
+}
+.item.hold-item-gallary .wrapper-images-list.single {
+  margin-bottom: 0;
+}
+.item.hold-item-gallary .wrapper-images-list.single .images-list {
+  justify-content: center;
+}
+.item.hold-item-gallary .wrapper-images-list.single .images-list .item {
+  width: 100%;
+  text-align: center;
+  display: block;
+  min-height: 197px;
+  margin-bottom: 0;
+}
+.item.hold-item-gallary .wrapper-images-list.single .images-list .item.button-add {
+  cursor: pointer;
+  outline: none;
+}
+.item.hold-item-gallary .wrapper-images-list.single .images-list .item.button-add .wrap {
+  border: 2px dashed #4bae4f;
+  border-radius: 10px;
+  min-height: 190px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.item.hold-item-gallary .wrapper-images-list.single .images-list .item.button-add:hover {
+  opacity: 0.7;
+}
+.item.hold-item-gallary .content {
+  text-align: center;
+}
+.item.hold-item-gallary .content .ttl {
+  color: #454545;
+  font-size: 20px;
+  margin: 17px 0 8px;
+  font-weight: 700;
+  line-height: 23px;
+}
+.item.hold-item-gallary .content .txt {
+  color: #828282;
+  font-weight: 400;
+  font-size: 16px;
+  word-break: break-word;
+}
+.item.hold-item-gallary .admin-buttom-delete-item {
+  position: absolute;
+  top: 7px;
+  right: 20px;
+  z-index: 1;
+}
+.item.hold-item-gallary .admin-buttom-move-item {
+  position: absolute;
+  top: 7px;
+  left: 18px;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1px;
+}
 /*!*****************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[3].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[3].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[3].use[3]!./src/blocks/Couple/style.scss ***!
   \*****************************************************************************************************************************************************************************************************************************************************/
@@ -1784,5 +2113,3 @@
   transition: all 0.2s linear;
   box-shadow: 0 0 0 2px #fff inset, 0 0 0 2px #ff4061;
 }
-
-/*# sourceMappingURL=style-blocks.css.map*/
