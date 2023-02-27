@@ -1,11 +1,11 @@
 <?php
 global $registerBlock;
 $registerBlock[] = [
-  'block_type' => 'create-block/services-new',
-  'callback' => 'wedding_shortcode_block_services_new'
+  'block_type' => 'create-block/couple',
+  'callback' => 'wedding_shortcode_block_couple'
 ];
 
-function wedding_shortcode_block_services_new($atts, $content) {
+function wedding_shortcode_block_couple($atts, $content) {
   $title = wedding_func_check_data('title', $atts, '<strong>Cô dâu & Chú rể</strong>');
   $title_shadow = wedding_func_check_data('title_shadow', $atts, 'Services');
   $config = wedding_func_check_data('config', $atts, []);
@@ -37,7 +37,7 @@ function wedding_shortcode_block_services_new($atts, $content) {
 
   ob_start(); ?>
 
-  <div class="block block-services-new" id="couple" style="<?= esc_attr($style_block); ?>">
+  <div class="block block-couple" id="couple" style="<?= esc_attr($style_block); ?>">
     <div class="holder">
       <div class="title text-center">
         <h3 class="ttl"><?= $title; ?></h3>

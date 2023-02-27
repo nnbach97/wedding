@@ -23,9 +23,7 @@ registerBlockType("create-block/teams", {
 			default: [
 				{
 					icon: {
-						url:
-							PV_Admin.PV_BASE_URL +
-							"/assets/img/blocks/leadership/leadership_img01.png",
+						url: PV_Admin.PV_BASE_URL + "/assets/img/blocks/leadership/1.png",
 						id: "",
 						alt: "",
 					},
@@ -34,9 +32,7 @@ registerBlockType("create-block/teams", {
 				},
 				{
 					icon: {
-						url:
-							PV_Admin.PV_BASE_URL +
-							"/assets/img/blocks/leadership/leadership_img02.png",
+						url: PV_Admin.PV_BASE_URL + "/assets/img/blocks/leadership/1.png",
 						id: "",
 						alt: "",
 					},
@@ -45,9 +41,7 @@ registerBlockType("create-block/teams", {
 				},
 				{
 					icon: {
-						url:
-							PV_Admin.PV_BASE_URL +
-							"/assets/img/blocks/leadership/leadership_img03.png",
+						url: PV_Admin.PV_BASE_URL + "/assets/img/blocks/leadership/1.png",
 						id: "",
 						alt: "",
 					},
@@ -56,9 +50,7 @@ registerBlockType("create-block/teams", {
 				},
 				{
 					icon: {
-						url:
-							PV_Admin.PV_BASE_URL +
-							"/assets/img/blocks/leadership/leadership_img04.png",
+						url: PV_Admin.PV_BASE_URL + "/assets/img/blocks/leadership/1.png",
 						id: "",
 						alt: "",
 					},
@@ -67,9 +59,7 @@ registerBlockType("create-block/teams", {
 				},
 				{
 					icon: {
-						url:
-							PV_Admin.PV_BASE_URL +
-							"/assets/img/blocks/leadership/leadership_img05.png",
+						url: PV_Admin.PV_BASE_URL + "/assets/img/blocks/leadership/1.png",
 						id: "",
 						alt: "",
 					},

@@ -1,11 +1,11 @@
 <?php
 global $registerBlock;
 $registerBlock[] = [
-  'block_type' => 'create-block/service-head',
-  'callback' => 'wedding_shortcode_block_service_head'
+  'block_type' => 'create-block/story',
+  'callback' => 'wedding_shortcode_block_story'
 ];
 
-function wedding_shortcode_block_service_head($atts, $content)
+function wedding_shortcode_block_story($atts, $content)
 {
   $title = wedding_func_check_data('ttl', $atts, '<strong>Nhập tiêu đề</strong>');
   $text = wedding_func_check_data('txt', $atts, 'Nhập nội dung');
@@ -27,7 +27,7 @@ function wedding_shortcode_block_service_head($atts, $content)
   }
 
   ob_start(); ?>
-  <div class="block-service-page" <?= $id !== '' ? $id : "" ?>>
+  <div class="block-story" <?= $id !== '' ? $id : "" ?>>
     <div class="<?= $reverse === "left" ? "head head--reverse" : "head" ?>">
       <div class="holder">
         <div class="wrap">

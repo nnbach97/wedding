@@ -4,13 +4,13 @@ $registerBlock = [];
 
 // wedding_include('inc/shortcodes/block-leadership.php');
 // -----------------------
-wedding_include('inc/shortcodes/block-services-new.php');
+wedding_include('inc/shortcodes/block-couple.php');
 wedding_include('inc/shortcodes/block-banner-new-img.php');
-wedding_include('inc/shortcodes/block-service-head.php');
 wedding_include('inc/shortcodes/block-banner-common.php');
+wedding_include('inc/shortcodes/block-story.php');
 wedding_include('inc/shortcodes/block-header-title.php');
-wedding_include('inc/shortcodes/block-feature-service-page.php');
-wedding_include('inc/shortcodes/block-clients.php');
+wedding_include('inc/shortcodes/block-event.php');
+wedding_include('inc/shortcodes/block-gallery.php');
 wedding_include('inc/shortcodes/block-contact.php');
 
 add_action('init', function () {

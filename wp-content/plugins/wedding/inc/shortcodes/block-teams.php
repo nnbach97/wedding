@@ -14,7 +14,7 @@
     $blocks = wedding_func_check_data('blocks', $atts, [
       [
         "icon" => [
-          "url" => P_wedding_RESOURCE_HOST . "/assets/img/blocks/leadership/leadership_img01.png",
+          "url" => P_wedding_RESOURCE_HOST . "/assets/img/blocks/leadership/1.png",
           "alt" => "",
           "id" => "",
         ],
@@ -23,7 +23,7 @@
       ],
       [
         "icon" => [
-          "url" => P_wedding_RESOURCE_HOST . "/assets/img/blocks/leadership/leadership_img02.png",
+          "url" => P_wedding_RESOURCE_HOST . "/assets/img/blocks/leadership/1.png",
           "alt" => "",
           "id" => "",
         ],
@@ -32,7 +32,7 @@
       ],
       [
         "icon" => [
-          "url" => P_wedding_RESOURCE_HOST . "/assets/img/blocks/leadership/leadership_img03.png",
+          "url" => P_wedding_RESOURCE_HOST . "/assets/img/blocks/leadership/1.png",
           "alt" => "",
           "id" => "",
         ],
@@ -41,7 +41,7 @@
       ],
       [
         "icon" => [
-          "url" => P_wedding_RESOURCE_HOST . "/assets/img/blocks/leadership/leadership_img04.png",
+          "url" => P_wedding_RESOURCE_HOST . "/assets/img/blocks/leadership/1.png",
           "alt" => "",
           "id" => "",
         ],
@@ -50,7 +50,7 @@
       ],
       [
         "icon" => [
-          "url" => P_wedding_RESOURCE_HOST . "/assets/img/blocks/leadership/leadership_img05.png",
+          "url" => P_wedding_RESOURCE_HOST . "/assets/img/blocks/leadership/1.png",
           "alt" => "",
           "id" => "",
         ],

@@ -1,11 +1,11 @@
 <?php
   global $registerBlock;
   $registerBlock[] = [
-    'block_type' => 'create-block/clients',
-    'callback' => 'wedding_shortcode_block_clients'
+    'block_type' => 'create-block/gallery',
+    'callback' => 'wedding_shortcode_block_gallery'
   ];
 
-  function wedding_shortcode_block_clients($atts, $content)
+  function wedding_shortcode_block_gallery($atts, $content)
   {
     $title = wedding_func_check_data('title', $atts, "<strong>Album Hình Cưới</strong>");
     $txt = wedding_func_check_data('txt', $atts, 'Tôi có thể chinh phục thế giới bằng một tay miễn là bạn đang nắm tay kia.');
@@ -15,7 +15,7 @@
     $style_block = wedding_func_check_data('style_block', $config, '');
     ob_start();
 ?>
-  <div class="block block-clients" id="gallery" style="<?= esc_attr($style_block); ?>">
+  <div class="block block-gallery" id="gallery" style="<?= esc_attr($style_block); ?>">
     <div class="holder">
       <div class="title text-center">
         <h3 class="ttl"><?= $title; ?></h3>
