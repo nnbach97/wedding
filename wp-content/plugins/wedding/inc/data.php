@@ -26,7 +26,7 @@ $dataInput = [
   // ]
 ];
 
-if (!defined('INPUT_TYPE')) define('INPUT_TYPE', $dataInput);
+if (!defined('INPUT_TYPE')) define('INPUT_TYPE', serialize($dataInput));
 
 // Render html InputType
 if (!function_exists("render_input_type")) {
@@ -34,7 +34,7 @@ if (!function_exists("render_input_type")) {
   {
     if (!defined('INPUT_TYPE')) return;
     $html = '';
-    foreach (INPUT_TYPE as $key => $obj) {
+    foreach (unserialize(INPUT_TYPE) as $key => $obj) {
       $html .= form_input($obj['name'], [
         'label' => $obj['label'],
         'value' => $key,

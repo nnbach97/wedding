@@ -26,9 +26,9 @@ if (!function_exists('template_mail')) {
     $html .= '<!DOCTYPE html>';
     $html .= '<html>';
     $html .= '<body>';
-    $html .= '<div style="font-size:14px;line-height:1.4;font-weight:400;margin:0px;background-color:#f9667e73;padding:80px">';
+    $html .= '<div style="font-size:14px;line-height:1.4;font-weight:400;margin:0px;background-color:#f9667e73;padding:8vw">';
     $html .= '<div style="max-width:580px;width:100%;border:0px;margin-right:auto;margin-left:auto;font-weight:500">';
-    $html .= '<div style="background-color:#ffffff;font-weight:500;padding: 20px;">';
+    $html .= '<div style="background-color:#ffffff;font-weight:500;padding: 3vw;">';
     $html .= '<div style="padding: 10px;">';
     $html .= '<h2 style="text-align: center; position: relative; margin: 0 0 30px; color: #000">';
     $html .= $title;
