@@ -20,26 +20,23 @@
 
 // ** Database settings - You can get this info from your web host ** //
 
-// if (strpos($_SERVER['DOCUMENT_ROOT'], '/var/www/html/') === false ) {
-//   define('IS_PROD', false);
-// } else {
-//   define('IS_PROD', true);
-// }
+if (strpos($_SERVER['DOCUMENT_ROOT'], '/home/t7vc4gqbxk9o/public_html') === false ) {
+  define('IS_PROD', false);
+} else {
+  define('IS_PROD', true);
+}
 
-
-// if (IS_PROD) {
-//   define('DB_NAME', 'wedding_en_website');
-//   define('DB_USER', 'wedding_en');
-// } else {
-//   define('DB_NAME', 'wedding_en');
-//   define('DB_USER', 'wedding');
-// }
-
-define('DB_NAME', 'webdding');
-define('DB_USER', 'root');
+if (IS_PROD) {
+  define('DB_NAME', 't7vc4gqbxk9o_webdding');
+  define('DB_USER', 't7vc4gqbxk9o_root');
+  define( 'DB_PASSWORD', 'BNN@asd1123' );
+} else {
+  define('DB_NAME', 'webdding');
+  define('DB_USER', 'root');
+  define( 'DB_PASSWORD', '' );
+}
 
 /** Database password */
-define( 'DB_PASSWORD', '' );
 
 /** Database hostname */
 define( 'DB_HOST', 'localhost' );
