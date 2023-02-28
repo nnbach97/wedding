@@ -49,7 +49,7 @@ const Control = function ({ props }) {
 
 const FragmentBlock = function ({ props }) {
 	const { attributes, setAttributes } = props;
-	const { ttl, txt, image } = attributes;
+	const { ttl, txt, image, date } = attributes;
 
 	let data = processConfig(attributes.config);
 	return (
@@ -81,7 +81,7 @@ const FragmentBlock = function ({ props }) {
 								<RichText
 									tagName="p"
 									className="date"
-									value={txt}
+									value={date}
 									allowedFormats={ALLOWED_FORMATS}
 									placeholder="DD/MM/YYYY .."
 									keepPlaceholderOnFocus={true}
