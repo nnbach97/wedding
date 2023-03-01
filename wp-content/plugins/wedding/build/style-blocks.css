@@ -985,6 +985,14 @@
   height: 70px;
   margin-bottom: 10px;
 }
+@media screen and (max-width: 1366px) {
+  .block-banner-new-img .banner-inner .wrap {
+    max-width: 350px;
+  }
+  .block-banner-new-img .banner-inner .wrap .ttl {
+    font-size: 33px;
+  }
+}
 @media screen and (max-width: 1023px) {
   .block-banner-new-img {
     height: 90vh;

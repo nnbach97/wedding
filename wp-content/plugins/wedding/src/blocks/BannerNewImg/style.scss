@@ -296,6 +296,17 @@
   }
 
   /* Responsive */
+  @media screen and (max-width: 1366px) {
+    .banner-inner {
+      .wrap {
+        max-width: 350px;
+        .ttl {
+          font-size: 33px;
+        }
+      }
+    }
+  }
+
   @media screen and (max-width: 1023px) {
     & {
       height: 90vh;
