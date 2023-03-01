@@ -278,7 +278,6 @@
   }
 
   &-toolbar {
-
     opacity: 1 !important;
     visibility: visible !important;
 
@@ -290,6 +289,10 @@
 /* Custom Admin*/
 .block-editor-block-list__block .block-gallary .wrapper-item {
   justify-content: flex-start;
+
+  .item {
+    margin-bottom: 10px;
+  }
 }
 /* END: Custom Admin*/
 

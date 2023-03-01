@@ -17,10 +17,8 @@ function wedding_shortcode_block_banner_new_img($atts, $content)
     'url' => P_wedding_RESOURCE_HOST . '/assets/img/blocks/banner/banner_new.png',
     'alt' => '',
     'id' => '',
-  ],);
-  $video_film = wedding_func_check_data('video_film', $atts, P_wedding_RESOURCE_HOST . '/assets/img/blocks/banner/video_time.mp4');
+  ]);
 
-  $is_show_btn_video = wedding_func_check_data('is_show_btn_video', $atts, true);
   $is_show_bg = wedding_func_check_data('is_show_bg', $atts, true);
 
   ob_start(); ?>
@@ -41,6 +39,11 @@ function wedding_shortcode_block_banner_new_img($atts, $content)
           <div class="shooting_star"></div>
         </div>
       </div> -->
+
+      <div class="block-heart">
+        <div id="header-plugin"></div>
+        <div class="bg_heart"></div>
+      </div>
     </div>
     <div class="holder banner-inner">
       <div class="wrap">

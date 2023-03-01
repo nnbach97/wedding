@@ -240,6 +240,9 @@
 .block-editor-block-list__block .block-gallary .wrapper-item {
   justify-content: flex-start;
 }
+.block-editor-block-list__block .block-gallary .wrapper-item .item {
+  margin-bottom: 10px;
+}
 
 /* END: Custom Admin*/
 .item.hold-item-gallary {
@@ -984,6 +987,54 @@
   align-items: center;
   height: 70px;
   margin-bottom: 10px;
+}
+.block-banner-new-img .block-heart {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.block-banner-new-img .block-heart .bg_heart {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.block-banner-new-img .block-heart .heart {
+  position: absolute;
+  top: -50%;
+  -m-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+.block-banner-new-img .block-heart .heart:before {
+  position: absolute;
+  top: -50%;
+  left: 0;
+  display: block;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: inherit;
+  border-radius: 100%;
+}
+.block-banner-new-img .block-heart .heart:after {
+  position: absolute;
+  top: 0;
+  right: -50%;
+  display: block;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: inherit;
+  border-radius: 100%;
+}
+@keyframes love {
+  0% {
+    top: 110%;
+  }
 }
 @media screen and (max-width: 1366px) {
   .block-banner-new-img .banner-inner .wrap {

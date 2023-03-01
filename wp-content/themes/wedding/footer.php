@@ -31,10 +31,6 @@ require get_template_directory() . '/inc/theme_data.php';
   </div>
 </div>
 
-<div class="block-heart">
-  <div id="header-plugin"></div>
-  <div class="bg_heart"></div>
-</div>
 <!-- ./footer -->
 <?php wp_footer(); ?>
 </body>

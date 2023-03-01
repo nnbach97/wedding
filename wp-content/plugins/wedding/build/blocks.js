@@ -1563,44 +1563,6 @@ const SortableItem = (0,react_sortable_hoc__WEBPACK_IMPORTED_MODULE_7__.Sortable
         blocks: atts
       });
     }
-  })), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-    class: "content"
-  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.RichText, {
-    tagName: "h4",
-    className: "ttl",
-    value: object === null || object === void 0 ? void 0 : object.title,
-    allowedFormats: _config_define__WEBPACK_IMPORTED_MODULE_4__.ALLOWED_FORMATS,
-    placeholder: "H\u1ECD v\xE0 t\xEAn",
-    keepPlaceholderOnFocus: true,
-    onChange: value => {
-      if (!value) return "";
-      let atts = [...(attributes === null || attributes === void 0 ? void 0 : attributes.blocks)];
-      atts[data_key] = {
-        ...object,
-        title: value
-      };
-      setAttributes({
-        blocks: atts
-      });
-    }
-  }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.RichText, {
-    tagName: "p",
-    className: "txt",
-    value: object === null || object === void 0 ? void 0 : object.des,
-    allowedFormats: _config_define__WEBPACK_IMPORTED_MODULE_4__.ALLOWED_FORMATS,
-    placeholder: "M\xF4 t\u1EA3",
-    keepPlaceholderOnFocus: true,
-    onChange: value => {
-      if (!value) return "";
-      let atts = [...(attributes === null || attributes === void 0 ? void 0 : attributes.blocks)];
-      atts[data_key] = {
-        ...object,
-        des: value
-      };
-      setAttributes({
-        blocks: atts
-      });
-    }
   })));
 });
 const SortableList = (0,react_sortable_hoc__WEBPACK_IMPORTED_MODULE_7__.SortableContainer)(props => {
