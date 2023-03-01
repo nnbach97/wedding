@@ -55,9 +55,9 @@
     $(".js-slick-gallary").slick({
       dots: false,
       arrows: true,
-      speed: 3000,
+      speed: 1000,
       autoplay: true,
-      autoplaySpeed: 3000,
+      autoplaySpeed: 2500,
       slidesToShow: 4,
       pauseOnHover: true,
       pauseOnFocus: true,

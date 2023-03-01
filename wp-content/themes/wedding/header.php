@@ -28,26 +28,30 @@ require get_template_directory() . '/inc/theme_data.php';
   <header class="block block-header js-header <?= ((is_front_page() || is_home()) ? '' : 'header-child') ?>">
     <div class="holder header-inner">
       <div class="head">
-        <a class="toggle js-toggle-menu" href="javascript:void(0);">
-          <div class="line"></div>
-          <div class="line"></div>
-          <div class="line"></div>
-        </a>
+        <?php if(!is_page('gallary')): ?>
+          <a class="toggle js-toggle-menu" href="javascript:void(0);">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+          </a>
+        <?php endif ?>
         <div class="logo">
           <a href="<?= get_home_url(); ?>" class="custom-logo-color" rel="home">
             <img class="custom-logo" src="<?= get_theme_mod('custom_logo_color', RESOURCE_HOST . '/img/logo_white.png'); ?>" alt="">
           </a>
         </div>
-        <nav class="nav js-nav-pc">
-          <?php
-          $color = get_theme_mod("custom_header_color");
-          wp_nav_menu([
-            'menu_class'     => 'head-menu',
-            'container'      => '',
-            'theme_location' => 'header-menu',
-          ]);
-          ?>
-        </nav>
+        <?php if(!is_page('gallary')): ?>
+          <nav class="nav js-nav-pc">
+            <?php
+            $color = get_theme_mod("custom_header_color");
+            wp_nav_menu([
+              'menu_class'     => 'head-menu',
+              'container'      => '',
+              'theme_location' => 'header-menu',
+            ]);
+            ?>
+          </nav>
+        <?php endif ?>
         <style>
           .block-header .head-menu .menu-item a {
             color: <?= $color ?>
@@ -63,27 +67,28 @@ require get_template_directory() . '/inc/theme_data.php';
         </style>
       </div>
     </div>
-
-    <div class="header-sp js-header-sp">
-      <div class="wrapper">
-        <div class="head">
-          <div class="logo">
-            <?php the_custom_logo(); ?>
+    <?php if(!is_page('gallary')): ?>
+      <div class="header-sp js-header-sp">
+        <div class="wrapper">
+          <div class="head">
+            <div class="logo">
+              <?php the_custom_logo(); ?>
+            </div>
+              <a class="toggle js-toggle-menu" href="javascript:void(0);">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+              </a>
           </div>
-          <a class="toggle js-toggle-menu" href="javascript:void(0);">
-            <div class="line"></div>
-            <div class="line"></div>
-            <div class="line"></div>
-          </a>
+          <?php
+          wp_nav_menu([
+            'menu_class'     => 'header-sp-menu js-nav-sp',
+            'container'      => '',
+            'theme_location' => 'header-menu',
+          ]);
+          ?>
         </div>
-        <?php
-        wp_nav_menu([
-          'menu_class'     => 'header-sp-menu js-nav-sp',
-          'container'      => '',
-          'theme_location' => 'header-menu',
-        ]);
-        ?>
       </div>
-    </div>
+    <?php endif ?>
   </header>
   <!-- ./header -->
