@@ -87,6 +87,10 @@
           </div>
         <?php endforeach ?>
       </div>
+
+      <div class="btn">
+        <a class="btn-lnk" href="/"><<< Quay lại Trang Chủ >>></a>
+      </div>
     </div>
   </div>
   <?php endif ?>

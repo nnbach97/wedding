@@ -193,6 +193,18 @@
     }
   }
 
+  .btn {
+    text-align: center;
+    padding: 25px;
+    font-size: 18px;
+
+    &-lnk:hover {
+      text-decoration: underline;
+      opacity: 0.6;
+      transition: all 0.8s;
+    }
+  }
+
   @media screen and (max-width: 992px) {
     .wrapper-item {
       .item {
