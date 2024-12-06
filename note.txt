@@ -1,4 +1,4 @@
-http://localhost:8080/wp-admin/
+http://localhost:8282/wp-admin/
 - admin | 123456a@A
 
 
@@ -8,3 +8,22 @@ http://localhost:8080/wp-admin/
 4. Cấu trúc lại thư mục theme
 
 
+
+-------------------------------
+Cấu hình Xampp
+
+Listen 8282
+<VirtualHost *:8282>
+    DocumentRoot "F:/Project/webdding/wedding"
+
+    <Directory "F:/Project/webdding/wedding">
+        Options Indexes FollowSymLinks Includes ExecCGI
+        AllowOverride All
+        Require all granted
+    </Directory>
+</VirtualHost>
+
+
+-----------
+Nén ảnh upload
+F:\Project\webdding\wedding\wp-content\uploads.rar
